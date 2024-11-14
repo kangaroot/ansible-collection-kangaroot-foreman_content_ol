@@ -1,0 +1,381 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+  upstream_username: "{{ foreman_products_ol_uln_username | default('') }}"
+  upstream_password: "{{ foreman_products_ol_uln_password | default('') }}"
+
+
+foreman_products_defaults_ol7_uln_uek: &foreman_products_defaults_ol7_uln_uek
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln_uek }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln_uek }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln_uek | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln_uek }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln_uek | bool }}"
+
+
+foreman_products_ol7_uln_uekr3:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr3 }}"
+    repositories:
+      ### Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64) - Latest | ol7_x86_64_UEKR3 ###
+      - name: Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64) - Latest
+        description: Latest packages for Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_UEKR3
+        url: uln://ol7_x86_64_UEKR3
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr3 }}"
+
+foreman_products_ol7_uln_uekr3_ofed:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr3_ofed }}"
+    repositories:
+      ### OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 7 (x86_64) | ol7_x86_64_UEKR3_OFED20 ###
+      - name: OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 7 (x86_64)
+        description: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel (UEK) on Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_UEKR3_OFED20
+        url: uln://ol7_x86_64_UEKR3_OFED20
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr3_ofed }}"
+
+foreman_products_ol7_uln_uekr3_dtrace:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr3_dtrace }}"
+    repositories:
+      ### Oracle Linux 7 Dtrace Userspace Tools (x86_64) - Latest | ol7_x86_64_Dtrace_userspace ###
+      - name: Oracle Linux 7 Dtrace Userspace Tools (x86_64) - Latest
+        description: The latest Dtrace userspace tools for Unbreakable Enterprise Kernel Release 3 (UEKR3) on Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_Dtrace_userspace
+        url: uln://ol7_x86_64_Dtrace_userspace
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr3_dtrace }}"
+
+foreman_products_ol7_uln_uekr4:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr4 }}"
+    repositories:
+      ### Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64) | ol7_x86_64_UEKR4 ###
+      - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)
+        description: Latest packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_UEKR4
+        url: uln://ol7_x86_64_UEKR4
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr4 }}"
+
+foreman_products_ol7_uln_uekr4_ofed:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr4_ofed }}"
+    repositories:
+      ### OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 7 (x86_64) | ol7_x86_64_UEKR4_OFED ###
+      - name: OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 7 (x86_64)
+        description: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel Release 4 (UEK) on Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_UEKR4_OFED
+        url: uln://ol7_x86_64_UEKR4_OFED
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr4_ofed }}"
+
+foreman_products_ol7_uln_uekr4_dtrace:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr4_dtrace }}"
+    repositories:
+      ### Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 7 | ol7_x86_64_UEKR4_DTrace_userspace ###
+      - name: Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 7
+        description: The latest Dtrace userspace tools for Oracle Linux 7 (x86_64) with Unbreakable Enterprise Kernel Release 4 (UEKR4).
+        label: ol7_uln_x86_64_UEKR4_DTrace_userspace
+        url: uln://ol7_x86_64_UEKR4_DTrace_userspace
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr4_dtrace }}"
+
+foreman_products_ol7_uln_uekr4_archive:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr4_archive }}"
+    repositories:
+      ### Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64) -Archive | ol7_x86_64_UEKR4_archive ###
+      - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64) -Archive
+        description: Archived packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_UEKR4_archive
+        url: uln://ol7_x86_64_UEKR4_archive
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr4_archive }}"
+
+foreman_products_ol7_uln_uekr5:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr5 }}"
+    repositories:
+      ### Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) | ol7_x86_64_UEKR5 ###
+      - name: Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)
+        description: Latest packages for Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_UEKR5
+        url: uln://ol7_x86_64_UEKR5
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr5 }}"
+
+foreman_products_ol7_uln_uekr5_archive:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr5_archive }}"
+    repositories:
+      ### Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) -Archive | ol7_x86_64_UEKR5_archive ###
+      - name: Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) -Archive
+        description: Archived packages for Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_UEKR5_archive
+        url: uln://ol7_x86_64_UEKR5_archive
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr5_archive }}"
+
+foreman_products_ol7_uln_uekr5_rdma:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr5_rdma }}"
+    repositories:
+      ### Oracle Linux 7 Unbreakable Enterprise Kernel Release 5 RDMA (x86_64) | ol7_x86_64_UEKR5_RDMA ###
+      - name: Oracle Linux 7 Unbreakable Enterprise Kernel Release 5 RDMA (x86_64)
+        description: Userspace utilities for configuring RDMA with Unbreakable Enterprise Kernel Release 5 on Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_UEKR5_RDMA
+        url: uln://ol7_x86_64_UEKR5_RDMA
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr5_rdma }}"
+
+foreman_products_ol7_uln_uekr5_developer:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr5_developer }}"
+    repositories:
+      ### Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_UEKR5 ###
+      - name: Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)
+        description: Latest developer preview of Unbreakable Enterprise Kernel Release 5 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_developer_UEKR5
+        url: uln://ol7_x86_64_developer_UEKR5
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr5_developer }}"
+
+foreman_products_ol7_uln_uekr6:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr6 }}"
+    repositories:
+      ### Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64) | ol7_x86_64_UEKR6 ###
+      - name: Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)
+        description: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_UEKR6
+        url: uln://ol7_x86_64_UEKR6
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr6 }}"
+
+foreman_products_ol7_uln_uekr6_rdma:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr6_rdma }}"
+    repositories:
+      ### Oracle Linux 7 (x86_64) UEK Release 6 RDMA | ol7_x86_64_UEKR6_RDMA ###
+      - name: Oracle Linux 7 (x86_64) UEK Release 6 RDMA
+        description: Latest RDMA packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 7 for the Oracle Integrated Stack.
+        label: ol7_uln_x86_64_UEKR6_RDMA
+        url: uln://ol7_x86_64_UEKR6_RDMA
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr6_rdma }}"
+
+foreman_products_ol7_uln_uekr6_developer:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_uekr6_developer }}"
+    repositories:
+      ### Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_UEKR6 ###
+      - name: Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)
+        description: Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_developer_UEKR6
+        url: uln://ol7_x86_64_developer_UEKR6
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_uekr6_developer }}"
+
+foreman_products_ol7_uln_modrhck:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_modrhck }}"
+    repositories:
+      ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64) | ol7_x86_64_MODRHCK ###
+      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64)
+        description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_MODRHCK
+        url: uln://ol7_x86_64_MODRHCK
+        <<: *foreman_products_defaults_ol7_uln_uek
+        organization: "{{ foreman_organization_ol7_uln_modrhck }}"
+
+foreman_products_ol7_uln_uek: "{{ [] |
+  union( foreman_products_ol7_uln_uekr3 | default([]) if foreman_enable_ol7_uln_uekr3 else [] ) |
+  union( foreman_products_ol7_uln_uekr3_ofed | default([]) if foreman_enable_ol7_uln_uekr3_ofed else [] ) |
+  union( foreman_products_ol7_uln_uekr3_dtrace | default([]) if foreman_enable_ol7_uln_uekr3_dtrace else [] ) |
+  union( foreman_products_ol7_uln_uekr4 | default([]) if foreman_enable_ol7_uln_uekr4 else [] ) |
+  union( foreman_products_ol7_uln_uekr4_ofed | default([]) if foreman_enable_ol7_uln_uekr4_ofed else [] ) |
+  union( foreman_products_ol7_uln_uekr4_dtrace | default([]) if foreman_enable_ol7_uln_uekr4_dtrace else [] ) |
+  union( foreman_products_ol7_uln_uekr4_archive | default([]) if foreman_enable_ol7_uln_uekr4_archive else [] ) |
+  union( foreman_products_ol7_uln_uekr5 | default([]) if foreman_enable_ol7_uln_uekr5 else [] ) |
+  union( foreman_products_ol7_uln_uekr5_archive | default([]) if foreman_enable_ol7_uln_uekr5_archive else [] ) |
+  union( foreman_products_ol7_uln_uekr5_rdma | default([]) if foreman_enable_ol7_uln_uekr5_rdma else [] ) |
+  union( foreman_products_ol7_uln_uekr5_developer | default([]) if foreman_enable_ol7_uln_uekr5_developer else [] ) |
+  union( foreman_products_ol7_uln_uekr6 | default([]) if foreman_enable_ol7_uln_uekr6 else [] ) |
+  union( foreman_products_ol7_uln_uekr6_rdma | default([]) if foreman_enable_ol7_uln_uekr6_rdma else [] ) |
+  union( foreman_products_ol7_uln_uekr6_developer | default([]) if foreman_enable_ol7_uln_uekr6_developer else [] ) |
+  union( foreman_products_ol7_uln_modrhck | default([]) if foreman_enable_ol7_uln_modrhck else [] )
+  }}"
+
+
+foreman_content_views_ol7_uln_uekr3:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR3"
+    organization: "{{ foreman_organization_ol7_uln_uekr3 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64) - Latest"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr3 }}"
+
+foreman_content_views_ol7_uln_uekr3_ofed:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR3_OFED20"
+    organization: "{{ foreman_organization_ol7_uln_uekr3_ofed }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr3_ofed }}"
+
+foreman_content_views_ol7_uln_uekr3_dtrace:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_Dtrace_userspace"
+    organization: "{{ foreman_organization_ol7_uln_uekr3_dtrace }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Dtrace Userspace Tools (x86_64) - Latest"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr3_dtrace }}"
+
+foreman_content_views_ol7_uln_uekr4:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR4"
+    organization: "{{ foreman_organization_ol7_uln_uekr4 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr4 }}"
+
+foreman_content_views_ol7_uln_uekr4_ofed:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR4_OFED"
+    organization: "{{ foreman_organization_ol7_uln_uekr4_ofed }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr4_ofed }}"
+
+foreman_content_views_ol7_uln_uekr4_dtrace:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR4_DTrace_userspace"
+    organization: "{{ foreman_organization_ol7_uln_uekr4_dtrace }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 7"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr4_dtrace }}"
+
+foreman_content_views_ol7_uln_uekr4_archive:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR4_archive"
+    organization: "{{ foreman_organization_ol7_uln_uekr4_archive }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64) -Archive"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr4_archive }}"
+
+foreman_content_views_ol7_uln_uekr5:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR5"
+    organization: "{{ foreman_organization_ol7_uln_uekr5 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr5 }}"
+
+foreman_content_views_ol7_uln_uekr5_archive:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR5_archive"
+    organization: "{{ foreman_organization_ol7_uln_uekr5_archive }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) -Archive"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr5_archive }}"
+
+foreman_content_views_ol7_uln_uekr5_rdma:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR5_RDMA"
+    organization: "{{ foreman_organization_ol7_uln_uekr5_rdma }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Unbreakable Enterprise Kernel Release 5 RDMA (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr5_rdma }}"
+
+foreman_content_views_ol7_uln_uekr5_developer:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_UEKR5"
+    organization: "{{ foreman_organization_ol7_uln_uekr5_developer }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr5_developer }}"
+
+foreman_content_views_ol7_uln_uekr6:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR6"
+    organization: "{{ foreman_organization_ol7_uln_uekr6 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr6 }}"
+
+foreman_content_views_ol7_uln_uekr6_rdma:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_UEKR6_RDMA"
+    organization: "{{ foreman_organization_ol7_uln_uekr6_rdma }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 (x86_64) UEK Release 6 RDMA"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr6_rdma }}"
+
+foreman_content_views_ol7_uln_uekr6_developer:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_UEKR6"
+    organization: "{{ foreman_organization_ol7_uln_uekr6_developer }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_uekr6_developer }}"
+
+foreman_content_views_ol7_uln_modrhck:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_MODRHCK"
+    organization: "{{ foreman_organization_ol7_uln_modrhck }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_modrhck }}"
+
+foreman_content_views_ol7_uln_uek: "{{ [] |
+  union( foreman_content_views_ol7_uln_uekr3 | default([]) if foreman_enable_ol7_uln_uekr3 else [] ) |
+  union( foreman_content_views_ol7_uln_uekr3_ofed | default([]) if foreman_enable_ol7_uln_uekr3_ofed else [] ) |
+  union( foreman_content_views_ol7_uln_uekr3_dtrace | default([]) if foreman_enable_ol7_uln_uekr3_dtrace else [] ) |
+  union( foreman_content_views_ol7_uln_uekr4 | default([]) if foreman_enable_ol7_uln_uekr4 else [] ) |
+  union( foreman_content_views_ol7_uln_uekr4_ofed | default([]) if foreman_enable_ol7_uln_uekr4_ofed else [] ) |
+  union( foreman_content_views_ol7_uln_uekr4_dtrace | default([]) if foreman_enable_ol7_uln_uekr4_dtrace else [] ) |
+  union( foreman_content_views_ol7_uln_uekr4_archive | default([]) if foreman_enable_ol7_uln_uekr4_archive else [] ) |
+  union( foreman_content_views_ol7_uln_uekr5 | default([]) if foreman_enable_ol7_uln_uekr5 else [] ) |
+  union( foreman_content_views_ol7_uln_uekr5_archive | default([]) if foreman_enable_ol7_uln_uekr5_archive else [] ) |
+  union( foreman_content_views_ol7_uln_uekr5_rdma | default([]) if foreman_enable_ol7_uln_uekr5_rdma else [] ) |
+  union( foreman_content_views_ol7_uln_uekr5_developer | default([]) if foreman_enable_ol7_uln_uekr5_developer else [] ) |
+  union( foreman_content_views_ol7_uln_uekr6 | default([]) if foreman_enable_ol7_uln_uekr6 else [] ) |
+  union( foreman_content_views_ol7_uln_uekr6_rdma | default([]) if foreman_enable_ol7_uln_uekr6_rdma else [] ) |
+  union( foreman_content_views_ol7_uln_uekr6_developer | default([]) if foreman_enable_ol7_uln_uekr6_developer else [] ) |
+  union( foreman_content_views_ol7_uln_modrhck | default([]) if foreman_enable_ol7_uln_modrhck else [] )
+  }}"
+

@@ -1,0 +1,271 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_content_credentials_ol9: []
+
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol9 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
+
+
+foreman_products_ol9:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      ### Oracle Linux 9 BaseOS Latest (x86_64) | ol9_x86_64_baseos_latest ###
+      - name: Oracle Linux 9 BaseOS Latest (x86_64)
+        description: Base operating system packages released for Oracle Linux 9 (x86_64) including the latest errata packages. (x86_64)
+        label: ol9_x86_64_baseos_latest
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/baseos/latest/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9 }}"
+      ### Oracle Linux 9 Application Stream Packages (x86_64) | ol9_x86_64_appstream ###
+      - name: Oracle Linux 9 Application Stream Packages (x86_64)
+        description: Application Stream packages released for Oracle Linux 9 including the latest errata packages. (x86_64)
+        label: ol9_x86_64_appstream
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/appstream/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9 }}"
+
+      ### Oracle Linux 9 Addons (x86_64) | ol9_x86_64_addons ###
+      - name: Oracle Linux 9 Addons (x86_64)
+        description: Latest Add-on packages for Oracle Linux 9 (x86_64)
+        label: ol9_x86_64_addons
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/addons/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9 }}"
+      ### Packages for creating test and development environments for Oracle Linux 9 (x86_64) | ol9_x86_64_developer ###
+      - name: Packages for creating test and development environments for Oracle Linux 9 (x86_64)
+        description: Latest packages for creating test and development environments - Oracle LInux 9 (x86_64)
+        label: ol9_x86_64_developer
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9 }}"
+      ### Oracle Linux 9 EPEL Packages (x86_64) | ol9_x86_64_developer_EPEL ###
+      - name: Oracle Linux 9 EPEL Packages (x86_64)
+        description: EPEL packages for Oracle Linux 9 (x86_64)
+        label: ol9_x86_64_developer_EPEL
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/EPEL/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9 }}"
+      ### Oracle Linux 9 CodeReady Builder (x86_64) | ol9_x86_64_codeready_builder ###
+      - name: Oracle Linux 9 CodeReady Builder (x86_64)
+        description: Repository of additional development and build tools for Oracle Linux 9 (x86_64) - (Unsupported)
+        label: ol9_x86_64_codeready_builder
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/codeready/builder/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9 }}"
+      # ### Oracle Linux 9 CodeReady Builder Developer Preview (x86_64) | ol9_x86_64_codeready_builder_developer ###
+      # - name: Oracle Linux 9 CodeReady Builder Developer Preview (x86_64)
+      #   description: Developer preview of Oracle Linux 9 CodeReady Builder Packages (x86_64) - (Unsupported)
+      #   label: ol9_x86_64_codeready_builder_developer
+      #   url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/codeready/builder/developer/x86_64/"
+      #   <<: *foreman_products_defaults
+      #   organization: "{{ foreman_organization_ol9 }}"
+      ### Oracle Linux 9 Distro Builder (x86_64) | ol9_x86_64_distro_builder ###
+      - name: Oracle Linux 9 Distro Builder (x86_64)
+        description: Oracle Linux 9 Distro Builder Packages (x86_64) - (Unsupported)
+        label: ol9_x86_64_distro_builder
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/distro/builder/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9 }}"
+
+
+foreman_content_views_ol9:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_baseos_latest"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 BaseOS Latest (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_appstream"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Application Stream Packages (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_addons"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Addons (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_developer"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Packages for creating test and development environments for Oracle Linux 9 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_developer_EPEL"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 EPEL Packages (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_codeready_builder"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 CodeReady Builder (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol9_x86_64_codeready_builder_developer"
+  #   organization: "{{ foreman_organization_ol9 }}"
+  #   repositories:
+  #     - name: Oracle Linux 9 CodeReady Builder Developer Preview (x86_64)
+  #       product: Oracle Linux
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_distro_builder"
+    organization: "{{ foreman_organization_ol9 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Distro Builder (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
+
+foreman_composite_content_views_ol9:
+  - name: "{{ foreman_ccv_prefix | default('ccv_') }}{{ foreman_ccv_name_prefix | default('') }}ol9"
+    organization: "{{ foreman_organization_ol9 }}"
+    composite: True
+    allow_promote: "{{ foreman_ccv_allow_promote_ol9 }}"
+    auto_publish: "{{ foreman_ccv_auto_publish_ol9 }}"
+    components:
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_baseos_latest"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_appstream"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_addons"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_developer"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_developer_EPEL"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_codeready_builder"
+        latest: true
+      # - content_view: "{{ foreman_cv_prefix | default('cv_') }}ol9_x86_64_codeready_builder_developer"
+      #   latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_distro_builder"
+        latest: true
+
+
+foreman_operatingsystems_defaults: &foreman_operatingsystems_defaults
+  os_family: "Redhat"
+  password_hash: "SHA512"
+  architectures:
+    - x86_64
+  # ptables:
+  #   - Kickstart default
+  #   - Kickstart custom
+  ptables: "{{
+    [ 'Kickstart default',
+      'Kickstart custom' ] |
+      union( foreman_partition_tables | default([]) | selectattr('os_family', 'defined') | selectattr('os_family', '==', 'Redhat') | map(attribute='name') | list )
+    }}"
+
+
+foreman_operatingsystems_ol9:
+  - name: "OracleLinux"
+    major: "9"
+    minor: "0"
+    description: "Oracle Linux 9.0"
+    default_templates: "{{ foreman_operatingsystems_ol90_default_templates | default( foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "9"
+    minor: "1"
+    description: "Oracle Linux 9.1"
+    default_templates: "{{ foreman_operatingsystems_ol91_default_templates | default( foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "9"
+    minor: "2"
+    description: "Oracle Linux 9.2"
+    default_templates: "{{ foreman_operatingsystems_ol92_default_templates | default( foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "9"
+    minor: "3"
+    description: "Oracle Linux 9.3"
+    default_templates: "{{ foreman_operatingsystems_ol93_default_templates | default( foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "9"
+    minor: "4"
+    description: "Oracle Linux 9.4"
+    default_templates: "{{ foreman_operatingsystems_ol94_default_templates | default( foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "9"
+    minor: ""
+    description: "Oracle Linux 9"
+    default_templates: "{{ foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+
+
+foreman_installation_media_defaults: &foreman_installation_media_defaults
+  os_family: Redhat
+  # organizations:
+  #   - "{{ foreman_organization }}"
+  # locations:
+  #   - "{{ foreman_default_location }}"
+  organizations: "{{ foreman_all_organizations_namelist }}"
+  locations: "{{ foreman_all_locations_namelist }}"
+
+
+foreman_installation_media_ol9: []
+# ENABLED IN VERSIONS!
+#   - name: Oracle Linux 9.3 BaseOS
+#     path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_linux/ol9_u3_baseos_base/"
+#     <<: *foreman_installation_media_defaults
+#     operatingsystems:
+#       - Oracle Linux 9.3
+#       - Oracle Linux 9
+
+
+foreman_activation_keys_defaults: &foreman_activation_keys_defaults
+  organization: "{{ foreman_organization }}"
+  # lifecycle_environment: "Library"
+  # subscriptions:
+  #   - name: "Oracle Linux"
+  auto_attach: False
+  # release_version: 9
+  # service_level: Standard
+
+
+foreman_activation_keys_ol9:
+  - name: "{{ foreman_ak_prefix | default('ak_') }}{{ foreman_ak_name_prefix | default('') }}ol9"
+    organization: "{{ foreman_organization_ol9 }}"
+    content_view: "{{ foreman_ccv_prefix | default('ccv_') }}{{ foreman_ccv_name_prefix | default('') }}ol9"
+    <<: *foreman_activation_keys_defaults
+    content_overrides:
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_baseos_{{ foreman_repo_label_prefix | default('') }}latest"
+        override: enabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_{{ foreman_repo_label_prefix | default('') }}appstream"
+        override: enabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_{{ foreman_repo_label_prefix | default('') }}addons"
+        override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_{{ foreman_repo_label_prefix | default('') }}developer"
+        override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_developer_{{ foreman_repo_label_prefix | default('') }}EPEL"
+        override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_codeready_{{ foreman_repo_label_prefix | default('') }}builder"
+        override: disabled
+      # - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_codeready_builder_{{ foreman_repo_label_prefix | default('') }}developer"
+      #   override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_distro_{{ foreman_repo_label_prefix | default('') }}builder"
+        override: disabled
+
+
+foreman_sync_plan_products_ol9: []
+

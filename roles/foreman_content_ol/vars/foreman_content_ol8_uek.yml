@@ -1,0 +1,195 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+
+foreman_products_defaults_ol8_uek: &foreman_products_defaults_ol8_uek
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol8_uek }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol8_uek }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_uek | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol8_uek }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol8_uek | bool }}"
+
+
+foreman_products_ol8_uekr6:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_uekr6 }}"
+    repositories:
+      ### Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64) | ol8_x86_64_UEKR6 ###
+      - name: Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)
+        description: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 8 (x86_64)
+        label: ol8_x86_64_UEKR6
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR6/x86_64/"
+        <<: *foreman_products_defaults_ol8_uek
+        organization: "{{ foreman_organization_ol8_uekr6 }}"
+
+foreman_products_ol8_uekr6_developer:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_uekr6_developer }}"
+    repositories:
+      ### Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_UEKR6 ###
+      - name: Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)
+        description: Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 8 (x86_64)
+        label: ol8_x86_64_developer_UEKR6
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/UEKR6/x86_64/"
+        <<: *foreman_products_defaults_ol8_uek
+        organization: "{{ foreman_organization_ol8_uekr6_developer }}"
+
+foreman_products_ol8_uekr6_rdma:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_uekr6_rdma }}"
+    repositories:
+      ### Oracle Linux 8 (x86_64) UEK Release 6 RDMA | ol8_x86_64_UEKR6_RDMA ###
+      - name: Oracle Linux 8 (x86_64) UEK Release 6 RDMA
+        description: Latest RDMA packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 8 for the Oracle Integrated Stack.
+        label: ol8_x86_64_UEKR6_RDMA
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR6/RDMA/x86_64/"
+        <<: *foreman_products_defaults_ol8_uek
+        organization: "{{ foreman_organization_ol8_uekr6_rdma }}"
+
+foreman_products_ol8_uekr7:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_uekr7 }}"
+    repositories:
+      ### Oracle Linux 8 UEK Release 7 (x86_64) | ol8_x86_64_UEKR7 ###
+      - name: Oracle Linux 8 UEK Release 7 (x86_64)
+        description: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 8 (x86_64)
+        label: ol8_x86_64_UEKR7
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR7/x86_64/"
+        <<: *foreman_products_defaults_ol8_uek
+        organization: "{{ foreman_organization_ol8_uekr7 }}"
+
+foreman_products_ol8_uekr7_developer:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_uekr7_developer }}"
+    repositories:
+      ### Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_UEKR7 ###
+      - name: Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 8 (x86_64)
+        description: Latest developer preview of Unbreakable Enterprise Kernel Release 7 packages for creating test and development environments (not for production use) - Oracle Linux 8 (x86_64)
+        label: ol8_x86_64_developer_UEKR7
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/UEKR7/x86_64/"
+        <<: *foreman_products_defaults_ol8_uek
+        organization: "{{ foreman_organization_ol8_uekr7_developer }}"
+
+foreman_products_ol8_uekr7_rdma:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_uekr7_rdma }}"
+    repositories:
+      ### Oracle Linux 8 (x86_64) UEK Release 7 RDMA | ol8_x86_64_UEKR7_RDMA ###
+      - name: Oracle Linux 8 (x86_64) UEK Release 7 RDMA
+        description: Latest RDMA packages for Unbreakable Enterprise Kernel Release 7 packages on Oracle Linux 8 for the Oracle Integrated Stack.
+        label: ol8_x86_64_UEKR7_RDMA
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR7/RDMA/x86_64/"
+        <<: *foreman_products_defaults_ol8_uek
+        organization: "{{ foreman_organization_ol8_uekr7_rdma }}"
+
+foreman_products_ol8_modrhck:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_modrhck }}"
+    repositories:
+      ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64) | ol8_x86_64_MODRHCK ###
+      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64)
+        description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64).
+        label: ol8_x86_64_MODRHCK
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/MODRHCK/x86_64/"
+        <<: *foreman_products_defaults_ol8_uek
+        organization: "{{ foreman_organization_ol8_modrhck }}"
+
+foreman_products_ol8_uek: "{{ [] |
+  union( foreman_products_ol8_uekr6 | default([]) if foreman_enable_ol8_uekr6 else [] ) |
+  union( foreman_products_ol8_uekr6_developer | default([]) if foreman_enable_ol8_uekr6_developer else [] ) |
+  union( foreman_products_ol8_uekr6_rdma | default([]) if foreman_enable_ol8_uekr6_rdma else [] ) |
+  union( foreman_products_ol8_uekr7 | default([]) if foreman_enable_ol8_uekr7 else [] ) |
+  union( foreman_products_ol8_uekr7_developer | default([]) if foreman_enable_ol8_uekr7_developer else [] ) |
+  union( foreman_products_ol8_uekr7_rdma | default([]) if foreman_enable_ol8_uekr7_rdma else [] ) |
+  union( foreman_products_ol8_modrhck | default([]) if foreman_enable_ol8_modrhck else [] )
+  }}"
+
+
+foreman_content_views_ol8_uekr6:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_UEKR6"
+    organization: "{{ foreman_organization_ol8_uekr6 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uekr6 }}"
+
+foreman_content_views_ol8_uekr6_developer:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_developer_UEKR6"
+    organization: "{{ foreman_organization_ol8_uekr6_developer }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uekr6_developer }}"
+
+foreman_content_views_ol8_uekr6_rdma:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_UEKR6_RDMA"
+    organization: "{{ foreman_organization_ol8_uekr6_rdma }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 (x86_64) UEK Release 6 RDMA"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uekr6_rdma }}"
+
+foreman_content_views_ol8_uekr7:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_UEKR7"
+    organization: "{{ foreman_organization_ol8_uekr7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 UEK Release 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uekr7 }}"
+
+foreman_content_views_ol8_uekr7_developer:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_developer_UEKR7"
+    organization: "{{ foreman_organization_ol8_uekr7_developer }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 8 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uekr7_developer }}"
+
+foreman_content_views_ol8_uekr7_rdma:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_UEKR7_RDMA"
+    organization: "{{ foreman_organization_ol8_uekr7_rdma }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 (x86_64) UEK Release 7 RDMA"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uekr7_rdma }}"
+
+foreman_content_views_ol8_modrhck:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_MODRHCK"
+    organization: "{{ foreman_organization_ol8_modrhck }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_modrhck }}"
+
+foreman_content_views_ol8_uek: "{{ [] |
+  union( foreman_content_views_ol8_uekr6 | default([]) if foreman_enable_ol8_uekr6 else [] ) |
+  union( foreman_content_views_ol8_uekr6_developer | default([]) if foreman_enable_ol8_uekr6_developer else [] ) |
+  union( foreman_content_views_ol8_uekr6_rdma | default([]) if foreman_enable_ol8_uekr6_rdma else [] ) |
+  union( foreman_content_views_ol8_uekr7 | default([]) if foreman_enable_ol8_uekr7 else [] ) |
+  union( foreman_content_views_ol8_uekr7_developer | default([]) if foreman_enable_ol8_uekr7_developer else [] ) |
+  union( foreman_content_views_ol8_uekr7_rdma | default([]) if foreman_enable_ol8_uekr7_rdma else [] ) |
+  union( foreman_content_views_ol8_modrhck | default([]) if foreman_enable_ol8_modrhck else [] )
+  }}"
+

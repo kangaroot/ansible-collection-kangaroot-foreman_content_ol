@@ -1,0 +1,580 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+
+foreman_products_defaults_ol70: &foreman_products_defaults_ol70
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol70 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol70 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol70 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol70 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol70 | bool }}"
+
+foreman_products_defaults_ol71: &foreman_products_defaults_ol71
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol71 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol71 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol71 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol71 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol71 | bool }}"
+
+foreman_products_defaults_ol72: &foreman_products_defaults_ol72
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol72 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol72 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol72 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol72 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol72 | bool }}"
+
+foreman_products_defaults_ol73: &foreman_products_defaults_ol73
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol73 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol73 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol73 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol73 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol73 | bool }}"
+
+foreman_products_defaults_ol74: &foreman_products_defaults_ol74
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol74 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol74 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol74 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol74 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol74 | bool }}"
+
+foreman_products_defaults_ol75: &foreman_products_defaults_ol75
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol75 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol75 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol75 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol75 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol75 | bool }}"
+
+foreman_products_defaults_ol76: &foreman_products_defaults_ol76
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol76 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol76 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol76 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol76 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol76 | bool }}"
+
+foreman_products_defaults_ol77: &foreman_products_defaults_ol77
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol77 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol77 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol77 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol77 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol77 | bool }}"
+
+foreman_products_defaults_ol78: &foreman_products_defaults_ol78
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol78 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol78 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol78 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol78 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol78 | bool }}"
+
+foreman_products_defaults_ol79: &foreman_products_defaults_ol79
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol79 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol79 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol79 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol79 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol79 | bool }}"
+
+
+foreman_products_ol70_content: &foreman_products_ol70_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol70 }}"
+    repositories:
+      ### Oracle Linux 7 GA installation media copy (x86_64) | ol7_x86_64_u0_base ###
+      - name: Oracle Linux 7 GA installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 GA (x86_64). No errata included
+        label: ol7_x86_64_u0_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/0/base/x86_64/"
+        <<: *foreman_products_defaults_ol70
+        organization: "{{ foreman_organization_ol70 }}"
+
+foreman_products_ol70:
+  - *foreman_products_ol70_content
+foreman_products_ol70_kickstart:
+  - *foreman_products_ol70_content
+
+foreman_products_ol71_content: &foreman_products_ol71_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol71 }}"
+    repositories:
+      ### Oracle Linux 7 Update 1 installation media copy (x86_64) | ol7_x86_64_u1_base ###
+      - name: Oracle Linux 7 Update 1 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 1 (x86_64). No errata included
+        label: ol7_x86_64_u1_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/1/base/x86_64/"
+        <<: *foreman_products_defaults_ol71
+        organization: "{{ foreman_organization_ol71 }}"
+
+foreman_products_ol71:
+  - *foreman_products_ol71_content
+foreman_products_ol71_kickstart:
+  - *foreman_products_ol71_content
+
+foreman_products_ol72_content: &foreman_products_ol72_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol72 }}"
+    repositories:
+      ### Oracle Linux 7 Update 2 installation media copy (x86_64) | ol7_x86_64_u2_base ###
+      - name: Oracle Linux 7 Update 2 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 2 (x86_64). No errata included
+        label: ol7_x86_64_u2_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/2/base/x86_64/"
+        <<: *foreman_products_defaults_ol72
+        organization: "{{ foreman_organization_ol72 }}"
+
+foreman_products_ol72:
+  - *foreman_products_ol72_content
+foreman_products_ol72_kickstart:
+  - *foreman_products_ol72_content
+
+foreman_products_ol73_content: &foreman_products_ol73_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol73 }}"
+    repositories:
+      ### Oracle Linux 7 Update 3 installation media copy (x86_64) | ol7_x86_64_u3_base ###
+      - name: Oracle Linux 7 Update 3 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 3 (x86_64). No errata included
+        label: ol7_x86_64_u3_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/3/base/x86_64/"
+        <<: *foreman_products_defaults_ol73
+        organization: "{{ foreman_organization_ol73 }}"
+
+foreman_products_ol73:
+  - *foreman_products_ol73_content
+foreman_products_ol73_kickstart:
+  - *foreman_products_ol73_content
+
+foreman_products_ol74_content: &foreman_products_ol74_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol74 }}"
+    repositories:
+      ### Oracle Linux 7 Update 4 installation media copy (x86_64) | ol7_x86_64_u4_base ###
+      - name: Oracle Linux 7 Update 4 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 4 (x86_64). No errata included
+        label: ol7_x86_64_u4_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/4/base/x86_64/"
+        <<: *foreman_products_defaults_ol74
+        organization: "{{ foreman_organization_ol74 }}"
+
+foreman_products_ol74:
+  - *foreman_products_ol74_content
+foreman_products_ol74_kickstart:
+  - *foreman_products_ol74_content
+
+foreman_products_ol75_content: &foreman_products_ol75_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol75 }}"
+    repositories:
+      ### Oracle Linux 7 Update 5 installation media copy (x86_64) | ol7_x86_64_u5_base ###
+      - name: Oracle Linux 7 Update 5 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 5 (x86_64). No errata included
+        label: ol7_x86_64_u5_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/5/base/x86_64/"
+        <<: *foreman_products_defaults_ol75
+        organization: "{{ foreman_organization_ol75 }}"
+
+foreman_products_ol75:
+  - *foreman_products_ol75_content
+foreman_products_ol75_kickstart:
+  - *foreman_products_ol75_content
+
+foreman_products_ol76_content: &foreman_products_ol76_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol76 }}"
+    repositories:
+      ### Oracle Linux 7 Update 6 installation media copy (x86_64) | ol7_x86_64_u6_base ###
+      - name: Oracle Linux 7 Update 6 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 6 (x86_64). No errata included
+        label: ol7_x86_64_u6_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/6/base/x86_64/"
+        <<: *foreman_products_defaults_ol76
+        organization: "{{ foreman_organization_ol76 }}"
+
+foreman_products_ol76:
+  - *foreman_products_ol76_content
+foreman_products_ol76_kickstart:
+  - *foreman_products_ol76_content
+
+foreman_products_ol77_content: &foreman_products_ol77_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol77 }}"
+    repositories:
+      ### Oracle Linux 7 Update 7 installation media copy (x86_64) | ol7_x86_64_u7_base ###
+      - name: Oracle Linux 7 Update 7 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 7 (x86_64). No errata included
+        label: ol7_x86_64_u7_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/7/base/x86_64/"
+        <<: *foreman_products_defaults_ol77
+        organization: "{{ foreman_organization_ol77 }}"
+
+foreman_products_ol77:
+  - *foreman_products_ol77_content
+foreman_products_ol77_kickstart:
+  - *foreman_products_ol77_content
+
+foreman_products_ol78_content: &foreman_products_ol78_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol78 }}"
+    repositories:
+      ### Oracle Linux 7 Update 8 installation media copy (x86_64) | ol7_x86_64_u8_base ###
+      - name: Oracle Linux 7 Update 8 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 8 (x86_64). No errata included
+        label: ol7_x86_64_u8_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/8/base/x86_64/"
+        <<: *foreman_products_defaults_ol78
+        organization: "{{ foreman_organization_ol78 }}"
+
+foreman_products_ol78:
+  - *foreman_products_ol78_content
+foreman_products_ol78_kickstart:
+  - *foreman_products_ol78_content
+
+foreman_products_ol79_content: &foreman_products_ol79_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol79 }}"
+    repositories:
+      ### Oracle Linux 7 Update 9 installation media copy (x86_64) | ol7_x86_64_u9_base ###
+      - name: Oracle Linux 7 Update 9 installation media copy (x86_64)
+        description: All packages released for Oracle Linux 7 Update 9 (x86_64). No errata included
+        label: ol7_x86_64_u9_base
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/9/base/x86_64/"
+        <<: *foreman_products_defaults_ol79
+        organization: "{{ foreman_organization_ol79 }}"
+
+foreman_products_ol79:
+  - *foreman_products_ol79_content
+foreman_products_ol79_kickstart:
+  - *foreman_products_ol79_content
+
+foreman_products_ol7_versions: "{{ [] |
+  union( foreman_products_ol70 | default([]) if foreman_enable_ol70 | bool else [] ) |
+  union( foreman_products_ol71 | default([]) if foreman_enable_ol71 | bool else [] ) |
+  union( foreman_products_ol72 | default([]) if foreman_enable_ol72 | bool else [] ) |
+  union( foreman_products_ol73 | default([]) if foreman_enable_ol73 | bool else [] ) |
+  union( foreman_products_ol74 | default([]) if foreman_enable_ol74 | bool else [] ) |
+  union( foreman_products_ol75 | default([]) if foreman_enable_ol75 | bool else [] ) |
+  union( foreman_products_ol76 | default([]) if foreman_enable_ol76 | bool else [] ) |
+  union( foreman_products_ol77 | default([]) if foreman_enable_ol77 | bool else [] ) |
+  union( foreman_products_ol78 | default([]) if foreman_enable_ol78 | bool else [] ) |
+  union( foreman_products_ol79 | default([]) if foreman_enable_ol79 | bool else [] ) |
+
+  union( foreman_products_ol70_kickstart | default([]) if foreman_enable_ol70_kickstart | bool else [] ) |
+  union( foreman_products_ol71_kickstart | default([]) if foreman_enable_ol71_kickstart | bool else [] ) |
+  union( foreman_products_ol72_kickstart | default([]) if foreman_enable_ol72_kickstart | bool else [] ) |
+  union( foreman_products_ol73_kickstart | default([]) if foreman_enable_ol73_kickstart | bool else [] ) |
+  union( foreman_products_ol74_kickstart | default([]) if foreman_enable_ol74_kickstart | bool else [] ) |
+  union( foreman_products_ol75_kickstart | default([]) if foreman_enable_ol75_kickstart | bool else [] ) |
+  union( foreman_products_ol76_kickstart | default([]) if foreman_enable_ol76_kickstart | bool else [] ) |
+  union( foreman_products_ol77_kickstart | default([]) if foreman_enable_ol77_kickstart | bool else [] ) |
+  union( foreman_products_ol78_kickstart | default([]) if foreman_enable_ol78_kickstart | bool else [] ) |
+  union( foreman_products_ol79_kickstart | default([]) if foreman_enable_ol79_kickstart | bool else [] )
+  }}"
+
+
+foreman_content_views_ol70:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u0_base"
+    organization: "{{ foreman_organization_ol70 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 GA installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol70 }}"
+
+foreman_content_views_ol71:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u1_base"
+    organization: "{{ foreman_organization_ol71 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 1 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol71 }}"
+
+foreman_content_views_ol72:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u2_base"
+    organization: "{{ foreman_organization_ol72 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 2 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol72 }}"
+
+foreman_content_views_ol73:
+  - name: ol7_x86_64_u3_base
+    organization: "{{ foreman_organization_ol73 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 3 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol73 }}"
+
+foreman_content_views_ol74:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u4_base"
+    organization: "{{ foreman_organization_ol74 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 4 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol74 }}"
+
+foreman_content_views_ol75:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u5_base"
+    organization: "{{ foreman_organization_ol75 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 5 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol75 }}"
+
+foreman_content_views_ol76:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u6_base"
+    organization: "{{ foreman_organization_ol76 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 6 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol76 }}"
+
+foreman_content_views_ol77:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u7_base"
+    organization: "{{ foreman_organization_ol77 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 7 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol77 }}"
+
+foreman_content_views_ol78:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u8_base"
+    organization: "{{ foreman_organization_ol78 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 8 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol78 }}"
+
+foreman_content_views_ol79:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u9_base"
+    organization: "{{ foreman_organization_ol79 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 9 installation media copy (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol79 }}"
+
+foreman_composite_content_views_ol70: []
+foreman_composite_content_views_ol71: []
+foreman_composite_content_views_ol72: []
+foreman_composite_content_views_ol73: []
+foreman_composite_content_views_ol74: []
+foreman_composite_content_views_ol75: []
+foreman_composite_content_views_ol76: []
+foreman_composite_content_views_ol77: []
+foreman_composite_content_views_ol78: []
+foreman_composite_content_views_ol79: []
+
+foreman_content_views_ol7_versions: "{{ [] |
+  union( foreman_content_views_ol70 | default([]) if foreman_enable_ol70 | bool else [] ) |
+  union( foreman_content_views_ol71 | default([]) if foreman_enable_ol71 | bool else [] ) |
+  union( foreman_content_views_ol72 | default([]) if foreman_enable_ol72 | bool else [] ) |
+  union( foreman_content_views_ol73 | default([]) if foreman_enable_ol73 | bool else [] ) |
+  union( foreman_content_views_ol74 | default([]) if foreman_enable_ol74 | bool else [] ) |
+  union( foreman_content_views_ol75 | default([]) if foreman_enable_ol75 | bool else [] ) |
+  union( foreman_content_views_ol76 | default([]) if foreman_enable_ol76 | bool else [] ) |
+  union( foreman_content_views_ol77 | default([]) if foreman_enable_ol77 | bool else [] ) |
+  union( foreman_content_views_ol78 | default([]) if foreman_enable_ol78 | bool else [] ) |
+  union( foreman_content_views_ol79 | default([]) if foreman_enable_ol79 | bool else [] )
+  }}"
+
+foreman_composite_content_views_ol7_versions: "{{ [] |
+  union( foreman_composite_content_views_ol70 | default([]) if foreman_enable_ol70 | bool and foreman_enable_ol70_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol71 | default([]) if foreman_enable_ol71 | bool and foreman_enable_ol71_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol72 | default([]) if foreman_enable_ol72 | bool and foreman_enable_ol72_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol73 | default([]) if foreman_enable_ol73 | bool and foreman_enable_ol73_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol74 | default([]) if foreman_enable_ol74 | bool and foreman_enable_ol74_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol75 | default([]) if foreman_enable_ol75 | bool and foreman_enable_ol75_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol76 | default([]) if foreman_enable_ol76 | bool and foreman_enable_ol76_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol77 | default([]) if foreman_enable_ol77 | bool and foreman_enable_ol77_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol78 | default([]) if foreman_enable_ol78 | bool and foreman_enable_ol78_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol79 | default([]) if foreman_enable_ol79 | bool and foreman_enable_ol79_default_ccv | bool else [] )
+  }}"
+
+
+foreman_operatingsystems_ol7_versions: "{{ [] |
+  union( foreman_operatingsystems_ol70 | default([]) if foreman_enable_ol70 | bool or foreman_enable_ol70_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol71 | default([]) if foreman_enable_ol71 | bool or foreman_enable_ol71_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol72 | default([]) if foreman_enable_ol72 | bool or foreman_enable_ol72_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol73 | default([]) if foreman_enable_ol73 | bool or foreman_enable_ol73_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol74 | default([]) if foreman_enable_ol74 | bool or foreman_enable_ol74_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol75 | default([]) if foreman_enable_ol75 | bool or foreman_enable_ol75_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol76 | default([]) if foreman_enable_ol76 | bool or foreman_enable_ol76_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol77 | default([]) if foreman_enable_ol77 | bool or foreman_enable_ol77_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol78 | default([]) if foreman_enable_ol78 | bool or foreman_enable_ol78_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol79 | default([]) if foreman_enable_ol79 | bool or foreman_enable_ol79_kickstart | bool else [] )
+  }}"
+
+
+foreman_installation_media_defaults: &foreman_installation_media_defaults
+  os_family: Redhat
+  # organizations:
+  #   - "{{ foreman_organization }}"
+  # locations:
+  #   - "{{ foreman_default_location }}"
+  organizations: "{{ foreman_all_organizations_namelist }}"
+  locations: "{{ foreman_all_locations_namelist }}"
+
+
+foreman_installation_media_ol70:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.0"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_ga_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.0
+
+foreman_installation_media_ol71:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.1"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u1_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.1
+
+foreman_installation_media_ol72:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.2"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u2_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.2
+
+foreman_installation_media_ol73:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.3"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u3_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.3
+
+foreman_installation_media_ol74:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.4"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u4_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.4
+
+foreman_installation_media_ol75:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.5"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u5_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.5
+
+foreman_installation_media_ol76:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.6"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u6_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.6
+
+foreman_installation_media_ol77:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.7"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u7_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.7
+
+foreman_installation_media_ol78:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.8"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u8_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.8
+
+foreman_installation_media_ol79:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 7.9"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u9_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 7.9
+      - Oracle Linux 7
+
+foreman_installation_media_ol7_versions: "{{ [] |
+  union( foreman_installation_media_ol70 | default([]) if foreman_enable_ol70_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol71 | default([]) if foreman_enable_ol71_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol72 | default([]) if foreman_enable_ol72_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol73 | default([]) if foreman_enable_ol73_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol74 | default([]) if foreman_enable_ol74_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol75 | default([]) if foreman_enable_ol75_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol76 | default([]) if foreman_enable_ol76_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol77 | default([]) if foreman_enable_ol77_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol78 | default([]) if foreman_enable_ol78_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol79 | default([]) if foreman_enable_ol79_kickstart | bool else [] )
+  }}"
+
+
+foreman_activation_keys_ol70: []
+foreman_activation_keys_ol71: []
+foreman_activation_keys_ol72: []
+foreman_activation_keys_ol73: []
+foreman_activation_keys_ol74: []
+foreman_activation_keys_ol75: []
+foreman_activation_keys_ol76: []
+foreman_activation_keys_ol77: []
+foreman_activation_keys_ol78: []
+foreman_activation_keys_ol79: []
+
+foreman_activation_keys_redhat7_versions: "{{ [] |
+  union( foreman_activation_keys_ol70 | default([]) if foreman_enable_ol70 | bool and foreman_enable_ol70_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol71 | default([]) if foreman_enable_ol71 | bool and foreman_enable_ol71_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol72 | default([]) if foreman_enable_ol72 | bool and foreman_enable_ol72_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol73 | default([]) if foreman_enable_ol73 | bool and foreman_enable_ol73_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol74 | default([]) if foreman_enable_ol74 | bool and foreman_enable_ol74_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol75 | default([]) if foreman_enable_ol75 | bool and foreman_enable_ol75_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol76 | default([]) if foreman_enable_ol76 | bool and foreman_enable_ol76_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol77 | default([]) if foreman_enable_ol77 | bool and foreman_enable_ol77_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol78 | default([]) if foreman_enable_ol78 | bool and foreman_enable_ol78_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol79 | default([]) if foreman_enable_ol79 | bool and foreman_enable_ol79_default_ak | bool else [] )
+  }}"
+
+
+foreman_sync_plan_products_ol70: []
+foreman_sync_plan_products_ol71: []
+foreman_sync_plan_products_ol72: []
+foreman_sync_plan_products_ol73: []
+foreman_sync_plan_products_ol74: []
+foreman_sync_plan_products_ol75: []
+foreman_sync_plan_products_ol76: []
+foreman_sync_plan_products_ol77: []
+foreman_sync_plan_products_ol78: []
+foreman_sync_plan_products_ol79: []
+
+foreman_sync_plan_products_redhat7_versions: "{{ [] |
+  union( foreman_sync_plan_products_ol70 | default([]) if foreman_enable_ol70 | bool or foreman_enable_ol70_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol71 | default([]) if foreman_enable_ol71 | bool or foreman_enable_ol71_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol72 | default([]) if foreman_enable_ol72 | bool or foreman_enable_ol72_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol73 | default([]) if foreman_enable_ol73 | bool or foreman_enable_ol73_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol74 | default([]) if foreman_enable_ol74 | bool or foreman_enable_ol74_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol75 | default([]) if foreman_enable_ol75 | bool or foreman_enable_ol75_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol76 | default([]) if foreman_enable_ol76 | bool or foreman_enable_ol76_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol77 | default([]) if foreman_enable_ol77 | bool or foreman_enable_ol77_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol78 | default([]) if foreman_enable_ol78 | bool or foreman_enable_ol78_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol79 | default([]) if foreman_enable_ol79 | bool or foreman_enable_ol79_kickstart | bool else [] )
+  }}"
+

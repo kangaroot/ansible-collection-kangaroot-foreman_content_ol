@@ -1,0 +1,60 @@
+---
+# tasks file for foreman_content_ol
+
+- name: "Vars | Include Oracle Linux content vars"
+  ansible.builtin.include_vars:
+    dir: vars
+    ignore_files:
+      - "main.yml"
+    extensions:
+      - "yml"
+    ignore_unknown_extensions: true
+
+- name: "Vars | Append Oracle Linux vars"
+  ansible.builtin.set_fact:
+    foreman_operatingsystems: "{{ foreman_operatingsystems | default([]) |
+      union( foreman_operatingsystems_ol | default([]) if foreman_enable_ol | bool else [] )
+      }}"
+    foreman_installation_media: "{{ foreman_installation_media | default([]) |
+      union( foreman_installation_media_ol | default([]) if foreman_enable_ol | bool else [] )
+      }}"
+    foreman_content_credentials: "{{ foreman_content_credentials | default([]) |
+      union( foreman_content_credentials_ol | default([]) if foreman_enable_ol | bool else [] )
+      }}"
+    foreman_products: "{{ foreman_products | default([]) |
+      union( foreman_products_ol | default([]) if foreman_enable_ol | bool else [] )
+      }}"
+    foreman_content_views: "{{ foreman_content_views | default([]) |
+      union( foreman_content_views_ol | default([]) if foreman_enable_ol | bool else [] )
+      }}"
+    foreman_activation_keys: "{{ foreman_activation_keys | default([]) |
+      union( foreman_activation_keys_ol | default([]) if foreman_enable_ol | bool else [] )
+      }}"
+    foreman_sync_plan_products: "{{ foreman_sync_plan_products | default([]) |
+      union( foreman_sync_plan_products_ol | default([]) if foreman_enable_ol | bool else [] )
+      }}"
+
+- name: "Vars | Append Oracle Linux ULN vars"
+  ansible.builtin.set_fact:
+    foreman_operatingsystems: "{{ foreman_operatingsystems | default([]) |
+      union( foreman_operatingsystems_ol_uln | default([]) if foreman_enable_ol_uln | bool else [] )
+      }}"
+    foreman_installation_media: "{{ foreman_installation_media | default([]) |
+      union( foreman_installation_media_ol_uln | default([]) if foreman_enable_ol_uln | bool else [] )
+      }}"
+    foreman_content_credentials: "{{ foreman_content_credentials | default([]) |
+      union( foreman_content_credentials_ol_uln | default([]) if foreman_enable_ol_uln | bool else [] )
+      }}"
+    foreman_products: "{{ foreman_products | default([]) |
+      union( foreman_products_ol_uln | default([]) if foreman_enable_ol_uln | bool else [] )
+      }}"
+    foreman_content_views: "{{ foreman_content_views | default([]) |
+      union( foreman_content_views_ol_uln | default([]) if foreman_enable_ol_uln | bool else [] )
+      }}"
+    foreman_activation_keys: "{{ foreman_activation_keys | default([]) |
+      union( foreman_activation_keys_ol_uln | default([]) if foreman_enable_ol_uln | bool else [] )
+      }}"
+    foreman_sync_plan_products: "{{ foreman_sync_plan_products | default([]) |
+      union( foreman_sync_plan_products_ol_uln | default([]) if foreman_enable_ol_uln | bool else [] )
+      }}"
+

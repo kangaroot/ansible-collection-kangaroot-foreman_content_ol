@@ -1,0 +1,62 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+
+foreman_products_defaults_ol7_security_validation: &foreman_products_defaults_ol7_security_validation
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_security_validation }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_security_validation }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_security_validation | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_security_validation }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_security_validation | bool }}"
+
+
+foreman_products_ol7_security_validation:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_security_validation }}"
+    repositories:
+      ### Oracle Linux 7 (x86_64) Security Validations | ol7_x86_64_security_validation ###
+      - name: Oracle Linux 7 (x86_64) Security Validations
+        description: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 (x86_64).
+        label: ol7_x86_64_security_validation
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/security/validation/x86_64/"
+        <<: *foreman_products_defaults_ol7_security_validation
+        organization: "{{ foreman_organization_ol7_security_validation }}"
+      ### Oracle Linux 7 Update 8 Security Validations packages (x86_64) | ol7_x86_64_u8_security_validation ###
+      - name: Oracle Linux 7 Update 8 Security Validations packages (x86_64)
+        description: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 Update 8 (x86_64).
+        label: ol7_x86_64_u8_security_validation
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/8/security/validation/x86_64/"
+        <<: *foreman_products_defaults_ol7_security_validation
+        organization: "{{ foreman_organization_ol7_security_validation }}"
+
+
+foreman_content_views_ol7_security_validation:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_security_validation"
+    organization: "{{ foreman_organization_ol7_security_validation }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 (x86_64) Security Validations"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_security_validation }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_u8_security_validation"
+    organization: "{{ foreman_organization_ol7_security_validation }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 8 Security Validations packages (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_security_validation }}"
+

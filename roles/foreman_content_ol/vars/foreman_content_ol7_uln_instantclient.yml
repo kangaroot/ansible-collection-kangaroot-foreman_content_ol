@@ -1,0 +1,77 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+  upstream_username: "{{ foreman_products_ol_uln_username | default('') }}"
+  upstream_password: "{{ foreman_products_ol_uln_password | default('') }}"
+
+
+foreman_products_defaults_ol7_uln_instantclient: &foreman_products_defaults_ol7_uln_instantclient
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln_instantclient }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln_instantclient }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln_instantclient | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln_instantclient }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln_instantclient | bool }}"
+
+
+foreman_products_ol7_uln_instantclient:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_instantclient }}"
+    repositories:
+      ### Oracle Instant Client for Oracle Linux 7 (x86_64) - License Included | ol7_x86_64_oracle_instantclient ###
+      - name: Oracle Instant Client for Oracle Linux 7 (x86_64) - License Included
+        description: Oracle Instant Client packages for Oracle Linux 7 (x86_64) .
+        label: ol7_uln_x86_64_oracle_instantclient
+        url: uln://ol7_x86_64_oracle_instantclient
+        <<: *foreman_products_defaults_ol7_uln_instantclient
+        organization: "{{ foreman_organization_ol7_uln_instantclient }}"
+      ### Oracle Instant Client 21 for Oracle Linux 7 (x86_64) - License Included | ol7_x86_64_oracle_instantclient21 ###
+      - name: Oracle Instant Client 21 for Oracle Linux 7 (x86_64) - License Included
+        description: Oracle Instant Client 21 packages for Oracle Linux 7 (x86_64) .
+        label: ol7_uln_x86_64_oracle_instantclient21
+        url: uln://ol7_x86_64_oracle_instantclient21
+        <<: *foreman_products_defaults_ol7_uln_instantclient
+        organization: "{{ foreman_organization_ol7_uln_instantclient }}"
+      ### Oracle ASMlib for Oracle Linux 7 (x86_64) | ol7_x86_64_oracle ###
+      - name: Oracle ASMlib for Oracle Linux 7 (x86_64)
+        description: Oracle ASMlib for Oracle Linux 7 (x86_64)
+        label: ol7_uln_x86_64_oracle
+        url: uln://ol7_x86_64_oracle
+        <<: *foreman_products_defaults_ol7_uln_instantclient
+        organization: "{{ foreman_organization_ol7_uln_instantclient }}"
+
+
+foreman_content_views_ol7_uln_instantclient:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_oracle_instantclient"
+    organization: "{{ foreman_organization_ol7_uln_instantclient }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client for Oracle Linux 7 (x86_64) - License Included"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_instantclient }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_oracle_instantclient21"
+    organization: "{{ foreman_organization_ol7_uln_instantclient }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client 21 for Oracle Linux 7 (x86_64) - License Included"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_instantclient }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_oracle"
+    organization: "{{ foreman_organization_ol7_uln_instantclient }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle ASMlib for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_instantclient }}"
+

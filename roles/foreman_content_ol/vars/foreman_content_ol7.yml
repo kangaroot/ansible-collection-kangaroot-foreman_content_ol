@@ -1,0 +1,285 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_content_credentials_ol7: []
+
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+
+foreman_products_ol7:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7 }}"
+    repositories:
+      ### Oracle Linux 7 Latest (x86_64) | ol7_x86_64_latest ###
+      - name: Oracle Linux 7 Latest (x86_64)
+        description: All packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
+        label: ol7_x86_64_latest
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/latest/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol7 }}"
+
+      ### Oracle Linux 7 Latest Optional Packages (x86_64) | ol7_x86_64_optional_latest ###
+      - name: Oracle Linux 7 Latest Optional Packages (x86_64)
+        description: All optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
+        label: ol7_x86_64_optional_latest
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/optional/latest/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol7 }}"
+
+      ### Oracle Linux 7 Addons (x86_64) | ol7_x86_64_addons ###
+      - name: Oracle Linux 7 Addons (x86_64)
+        description: Oracle Linux 7 Addons (x86_64).
+        label: ol7_x86_64_addons
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/addons/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol7 }}"
+      ### Oracle Linux 7 (x86_64) Development | ol7_x86_64_developer ###
+      - name: Oracle Linux 7 (x86_64) Development
+        description: Latest packages for creating test and development environments - Oracle LInux 7 (x86_64)
+        label: ol7_x86_64_developer
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol7 }}"
+      ### EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_EPEL ###
+      - name: EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)
+        description: Latest EPEL packages for creating test and development environments - Oracle LInux 7 (x86_64)
+        label: ol7_x86_64_developer_EPEL
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_EPEL/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol7 }}"
+      ### Oracle Software Collections for Oracle Linux 7 (x86_64) | ol7_x86_64_SoftwareCollections ###
+      - name: Oracle Software Collections for Oracle Linux 7 (x86_64)
+        description: Latest Oracle Software Collections 3.0 packages for Oracle Linux 7 (x86_64).
+        label: ol7_x86_64_SoftwareCollections
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/SoftwareCollections/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol7 }}"
+
+      # - name: Oracle Linux 7 Debuginfo (x86_64)
+      #   label: ol7_debuginfo
+      #   url: https://oss.oracle.com/ol7/debuginfo/
+      #   <<: *foreman_products_defaults
+      #   organization: "{{ foreman_organization_ol7 }}"
+
+
+foreman_content_views_ol7:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_latest"
+    organization: "{{ foreman_organization_ol7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_optional_latest"
+    organization: "{{ foreman_organization_ol7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest Optional Packages (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_addons"
+    organization: "{{ foreman_organization_ol7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Addons (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer"
+    organization: "{{ foreman_organization_ol7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 (x86_64) Development"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_EPEL"
+    organization: "{{ foreman_organization_ol7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_SoftwareCollections"
+    organization: "{{ foreman_organization_ol7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Software Collections for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
+
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_debuginfo"
+  #   organization: "{{ foreman_organization_ol7 }}"
+  #   repositories:
+  #     - name: Oracle Linux 7 Debuginfo (x86_64)
+  #       product: Oracle Linux
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
+
+foreman_composite_content_views_ol7:
+  - name: "{{ foreman_ccv_prefix | default('ccv_') }}{{ foreman_ccv_name_prefix | default('') }}ol7"
+    organization: "{{ foreman_organization_ol7 }}"
+    composite: True
+    allow_promote: "{{ foreman_ccv_allow_promote_ol7 }}"
+    auto_publish: "{{ foreman_ccv_auto_publish_ol7 }}"
+    components:
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_latest"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_optional_latest"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_addons"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_EPEL"
+        latest: true
+      - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_SoftwareCollections"
+        latest: true
+      # - content_view: "{{ foreman_cv_prefix | default('cv_') }}ol7_debuginfo"
+      #   latest: true
+
+
+foreman_operatingsystems_defaults: &foreman_operatingsystems_defaults
+  os_family: "Redhat"
+  password_hash: "SHA512"
+  architectures:
+    - x86_64
+  # ptables:
+  #   - Kickstart default
+  #   - Kickstart custom
+  ptables: "{{
+    [ 'Kickstart default',
+      'Kickstart custom' ] |
+      union( foreman_partition_tables | default([]) | selectattr('os_family', 'defined') | selectattr('os_family', '==', 'Redhat') | map(attribute='name') | list )
+    }}"
+
+
+foreman_operatingsystems_ol7:
+  - name: "OracleLinux"
+    major: "7"
+    minor: "0"
+    description: "Oracle Linux 7.0"
+    default_templates: "{{ foreman_operatingsystems_ol70_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "1"
+    description: "Oracle Linux 7.1"
+    default_templates: "{{ foreman_operatingsystems_ol71_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "2"
+    description: "Oracle Linux 7.2"
+    default_templates: "{{ foreman_operatingsystems_ol72_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "3"
+    description: "Oracle Linux 7.3"
+    default_templates: "{{ foreman_operatingsystems_ol73_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "4"
+    description: "Oracle Linux 7.4"
+    default_templates: "{{ foreman_operatingsystems_ol74_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "5"
+    description: "Oracle Linux 7.5"
+    default_templates: "{{ foreman_operatingsystems_ol75_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "6"
+    description: "Oracle Linux 7.6"
+    default_templates: "{{ foreman_operatingsystems_ol76_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "7"
+    description: "Oracle Linux 7.7"
+    default_templates: "{{ foreman_operatingsystems_ol77_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "8"
+    description: "Oracle Linux 7.8"
+    default_templates: "{{ foreman_operatingsystems_ol78_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: "9"
+    description: "Oracle Linux 7.9"
+    default_templates: "{{ foreman_operatingsystems_ol79_default_templates | default( foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "7"
+    minor: ""
+    description: "Oracle Linux 7"
+    default_templates: "{{ foreman_operatingsystems_ol7_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+
+
+foreman_installation_media_defaults: &foreman_installation_media_defaults
+  os_family: Redhat
+  # organizations:
+  #   - "{{ foreman_organization }}"
+  # locations:
+  #   - "{{ foreman_default_location }}"
+  organizations: "{{ foreman_all_organizations_namelist }}"
+  locations: "{{ foreman_all_locations_namelist }}"
+
+
+foreman_installation_media_ol7: []
+# ENABLED IN VERSIONS!
+#   - name: Oracle Linux 7.9
+#     path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol7_u9_base/"
+#     <<: *foreman_installation_media_defaults
+#     operatingsystems:
+#       - Oracle Linux 7.9
+#       - Oracle Linux 7
+
+
+foreman_activation_keys_defaults: &foreman_activation_keys_defaults
+  # lifecycle_environment: "Library"
+  # subscriptions:
+  #   - name: "Oracle Linux"
+  auto_attach: False
+  # release_version: 7Server
+  # service_level: Standard
+
+
+foreman_activation_keys_ol7:
+  - name: "{{ foreman_ak_prefix | default('ak_') }}{{ foreman_ak_name_prefix | default('') }}ol7"
+    organization: "{{ foreman_organization_ol7 }}"
+    content_view: "{{ foreman_ccv_prefix | default('ccv_') }}{{ foreman_ccv_name_prefix | default('') }}ol7"
+    <<: *foreman_activation_keys_defaults
+    content_overrides:
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_x86_64_{{ foreman_repo_label_prefix | default('') }}latest"
+        override: enabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_x86_64_optional_{{ foreman_repo_label_prefix | default('') }}latest"
+        override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_x86_64_{{ foreman_repo_label_prefix | default('') }}addons"
+        override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_x86_64_{{ foreman_repo_label_prefix | default('') }}developer"
+        override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_x86_64_developer_{{ foreman_repo_label_prefix | default('') }}EPEL"
+        override: disabled
+      - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_x86_64_{{ foreman_repo_label_prefix | default('') }}SoftwareCollections"
+        override: disabled
+      # - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_{{ foreman_repo_label_prefix | default('') }}debuginfo"
+      #   override: disabled
+
+
+foreman_sync_plan_products_ol7: []
+

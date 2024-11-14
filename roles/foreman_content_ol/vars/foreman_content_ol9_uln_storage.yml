@@ -1,0 +1,34 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+  upstream_username: "{{ foreman_products_ol_uln_username | default('') }}"
+  upstream_password: "{{ foreman_products_ol_uln_password | default('') }}"
+
+
+foreman_products_defaults_ol9_uln_storage: &foreman_products_defaults_ol9_uln_storage
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol9_uln_storage }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol9_uln_storage }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln_storage | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln_storage }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol9_uln_storage | bool }}"
+
+
+foreman_products_ol9_uln_storage: []
+
+
+foreman_content_views_ol9_uln_storage: []
+

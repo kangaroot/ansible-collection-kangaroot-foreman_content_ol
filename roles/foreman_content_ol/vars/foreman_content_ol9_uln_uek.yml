@@ -1,0 +1,128 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+  upstream_username: "{{ foreman_products_ol_uln_username | default('') }}"
+  upstream_password: "{{ foreman_products_ol_uln_password | default('') }}"
+
+
+foreman_products_defaults_ol9_uln_uek: &foreman_products_defaults_ol9_uln_uek
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol9_uln_uek }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol9_uln_uek }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9_uln_uek | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol9_uln_uek }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol9_uln_uek | bool }}"
+
+
+foreman_products_ol9_uln_uekr7:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9_uln_uekr7 }}"
+    repositories:
+      ### Oracle Linux 9 UEK Release 7 (x86_64) | ol9_x86_64_UEKR7 ###
+      - name: Oracle Linux 9 UEK Release 7 (x86_64)
+        description: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64)
+        label: ol9_uln_x86_64_UEKR7
+        url: uln://ol9_x86_64_UEKR7
+        <<: *foreman_products_defaults_ol9_uln_uek
+        organization: "{{ foreman_organization_ol9_uln_uekr7 }}"
+
+foreman_products_ol9_uln_uekr7_developer:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9_uln_uekr7_developer }}"
+    repositories:
+      ### Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64) | ol9_x86_64_developer_UEKR7 ###
+      - name: Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64)
+        description: Developer preview of Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64) - (not for production use)
+        label: ol9_uln_x86_64_developer_UEKR7
+        url: uln://ol9_x86_64_developer_UEKR7
+        <<: *foreman_products_defaults_ol9_uln_uek
+        organization: "{{ foreman_organization_ol9_uln_uekr7_developer }}"
+
+foreman_products_ol9_uln_rdma:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9_uln_rdma }}"
+    repositories:
+      ### Oracle Linux 9 RDMA (x86_64) | ol9_x86_64_RDMA ###
+      - name: Oracle Linux 9 RDMA (x86_64)
+        description: Latest RDMA packages for Oracle Linux 9 (x86_64)
+        label: ol9_uln_x86_64_RDMA
+        url: uln://ol9_x86_64_RDMA
+        <<: *foreman_products_defaults_ol9_uln_uek
+        organization: "{{ foreman_organization_ol9_uln_rdma }}"
+
+foreman_products_ol9_uln_modrhck:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9_uln_modrhck }}"
+    repositories:
+      ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64) | ol9_x86_64_MODRHCK ###
+      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64)
+        description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64).
+        label: ol9_uln_x86_64_MODRHCK
+        url: uln://ol9_x86_64_MODRHCK
+        <<: *foreman_products_defaults_ol9_uln_uek
+        organization: "{{ foreman_organization_ol9_uln_modrhck }}"
+
+foreman_products_ol9_uln_uek: "{{ [] |
+  union( foreman_products_ol9_uln_uekr7 | default([]) if foreman_enable_ol9_uln_uekr7 else [] ) |
+  union( foreman_products_ol9_uln_uekr7_developer | default([]) if foreman_enable_ol9_uln_uekr7_developer else [] ) |
+  union( foreman_products_ol9_uln_rdma | default([]) if foreman_enable_ol9_uln_rdma else [] ) |
+  union( foreman_products_ol9_uln_modrhck | default([]) if foreman_enable_ol9_uln_modrhck else [] )
+  }}"
+
+
+foreman_content_views_ol9_uln_uekr7:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_uln_x86_64_UEKR7"
+    organization: "{{ foreman_organization_ol9_uln_uekr7 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 UEK Release 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_uln_uekr7 }}"
+
+foreman_content_views_ol9_uln_uekr7_developer:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_uln_x86_64_developer_UEKR7"
+    organization: "{{ foreman_organization_ol9_uln_uekr7_developer }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_uln_uekr7_developer }}"
+
+foreman_content_views_ol9_uln_rdma:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_uln_x86_64_RDMA"
+    organization: "{{ foreman_organization_ol9_uln_rdma }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 RDMA (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_uln_rdma }}"
+
+foreman_content_views_ol9_uln_modrhck:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_uln_x86_64_MODRHCK"
+    organization: "{{ foreman_organization_ol9_uln_modrhck }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_uln_modrhck }}"
+
+foreman_content_views_ol9_uln_uek: "{{ [] |
+  union( foreman_content_views_ol9_uln_uekr7 | default([]) if foreman_enable_ol9_uln_uekr7 else [] ) |
+  union( foreman_content_views_ol9_uln_uekr7_developer | default([]) if foreman_enable_ol9_uln_uekr7_developer else [] ) |
+  union( foreman_content_views_ol9_uln_rdma | default([]) if foreman_enable_ol9_uln_rdma else [] ) |
+  union( foreman_content_views_ol9_uln_modrhck | default([]) if foreman_enable_ol9_uln_modrhck else [] )
+  }}"
+

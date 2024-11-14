@@ -1,0 +1,289 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln | bool }}"
+  upstream_username: "{{ foreman_products_ol_uln_username | default('') }}"
+  upstream_password: "{{ foreman_products_ol_uln_password | default('') }}"
+
+
+foreman_products_defaults_ol7_uln_developer: &foreman_products_defaults_ol7_uln_developer
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7_uln_developer }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7_uln_developer }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7_uln_developer | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7_uln_developer }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7_uln_developer | bool }}"
+
+
+foreman_products_ol7_uln_developer_go110:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go110 }}"
+    repositories:
+      ### Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang110 ###
+      - name: Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang110
+        url: uln://ol7_x86_64_developer_golang110
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go110 }}"
+
+foreman_products_ol7_uln_developer_go111:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go111 }}"
+    repositories:
+      ### Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang111 ###
+      - name: Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang111
+        url: uln://ol7_x86_64_developer_golang111
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go111 }}"
+
+foreman_products_ol7_uln_developer_go112:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go112 }}"
+    repositories:
+      ### Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang112 ###
+      - name: Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang112
+        url: uln://ol7_x86_64_developer_golang112
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go112 }}"
+
+foreman_products_ol7_uln_developer_go113:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go113 }}"
+    repositories:
+      ### Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang113 ###
+      - name: Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang113
+        url: uln://ol7_x86_64_developer_golang113
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go113 }}"
+
+foreman_products_ol7_uln_developer_go114:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go114 }}"
+    repositories:
+      ### Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang114 ###
+      - name: Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang114
+        url: uln://ol7_x86_64_developer_golang114
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go114 }}"
+
+foreman_products_ol7_uln_developer_go115:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go115 }}"
+    repositories:
+      ### Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang115 ###
+      - name: Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang115
+        url: uln://ol7_x86_64_developer_golang115
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go115 }}"
+
+foreman_products_ol7_uln_developer_go116:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go116 }}"
+    repositories:
+      ### Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang116 ###
+      - name: Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang116
+        url: uln://ol7_x86_64_developer_golang116
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go116 }}"
+
+foreman_products_ol7_uln_developer_go117:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go117 }}"
+    repositories:
+      ### Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang117 ###
+      - name: Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang117
+        url: uln://ol7_x86_64_developer_golang117
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go117 }}"
+
+foreman_products_ol7_uln_developer_go118:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go118 }}"
+    repositories:
+      ### Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang118 ###
+      - name: Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang118
+        url: uln://ol7_x86_64_developer_golang118
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go118 }}"
+
+foreman_products_ol7_uln_developer_go119:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_go119 }}"
+    repositories:
+      ### Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang119 ###
+      - name: Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_golang119
+        url: uln://ol7_x86_64_developer_golang119
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_go119 }}"
+
+foreman_products_ol7_uln_developer_php74:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_uln_developer_php74 }}"
+    repositories:
+      ### Latest PHP 7.4 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_php74 ###
+      - name: Latest PHP 7.4 packages for Oracle Linux 7 (x86_64)
+        description: Latest PHP 7.4 packages for Oracle Linux 7 (x86_64).
+        label: ol7_uln_x86_64_developer_php74
+        url: uln://ol7_x86_64_developer_php74
+        <<: *foreman_products_defaults_ol7_uln_developer
+        organization: "{{ foreman_organization_ol7_uln_developer_php74 }}"
+
+foreman_products_ol7_uln_developer: "{{ [] |
+  union( foreman_products_ol7_uln_developer_go110 | default([]) if foreman_enable_ol7_uln_developer_go110 else [] ) |
+  union( foreman_products_ol7_uln_developer_go111 | default([]) if foreman_enable_ol7_uln_developer_go111 else [] ) |
+  union( foreman_products_ol7_uln_developer_go112 | default([]) if foreman_enable_ol7_uln_developer_go112 else [] ) |
+  union( foreman_products_ol7_uln_developer_go113 | default([]) if foreman_enable_ol7_uln_developer_go113 else [] ) |
+  union( foreman_products_ol7_uln_developer_go114 | default([]) if foreman_enable_ol7_uln_developer_go114 else [] ) |
+  union( foreman_products_ol7_uln_developer_go115 | default([]) if foreman_enable_ol7_uln_developer_go115 else [] ) |
+  union( foreman_products_ol7_uln_developer_go116 | default([]) if foreman_enable_ol7_uln_developer_go116 else [] ) |
+  union( foreman_products_ol7_uln_developer_go117 | default([]) if foreman_enable_ol7_uln_developer_go117 else [] ) |
+  union( foreman_products_ol7_uln_developer_go118 | default([]) if foreman_enable_ol7_uln_developer_go118 else [] ) |
+  union( foreman_products_ol7_uln_developer_go119 | default([]) if foreman_enable_ol7_uln_developer_go119 else [] ) |
+  union( foreman_products_ol7_uln_developer_php74 | default([]) if foreman_enable_ol7_uln_developer_php74 else [] )
+  }}"
+
+
+foreman_content_views_ol7_uln_developer_go110:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang110"
+    organization: "{{ foreman_organization_ol7_uln_developer_go110 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go110 }}"
+
+foreman_content_views_ol7_uln_developer_go111:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang111"
+    organization: "{{ foreman_organization_ol7_uln_developer_go111 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go111 }}"
+
+foreman_content_views_ol7_uln_developer_go112:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang112"
+    organization: "{{ foreman_organization_ol7_uln_developer_go112 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go112 }}"
+
+foreman_content_views_ol7_uln_developer_go113:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang113"
+    organization: "{{ foreman_organization_ol7_uln_developer_go113 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go113 }}"
+
+foreman_content_views_ol7_uln_developer_go114:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang114"
+    organization: "{{ foreman_organization_ol7_uln_developer_go114 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go114 }}"
+
+foreman_content_views_ol7_uln_developer_go115:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang115"
+    organization: "{{ foreman_organization_ol7_uln_developer_go115 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go115 }}"
+
+foreman_content_views_ol7_uln_developer_go116:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang116"
+    organization: "{{ foreman_organization_ol7_uln_developer_go116 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go116 }}"
+
+foreman_content_views_ol7_uln_developer_go117:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang117"
+    organization: "{{ foreman_organization_ol7_uln_developer_go117 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go117 }}"
+
+foreman_content_views_ol7_uln_developer_go118:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang118"
+    organization: "{{ foreman_organization_ol7_uln_developer_go118 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go118 }}"
+
+foreman_content_views_ol7_uln_developer_go119:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_golang119"
+    organization: "{{ foreman_organization_ol7_uln_developer_go119 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_go119 }}"
+
+foreman_content_views_ol7_uln_developer_php74:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_php74"
+    organization: "{{ foreman_organization_ol7_uln_developer_php74 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest PHP 7.4 packages for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_developer_php74 }}"
+
+foreman_content_views_ol7_uln_developer: "{{ [] |
+  union( foreman_content_views_ol7_uln_developer_go110 | default([]) if foreman_enable_ol7_uln_developer_go110 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go111 | default([]) if foreman_enable_ol7_uln_developer_go111 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go112 | default([]) if foreman_enable_ol7_uln_developer_go112 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go113 | default([]) if foreman_enable_ol7_uln_developer_go113 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go114 | default([]) if foreman_enable_ol7_uln_developer_go114 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go115 | default([]) if foreman_enable_ol7_uln_developer_go115 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go116 | default([]) if foreman_enable_ol7_uln_developer_go116 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go117 | default([]) if foreman_enable_ol7_uln_developer_go117 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go118 | default([]) if foreman_enable_ol7_uln_developer_go118 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_go119 | default([]) if foreman_enable_ol7_uln_developer_go119 else [] ) |
+  union( foreman_content_views_ol7_uln_developer_php74 | default([]) if foreman_enable_ol7_uln_developer_php74 else [] )
+  }}"
+

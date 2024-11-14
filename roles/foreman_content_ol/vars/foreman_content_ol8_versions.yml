@@ -1,0 +1,632 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+
+foreman_products_defaults_ol80: &foreman_products_defaults_ol80
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol80 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol80 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol80 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol80 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol80 | bool }}"
+
+foreman_products_defaults_ol81: &foreman_products_defaults_ol81
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol81 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol81 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol81 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol81 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol81 | bool }}"
+
+foreman_products_defaults_ol82: &foreman_products_defaults_ol82
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol82 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol82 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol82 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol82 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol82 | bool }}"
+
+foreman_products_defaults_ol83: &foreman_products_defaults_ol83
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol83 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol83 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol83 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol83 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol83 | bool }}"
+
+foreman_products_defaults_ol84: &foreman_products_defaults_ol84
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol84 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol84 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol84 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol84 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol84 | bool }}"
+
+foreman_products_defaults_ol85: &foreman_products_defaults_ol85
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol85 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol85 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol85 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol85 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol85 | bool }}"
+
+foreman_products_defaults_ol86: &foreman_products_defaults_ol86
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol86 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol86 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol86 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol86 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol86 | bool }}"
+
+foreman_products_defaults_ol87: &foreman_products_defaults_ol87
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol87 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol87 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol87 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol87 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol87 | bool }}"
+
+foreman_products_defaults_ol88: &foreman_products_defaults_ol88
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol88 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol88 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol88 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol88 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol88 | bool }}"
+
+foreman_products_defaults_ol89: &foreman_products_defaults_ol89
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol89 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol89 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol89 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol89 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol89 | bool }}"
+
+foreman_products_defaults_ol810: &foreman_products_defaults_ol810
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol810 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol810 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol810 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol810 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol810 | bool }}"
+
+
+foreman_products_ol80_content: &foreman_products_ol80_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol80 }}"
+    repositories:
+      ### Oracle Linux 8 BaseOS GA (x86_64) | ol8_x86_64_u0_baseos_base ###
+      - name: Oracle Linux 8 BaseOS GA (x86_64)
+        description: Base operating system packages released for Oracle Linux 8 GA (x86_64). No errata included
+        label: ol8_x86_64_u0_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/0/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol80
+        organization: "{{ foreman_organization_ol80 }}"
+
+foreman_products_ol80:
+  - *foreman_products_ol80_content
+foreman_products_ol80_kickstart:
+  - *foreman_products_ol80_content
+
+foreman_products_ol81_content: &foreman_products_ol81_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol81 }}"
+    repositories:
+      ### Oracle Linux 8.1 BaseOS (x86_64) | ol8_x86_64_u1_baseos_base ###
+      - name: Oracle Linux 8.1 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8 (x86_64). No errata included
+        label: ol8_x86_64_u1_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/1/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol81
+        organization: "{{ foreman_organization_ol81 }}"
+
+foreman_products_ol81:
+  - *foreman_products_ol81_content
+foreman_products_ol81_kickstart:
+  - *foreman_products_ol81_content
+
+foreman_products_ol82_content: &foreman_products_ol82_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol82 }}"
+    repositories:
+      ### Oracle Linux 8.2 BaseOS (x86_64) | ol8_x86_64_u2_baseos_base ###
+      - name: Oracle Linux 8.2 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.2 (x86_64). No errata included
+        label: ol8_x86_64_u2_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/2/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol82
+        organization: "{{ foreman_organization_ol82 }}"
+
+foreman_products_ol82:
+  - *foreman_products_ol82_content
+foreman_products_ol82_kickstart:
+  - *foreman_products_ol82_content
+
+foreman_products_ol83_content: &foreman_products_ol83_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol83 }}"
+    repositories:
+      ### Oracle Linux 8.3 BaseOS (x86_64) | ol8_x86_64_u3_baseos_base ###
+      - name: Oracle Linux 8.3 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.3 (x86_64). No errata included
+        label: ol8_x86_64_u3_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/3/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol83
+        organization: "{{ foreman_organization_ol83 }}"
+
+foreman_products_ol83:
+  - *foreman_products_ol83_content
+foreman_products_ol83_kickstart:
+  - *foreman_products_ol83_content
+
+foreman_products_ol84_content: &foreman_products_ol84_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol84 }}"
+    repositories:
+      ### Oracle Linux 8.4 BaseOS (x86_64) | ol8_x86_64_u4_baseos_base ###
+      - name: Oracle Linux 8.4 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.4 (x86_64). No errata included
+        label: ol8_x86_64_u4_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/4/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol84
+        organization: "{{ foreman_organization_ol84 }}"
+
+foreman_products_ol84:
+  - *foreman_products_ol84_content
+foreman_products_ol84_kickstart:
+  - *foreman_products_ol84_content
+
+foreman_products_ol85_content: &foreman_products_ol85_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol85 }}"
+    repositories:
+      ### Oracle Linux 8.5 BaseOS (x86_64) | ol8_x86_64_u5_baseos_base ###
+      - name: Oracle Linux 8.5 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.5 (x86_64). No errata included
+        label: ol8_x86_64_u5_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/5/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol85
+        organization: "{{ foreman_organization_ol85 }}"
+
+foreman_products_ol85:
+  - *foreman_products_ol85_content
+foreman_products_ol85_kickstart:
+  - *foreman_products_ol85_content
+
+foreman_products_ol86_content: &foreman_products_ol86_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol86 }}"
+    repositories:
+      ### Oracle Linux 8.6 BaseOS (x86_64) | ol8_x86_64_u6_baseos_base ###
+      - name: Oracle Linux 8.6 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.6 (x86_64). No errata included
+        label: ol8_x86_64_u6_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/6/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol86
+        organization: "{{ foreman_organization_ol86 }}"
+
+foreman_products_ol86:
+  - *foreman_products_ol86_content
+foreman_products_ol86_kickstart:
+  - *foreman_products_ol86_content
+
+foreman_products_ol87_content: &foreman_products_ol87_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol87 }}"
+    repositories:
+      ### Oracle Linux 8.7 BaseOS (x86_64) | ol8_x86_64_u7_baseos_base ###
+      - name: Oracle Linux 8.7 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.7 (x86_64). No errata included
+        label: ol8_x86_64_u7_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/7/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol87
+        organization: "{{ foreman_organization_ol87 }}"
+
+foreman_products_ol87:
+  - *foreman_products_ol87_content
+foreman_products_ol87_kickstart:
+  - *foreman_products_ol87_content
+
+foreman_products_ol88_content: &foreman_products_ol88_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol88 }}"
+    repositories:
+      ### Oracle Linux 8.8 BaseOS (x86_64) | ol8_x86_64_u8_baseos_base ###
+      - name: Oracle Linux 8.8 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.8 (x86_64). No errata included
+        label: ol8_x86_64_u8_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/8/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol88
+        organization: "{{ foreman_organization_ol88 }}"
+
+foreman_products_ol88:
+  - *foreman_products_ol88_content
+foreman_products_ol88_kickstart:
+  - *foreman_products_ol88_content
+
+foreman_products_ol89_content: &foreman_products_ol89_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol89 }}"
+    repositories:
+      ### Oracle Linux 8.9 BaseOS (x86_64) | ol8_x86_64_u9_baseos_base ###
+      - name: Oracle Linux 8.9 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.9 (x86_64). No errata included
+        label: ol8_x86_64_u9_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/9/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol89
+        organization: "{{ foreman_organization_ol89 }}"
+
+foreman_products_ol89:
+  - *foreman_products_ol89_content
+foreman_products_ol89_kickstart:
+  - *foreman_products_ol89_content
+
+foreman_products_ol810_content: &foreman_products_ol810_content
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol810 }}"
+    repositories:
+      ### Oracle Linux 8.10 BaseOS (x86_64) | ol8_x86_64_u10_baseos_base ###
+      - name: Oracle Linux 8.10 BaseOS (x86_64)
+        description: Base operating system packages released for Oracle Linux 8.10 (x86_64). No errata included
+        label: ol8_x86_64_u10_baseos_base
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/10/baseos/base/x86_64/"
+        <<: *foreman_products_defaults_ol810
+        organization: "{{ foreman_organization_ol810 }}"
+
+foreman_products_ol810:
+  - *foreman_products_ol810_content
+foreman_products_ol810_kickstart:
+  - *foreman_products_ol810_content
+
+foreman_products_ol8_versions: "{{ [] |
+  union( foreman_products_ol80 | default([]) if foreman_enable_ol80 | bool else [] ) |
+  union( foreman_products_ol81 | default([]) if foreman_enable_ol81 | bool else [] ) |
+  union( foreman_products_ol82 | default([]) if foreman_enable_ol82 | bool else [] ) |
+  union( foreman_products_ol83 | default([]) if foreman_enable_ol83 | bool else [] ) |
+  union( foreman_products_ol84 | default([]) if foreman_enable_ol84 | bool else [] ) |
+  union( foreman_products_ol85 | default([]) if foreman_enable_ol85 | bool else [] ) |
+  union( foreman_products_ol86 | default([]) if foreman_enable_ol86 | bool else [] ) |
+  union( foreman_products_ol87 | default([]) if foreman_enable_ol87 | bool else [] ) |
+  union( foreman_products_ol88 | default([]) if foreman_enable_ol88 | bool else [] ) |
+  union( foreman_products_ol89 | default([]) if foreman_enable_ol89 | bool else [] ) |
+  union( foreman_products_ol810 | default([]) if foreman_enable_ol810 | bool else [] ) |
+
+  union( foreman_products_ol80_kickstart | default([]) if foreman_enable_ol80_kickstart | bool else [] ) |
+  union( foreman_products_ol81_kickstart | default([]) if foreman_enable_ol81_kickstart | bool else [] ) |
+  union( foreman_products_ol82_kickstart | default([]) if foreman_enable_ol82_kickstart | bool else [] ) |
+  union( foreman_products_ol83_kickstart | default([]) if foreman_enable_ol83_kickstart | bool else [] ) |
+  union( foreman_products_ol84_kickstart | default([]) if foreman_enable_ol84_kickstart | bool else [] ) |
+  union( foreman_products_ol85_kickstart | default([]) if foreman_enable_ol85_kickstart | bool else [] ) |
+  union( foreman_products_ol86_kickstart | default([]) if foreman_enable_ol86_kickstart | bool else [] ) |
+  union( foreman_products_ol87_kickstart | default([]) if foreman_enable_ol87_kickstart | bool else [] ) |
+  union( foreman_products_ol88_kickstart | default([]) if foreman_enable_ol88_kickstart | bool else [] ) |
+  union( foreman_products_ol89_kickstart | default([]) if foreman_enable_ol89_kickstart | bool else [] ) |
+  union( foreman_products_ol810_kickstart | default([]) if foreman_enable_ol810_kickstart | bool else [] )
+  }}"
+
+
+foreman_content_views_ol80:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u0_baseos_base"
+    organization: "{{ foreman_organization_ol80 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 BaseOS GA (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol80 }}"
+
+foreman_content_views_ol81:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u1_baseos_base"
+    organization: "{{ foreman_organization_ol81 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.1 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol81 }}"
+
+foreman_content_views_ol82:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u2_baseos_base"
+    organization: "{{ foreman_organization_ol82 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.2 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol82 }}"
+
+foreman_content_views_ol83:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u3_baseos_base"
+    organization: "{{ foreman_organization_ol83 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.3 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol83 }}"
+
+foreman_content_views_ol84:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u4_baseos_base"
+    organization: "{{ foreman_organization_ol84 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.4 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol84 }}"
+
+foreman_content_views_ol85:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u5_baseos_base"
+    organization: "{{ foreman_organization_ol85 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.5 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol85 }}"
+
+foreman_content_views_ol86:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u6_baseos_base"
+    organization: "{{ foreman_organization_ol86 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.6 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol86 }}"
+
+foreman_content_views_ol87:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u7_baseos_base"
+    organization: "{{ foreman_organization_ol87 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.7 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol87 }}"
+
+foreman_content_views_ol88:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u8_baseos_base"
+    organization: "{{ foreman_organization_ol88 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.8 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol88 }}"
+
+foreman_content_views_ol89:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u9_baseos_base"
+    organization: "{{ foreman_organization_ol89 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.9 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol89 }}"
+
+foreman_content_views_ol810:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_u10_baseos_base"
+    organization: "{{ foreman_organization_ol810 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8.10 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol810 }}"
+
+foreman_composite_content_views_ol80: []
+foreman_composite_content_views_ol81: []
+foreman_composite_content_views_ol82: []
+foreman_composite_content_views_ol83: []
+foreman_composite_content_views_ol84: []
+foreman_composite_content_views_ol85: []
+foreman_composite_content_views_ol86: []
+foreman_composite_content_views_ol87: []
+foreman_composite_content_views_ol88: []
+foreman_composite_content_views_ol89: []
+foreman_composite_content_views_ol810: []
+
+foreman_content_views_ol8_versions: "{{ [] |
+  union( foreman_content_views_ol80 | default([]) if foreman_enable_ol80 | bool else [] ) |
+  union( foreman_content_views_ol81 | default([]) if foreman_enable_ol81 | bool else [] ) |
+  union( foreman_content_views_ol82 | default([]) if foreman_enable_ol82 | bool else [] ) |
+  union( foreman_content_views_ol83 | default([]) if foreman_enable_ol83 | bool else [] ) |
+  union( foreman_content_views_ol84 | default([]) if foreman_enable_ol84 | bool else [] ) |
+  union( foreman_content_views_ol85 | default([]) if foreman_enable_ol85 | bool else [] ) |
+  union( foreman_content_views_ol86 | default([]) if foreman_enable_ol86 | bool else [] ) |
+  union( foreman_content_views_ol87 | default([]) if foreman_enable_ol87 | bool else [] ) |
+  union( foreman_content_views_ol88 | default([]) if foreman_enable_ol88 | bool else [] ) |
+  union( foreman_content_views_ol89 | default([]) if foreman_enable_ol89 | bool else [] ) |
+  union( foreman_content_views_ol810 | default([]) if foreman_enable_ol810 | bool else [] )
+  }}"
+
+foreman_composite_content_views_ol8_versions: "{{ [] |
+  union( foreman_composite_content_views_ol80 | default([]) if foreman_enable_ol80 | bool and foreman_enable_ol80_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol81 | default([]) if foreman_enable_ol81 | bool and foreman_enable_ol81_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol82 | default([]) if foreman_enable_ol82 | bool and foreman_enable_ol82_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol83 | default([]) if foreman_enable_ol83 | bool and foreman_enable_ol83_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol84 | default([]) if foreman_enable_ol84 | bool and foreman_enable_ol84_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol85 | default([]) if foreman_enable_ol85 | bool and foreman_enable_ol85_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol86 | default([]) if foreman_enable_ol86 | bool and foreman_enable_ol86_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol87 | default([]) if foreman_enable_ol87 | bool and foreman_enable_ol87_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol88 | default([]) if foreman_enable_ol88 | bool and foreman_enable_ol88_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol89 | default([]) if foreman_enable_ol89 | bool and foreman_enable_ol89_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol810 | default([]) if foreman_enable_ol810 | bool and foreman_enable_ol810_default_ccv | bool else [] )
+  }}"
+
+
+foreman_operatingsystems_ol8_versions: "{{ [] |
+  union( foreman_operatingsystems_ol80 | default([]) if foreman_enable_ol80 | bool or foreman_enable_ol80_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol81 | default([]) if foreman_enable_ol81 | bool or foreman_enable_ol81_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol82 | default([]) if foreman_enable_ol82 | bool or foreman_enable_ol82_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol83 | default([]) if foreman_enable_ol83 | bool or foreman_enable_ol83_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol84 | default([]) if foreman_enable_ol84 | bool or foreman_enable_ol84_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol85 | default([]) if foreman_enable_ol85 | bool or foreman_enable_ol85_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol86 | default([]) if foreman_enable_ol86 | bool or foreman_enable_ol86_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol87 | default([]) if foreman_enable_ol87 | bool or foreman_enable_ol87_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol88 | default([]) if foreman_enable_ol88 | bool or foreman_enable_ol88_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol89 | default([]) if foreman_enable_ol89 | bool or foreman_enable_ol89_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol810 | default([]) if foreman_enable_ol810 | bool or foreman_enable_ol810_kickstart | bool else [] )
+  }}"
+
+
+foreman_installation_media_defaults: &foreman_installation_media_defaults
+  os_family: Redhat
+  # organizations:
+  #   - "{{ foreman_organization }}"
+  # locations:
+  #   - "{{ foreman_default_location }}"
+  organizations: "{{ foreman_all_organizations_namelist }}"
+  locations: "{{ foreman_all_locations_namelist }}"
+
+
+foreman_installation_media_ol80:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.0 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_ga_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.0
+
+foreman_installation_media_ol81:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.1 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u1_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.1
+
+foreman_installation_media_ol82:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.2 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u2_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.2
+
+foreman_installation_media_ol83:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.3 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u3_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.3
+
+foreman_installation_media_ol84:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.4 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u4_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.4
+
+foreman_installation_media_ol85:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.5 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u5_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.5
+
+foreman_installation_media_ol86:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.6 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u6_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.6
+
+foreman_installation_media_ol87:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.7 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u7_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.7
+
+foreman_installation_media_ol88:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.8 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u8_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.8
+
+foreman_installation_media_ol89:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.9 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u9_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.9
+
+foreman_installation_media_ol810:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 8.10 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_Linux/ol8_u10_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 8.10
+      - Oracle Linux 8
+
+foreman_installation_media_ol8_versions: "{{ [] |
+  union( foreman_installation_media_ol80 | default([]) if foreman_enable_ol80_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol81 | default([]) if foreman_enable_ol81_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol82 | default([]) if foreman_enable_ol82_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol83 | default([]) if foreman_enable_ol83_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol84 | default([]) if foreman_enable_ol84_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol85 | default([]) if foreman_enable_ol85_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol86 | default([]) if foreman_enable_ol86_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol87 | default([]) if foreman_enable_ol87_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol88 | default([]) if foreman_enable_ol88_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol89 | default([]) if foreman_enable_ol89_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol810 | default([]) if foreman_enable_ol810_kickstart | bool else [] )
+  }}"
+
+
+foreman_activation_keys_ol80: []
+foreman_activation_keys_ol81: []
+foreman_activation_keys_ol82: []
+foreman_activation_keys_ol83: []
+foreman_activation_keys_ol84: []
+foreman_activation_keys_ol85: []
+foreman_activation_keys_ol86: []
+foreman_activation_keys_ol87: []
+foreman_activation_keys_ol88: []
+foreman_activation_keys_ol89: []
+foreman_activation_keys_ol810: []
+
+foreman_activation_keys_redhat7_versions: "{{ [] |
+  union( foreman_activation_keys_ol80 | default([]) if foreman_enable_ol80 | bool and foreman_enable_ol80_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol81 | default([]) if foreman_enable_ol81 | bool and foreman_enable_ol81_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol82 | default([]) if foreman_enable_ol82 | bool and foreman_enable_ol82_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol83 | default([]) if foreman_enable_ol83 | bool and foreman_enable_ol83_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol84 | default([]) if foreman_enable_ol84 | bool and foreman_enable_ol84_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol85 | default([]) if foreman_enable_ol85 | bool and foreman_enable_ol85_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol86 | default([]) if foreman_enable_ol86 | bool and foreman_enable_ol86_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol87 | default([]) if foreman_enable_ol87 | bool and foreman_enable_ol87_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol88 | default([]) if foreman_enable_ol88 | bool and foreman_enable_ol88_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol89 | default([]) if foreman_enable_ol89 | bool and foreman_enable_ol89_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol810 | default([]) if foreman_enable_ol810 | bool and foreman_enable_ol810_default_ak | bool else [] )
+  }}"
+
+
+foreman_sync_plan_products_ol80: []
+foreman_sync_plan_products_ol81: []
+foreman_sync_plan_products_ol82: []
+foreman_sync_plan_products_ol83: []
+foreman_sync_plan_products_ol84: []
+foreman_sync_plan_products_ol85: []
+foreman_sync_plan_products_ol86: []
+foreman_sync_plan_products_ol87: []
+foreman_sync_plan_products_ol88: []
+foreman_sync_plan_products_ol89: []
+foreman_sync_plan_products_ol810: []
+
+foreman_sync_plan_products_redhat7_versions: "{{ [] |
+  union( foreman_sync_plan_products_ol80 | default([]) if foreman_enable_ol80 | bool or foreman_enable_ol80_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol81 | default([]) if foreman_enable_ol81 | bool or foreman_enable_ol81_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol82 | default([]) if foreman_enable_ol82 | bool or foreman_enable_ol82_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol83 | default([]) if foreman_enable_ol83 | bool or foreman_enable_ol83_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol84 | default([]) if foreman_enable_ol84 | bool or foreman_enable_ol84_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol85 | default([]) if foreman_enable_ol85 | bool or foreman_enable_ol85_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol86 | default([]) if foreman_enable_ol86 | bool or foreman_enable_ol86_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol87 | default([]) if foreman_enable_ol87 | bool or foreman_enable_ol87_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol88 | default([]) if foreman_enable_ol88 | bool or foreman_enable_ol88_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol89 | default([]) if foreman_enable_ol89 | bool or foreman_enable_ol89_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol810 | default([]) if foreman_enable_ol810 | bool or foreman_enable_ol810_kickstart | bool else [] )
+  }}"
+

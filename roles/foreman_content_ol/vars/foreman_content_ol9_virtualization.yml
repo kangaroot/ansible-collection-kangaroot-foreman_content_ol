@@ -1,0 +1,70 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+
+
+foreman_products_defaults_ol70: &foreman_products_defaults_ol70
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol70 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol70 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol70 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol70 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol70 | bool }}"
+
+
+foreman_products_ol9_virtualization_kvm_utils:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
+    repositories:
+      ### Oracle Linux 9 KVM Utilities (x86_64) | ol9_x86_64_kvm_utils ###
+      - name: Oracle Linux 9 KVM Utilities (x86_64)
+        description: Latest Oracle Linux 9 KVM Utilities Packages (x86_64)
+        label: ol9_x86_64_kvm_utils
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/kvm/utils/x86_64/"
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
+      # ### Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64) | ol9_x86_64_developer_kvm_utils ###
+      # - name: Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64)
+      #   description: Latest KVM Utility packages for test and development for Oracle Linux 9 (x86_64).
+      #   label: ol9_x86_64_developer_kvm_utils
+      #   url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/kvm/utils/x86_64/"
+      #   <<: *foreman_products_defaults
+      #   organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
+
+foreman_products_ol9_virtualization: "{{ [] |
+  union( foreman_products_ol9_virtualization_kvm_utils | default([]) if foreman_enable_ol9_virtualization_kvm_utils else [] )
+  }}"
+
+
+foreman_content_views_ol9_virtualization_kvm_utils:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_kvm_utils"
+    organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 KVM Utilities (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_virtualization_kvm_utils }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol9_x86_64_developer_kvm_utils"
+  #   organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
+  #   repositories:
+  #     - name: Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64)
+  #       product: Oracle Linux
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol9_virtualization_kvm_utils }}"
+
+foreman_content_views_ol9_virtualization: "{{ [] |
+  union( foreman_content_views_ol9_virtualization_kvm_utils | default([]) if foreman_enable_ol9_virtualization_kvm_utils else [] )
+  }}"
+
