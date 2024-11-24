@@ -91,11 +91,45 @@ foreman_products_ol7_mysql80:
         <<: *foreman_products_defaults_ol7_mysql
         organization: "{{ foreman_organization_ol7_mysql80 }}"
 
-foreman_products_ol7_mysql: "{{ [] |
+foreman_products_ol7_mysql84:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_mysql84 }}"
+    repositories:
+      ### MySQL 8.4 for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL84_community ###
+      - name: MySQL 8.4 for Oracle Linux 7 (x86_64)
+        description: Latest MySQL 8.4 packages for Oracle Linux 7 (x86_64).
+        label: ol7_x86_64_MySQL84_community
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL84_community/x86_64/"
+        <<: *foreman_products_defaults_ol7_mysql
+        organization: "{{ foreman_organization_ol7_mysql84 }}"
+      ### MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL84_tools_community ###
+      - name: MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64)
+        description: Latest MySQL 8.4 Tools Community packages for Oracle Linux 7 (x86_64).
+        label: ol7_x86_64_MySQL84_tools_community
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL84/tools/community/x86_64/"
+        <<: *foreman_products_defaults_ol7_mysql
+        organization: "{{ foreman_organization_ol7_mysql84 }}"
+
+foreman_products_ol7_mysql_main:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_mysql80 }}"
+    repositories:
+      ### MySQL Connectors Community for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL_connectors_community ###
+      - name: MySQL Connectors Community for Oracle Linux 7 (x86_64)
+        description: Latest MySQL Connectors Community packages for Oracle Linux 7 (x86_64).
+        label: ol7_x86_64_MySQL_connectors_community
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL/connectors/community/x86_64/"
+        <<: *foreman_products_defaults_ol7_mysql
+        organization: "{{ foreman_organization_ol7_mysql }}"
+
+foreman_products_ol7_mysql: "{{ ( foreman_products_ol7_mysql_main | default([]) if foreman_enable_ol7_mysql else [] ) |
   union( foreman_products_ol7_mysql55 | default([]) if foreman_enable_ol7_mysql55 else [] ) |
   union( foreman_products_ol7_mysql56 | default([]) if foreman_enable_ol7_mysql56 else [] ) |
   union( foreman_products_ol7_mysql57 | default([]) if foreman_enable_ol7_mysql57 else [] ) |
-  union( foreman_products_ol7_mysql80 | default([]) if foreman_enable_ol7_mysql80 else [] )
+  union( foreman_products_ol7_mysql80 | default([]) if foreman_enable_ol7_mysql80 else [] ) |
+  union( foreman_products_ol7_mysql84 | default([]) if foreman_enable_ol7_mysql84 else [] )
   }}"
 
 
@@ -143,10 +177,33 @@ foreman_content_views_ol7_mysql80:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_mysql80 }}"
 
-foreman_content_views_ol7_mysql: "{{ [] |
+foreman_content_views_ol7_mysql84:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_MySQL84_community"
+    organization: "{{ foreman_organization_ol7_mysql84 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.4 for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_mysql84 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_MySQL84_tools_community"
+    organization: "{{ foreman_organization_ol7_mysql84 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_mysql84 }}"
+
+foreman_content_views_ol7_mysql_main:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_MySQL_connectors_community"
+    organization: "{{ foreman_organization_ol7_mysql }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL Connectors Community for Oracle Linux 7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_mysql }}"
+
+foreman_content_views_ol7_mysql: "{{ ( foreman_content_views_ol7_mysql_main | default([]) if foreman_enable_ol7_mysql else [] ) |
   union( foreman_content_views_ol7_mysql55 | default([]) if foreman_enable_ol7_mysql55 else [] ) |
   union( foreman_content_views_ol7_mysql56 | default([]) if foreman_enable_ol7_mysql56 else [] ) |
   union( foreman_content_views_ol7_mysql57 | default([]) if foreman_enable_ol7_mysql57 else [] ) |
-  union( foreman_content_views_ol7_mysql80 | default([]) if foreman_enable_ol7_mysql80 else [] )
+  union( foreman_content_views_ol7_mysql80 | default([]) if foreman_enable_ol7_mysql80 else [] ) |
+  union( foreman_content_views_ol7_mysql84 | default([]) if foreman_enable_ol7_mysql84 else [] )
   }}"
 

@@ -1,0 +1,273 @@
+# Oracle Linux 9
+
+  ## Latest Packages
+  latest_packages:
+
+    repos:
+
+      BaseOS Latest:
+        desccription: Oracle Linux 9 BaseOS Latest.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/baseos/latest/x86_64/
+          aarch64: /repo/OracleLinux/OL9/baseos/latest/aarch64/
+
+      AppStream Latest:
+        desccription: Oracle Linux 9 Application Stream Packages.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/appstream/x86_64/
+          aarch64: /repo/OracleLinux/OL9/appstream/aarch64/
+
+
+      Add-ons:
+        desccription: Latest add-on packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/addons/x86_64/
+          aarch64: /repo/OracleLinux/OL9/addons/aarch64/
+
+
+      Developer Packages:
+        desccription: Latest packages for test and development for Oracle Linux 9 (not for production use).
+        repos:
+          x86_64: /repo/OracleLinux/OL9/developer/x86_64/
+          aarch64: /repo/OracleLinux/OL9/developer/aarch64/
+
+
+      EPEL Packages:
+        desccription: Latest EPEL packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/developer/EPEL/x86_64/
+          aarch64: /repo/OracleLinux/OL9/developer/EPEL/aarch64/
+
+
+      CodeReady Builder:
+        desccription: Latest CodeReady Builder packages for Oracle Linux 9 (Unsupported).
+        repos:
+          x86_64: /repo/OracleLinux/OL9/codeready/builder/x86_64/
+          aarch64: /repo/OracleLinux/OL9/codeready/builder/aarch64/
+
+
+      Distro Builder:
+        desccription: Latest Disro Builder packaegs for Oracle Linux 9 (Unsupported).
+        repos:
+          x86_64: /repo/OracleLinux/OL9/distro/builder/x86_64/
+          aarch64: /repo/OracleLinux/OL9/distro/builder/aarch64/
+
+
+      Developer Archive:
+        desccription: Archived developer packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/developer/archive/x86_64/
+          aarch64: /repo/OracleLinux/OL9/developer/archive/aarch64/
+
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      BaseOS GA:
+        desccription: Installation media copy of Oracle Linux 9 BaseOS GA
+        repos:
+          x86_64: /repo/OracleLinux/OL9/0/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL9/0/baseos/base/aarch64/
+
+      BaseOS 9.1:
+        desccription: Installation media copy of Oracle Linux 9.1 BaseOS
+        repos:
+          x86_64: /repo/OracleLinux/OL9/1/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL9/1/baseos/base/aarch64/
+
+      BaseOS 9.2:
+        desccription: Installation media copy of Oracle Linux 9.2 BaseOS
+        repos:
+          x86_64: /repo/OracleLinux/OL9/2/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL9/2/baseos/base/aarch64/
+
+      BaseOS 9.3:
+        desccription: Installation media copy of Oracle Linux 9.3 BaseOS
+        repos:
+          x86_64: /repo/OracleLinux/OL9/3/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL9/3/baseos/base/aarch64/
+
+      BaseOS 9.4:
+        desccription: Installation media copy of Oracle Linux 9.4 BaseOS
+        repos:
+          x86_64: /repo/OracleLinux/OL9/4/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL9/4/baseos/base/aarch64/
+
+      BaseOS 9.5:
+        desccription: Installation media copy of Oracle Linux 9.5 BaseOS
+        repos:
+          x86_64: /repo/OracleLinux/OL9/5/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL9/5/baseos/base/aarch64/
+
+
+  ## UEK
+  uek:
+
+    repos:
+
+      UEK Release 7:
+        desccription: Latest Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/UEKR7/x86_64/
+          aarch64: /repo/OracleLinux/OL9/UEKR7/aarch64/
+
+
+      RDMA:
+        desccription: Latest RDMA  packages for Unbreakable Enterprise Kernel on Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/RDMA/x86_64/
+
+
+      Developer Release of UEK-next:
+        desccription: Developer release of UEK-next for Oracle Linux 9 - (unsupported, not for production use).
+        repos:
+          x86_64: /repo/OracleLinux/OL9/developer/UEKnext/x86_64/
+          aarch64: /repo/OracleLinux/OL9/developer/UEKnext/aarch64/
+
+
+      RHCK with Oracle fixes:
+        desccription: Latest RHCK with Oracle fixes for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/MODRHCK/x86_64/
+
+
+  ## Instant Client
+  instant_client:
+
+    repos:
+
+      Oracle Database Instant Client 19c:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL9/oracle/instantclient/x86_64/
+
+      Oracle Database Instant Client 23ai:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL9/oracle/instantclient23/x86_64/
+
+
+      Oracle Database Tools:
+        desccription: Oracle Database Tools for Developers.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/oracle/software/x86_64/
+          aarch64: /repo/OracleLinux/OL9/oracle/software/aarch64/
+
+
+  ## Oracle Linux Cloud Native Environment
+  olcne:
+
+    repos:
+
+      Oracle Cloud Native Environment:
+        desccription: Latest Oracle Cloud Native Environment Packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/ocne/x86_64/
+          aarch64: /repo/OracleLinux/OL9/ocne/aarch64/
+
+      Oracle Cloud Native Environment 1.7:
+        desccription: Latest Oracle Cloud Native Environment Release 1.7 Packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/olcne17/x86_64/
+
+      Oracle Cloud Native Environment 1.8:
+        desccription: Latest Oracle Cloud Native Environment Release 1.8 Packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/olcne18/x86_64/
+          aarch64: /repo/OracleLinux/OL9/olcne18/aarch64/
+
+      Oracle Cloud Native Environment 1.9:
+        desccription: Latest Oracle Cloud Native Environment Release 1.9 Packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/olcne19/x86_64/
+          aarch64: /repo/OracleLinux/OL9/olcne19/aarch64/
+
+
+  ## Security Validations
+  security_validations:
+
+    repos:
+
+      Security Validation (Update 3):
+        desccription: Latest packages delivered for security validations, like FIPS or common criteria for Oracle Linux 9
+        repos:
+          x86_64: /repo/OracleLinux/OL9/3/security/validation/x86_64/
+          aarch64: /repo/OracleLinux/OL9/3/security/validation/aarch64/
+
+
+  ## MySQL
+  mysql:
+
+    repos:
+
+      MySQL 8.0 Server Community:
+        desccription: Latest MySQL 8.0 Community Server packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/MySQL80/community/x86_64/
+          aarch64: /repo/OracleLinux/OL9/MySQL80/community/aarch64/
+
+      MySQL 8.0 Connectors Community:
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/MySQL80/connectors/community/x86_64/
+          aarch64: /repo/OracleLinux/OL9/MySQL80/connectors/community/aarch64/
+
+      MySQL 8.0 Tools Community:
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/MySQL80/tools/community/x86_64/
+          aarch64: /repo/OracleLinux/OL9/MySQL80/tools/community/aarch64/
+
+
+      MySQL 8.4 Server Community:
+        desccription: Latest MySQL 8.4 Community Server packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/MySQL84/community/x86_64/
+          aarch64: /repo/OracleLinux/OL9/MySQL84/community/aarch64/
+
+      MySQL 8.4 Tools Community:
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/MySQL84/tools/community/x86_64/
+          aarch64: /repo/OracleLinux/OL9/MySQL84/tools/community/aarch64/
+
+
+      MySQL Connectors Community:
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/MySQL/connectors/community/x86_64/
+          aarch64: /repo/OracleLinux/OL9/MySQL/connectors/community/aarch64/
+
+
+  ## Oracle Linux Manager
+  olm:
+
+    repos:
+
+      Oracle Linux Manager  2.10 Client:
+        desccription: Latest Oracle Linux Manager 2.10 Client  packages for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/oraclelinuxmanager210/client//x86_64/
+          aarch64: /repo/OracleLinux/OL9/oraclelinuxmanager210/client//aarch64/
+
+
+  ## Virtualization
+  virtualization:
+
+    repos:
+
+      KVM Utilities:
+        desccription: Latest KVM Utils for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/kvm/utils/x86_64/
+          aarch64: /repo/OracleLinux/OL9/kvm/utils/aarch64/
+
+      KVM Utilities (Developer):
+        desccription: KVM Utils for test and development for Oracle Linux 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL9/developer/kvm/utils/x86_64/
+          aarch64: /repo/OracleLinux/OL9/developer/kvm/utils/aarch64/
+
+

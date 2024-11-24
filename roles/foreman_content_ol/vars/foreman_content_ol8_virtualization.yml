@@ -4,16 +4,16 @@
 foreman_products_defaults: &foreman_products_defaults
   content_type: yum
   gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
-  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol8 }}"
   # mirror_on_sync: True
   # mirroring_policy: "additive"
   # mirroring_policy: "mirror_content_only"
   # mirroring_policy: "mirror_complete"
-  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
-  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
   # http_proxy: Default Proxy
-  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
-  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
 
 
 foreman_products_defaults_ol8_virtualization: &foreman_products_defaults_ol8_virtualization
@@ -58,9 +58,30 @@ foreman_products_ol8_virtualization_ovirt44:
         <<: *foreman_products_defaults_ol8_virtualization
         organization: "{{ foreman_organization_ol8_virtualization_ovirt44 }}"
 
+foreman_products_ol8_virtualization_ovirt45:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
+    repositories:
+      ### oVirt Release 4.5 on Oracle Linux 8 (x86_64) | ol8_x86_64_ovirt45 ###
+      - name: oVirt Release 4.5 on Oracle Linux 8 (x86_64)
+        description: Latest packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64).
+        label: ol8_x86_64_ovirt45
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt45/x86_64/"
+        <<: *foreman_products_defaults_ol8_virtualization
+        organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
+      ### oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra | ol8_x86_64_ovirt45_extras ###
+      - name: oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra
+        description: Latest extra packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64).
+        label: ol8_x86_64_ovirt45_extras
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt45/extras/x86_64/"
+        <<: *foreman_products_defaults_ol8_virtualization
+        organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
+
 foreman_products_ol8_virtualization: "{{ [] |
   union( foreman_products_ol8_virtualization_kvm_utils | default([]) if foreman_enable_ol8_virtualization_kvm_utils else [] ) |
-  union( foreman_products_ol8_virtualization_ovirt44 | default([]) if foreman_enable_ol8_virtualization_ovirt44 else [] )
+  union( foreman_products_ol8_virtualization_ovirt44 | default([]) if foreman_enable_ol8_virtualization_ovirt44 else [] ) |
+  union( foreman_products_ol8_virtualization_ovirt45 | default([]) if foreman_enable_ol8_virtualization_ovirt45 else [] )
   }}"
 
 
@@ -86,8 +107,23 @@ foreman_content_views_ol8_virtualization_ovirt44:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_virtualization_ovirt44 }}"
 
+foreman_content_views_ol8_virtualization_ovirt45:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_ovirt45"
+    organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.5 on Oracle Linux 8 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_virtualization_ovirt45 }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_ovirt45_extras"
+    organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4. on Oracle Linux 8 (x86_64) - Extra"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_virtualization_ovirt45 }}"
+
 foreman_content_views_ol8_virtualization: "{{ [] |
   union( foreman_content_views_ol8_virtualization_kvm_utils | default([]) if foreman_enable_ol8_virtualization_kvm_utils else [] ) |
-  union( foreman_content_views_ol8_virtualization_ovirt44 | default([]) if foreman_enable_ol8_virtualization_ovirt44 else [] )
+  union( foreman_content_views_ol8_virtualization_ovirt44 | default([]) if foreman_enable_ol8_virtualization_ovirt44 else [] ) |
+  union( foreman_content_views_ol8_virtualization_ovirt45 | default([]) if foreman_enable_ol8_virtualization_ovirt45 else [] )
   }}"
 

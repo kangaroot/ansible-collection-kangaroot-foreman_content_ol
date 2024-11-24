@@ -1,0 +1,682 @@
+# Oracle Linux 6
+
+  ## Sustaining Support
+  sustaining_support:
+
+    repos:
+
+      Oracle Linux 6 Latest (i386):
+        desccription: All packages released for Oracle Linux 6 (i386) including the latest errata packages. (i386)
+        uln_label: ol6_i386_latest
+
+      Oracle Linux 6 Latest (x86_64):
+        desccription: All packages released for Oracle Linux 6 (x86_64) including the latest errata packages. (x86_64)
+        uln_label: ol6_x86_64_latest
+
+
+      Unbreakable Enterprise Kernel for Oracle Linux 6 (i386):
+        desccription: Unbreakable Enterprise Kernel for Oracle Linux 6 (i386) released on the install media.
+        uln_label: ol6_i386_UEK_base
+
+      Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64):
+        desccription: Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) released on the install media.
+        uln_label: ol6_x86_64_UEK_base
+
+      Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (i386):
+        desccription: Latest Unbreakable Enterprise Kernel packages for Oracle Linux 6 (i386)
+        uln_label: ol6_i386_UEK_latest
+
+      Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64):
+        desccription: Latest Unbreakable Enterprise Kernel packages for Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_UEK_latest
+
+      Dtrace for Oracle Linux 6 (x86_64) - Latest:
+        desccription: Latest packages required for Dtrace on Oracle Linux 6 (x86_64) with the Unbreakable Enterprise Kernel Release 2
+        uln_label: ol6_x86_64_Dtrace_latest
+
+      Oracle Linux 6 Dtrace Userspace Tools (x86_64) - Latest:
+        desccription: The latest Dtrace userspace tools for Unbreakable Enterprise Kernel Release 3 (UEKR3) on Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_Dtrace_userspace_latest
+
+      OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64):
+        desccription: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel (UEK) on Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_ofed_UEK
+
+
+      Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest:
+        desccription: Latest packages for Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_UEKR3_latest
+
+
+      Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64):
+        desccription: Latest Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)
+        uln_label: ol6_x86_64_UEKR4_ELS
+
+      Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64):
+        desccription: Latest packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_UEKR4
+
+      Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 6:
+        desccription: The latest Dtrace userspace tools for Oracle Linux 6 (x86_64) with Unbreakable Enterprise Kernel Release 4 (UEKR4).
+        uln_label: ol6_x86_64_UEKR4_DTrace_userspace
+
+      Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) - Archive:
+        desccription: Archived packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_UEKR4_archive
+
+      OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64):
+        desccription: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel Release 4 (UEK) on Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_UEKR4_OFED
+
+
+      Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (i386):
+        desccription: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (i386).
+        uln_label: ol6_i386_MODRHCK
+
+      Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64):
+        desccription: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_MODRHCK
+
+
+      Ksplice for Oracle Linux 6 (i386):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 6 (i386).
+        uln_label: ol6_i386_ksplice
+
+      Ksplice for Oracle Linux 6 (x86_64):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_ksplice
+
+      Ksplice aware userspace packages for Oracle Linux 6 - ELS (x86_64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 6 (x86_64) - ELS
+        uln_label: ol6_x86_64_userspace_ksplice_ELS
+
+      Ksplice aware userspace packages for Oracle Linux 6 (x86_64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_userspace_ksplice
+
+
+      Oracle Linux 6 Add ons (i386):
+        desccription: Oracle Linux 6 Add ons (i386)
+        uln_label: ol6_i386_addons
+
+      Oracle Linux 6 Add ons (x86_64):
+        desccription: Oracle Linux 6 Add ons (x86_64)
+        uln_label: ol6_x86_64_addons
+
+      Oracle Software Collections for Oracle Linux 6 (x86_64):
+        desccription: Latest Oracle Software Collections 3.0 packages for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_SoftwareCollections
+
+      Oracle Linux 6 software for SAP:
+        desccription: Packages required for SAP software to run on Oracle Linux 6
+        uln_label: ol6_x86_64_SAP_addons
+
+      Packages for creating test and development environments for Oracle Linux 6 (i386):
+        desccription: Latest packages for creating test and development environments - Oracle Linux 6 (i386)
+        uln_label: ol6_i386_developer
+
+      Packages for creating test and development environments for Oracle Linux 6 (x86_64):
+        desccription: Latest packages for creating test and development environments - Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_developer
+
+
+      Spacewalk Client 2.6 for Oracle Linux 6 (i386):
+        desccription: All Spacewalk Client 2.6 packages released for Oracle Linux 6 (i386).
+        uln_label: ol6_i386_spacewalk26_client
+
+      Spacewalk Client 2.6 for Oracle Linux 6 (x86_64):
+        desccription: All Spacewalk Client 2.6 packages released for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_spacewalk26_client
+
+      Spacewalk Client 2.7 for Oracle Linux 6 (i386):
+        desccription: All Spacewalk Client 2.7 packages released for Oracle Linux 6 (i386).
+        uln_label: ol6_i386_spacewalk27_client
+
+      Spacewalk Client 2.7 for Oracle Linux 6 (x86_64):
+        desccription: All Spacewalk Client 2.7 packages released for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_spacewalk27_client
+
+      Spacewalk Server 2.6 for Oracle Linux 6 (x86_64):
+        desccription: All Spacewalk Server 2.6 packages released for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_spacewalk26_server
+
+      Spacewalk Server 2.7 for Oracle Linux 6 (x86_64):
+        desccription: All Spacewalk Server 2.7 packages released for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_spacewalk27_server
+
+
+      Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included:
+        desccription: Oracle Instant Client packages for Oracle Linux 6 (x86_64) .
+        uln_label: ol6_x86_64_oracle_instantclient
+
+      Oracle Software for Oracle Linux 6 (i386):
+        desccription: Oracle Software for Oracle Linux 6 (i386)
+        uln_label: ol6_i386_oracle
+
+      Oracle Software for Oracle Linux 6 (x86_64):
+        desccription: Oracle Software for Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_oracle
+
+
+      HA Utilities for MySQL and Oracle Linux 6 (x86_64):
+        desccription: Management Utilities for MySQL HA with Oracle Linux 6
+        uln_label: ol6_x86_64_mysql-ha-utils
+
+      HA Utilities for MySQL and Oracle Linux 6 (x86):
+        desccription: Management Utilities for MySQL HA with Oracle Linux 6
+        uln_label: ol6_i386_mysql-ha-utils
+
+      MySQL 5.5 for Oracle Linux 6 (i386):
+        desccription: Latest MySQL packages released on the Oracle Linux 6 (i386).
+        uln_label: ol6_i386_MySQL
+
+      MySQL 5.5 for Oracle Linux 6 (x86_64):
+        desccription: Latest MySQL packages released on the Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_MySQL
+
+      MySQL 5.6 for Oracle Linux 6 (i386):
+        desccription: Latest MySQL 5.6 packages for Oracle Linux 6 (i386).
+        uln_label: ol6_i386_MySQL56
+
+      MySQL 5.6 for Oracle Linux 6 (x86_64):
+        desccription: Latest MySQL 5.6 packages for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_MySQL56
+
+      MySQL 5.7 for Oracle Linux 6 (i386):
+        desccription: Latest MySQL 5.7 packages for Oracle Linux 6 (i386).
+        uln_label: ol6_i386_MySQL57_community
+
+      MySQL 5.7 for Oracle Linux 6 (x86_64):
+        desccription: Latest MySQL 5.7 packages for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_MySQL57_community
+
+      MySQL 8.0 for Oracle Linux 6 (i386):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 6 (i386).
+        uln_label: ol6_i386_MySQL80_community
+
+      MySQL 8.0 for Oracle Linux 6 (x86_64):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 6 (x86_64).
+        uln_label: ol6_x86_64_MySQL80_community
+
+
+      Oracle OpenStack 1.0 (x86_64):
+        desccription: Latest for Oracle OpenStack version 1.0 (Icehouse).
+        uln_label: ol6_x86_64_openstack10
+
+      Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64):
+        desccription: Latest for Oracle OpenStack version 2.1 for Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_openstack21
+
+      Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64):
+        desccription: Latest for Oracle OpenStack version 3.0
+        uln_label: ol6_x86_64_openstack30
+
+      Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64):
+        desccription: Latest Packages for Oracle OpenStack version 4.0
+        uln_label: ol6_x86_64_openstack40
+
+
+      Oracle Linux 6 Archive (i386):
+        desccription: Archived packages for Oracle Linux 6 (i386)
+        uln_label: ol6_i386_latest_archive
+
+      Oracle Linux 6 Archive (x86_64):
+        desccription: Archived packages for Oracle Linux 6 (x86_64)
+        uln_label: ol6_x86_64_latest_archive
+
+
+      Oracle Linux 6 ELS (i386):
+        desccription: All packages released for Oracle Linux 6 Extended Lifecycle Support (i386).
+        uln_label: ol6_i386_ELS
+
+      Oracle Linux 6 ELS (x86_64):
+        desccription: All packages released for Oracle Linux 6 Extended Lifecycle Support (x86_64).
+        uln_label: ol6_x86_64_ELS
+
+      Ksplice for Oracle Linux 6 - ELS (i386):
+        desccription: Oracle Ksplice Updates for Oracle Linux 6 - ELS (i386).
+        uln_label: ol6_i386_ksplice_ELS
+
+      Ksplice for Oracle Linux 6 - ELS (x86_64):
+        desccription: Oracle Ksplice Updates for Oracle Linux 6 - ELS (x86_64).
+        uln_label: ol6_x86_64_ksplice_ELS
+
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      Oracle Linux 6 GA (i386):
+        desccription: All packages released for Oracle Linux 6 GA (i386). No errata included.
+        uln_label: ol6_ga_i386_base
+
+      Oracle Linux 6 GA (x86_64):
+        desccription: All packages released for Oracle Linux 6 GA (x86_64). No errata included.
+        uln_label: ol6_ga_x86_64_base
+
+      Oracle Linux 6 Update 1 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 1 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u1_i386_base
+
+      Oracle Linux 6 Update 1 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 1 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u1_x86_64_base
+
+      Oracle Linux 6 Update 2 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 2 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u2_i386_base
+
+      Oracle Linux 6 Update 2 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 2 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u2_x86_64_base
+
+      Oracle Linux 6 Update 3 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 3 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u3_i386_base
+
+      Oracle Linux 6 Update 3 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 3 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u3_x86_64_base
+
+      Oracle Linux 6 Update 4 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 4 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u4_i386_base
+
+      Oracle Linux 6 Update 4 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 4 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u4_x86_64_base
+
+      Oracle Linux 6 Update 5 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 5 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u5_i386_base
+
+      Oracle Linux 6 Update 5 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 5 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u5_x86_64_base
+
+      Oracle Linux 6 Update 6 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 6 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u6_i386_base
+
+      Oracle Linux 6 Update 6 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 6 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u6_x86_64_base
+
+      Oracle Linux 6 Update 7 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 7 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u7_i386_base
+
+      Oracle Linux 6 Update 7 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 7 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u7_x86_64_base
+
+      Oracle Linux 6 Update 8 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 8 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u8_i386_base
+
+      Oracle Linux 6 Update 8 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 8 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u8_x86_64_base
+
+      Oracle Linux 6 Update 9 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 9 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u9_i386_base
+
+      Oracle Linux 6 Update 9 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 9 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u9_x86_64_base
+
+      Oracle Linux 6 Update 10 installation media copy (i386):
+        desccription: All packages released on the Oracle Linux 6 Update 10 (i386) installation media. This channel does not contain updates.
+        uln_label: ol6_u10_i386_base
+
+      Oracle Linux 6 Update 10 installation media copy (x86_64):
+        desccription: All packages released on the Oracle Linux 6 Update 10 (x86_64) installation media. This channel does not contain updates.
+        uln_label: ol6_u10_x86_64_base
+
+
+      Oracle Linux 6 GA Patches (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 (i386)
+        uln_label: ol6_ga_i386_patch
+
+      Oracle Linux 6 GA Patches (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 (x86_64)
+        uln_label: ol6_ga_x86_64_patch
+
+      Oracle Linux 6 Update 1 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 1 (i386).
+        uln_label: ol6_u1_i386_patch
+
+      Oracle Linux 6 Update 1 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 1 (x86_64).
+        uln_label: ol6_u1_x86_64_patch
+
+      Oracle Linux 6 Update 2 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 2 (i386).
+        uln_label: ol6_u2_i386_patch
+
+      Oracle Linux 6 Update 2 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 2 (x86_64).
+        uln_label: ol6_u2_x86_64_patch
+
+      Oracle Linux 6 Update 3 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 3 (i386)
+        uln_label: ol6_u3_i386_patch
+
+      Oracle Linux 6 Update 3 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 3 (x86_64)
+        uln_label: ol6_u3_x86_64_patch
+
+      Oracle Linux 6 Update 4 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 4 (i386)
+        uln_label: ol6_u4_i386_patch
+
+      Oracle Linux 6 Update 4 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 4 (x86_64)
+        uln_label: ol6_u4_x86_64_patch
+
+      Oracle Linux 6 Update 5 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 5 (i386)
+        uln_label: ol6_u5_i386_patch
+
+      Oracle Linux 6 Update 5 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 5 (x86_64)
+        uln_label: ol6_u5_x86_64_patch
+
+      Oracle Linux 6 Update 6 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 6 (i386)
+        uln_label: ol6_u6_i386_patch
+
+      Oracle Linux 6 Update 6 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 6 (x86_64)
+        uln_label: ol6_u6_x86_64_patch
+
+      Oracle Linux 6 Update 7 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 7 (i386)
+        uln_label: ol6_u7_i386_patch
+
+      Oracle Linux 6 Update 7 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 7 (x86_64)
+        uln_label: ol6_u7_x86_64_patch
+
+      Oracle Linux 6 Update 8 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 8 (i386)
+        uln_label: ol6_u8_i386_patch
+
+      Oracle Linux 6 Update 8 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 8 (x86_64)
+        uln_label: ol6_u8_x86_64_patch
+
+      Oracle Linux 6 Update 9 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 9 (i386)
+        uln_label: ol6_u9_i386_patch
+
+      Oracle Linux 6 Update 9 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 9 (x86_64)
+        uln_label: ol6_u9_x86_64_patch
+
+      Oracle Linux 6 Update 10 Patch (i386):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 10 (i386)
+        uln_label: ol6_u10_i386_patch
+
+      Oracle Linux 6 Update 10 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 6 Update 10 (x86_64)
+        uln_label: ol6_u10_x86_64_patch
+
+
+  ## Exadata
+  exadata:
+
+    repos:
+
+      Exadata release 12.1.2.1.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.1.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.1.0_x86_64_base
+
+      Exadata release 12.1.2.1.1 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.1.1 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.1.1_x86_64_base
+
+      Exadata release 12.1.2.1.2 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.1.2 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.1.2_x86_64_base
+
+      Exadata release 12.1.2.1.3 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.1.3 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.1.3_x86_64_base
+
+      Exadata release 12.1.2.2.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.2.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.2.0_x86_64_base
+
+      Exadata release 12.1.2.2.1 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.2.1 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.2.1_x86_64_base
+
+      Exadata release 12.1.2.2.2 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.2.2 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.2.2_x86_64_base
+
+      Exadata release 12.1.2.2.3 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.2.3 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.2.3_x86_64_base
+
+      Exadata release 12.1.2.3.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.0_x86_64_base
+
+      Exadata release 12.1.2.3.1 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.1 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.1_x86_64_base
+
+      Exadata release 12.1.2.3.2 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.2 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.2_x86_64_base
+
+      Exadata release 12.1.2.3.3 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.3 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.3_x86_64_base
+
+      Exadata release 12.1.2.3.4 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.4 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.4_x86_64_base
+
+      Exadata release 12.1.2.3.5 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.5 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.5_x86_64_base
+
+      Exadata release 12.1.2.3.6 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.6 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.6_x86_64_base
+
+      Exadata release 12.1.2.3.7 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.1.2.3.7 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.1.2.3.7_x86_64_base
+
+      Exadata release 12.2.1.1.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.0_x86_64_base
+
+      Exadata release 12.2.1.1.1 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.1 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.1_x86_64_base
+
+      Exadata release 12.2.1.1.2 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.2 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.2_x86_64_base
+
+      Exadata release 12.2.1.1.3 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.3 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.3_x86_64_base
+
+      Exadata release 12.2.1.1.4 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.4 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.4_x86_64_base
+
+      Exadata release 12.2.1.1.5 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.5 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.5_x86_64_base
+
+      Exadata release 12.2.1.1.6 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.6 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.6_x86_64_base
+
+      Exadata release 12.2.1.1.7 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.7 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.7_x86_64_base
+
+      Exadata release 12.2.1.1.8 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 12.2.1.1.8 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_12.2.1.1.8_x86_64_base
+
+      Exadata release 18.1.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.0.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.0.0.0_x86_64_base
+
+      Exadata release 18.1.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.1.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.1.0.0_x86_64_base
+
+      Exadata release 18.1.10.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.10.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.10.0.0_x86_64_base
+
+      Exadata release 18.1.11.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.11.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.11.0.0_x86_64_base
+
+      Exadata release 18.1.12.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.12.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.12.0.0_x86_64_base
+
+      Exadata release 18.1.13.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.13.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.13.0.0_x86_64_base
+
+      Exadata release 18.1.14.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.14.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.14.0.0_x86_64_base
+
+      Exadata release 18.1.15.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.15.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.15.0.0_x86_64_base
+
+      Exadata release 18.1.16.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.16.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.16.0.0_x86_64_base
+
+      Exadata release 18.1.17.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.17.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.17.0.0_x86_64_base
+
+      Exadata release 18.1.18.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.18.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.18.0.0_x86_64_base
+
+      Exadata release 18.1.19.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.19.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.19.0.0_x86_64_base
+
+      Exadata release 18.1.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.2.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.2.0.0_x86_64_base
+
+      Exadata release 18.1.20.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.20.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.20.0.0_x86_64_base
+
+      Exadata release 18.1.21.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.21.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.21.0.0_x86_64_base
+
+      Exadata release 18.1.22.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.22.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.22.0.0_x86_64_base
+
+      Exadata release 18.1.23.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.23.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.23.0.0_x86_64_base
+
+      Exadata release 18.1.25.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.25.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.25.0.0_x86_64_base
+
+      Exadata release 18.1.26.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.26.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.26.0.0_x86_64_base
+
+      Exadata release 18.1.27.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.27.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.27.0.0_x86_64_base
+
+      Exadata release 18.1.28.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.28.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.28.0.0_x86_64_base
+
+      Exadata release 18.1.29.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.29.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.29.0.0_x86_64_base
+
+      Exadata release 18.1.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.3.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.3.0.0_x86_64_base
+
+      Exadata release 18.1.30.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.30.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.30.0.0_x86_64_base
+
+      Exadata release 18.1.31.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.31.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.31.0.0_x86_64_base
+
+      Exadata release 18.1.32.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.32.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.32.0.0_x86_64_base
+
+      Exadata release 18.1.33.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.33.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.33.0.0_x86_64_base
+
+      Exadata release 18.1.34.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.34.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.34.0.0_x86_64_base
+
+      Exadata release 18.1.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.4.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.4.0.0_x86_64_base
+
+      Exadata release 18.1.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.5.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.5.0.0_x86_64_base
+
+      Exadata release 18.1.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.6.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.6.0.0_x86_64_base
+
+      Exadata release 18.1.7.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.7.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.7.0.0_x86_64_base
+
+      Exadata release 18.1.8.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.8.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.8.0.0_x86_64_base
+
+      Exadata release 18.1.9.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 18.1.9.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_18.1.9.0.0_x86_64_base
+
+
+  ## PCA
+  pca:
+
+    repos:
+
+      PCA 2.4.3.2 CN:
+        desccription: All Oracle Linux 6 based OVM server packages released for PCA 2.4.3.2 Compute Nodes.
+        uln_label: pca2432_x86_64_cn
+
+      PCA 2.4.3.2 MN:
+        desccription: All Oracle Linux 6 based packages released for PCA 2.4.3.2 Management Nodes.
+        uln_label: pca2432_x86_64_mn
+

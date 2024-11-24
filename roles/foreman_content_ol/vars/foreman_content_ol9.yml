@@ -48,7 +48,7 @@ foreman_products_ol9:
         organization: "{{ foreman_organization_ol9 }}"
       ### Packages for creating test and development environments for Oracle Linux 9 (x86_64) | ol9_x86_64_developer ###
       - name: Packages for creating test and development environments for Oracle Linux 9 (x86_64)
-        description: Latest packages for creating test and development environments - Oracle LInux 9 (x86_64)
+        description: Latest packages for creating test and development environments - Oracle Linux 9 (x86_64)
         label: ol9_x86_64_developer
         url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/x86_64/"
         <<: *foreman_products_defaults
@@ -67,13 +67,6 @@ foreman_products_ol9:
         url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/codeready/builder/x86_64/"
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol9 }}"
-      # ### Oracle Linux 9 CodeReady Builder Developer Preview (x86_64) | ol9_x86_64_codeready_builder_developer ###
-      # - name: Oracle Linux 9 CodeReady Builder Developer Preview (x86_64)
-      #   description: Developer preview of Oracle Linux 9 CodeReady Builder Packages (x86_64) - (Unsupported)
-      #   label: ol9_x86_64_codeready_builder_developer
-      #   url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/codeready/builder/developer/x86_64/"
-      #   <<: *foreman_products_defaults
-      #   organization: "{{ foreman_organization_ol9 }}"
       ### Oracle Linux 9 Distro Builder (x86_64) | ol9_x86_64_distro_builder ###
       - name: Oracle Linux 9 Distro Builder (x86_64)
         description: Oracle Linux 9 Distro Builder Packages (x86_64) - (Unsupported)
@@ -121,12 +114,6 @@ foreman_content_views_ol9:
       - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 CodeReady Builder (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol9_x86_64_codeready_builder_developer"
-  #   organization: "{{ foreman_organization_ol9 }}"
-  #   repositories:
-  #     - name: Oracle Linux 9 CodeReady Builder Developer Preview (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol9 }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_distro_builder"
     organization: "{{ foreman_organization_ol9 }}"
     repositories:
@@ -153,8 +140,6 @@ foreman_composite_content_views_ol9:
         latest: true
       - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_codeready_builder"
         latest: true
-      # - content_view: "{{ foreman_cv_prefix | default('cv_') }}ol9_x86_64_codeready_builder_developer"
-      #   latest: true
       - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_distro_builder"
         latest: true
 
@@ -207,6 +192,12 @@ foreman_operatingsystems_ol9:
     <<: *foreman_operatingsystems_defaults
   - name: "OracleLinux"
     major: "9"
+    minor: "5"
+    description: "Oracle Linux 9.5"
+    default_templates: "{{ foreman_operatingsystems_ol95_default_templates | default( foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) ) }}"
+    <<: *foreman_operatingsystems_defaults
+  - name: "OracleLinux"
+    major: "9"
     minor: ""
     description: "Oracle Linux 9"
     default_templates: "{{ foreman_operatingsystems_ol9_default_templates | default( foreman_operatingsystems_ol_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) }}"
@@ -229,7 +220,7 @@ foreman_installation_media_ol9: []
 #     path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_linux/ol9_u3_baseos_base/"
 #     <<: *foreman_installation_media_defaults
 #     operatingsystems:
-#       - Oracle Linux 9.3
+#       - Oracle Linux 9.5
 #       - Oracle Linux 9
 
 
@@ -261,8 +252,6 @@ foreman_activation_keys_ol9:
         override: disabled
       - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_codeready_{{ foreman_repo_label_prefix | default('') }}builder"
         override: disabled
-      # - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_codeready_builder_{{ foreman_repo_label_prefix | default('') }}developer"
-      #   override: disabled
       - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol9_x86_64_distro_{{ foreman_repo_label_prefix | default('') }}builder"
         override: disabled
 

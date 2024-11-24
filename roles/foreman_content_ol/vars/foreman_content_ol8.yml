@@ -48,21 +48,21 @@ foreman_products_ol8:
         organization: "{{ foreman_organization_ol8 }}"
       ### Packages for creating test and development environments for Oracle Linux 8 (x86_64) | ol8_x86_64_developer ###
       - name: Packages for creating test and development environments for Oracle Linux 8 (x86_64)
-        description: Latest packages for creating test and development environments - Oracle LInux 8 (x86_64)
+        description: Latest packages for creating test and development environments - Oracle Linux 8 (x86_64)
         label: ol8_x86_64_developer
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/x86_64/"
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol8 }}"
       ### EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_EPEL ###
       - name: EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64)
-        description: Latest EPEL packages for creating test and development environments - Oracle LInux 8 (x86_64)
+        description: Latest EPEL packages for creating test and development environments - Oracle Linux 8 (x86_64)
         label: ol8_x86_64_developer_EPEL
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/EPEL/x86_64/"
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol8 }}"
       ### EPEL Modular Packages for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_EPEL_modular ###
       - name: EPEL Modular Packages for Oracle Linux 8 (x86_64)
-        description: Latest EPEL Modular packages for creating test and development environments - Oracle LInux 8 (x86_64)
+        description: Latest EPEL Modular packages for creating test and development environments - Oracle Linux 8 (x86_64)
         label: ol8_x86_64_developer_EPEL_modular
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/EPEL/modular/x86_64/"
         <<: *foreman_products_defaults
@@ -74,13 +74,6 @@ foreman_products_ol8:
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/codeready/builder/x86_64/"
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol8 }}"
-      # ### Developer Preview for CodeReady Linux Builder for Oracle Linux 8 (x86_64) - Unsupported | ol8_x86_64_developer_codeready_builder ###
-      # - name: Developer Preview for CodeReady Linux Builder for Oracle Linux 8 (x86_64) - Unsupported
-      #   description: Developer preview repository of additional development and build tools for Oracle Linux 8 (x86_64) - (unsupported).
-      #   label: ol8_x86_64_developer_codeready_builder
-      #   url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/codeready/builder/developer/x86_64/"
-      #   <<: *foreman_products_defaults
-      #   organization: "{{ foreman_organization_ol8 }}"
       ### Oracle Linux 8 Distro Builder (x86_64) - Unsupported | ol8_x86_64_distro_builder ###
       - name: Oracle Linux 8 Distro Builder (x86_64) - Unsupported
         description: Latest packages for Oracle Linux 8 Distro Builder (x86_64) - Unsupported.
@@ -88,12 +81,6 @@ foreman_products_ol8:
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/distro/builder/x86_64/"
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol8 }}"
-
-      # - name: Oracle Linux 8 Debuginfo (x86_64)
-      #   label: ol8_debuginfo
-      #   url: https://oss.oracle.com/ol8/debuginfo/
-      #   <<: *foreman_products_defaults
-      #   organization: "{{ foreman_organization_ol8 }}"
 
 
 foreman_content_views_ol8:
@@ -140,25 +127,12 @@ foreman_content_views_ol8:
       - name: "{{ foreman_repo_name_prefix | default('') }}CodeReady Linux Builder for Oracle Linux 8 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol8_x86_64_developer_codeready_builder"
-  #   organization: "{{ foreman_organization_ol8 }}"
-  #   repositories:
-  #     - name: Developer Preview for CodeReady Linux Builder for Oracle Linux 8 (x86_64) - Unsupported
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol8 }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_distro_builder"
     organization: "{{ foreman_organization_ol8 }}"
     repositories:
       - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Distro Builder (x86_64) - Unsupported"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8 }}"
-
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol8_debuginfo"
-  #   organization: "{{ foreman_organization_ol8 }}"
-  #   repositories:
-  #     - name: Oracle Linux 8 Debuginfo (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol8 }}"
 
 foreman_composite_content_views_ol8:
   - name: "{{ foreman_ccv_prefix | default('ccv_') }}{{ foreman_ccv_name_prefix | default('') }}ol8"
@@ -181,12 +155,8 @@ foreman_composite_content_views_ol8:
         latest: true
       - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_codeready_builder"
         latest: true
-      # - content_view: "{{ foreman_cv_prefix | default('cv_') }}ol8_x86_64_developer_codeready_builder"
-      #   latest: true
       - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_distro_builder"
         latest: true
-      # - content_view: "{{ foreman_cv_prefix | default('cv_') }}ol8_debuginfo"
-      #   latest: true
 
 
 foreman_operatingsystems_defaults: &foreman_operatingsystems_defaults
@@ -328,12 +298,8 @@ foreman_activation_keys_ol8:
         override: disabled
       - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol8_x86_64_codeready_{{ foreman_repo_label_prefix | default('') }}builder"
         override: disabled
-      # - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol8_x86_64_developer_codeready_{{ foreman_repo_label_prefix | default('') }}builder"
-      #   override: disabled
       - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol8_x86_64_distro_{{ foreman_repo_label_prefix | default('') }}builder"
         override: disabled
-      # - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol8_{{ foreman_repo_label_prefix | default('') }}debuginfo"
-      #   override: disabled
 
 
 foreman_sync_plan_products_ol8: []

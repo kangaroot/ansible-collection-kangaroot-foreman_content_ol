@@ -4,16 +4,16 @@
 foreman_products_defaults: &foreman_products_defaults
   content_type: yum
   gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
-  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol9 }}"
   # mirror_on_sync: True
   # mirroring_policy: "additive"
   # mirroring_policy: "mirror_content_only"
   # mirroring_policy: "mirror_complete"
-  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
-  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
   # http_proxy: Default Proxy
-  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
-  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
 
 
 foreman_products_defaults_ol9_olcne: &foreman_products_defaults_ol9_olcne
@@ -25,8 +25,64 @@ foreman_products_defaults_ol9_olcne: &foreman_products_defaults_ol9_olcne
   unprotected: "{{ foreman_products_defaults_unprotected_ol9_olcne | bool }}"
 
 
-foreman_products_ol9_olcne: []
+foreman_products_ol9_olcne:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9_olcne }}"
+    repositories:
+      ### Oracle Linux Cloud Native Environment (x86_64) | ol9_x86_64_olcne ###
+      - name: Oracle Linux Cloud Native Environment (x86_64)
+        description: Latest Oracle Cloud Native Environment Packages for Oracle Linux 9
+        label: ol9_x86_64_olcne
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne/x86_64/"
+        <<: *foreman_products_defaults_ol9_olcne
+        organization: "{{ foreman_organization_ol9_olcne }}"
+      ### Oracle Linux Cloud Native Environment 1.7 (x86_64) | ol9_x86_64_olcne17 ###
+      - name: Oracle Linux Cloud Native Environment 1.7 (x86_64)
+        description: Packages for components of the 1.7 release of Oracle Linux Cloud Native environment for Oracle Linux 9 (x86_64)
+        label: ol9_x86_64_olcne17
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne17/x86_64/"
+        <<: *foreman_products_defaults_ol9_olcne
+        organization: "{{ foreman_organization_ol9_olcne }}"
+      ### Oracle Linux Cloud Native Environment 1.8 (x86_64) | ol9_x86_64_olcne18 ###
+      - name: Oracle Linux Cloud Native Environment 1.8 (x86_64)
+        description: Packages for components of the 1.8 release of Oracle Linux Cloud Native environment for Oracle Linux 9 (x86_64)
+        label: ol9_x86_64_olcne18
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne18/x86_64/"
+        <<: *foreman_products_defaults_ol9_olcne
+        organization: "{{ foreman_organization_ol9_olcne }}"
+      ### Oracle Linux Cloud Native Environment 1.9 (x86_64) | ol9_x86_64_olcne19 ###
+      - name: Oracle Linux Cloud Native Environment 1.9 (x86_64)
+        description: Packages for components of the 1.9 release of Oracle Linux Cloud Native environment for Oracle Linux 9 (x86_64)
+        label: ol9_x86_64_olcne19
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne19/x86_64/"
+        <<: *foreman_products_defaults_ol9_olcne
+        organization: "{{ foreman_organization_ol9_olcne }}"
 
 
-foreman_content_views_ol9_olcne: []
+foreman_content_views_ol9_olcne:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_olcne"
+    organization: "{{ foreman_organization_ol9_olcne }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_olcne }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_olcne17"
+    organization: "{{ foreman_organization_ol9_olcne }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.7 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_olcne }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_olcne18"
+    organization: "{{ foreman_organization_ol9_olcne }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.8 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_olcne }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_olcne19"
+    organization: "{{ foreman_organization_ol9_olcne }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.9 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_olcne }}"
 

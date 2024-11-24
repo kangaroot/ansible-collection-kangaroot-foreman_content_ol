@@ -1,0 +1,439 @@
+# Oracle Linux 9
+
+oracle_linux_9:
+
+  ## Latest Packages
+  latest_packages:
+
+    repos:
+
+      Oracle Linux 9 BaseOS Latest(x86_64):
+        desccription: Base operating system packages released for Oracle Linux 9 (x86_64) including the latest errata packages. (x86_64)
+        uln_label: ol9_x86_64_baseos_latest
+
+      Oracle Linux 9 BaseOS(aarch64):
+        desccription: Base operating system packages released for Oracle Linux 9 (aarch64) including the latest errata packages. (aarch64)
+        uln_label: ol9_aarch64_baseos_latest
+
+      Oracle Linux 9 Application Stream Packages (aarch64):
+        desccription: Application Stream packages released for Oracle Linux 9 including the latest errata packages. (aarch64)
+        uln_label: ol9_aarch64_appstream
+
+      Oracle Linux 9 Application Stream Packages (x86_64):
+        desccription: Application Stream packages released for Oracle Linux 9 including the latest errata packages. (x86_64)
+        uln_label: ol9_x86_64_appstream
+
+
+      Oracle Linux 9 Addons (aarch64):
+        desccription: Latest Add-on packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_addons
+
+      Oracle Linux 9 Addons (x86_64):
+        desccription: Latest Add-on packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_addons
+
+
+      Packages for creating test and development environments for Oracle Linux 9 (aarch64):
+        desccription: Latest packages for creating test and development environments - Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_developer
+
+      Packages for creating test and development environments for Oracle Linux 9 (x86_64):
+        desccription: Latest packages for creating test and development environments - Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_developer
+
+
+      Oracle Linux 9 EPEL Packages (aarch64):
+        desccription: EPEL packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_developer_EPEL
+
+      Oracle Linux 9 EPEL Packages (x86_64):
+        desccription: EPEL packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_developer_EPEL
+
+
+      Oracle Linux 9 CodeReady Builder (aarch64):
+        desccription: Repository of additional development and build tools for Oracle Linux 9 (aarch64) - (Unsupported)
+        uln_label: ol9_aarch64_codeready_builder
+
+      Oracle Linux 9 CodeReady Builder (x86_64):
+        desccription: Repository of additional development and build tools for Oracle Linux 9 (x86_64) - (Unsupported)
+        uln_label: ol9_x86_64_codeready_builder
+
+
+      Oracle Linux 9 Distro Builder (aarch64):
+        desccription: Oracle Linux 9 Distro Builder Packages (aarch64) - (Unsupported)
+        uln_label: ol9_aarch64_distro_builder
+
+      Oracle Linux 9 Distro Builder (x86_64):
+        desccription: Oracle Linux 9 Distro Builder Packages (x86_64) - (Unsupported)
+        uln_label: ol9_x86_64_distro_builder
+
+
+      Oracle Linux 9 BaseOS Developer Preview (aarch64):
+        desccription: Developer preview of Oracle Linux 9 BaseOS Packages (aarch64) - (Unsupported)
+        uln_label: ol9_aarch64_baseos_developer
+
+      Oracle Linux 9 BaseOS Developer Preview (x86_64):
+        desccription: Developer preview of Oracle Linux 9 BaseOS Packages (x86_64) - (Unsupported)
+        uln_label: ol9_x86_64_baseos_developer
+
+      Oracle Linux 9 Appstream Developer Preview (aarch64):
+        desccription: Developer preview of Oracle Linux 9 Application Stream Packages (aarch64) - (Unsupported)
+        uln_label: ol9_aarch64_appstream_developer
+
+      Oracle Linux 9 Appstream Developer Preview (x86_64):
+        desccription: Developer preview of Oracle Linux 9 Application Stream Packages (x86_64) - (Unsupported)
+        uln_label: ol9_x86_64_appstream_developer
+
+      Oracle Linux 9 Developer Packages Archive (aarch64):
+        desccription: Archived developer packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_developer_archive
+
+      Oracle Linux 9 Developer Packages Archive (x86_64):
+        desccription: Archived developer packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_developer_archive
+
+      Oracle Linux 9 CodeReady Builder Developer Preview (aarch64):
+        desccription: Developer preview of Oracle Linux 9 CodeReady Builder Packages (aarch64) - (Unsupported)
+        uln_label: ol9_aarch64_codeready_builder_developer
+
+      Oracle Linux 9 CodeReady Builder Developer Preview (x86_64):
+        desccription: Developer preview of Oracle Linux 9 CodeReady Builder Packages (x86_64) - (Unsupported)
+        uln_label: ol9_x86_64_codeready_builder_developer
+
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      Oracle Linux 9 BaseOS GA (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 9 GA (aarch64). No errata included
+        uln_label: ol9_aarch64_u0_baseos_base
+
+      Oracle Linux 9 BaseOS GA (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 9 GA (x86_64). No errata included
+        uln_label: ol9_x86_64_u0_baseos_base
+
+      Oracle Linux 9.1 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 9.1 GA (aarch64). No errata included
+        uln_label: ol9_aarch64_u1_baseos_base
+
+      Oracle Linux 9.1 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 9.1 GA (x86_64). No errata included
+        uln_label: ol9_x86_64_u1_baseos_base
+
+      Oracle Linux 9.2 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 9.2 GA (aarch64). No errata included
+        uln_label: ol9_aarch64_u2_baseos_base
+
+      Oracle Linux 9.2 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 9.2 GA (x86_64). No errata included
+        uln_label: ol9_x86_64_u2_baseos_base
+
+      Oracle Linux 9.3 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 9.3 (aarch64)
+        uln_label: ol9_aarch64_u3_baseos_base
+
+      Oracle Linux 9.3 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 9.3 (x86_64)
+        uln_label: ol9_x86_64_u3_baseos_base
+
+      Oracle Linux 9.4 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 9.4 (aarch64)
+        uln_label: ol9_aarch64_u4_baseos_base
+
+      Oracle Linux 9.4 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 9.4 (x86_64)
+        uln_label: ol9_x86_64_u4_baseos_base
+
+      Oracle Linux 9.5 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 9.5 (aarch64)
+        uln_label: ol9_aarch64_u5_baseos_base
+
+      Oracle Linux 9.5 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 9.5 (x86_64)
+        uln_label: ol9_x86_64_u5_baseos_base
+
+
+      Oracle Linux 9 BaseOS GA Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 9 BaseOS GA (aarch64).
+        uln_label: ol9_aarch64_u0_baseos_patch
+
+      Oracle Linux 9 BaseOS GA Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 9 BaseOS GA (x86_64).
+        uln_label: ol9_x86_64_u0_baseos_patch
+
+      Oracle Linux 9.1 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 9.1 BaseOS GA (aarch64).
+        uln_label: ol9_aarch64_u1_baseos_patch
+
+      Oracle Linux 9.1 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 9.1 BaseOS GA (x86_64).
+        uln_label: ol9_x86_64_u1_baseos_patch
+
+      Oracle Linux 9.2 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 9.2 BaseOS GA (aarch64)
+        uln_label: ol9_aarch64_u2_baseos_patch
+
+      Oracle Linux 9.2 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 9.2 BaseOS GA (x86_64)
+        uln_label: ol9_x86_64_u2_baseos_patch
+
+      Oracle Linux 9.4 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 9.4 BaseOS (aarch64)
+        uln_label: ol9_aarch64_u4_baseos_patch
+
+      Oracle Linux 9.4 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 9.4 BaseOS (x86_64)
+        uln_label: ol9_x86_64_u4_baseos_patch
+
+      Oracle Linux 9.5 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 9.5 BaseOS (aarch64)
+        uln_label: ol9_aarch64_u5_baseos_patch
+
+      Oracle Linux 9.5 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 9.5 BaseOS (x86_64)
+        uln_label: ol9_x86_64_u5_baseos_patch
+
+
+  ## UEK
+  uek:
+
+    repos:
+
+      Oracle Linux 9 UEK Release 7 (aarch64):
+        desccription: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_UEKR7
+
+      Oracle Linux 9 UEK Release 7 (x86_64):
+        desccription: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_UEKR7
+
+      Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (aarch64):
+        desccription: Developer preview of Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (aarch64) - (not for production use)
+        uln_label: ol9_aarch64_developer_UEKR7
+
+      Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64):
+        desccription: Developer preview of Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64) - (not for production use)
+        uln_label: ol9_x86_64_developer_UEKR7
+
+      Oracle Linux 9 RDMA (x86_64):
+        desccription: Latest RDMA packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_RDMA
+
+
+      Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64):
+        desccription: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64).
+        uln_label: ol9_x86_64_MODRHCK
+
+
+      Oracle Linux 9 UEK-next Developer Release (aarch64):
+        desccription: Developer release of UEK-next for Oracle Linux 9 (aarch64) - (unsupported, not for use in production)
+        uln_label: ol9_aarch64_developer_UEKnext
+
+      Oracle Linux 9 UEK-next Developer Release (x86_64):
+        desccription: Developer release of UEK-next for Oracle Linux 9 (x86_64) - (unsupported, not for use in production)
+        uln_label: ol9_x86_64_developer_UEKnext
+
+
+  ## Ksplice
+  ksplice:
+
+    repos:
+
+      Ksplice for Oracle Linux 9 (aarch64):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_ksplice
+
+      Ksplice for Oracle Linux 9 (x86_64):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_ksplice
+
+      Ksplice aware userspace packages for Oracle Linux 9 (aarch64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_userspace_ksplice
+
+      Ksplice aware userspace packages for Oracle Linux 9 (x86_64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_userspace_ksplice
+
+
+  ## Instant Client
+  instant_client:
+
+    repos:
+
+      Oracle Instant Client 23 for Oracle Linux 9 (x86_64) - License Included:
+        desccription: Oracle Instant Client 23 packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_oracle_instantclient23
+
+
+      Oracle ASMlib for Oracle Linux 9 (aarch64):
+        desccription: Oracle ASMlib for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_oracle
+
+      Oracle ASMlib for Oracle Linux 9 (x86_64):
+        desccription: Oracle ASMlib for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_oracle
+
+
+      Oracle Software for Oracle Linux 9 (aarch64):
+        desccription: Oracle Software for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_oracle_software
+
+      Oracle Software for Oracle Linux 9 (x86_64):
+        desccription: Oracle Software for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_oracle_software
+
+
+  ## Oracle Linux Cloud Native Environment
+  olcne:
+
+    repos:
+
+      Oracle Cloud Native Environment - Oracle Linux 9 (aarch64):
+        desccription: Packages for components of Oracle Cloud Native Environment for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_ocne
+
+      Oracle Cloud Native Environment - Oracle Linux 9 (x86_64):
+        desccription: Packages for components of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_ocne
+
+      Oracle Cloud Native Environment 1.7 - Oracle Linux 9 (x86_64):
+        desccription: Packages for components of the 1.7 release of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_olcne17
+
+      Oracle Cloud Native Environment 1.8 - Oracle Linux 9 (aarch64):
+        desccription: Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_olcne18
+
+      Oracle Cloud Native Environment 1.8 - Oracle Linux 9 (x86_64):
+        desccription: Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_olcne18
+
+      Oracle Cloud Native Environment 1.9 - Oracle Linux 9 (aarch64):
+        desccription: Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_olcne19
+
+      Oracle Cloud Native Environment 1.9 - Oracle Linux 9 (x86_64):
+        desccription: Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_olcne19
+
+
+  ## Security Validations
+  security_validations:
+
+    repos:
+
+      Oracle Linux 9 Update 3 Security Validation (aarch64):
+        desccription: Latest packages delivered for security validations, like FIPS or Common Criteria for Oracle Linux 9 Update 3 (aarch64)
+        uln_label: ol9_aarch64_u3_security_validation
+
+      Oracle Linux 9 Update 3 Security Validation (x86_64):
+        desccription: Latest packages delivered for security validations, like FIPS or Common Criteria for Oracle Linux 9 Update 3 (x86_64)
+        uln_label: ol9_x86_64_u3_security_validation
+
+
+  ## MySQL
+  mysql:
+
+    repos:
+
+      MySQL Connectors Community for Oracle Linux 9 (aarch64):
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_MySQL_connectors_community
+
+      MySQL Connectors Community for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_MySQL_connectors_community
+
+      MySQL 8.0 Connectors Community for Oracle Linux 9 (aarch64):
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 9 (aarch64).
+        uln_label: ol9_aarch64_MySQL80_connectors_community
+
+      MySQL 8.0 Connectors Community for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 9 (x86_64).
+        uln_label: ol9_x86_64_MySQL80_connectors_community
+
+      MySQL 8.0 for Oracle Linux 9 (aarch64):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 9 (aarch64).
+        uln_label: ol9_aarch64_MySQL80_community
+
+      MySQL 8.0 for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 9 (x86_64).
+        uln_label: ol9_x86_64_MySQL80_community
+
+      MySQL 8.0 Tools Community for Oracle Linux 9 (aarch64):
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 9 (aarch64).
+        uln_label: ol9_aarch64_MySQL80_tools_community
+
+      MySQL 8.0 Tools Community for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 9 (x86_64).
+        uln_label: ol9_x86_64_MySQL80_tools_community
+
+      MySQL 8.4 Server Community for Oracle Linux 9 (aarch64):
+        desccription: Latest MySQL 8.4 Server Community packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_MySQL84_community
+
+      MySQL 8.4 Server Community for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL 8.4 Server Community packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_MySQL84_community
+
+      MySQL 8.4 Tools Community for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_MySQL84_tools_community
+
+      MySQL Innovation Server Community for Oracle Linux 9 (aarch64):
+        desccription: Latest MySQL Innovation Server Community packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_MySQL_innovation_community
+
+      MySQL Innovation Server Community for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL Innovation Server Community packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_MySQL_innovation_community
+
+      MySQL Innovation Tools Community for Oracle Linux 9 (aarch64):
+        desccription: Latest MySQL Innovation Tools Community packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_MySQL_innovation_tools_community
+
+      MySQL Innovation Tools Community for Oracle Linux 9 (x86_64):
+        desccription: Latest MySQL Innovation Tools Community packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_MySQL_innovation_tools_community
+
+
+  ## Oracle Linux Manager
+  olm:
+
+    repos:
+
+      Oracle Linux Manager 2.10 Client (aarch64):
+        desccription: Latest Oracle Linux Manager 2.10 Client packages for Oracle Linux 9 (aarch64)
+        uln_label: ol9_aarch64_oraclelinuxmanager210_client
+
+      Oracle Linux Manager 2.10 Client (x86_64):
+        desccription: Latest Oracle Linux Manager 2.10 Client packages for Oracle Linux 9 (x86_64)
+        uln_label: ol9_x86_64_oraclelinuxmanager210_client
+
+
+  ## Virtualization
+  virtualization:
+
+    repos:
+
+      Oracle Linux 9 KVM Utilities (aarch64):
+        desccription: Latest Oracle Linux 9 KVM Utilities Packages (aarch64)
+        uln_label: ol9_aarch64_kvm_utils
+
+      Oracle Linux 9 KVM Utilities (x86_64):
+        desccription: Latest Oracle Linux 9 KVM Utilities Packages (x86_64)
+        uln_label: ol9_x86_64_kvm_utils
+
+      Developer Preview of KVM Utilities for Oracle Linux 9 (aarch64):
+        desccription: Latest KVM Utility packages for test and development for Oracle Linux 9 (aarch64).
+        uln_label: ol9_aarch64_developer_kvm_utils
+
+      Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64):
+        desccription: Latest KVM Utility packages for test and development for Oracle Linux 9 (x86_64).
+        uln_label: ol9_x86_64_developer_kvm_utils
+
+

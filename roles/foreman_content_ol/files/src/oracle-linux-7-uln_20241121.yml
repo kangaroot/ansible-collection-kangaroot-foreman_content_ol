@@ -1,0 +1,1389 @@
+# Oracle Linux 7
+
+oracle_linux_7:
+
+  ## Latest Packages
+  latest_packages:
+
+    repos:
+
+      Oracle Linux 7 Latest Packages (aarch64):
+        desccription: All packages released for Oracle Linux 7 (aarch64) including the latest errata packages. (aarch64)
+        uln_label: ol7_aarch64_latest
+
+      Oracle Linux 7 Latest (x86_64):
+        desccription: All packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
+        uln_label: ol7_x86_64_latest
+
+
+      Oracle Linux 7 Latest Optional Packages (aarch64):
+        desccription: All optional packages released for Oracle Linux 7 (aarch64) including the latest errata packages. (aarch64)
+        uln_label: ol7_aarch64_optional_latest
+
+      Oracle Linux 7 Latest Optional Packages (x86_64):
+        desccription: All optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
+        uln_label: ol7_x86_64_optional_latest
+
+
+      Oracle Linux 7 Addons (aarch64):
+        desccription: Oracle Linux 7 Addons (aarch64).
+        uln_label: ol7_aarch64_addons
+
+      Oracle Linux 7 Addons (x86_64):
+        desccription: Oracle Linux 7 Addons (x86_64).
+        uln_label: ol7_x86_64_addons
+
+
+      Oracle Linux 7 (aarch64) Development:
+        desccription: Latest packages for creating test and development environments - Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_developer
+
+      Oracle Linux 7 (x86_64) Development:
+        desccription: Latest packages for creating test and development environments - Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_developer
+
+
+      EPEL Packages for creating test and development environments for Oracle Linux 7 (aarch64):
+        desccription: EPEL Packages for Oracle Linux 7 (aarch64) - This repository is 'End of Life'. No more updates including security and bug fixes will be released.
+        uln_label: ol7_aarch64_developer_EPEL
+
+      EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64):
+        desccription: EPEL Packages for Oracle Linux 7 (x86_64) - This repository is 'End of Life'. No more updates including security and bug fixes will be released.
+        uln_label: ol7_x86_64_developer_EPEL
+
+
+      Oracle Software Collections 2 for Oracle Linux 7 (aarch64):
+        desccription: Latest Oracle Software Collections 2.1 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_SoftwareCollections
+
+      Oracle Software Collections for Oracle Linux 7 (x86_64):
+        desccription: Latest Oracle Software Collections 3.0 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_SoftwareCollections
+
+
+      Oracle Linux 7 software for SAP:
+        desccription: Packages required for SAP software to run on Oracle Linux 7
+        uln_label: ol7_x86_64_SAP_addons
+
+
+      Packages considered as preview for test and development environments for Oracle Linux 7 (x86_64):
+        desccription: Technology preview packages for testing and development on Oracle Linux 7.  Not for use in production.
+        uln_label: ol7_x86_64_preview
+
+      Oracle Linux 7 Archive (x86_64):
+        desccription: Archived packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_latest_archive
+
+      Oracle Linux 7 Latest Optional Packages (x86_64) - Archive:
+        desccription: Archived optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
+        uln_label: ol7_x86_64_optional_archive
+
+      Oracle Linux 7 Developer Packages Archive (aarch64):
+        desccription: Archived developer packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_developer_archive
+
+      Oracle Linux 7 Developer Packages Archive (x86_64):
+        desccription: Archived developer packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_developer_archive
+
+
+      Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use):
+        desccription: Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)
+        uln_label: ol7_x86_64_u5_developer
+
+      Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use):
+        desccription: Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)
+        uln_label: ol7_x86_64_optional_developer
+
+
+      Oracle Linux 7 Update 9 Beta (aarch64):
+        desccription: All beta packages for Oracle Linux 7 Update 9 (aarch64). Not for production use.
+        uln_label: ol7_aarch64_beta
+
+      Oracle Linux 7 Update 9 Beta (aarch64) Optional:
+        desccription: Optional beta packages for Oracle Linux 7 Update 9 (aarch64). Not for production use.
+        uln_label: ol7_aarch64_optional_beta
+
+      Oracle Linux 7 Update 9 Beta (x86_64):
+        desccription: All beta packages for Oracle Linux 7 Update 9 (x86_64). Not for production use.
+        uln_label: ol7_x86_64_beta
+
+      Oracle Linux 7 Update 9 Beta (x86_64) Optional:
+        desccription: Optional beta packages for Oracle Linux 7 Update 9 (x86_64). Not for production use.
+        uln_label: ol7_x86_64_optional_beta
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      Oracle Linux 7 GA installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 GA (x86_64). No errata included
+        uln_label: ol7_x86_64_u0_base
+
+      Oracle Linux 7 Update 1 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 1 (x86_64). No errata included
+        uln_label: ol7_x86_64_u1_base
+
+      Oracle Linux 7 Update 2 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 2 (x86_64). No errata included
+        uln_label: ol7_x86_64_u2_base
+
+      Oracle Linux 7 Update 3 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 3 (x86_64). No errata included
+        uln_label: ol7_x86_64_u3_base
+
+      Oracle Linux 7 Update 4 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 4 (x86_64). No errata included
+        uln_label: ol7_x86_64_u4_base
+
+      Oracle Linux 7 Update 5 installation media copy (aarch64):
+        desccription: All packages released for Oracle Linux 7 Update 5 (aarch64). No errata included
+        uln_label: ol7_aarch64_u5_base
+
+      Oracle Linux 7 Update 5 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 5 (x86_64). No errata included
+        uln_label: ol7_x86_64_u5_base
+
+      Oracle Linux 7 Update 6 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 6 (x86_64). No errata included
+        uln_label: ol7_x86_64_u6_base
+
+      Oracle Linux 7 Update 7 installation media copy (aarch64):
+        desccription: All packages released for Oracle Linux 7 Update 7 (aarch64). No errata included
+        uln_label: ol7_aarch64_u7_base
+
+      Oracle Linux 7 Update 7 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 7 (x86_64). No errata included
+        uln_label: ol7_x86_64_u7_base
+
+      Oracle Linux 7 Update 8 installation media copy (aarch64):
+        desccription: All packages released for Oracle Linux 7 Update 8 (aarch64). No errata included
+        uln_label: ol7_aarch64_u8_base
+
+      Oracle Linux 7 Update 8 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 8 (x86_64). No errata included
+        uln_label: ol7_x86_64_u8_base
+
+      Oracle Linux 7 Update 9 installation media copy (aarch64):
+        desccription: All packages released for Oracle Linux 7 Update 9 (aarch64). No errata included
+        uln_label: ol7_aarch64_u9_base
+
+      Oracle Linux 7 Update 9 installation media copy (x86_64):
+        desccription: All packages released for Oracle Linux 7 Update 9 (x86_64). No errata included
+        uln_label: ol7_x86_64_u9_base
+
+
+      Oracle Linux 7 GA Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 GA (x86_64)
+        uln_label: ol7_x86_64_u0_patch
+
+      Oracle Linux 7 Update 1 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 1 (x86_64)
+        uln_label: ol7_x86_64_u1_patch
+
+      Oracle Linux 7 Update 2 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 2 (x86_64)
+        uln_label: ol7_x86_64_u2_patch
+
+      Oracle Linux 7 Update 3 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 3 (x86_64)
+        uln_label: ol7_x86_64_u3_patch
+
+      Oracle Linux 7 Update 4 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 4 (x86_64)
+        uln_label: ol7_x86_64_u4_patch
+
+      Oracle Linux 7 Update 5 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 5 (x86_64)
+        uln_label: ol7_x86_64_u5_patch
+
+      Oracle Linux 7 Update 6 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 6 (x86_64)
+        uln_label: ol7_x86_64_u6_patch
+
+      Oracle Linux 7 Update 7 Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 7 (aarch64)
+        uln_label: ol7_aarch64_u7_patch
+
+      Oracle Linux 7 Update 7 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 7 (x86_64)
+        uln_label: ol7_x86_64_u7_patch
+
+      Oracle Linux 7 Update 8 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 8 (x86_64)
+        uln_label: ol7_x86_64_u8_patch
+
+      Oracle Linux 7 Update 9 Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 9 (aarch64)
+        uln_label: ol7_aarch64_u9_patch
+
+      Oracle Linux 7 Update 9 Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 7 Update 9 (x86_64)
+        uln_label: ol7_x86_64_u9_patch
+
+
+  ## UEK
+  uek:
+
+    repos:
+
+      Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64) - Latest:
+        desccription: Latest packages for Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_UEKR3
+
+      OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 7 (x86_64):
+        desccription: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel (UEK) on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_UEKR3_OFED20
+
+      Oracle Linux 7 Dtrace Userspace Tools (x86_64) - Latest:
+        desccription: The latest Dtrace userspace tools for Unbreakable Enterprise Kernel Release 3 (UEKR3) on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_Dtrace_userspace
+
+
+      Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64):
+        desccription: Latest packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_UEKR4
+
+      OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 7 (x86_64):
+        desccription: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel Release 4 (UEK) on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_UEKR4_OFED
+
+      Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 7:
+        desccription: The latest Dtrace userspace tools for Oracle Linux 7 (x86_64) with Unbreakable Enterprise Kernel Release 4 (UEKR4).
+        uln_label: ol7_x86_64_UEKR4_DTrace_userspace
+
+      Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64) -Archive:
+        desccription: Archived packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_UEKR4_archive
+
+
+      Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64):
+        desccription: Latest packages for Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_UEKR5
+
+      Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (aarch64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 5 packages for creating test and development environments (not for production use) - Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_developer_UEKR5
+
+      Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 5 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_developer_UEKR5
+
+      Oracle Linux 7 Unbreakable Enterprise Kernel Release 5 RDMA (x86_64):
+        desccription: Userspace utilities for configuring RDMA with Unbreakable Enterprise Kernel Release 5 on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_UEKR5_RDMA
+
+      Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) -Archive:
+        desccription: Archived packages for Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_UEKR5_archive
+
+
+      Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (aarch64):
+        desccription: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_UEKR6
+
+      Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64):
+        desccription: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_UEKR6
+
+      Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (aarch64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_developer_UEKR6
+
+      Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_developer_UEKR6
+
+      Oracle Linux 7 (x86_64) UEK Release 6 RDMA:
+        desccription: Latest RDMA packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 7 for the Oracle Integrated Stack.
+        uln_label: ol7_x86_64_UEKR6_RDMA
+
+
+      Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64):
+        desccription: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_MODRHCK
+
+
+  ## Ksplice
+  ksplice:
+
+    repos:
+
+      Ksplice for Oracle Linux 7 (aarch64):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_ksplice
+
+      Ksplice for Oracle Linux 7 (x86_64):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_ksplice
+
+      Ksplice aware userspace packages for Oracle Linux 7 (aarch64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_userspace_ksplice
+
+      Ksplice aware userspace packages for Oracle Linux 7 (x86_64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_userspace_ksplice
+
+
+  ## Leapp
+  leapp:
+
+    repos:
+
+      Leapp Upgrade Utilities for Oracle Linux 7 (aarch64):
+        desccription: Latest packages for in-place upgrade from Oracle Linux 7 to Oracle Linux 8 (aarch64) .
+        uln_label: ol7_aarch64_leapp
+
+      Leapp Upgrade Utilities for Oracle Linux 7 (x86_64):
+        desccription: Latest packages for in-place upgrade from Oracle Linux 7 to Oracle Linux 8 (x86_64) .
+        uln_label: ol7_x86_64_leapp
+
+
+  ## Instant Client
+  instant_client:
+
+    repos:
+
+      Oracle Instant Client for Oracle Linux 7 (x86_64) - License Included:
+        desccription: Oracle Instant Client packages for Oracle Linux 7 (x86_64) .
+        uln_label: ol7_x86_64_oracle_instantclient
+
+      Oracle Instant Client 21 for Oracle Linux 7 (x86_64) - License Included:
+        desccription: Oracle Instant Client 21 packages for Oracle Linux 7 (x86_64) .
+        uln_label: ol7_x86_64_oracle_instantclient21
+
+
+      Oracle ASMlib for Oracle Linux 7 (x86_64):
+        desccription: Oracle ASMlib for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_oracle
+
+      Oracle Software for Oracle Linux 7 (x86_64):
+        desccription: Oracle Software for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_oracle_software
+
+
+  ## Oracle Linux Cloud Native Environment
+  olcne:
+
+    repos:
+
+      Oracle Linux Cloud Native Environment (x86_64):
+        desccription: Latest packages for components of the Oracle Linux Cloud Native environment (x86_64)
+        uln_label: ol7_x86_64_olcne
+
+      Oracle Linux Cloud Native Environment 1.1 (x86_64):
+        desccription: Packages for components of the 1.1 release of Oracle Linux Cloud Native environment (x86_64)
+        uln_label: ol7_x86_64_olcne11
+
+      Oracle Linux Cloud Native Environment 1.2 - Oracle Linux 7 (aarch64):
+        desccription: Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_olcne12
+
+      Oracle Linux Cloud Native Environment 1.2 - Oracle Linux 7 (x86_64):
+        desccription: Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_olcne12
+
+      Oracle Linux Cloud Native Environment 1.3 - Oracle Linux 7 (aarch64):
+        desccription: Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_olcne13
+
+      Oracle Linux Cloud Native Environment 1.3 - Oracle Linux 7 (x86_64):
+        desccription: Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_olcne13
+
+      Oracle Linux Cloud Native Environment 1.4 - Oracle Linux 7 (aarch64):
+        desccription: Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_olcne14
+
+      Oracle Linux Cloud Native Environment 1.4 - Oracle Linux 7 (x86_64):
+        desccription: Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_olcne14
+
+      Oracle Linux Cloud Native Environment 1.5 - Oracle Linux 7 (x86_64):
+        desccription: Packages for components of the 1.5 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_olcne15
+
+      Oracle Linux Cloud Native Environment 1.6 - Oracle Linux 7 (x86_64):
+        desccription: Packages for components of the 1.6 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_olcne16
+
+
+      Developer Preview for Oracle Cloud Native Environment (aarch64):
+        desccription: Developer preview packages for components of the Oracle Cloud Native Environment (aarch64)
+        uln_label: ol7_aarch64_developer_olcne
+
+      Developer Preview for Oracle Linux Cloud Native Environment (x86_64):
+        desccription: Developer preview packages for components of the Oracle Linux Cloud Native environment (x86_64)
+        uln_label: ol7_x86_64_developer_olcne
+
+
+  ## Security Validations
+  security_validation:
+
+    repos:
+
+      Oracle Linux 7 (x86_64) Security Validations:
+        desccription: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_security_validation
+
+
+      Oracle Linux 7 Update 8 Security Validations packages (aarch64):
+        desccription: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 Update 8 (aarch64).
+        uln_label: ol7_aarch64_u8_security_validation
+
+      Oracle Linux 7 Update 8 Security Validations packages (x86_64):
+        desccription: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 Update 8 (x86_64).
+        uln_label: ol7_x86_64_u8_security_validation
+
+
+  ## MySQL
+  mysql:
+
+    repos:
+
+      MySQL 5.5 for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 5.5 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_MySQL55_community
+
+      MySQL 5.6 for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 5.6 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_MySQL56_community
+
+      MySQL 5.7 for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 5.7 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_MySQL57_community
+
+
+      MySQL Connectors Community for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_MySQL_connectors_community
+
+      MySQL Connectors Community for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_MySQL_connectors_community
+
+
+      MySQL 8.0 Connectors Community for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_MySQL80_connectors_community
+
+      MySQL 8.0 Connectors Community for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_MySQL80_connectors_community
+
+      MySQL 8.0 for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_MySQL80_community
+
+      MySQL 8.0 for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_MySQL80_community
+
+      MySQL 8.0 Tools Community for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_MySQL80_tools_community
+
+      MySQL 8.0 Tools Community for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_MySQL80_tools_community
+
+
+      MySQL 8.4 Server Community for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL 8.4 Server Community packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_MySQL84_community
+
+      MySQL 8.4 Server Community for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 8.4 Server Community packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_MySQL84_community
+
+      MySQL 8.4 Tools Community for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_MySQL84_tools_community
+
+      MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_MySQL84_tools_community
+
+
+      MySQL Innovation Server Community for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL Innovation Server Community packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_MySQL_innovation_community
+
+      MySQL Innovation Server Community for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL Innovation Server Community packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_MySQL_innovation_community
+
+      MySQL Innovation Tools Community for Oracle Linux 7 (aarch64):
+        desccription: Latest MySQL Innovation Tools Community packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_MySQL_innovation_tools_community
+
+      MySQL Innovation Tools Community for Oracle Linux 7 (x86_64):
+        desccription: Latest MySQL Innovation Tools Community packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_MySQL_innovation_tools_community
+
+
+  ## Cloud
+  cloud:
+
+    repos:
+
+      Oracle OpenStack 2.0 (x86_64):
+        desccription: Latest for Oracle OpenStack version 2.0 .
+        uln_label: ol7_x86_64_openstack20
+
+
+      Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64):
+        desccription: Latest for Oracle OpenStack version 2.1 for Oracle Linux 7 (x86_64) .
+        uln_label: ol7_x86_64_openstack21
+
+
+      Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64):
+        desccription: Latest for Oracle OpenStack version 3.0 .
+        uln_label: ol7_x86_64_openstack30
+
+      Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64):
+        desccription: Latest Extra development packages for Oracle OpenStack version 3.0
+        uln_label: ol7_x86_64_openstack_extras
+
+
+      Oracle OpenStack 4.0 for Oracle Linux 7 (x86_64):
+        desccription: Latest Packages for Oracle OpenStack version 4.0 .
+        uln_label: ol7_x86_64_openstack40
+
+      Extra development packages for Oracle OpenStack 4.0 on Oracle Linux 7 (x86_64):
+        desccription: Latest Extra development packages for Oracle OpenStack version 4.0
+        uln_label: ol7_x86_64_openstack40_extras
+
+
+      Oracle OpenStack 5.0 for Oracle Linux 7 (x86_64):
+        desccription: Latest Packages for Oracle OpenStack version 5.0 .
+        uln_label: ol7_x86_64_openstack50
+
+      Extra development packages for Oracle OpenStack 5.0 on Oracle Linux 7 (x86_64):
+        desccription: Latest Extra development packages for Oracle OpenStack version 5.0
+        uln_label: ol7_x86_64_openstack50_extras
+
+
+  ## Virtualization
+  virtualization:
+
+    repos:
+
+      KVM Utilities for Oracle Linux 7 (x86_64):
+        desccription: Latest packages for KVM Utilities for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_kvm_utils
+
+
+      Developer Preview of KVM Utilities for Oracle Linux 7 (aarch64):
+        desccription: Latest KVM Utility packages for test and development for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_kvm_utils
+
+      Developer Preview of KVM Utilities for Oracle Linux 7 (x86_64):
+        desccription: Latest KVM Utility packages for test and development for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_kvm_utils
+
+
+      oVirt Release 4.2 on Oracle Linux 7 (x86_64):
+        desccription: Latest packages for oVirt Release 4.2 on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_ovirt42
+
+      oVirt Release 4.2 on Oracle Linux 7 (x86_64) - Extra:
+        desccription: Latest extra packages for oVirt Release 4.2 on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_ovirt42_extras
+
+
+      oVirt Release 4.3 on Oracle Linux 7 (x86_64):
+        desccription: Latest packages for oVirt Release 4.3 on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_ovirt43
+
+      oVirt Release 4.3 on Oracle Linux 7 (x86_64) - Extra:
+        desccription: Latest extra packages for oVirt Release 4.3 on Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_ovirt43_extras
+
+
+  ## Storage
+  storage:
+
+    repos:
+
+      Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later):
+        desccription: Latest packages for Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later).
+        uln_label: ol7_x86_64_ceph
+
+      Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later):
+        desccription: Latest packages for Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later).
+        uln_label: ol7_x86_64_ceph30
+
+
+      Glusterfs 3.12 for Oracle Linux 7 (x86_64):
+        desccription: Latest GlusterFs 3.12 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_gluster312
+
+      Glusterfs 4.1 for Oracle Linux 7 (aarch64):
+        desccription: Latest GlusterFs 4.1 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_gluster41
+
+      Glusterfs 4.1 for Oracle Linux 7 (x86_64):
+        desccription: Latest GlusterFs 4.1 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_gluster41
+
+      Gluster 5 for Oracle Linux 7 (aarch64):
+        desccription: Latest Gluster 5 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_gluster5
+
+      Gluster 5 for Oracle Linux 7 (x86_64):
+        desccription: Latest Gluster 5 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_gluster5
+
+      Gluster 6 for Oracle Linux 7 (aarch64):
+        desccription: Latest Gluster 6 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_gluster6
+
+      Gluster 6 for Oracle Linux 7 (x86_64):
+        desccription: Latest Gluster 6 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_gluster6
+
+      Gluster 8 for Oracle Linux 7 (aarch64):
+        desccription: Latest Gluster 8 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_gluster8
+
+      Gluster 8 for Oracle Linux 7 (x86_64):
+        desccription: Latest Gluster 8 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_gluster8
+
+
+  ## Packages for Test and Development
+  developer:
+
+    repos:
+
+      Latest Node.js 14 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Node.js 14 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_nodejs14
+
+      Latest PHP 7.4 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest PHP 7.4 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_php74
+
+
+      Latest Go Programming Language 1.10 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.10 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang110
+
+      Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang110
+
+      Latest Go Programming Language 1.11 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.11 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang111
+
+      Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang111
+
+      Latest Go Programming Language 1.12 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.12 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang112
+
+      Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang112
+
+      Latest Go Programming Language 1.13 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.13 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang113
+
+      Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang113
+
+      Latest Go Programming Language 1.14 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.14 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang114
+
+      Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang114
+
+      Latest Go Programming Language 1.15 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.15 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang115
+
+      Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang115
+
+      Latest Go Programming Language 1.16 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.16 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang116
+
+      Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang116
+
+      Latest Go Programming Language 1.17 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.17 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang117
+
+      Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang117
+
+      Latest Go Programming Language 1.18 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.18 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang118
+
+      Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang118
+
+      Latest Go Programming Language 1.19 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.19 packages for Oracle Linux 7 (aarch64).
+        uln_label: ol7_aarch64_developer_golang119
+
+      Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_developer_golang119
+
+      Latest Go Programming Language 1.21 packages for Oracle Linux 7 (aarch64):
+        desccription: Latest Go Programming Language 1.21 packages for Oracle Linux 7 (aarch64)
+        uln_label: ol7_aarch64_developer_golang121
+
+      Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64):
+        desccription: Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64)
+        uln_label: ol7_x86_64_developer_golang121
+
+
+  ## OLM
+  olm:
+
+    repos:
+
+      Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 7 (x86_64):
+        desccription: All Oracle Linux Manager (formerly Spacewalk) Client 2.10 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_oraclelinuxmanager210_client
+
+      Oracle Linux Manager (formerly Spacewalk) Server 2.10 for Oracle Linux 7 (x86_64):
+        desccription: All Oracle Linux Manager (formerly Spacewalk) Server 2.10 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_oraclelinuxmanager210_server
+
+
+      Spacewalk Client 2.6 for Oracle Linux 7 (x86_64):
+        desccription: All Spacewalk Client 2.6 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_spacewalk26_client
+
+      Spacewalk Client 2.7 for Oracle Linux 7 (x86_64):
+        desccription: All Spacewalk Client 2.7 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_spacewalk27_client
+
+      Spacewalk Client 2.10 for Oracle Linux 7 (x86_64):
+        desccription: All Spacewalk Client 2.10 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_spacewalk210_client
+
+      Spacewalk Server 2.6 for Oracle Linux 7 (x86_64):
+        desccription: All Spacewalk Server 2.6 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_spacewalk26_server
+
+      Spacewalk Server 2.7 for Oracle Linux 7 (x86_64):
+        desccription: All Spacewalk Server 2.7 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_spacewalk27_server
+
+      Spacewalk Server 2.10 for Oracle Linux 7 (x86_64):
+        desccription: All Spacewalk Server 2.10 packages released for Oracle Linux 7 (x86_64).
+        uln_label: ol7_x86_64_spacewalk210_server
+
+
+  ## Exadata
+  exadata:
+
+    repos:
+
+      Exadata release 19.1.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.1.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.1.0.0.0_x86_64_base
+
+      Exadata release 19.1.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.1.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.1.1.0.0_x86_64_base
+
+      Exadata release 19.1.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.1.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.1.2.0.0_x86_64_base
+
+      Exadata release 19.2.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.0.0.0_x86_64_base
+
+      Exadata release 19.2.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.1.0.0_x86_64_base
+
+      Exadata release 19.2.10.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.10.0.0_x86_64_base
+
+      Exadata release 19.2.11.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.11.0.0_x86_64_base
+
+      Exadata release 19.2.12.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.12.0.0_x86_64_base
+
+      Exadata release 19.2.13.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.13.0.0_x86_64_base
+
+      Exadata release 19.2.14.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.14.0.0_x86_64_base
+
+      Exadata release 19.2.15.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.15.0.0_x86_64_base
+
+      Exadata release 19.2.16.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.16.0.0_x86_64_base
+
+      Exadata release 19.2.17.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.17.0.0_x86_64_base
+
+      Exadata release 19.2.18.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.18.0.0_x86_64_base
+
+      Exadata release 19.2.19.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.19.0.0_x86_64_base
+
+      Exadata release 19.2.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.2.0.0_x86_64_base
+
+      Exadata release 19.2.20.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.20.0.0_x86_64_base
+
+      Exadata release 19.2.21.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.21.0.0_x86_64_base
+
+      Exadata release 19.2.22.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.22.0.0_x86_64_base
+
+      Exadata release 19.2.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.3.0.0_x86_64_base
+
+      Exadata release 19.2.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.4.0.0_x86_64_base
+
+      Exadata release 19.2.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.5.0.0_x86_64_base
+
+      Exadata release 19.2.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.6.0.0_x86_64_base
+
+      Exadata release 19.2.7.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.7.0.0_x86_64_base
+
+      Exadata release 19.2.8.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.8.0.0_x86_64_base
+
+      Exadata release 19.2.9.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.2.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.2.9.0.0_x86_64_base
+
+      Exadata release 19.3.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.0.0.0_x86_64_base
+
+      Exadata release 19.3.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.1.0.0_x86_64_base
+
+      Exadata release 19.3.10.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.10.0.0_x86_64_base
+
+      Exadata release 19.3.11.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.11.0.0_x86_64_base
+
+      Exadata release 19.3.12.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.12.0.0_x86_64_base
+
+      Exadata release 19.3.13.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.13.0.0_x86_64_base
+
+      Exadata release 19.3.14.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.14.0.0_x86_64_base
+
+      Exadata release 19.3.15.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.15.0.0_x86_64_base
+
+      Exadata release 19.3.16.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.16.0.0_x86_64_base
+
+      Exadata release 19.3.17.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.17.0.0_x86_64_base
+
+      Exadata release 19.3.18.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.18.0.0_x86_64_base
+
+      Exadata release 19.3.19.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.19.0.0_x86_64_base
+
+      Exadata release 19.3.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.2.0.0_x86_64_base
+
+      Exadata release 19.3.20.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.20.0.0_x86_64_base
+
+      Exadata release 19.3.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.3.0.0_x86_64_base
+
+      Exadata release 19.3.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.4.0.0_x86_64_base
+
+      Exadata release 19.3.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.5.0.0_x86_64_base
+
+      Exadata release 19.3.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.6.0.0_x86_64_base
+
+      Exadata release 19.3.7.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.7.0.0_x86_64_base
+
+      Exadata release 19.3.8.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.8.0.0_x86_64_base
+
+      Exadata release 19.3.9.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 19.3.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_19.3.9.0.0_x86_64_base
+
+      Exadata release 20.1.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.0.0.0_x86_64_base
+
+      Exadata release 20.1.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.1.0.0_x86_64_base
+
+      Exadata release 20.1.10.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.10.0.0_x86_64_base
+
+      Exadata release 20.1.11.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.11.0.0_x86_64_base
+
+      Exadata release 20.1.12.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.12.0.0_x86_64_base
+
+      Exadata release 20.1.13.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.13.0.0_x86_64_base
+
+      Exadata release 20.1.14.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.14.0.0_x86_64_base
+
+      Exadata release 20.1.15.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.15.0.0_x86_64_base
+
+      Exadata release 20.1.16.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.16.0.0_x86_64_base
+
+      Exadata release 20.1.17.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.17.0.0_x86_64_base
+
+      Exadata release 20.1.18.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.18.0.0_x86_64_base
+
+      Exadata release 20.1.19.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.19.0.0_x86_64_base
+
+      Exadata release 20.1.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.2.0.0_x86_64_base
+
+      Exadata release 20.1.20.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.20.0.0_x86_64_base
+
+      Exadata release 20.1.21.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.21.0.0_x86_64_base
+
+      Exadata release 20.1.22.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.22.0.0_x86_64_base
+
+      Exadata release 20.1.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.3.0.0_x86_64_base
+
+      Exadata release 20.1.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.4.0.0_x86_64_base
+
+      Exadata release 20.1.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.5.0.0_x86_64_base
+
+      Exadata release 20.1.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.6.0.0_x86_64_base
+
+      Exadata release 20.1.7.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.7.0.0_x86_64_base
+
+      Exadata release 20.1.8.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.8.0.0_x86_64_base
+
+      Exadata release 20.1.9.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 20.1.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_20.1.9.0.0_x86_64_base
+
+      Exadata release 21.2.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.0.0.0_x86_64_base
+
+      Exadata release 21.2.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.1.0.0_x86_64_base
+
+      Exadata release 21.2.10.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.10.0.0_x86_64_base
+
+      Exadata release 21.2.11.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.11.0.0_x86_64_base
+
+      Exadata release 21.2.12.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.12.0.0_x86_64_base
+
+      Exadata release 21.2.13.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.13.0.0_x86_64_base
+
+      Exadata release 21.2.14.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.14.0.0_x86_64_base
+
+      Exadata release 21.2.15.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.15.0.0_x86_64_base
+
+      Exadata release 21.2.16.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.16.0.0_x86_64_base
+
+      Exadata release 21.2.17.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.17.0.0_x86_64_base
+
+      Exadata release 21.2.18.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.18.0.0_x86_64_base
+
+      Exadata release 21.2.19.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.19.0.0_x86_64_base
+
+      Exadata release 21.2.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.2.0.0_x86_64_base
+
+      Exadata release 21.2.20.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.20.0.0_x86_64_base
+
+      Exadata release 21.2.21.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.21.0.0_x86_64_base
+
+      Exadata release 21.2.22.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.22.0.0_x86_64_base
+
+      Exadata release 21.2.23.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.23.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.23.0.0_x86_64_base
+
+      Exadata release 21.2.24.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.24.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.24.0.0_x86_64_base
+
+      Exadata release 21.2.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.3.0.0_x86_64_base
+
+      Exadata release 21.2.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.4.0.0_x86_64_base
+
+      Exadata release 21.2.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.5.0.0_x86_64_base
+
+      Exadata release 21.2.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.6.0.0_x86_64_base
+
+      Exadata release 21.2.7.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.7.0.0_x86_64_base
+
+      Exadata release 21.2.8.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.8.0.0_x86_64_base
+
+      Exadata release 21.2.9.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 21.2.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_21.2.9.0.0_x86_64_base
+
+      Exadata release 22.1.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.0.0.0_x86_64_base
+
+      Exadata release 22.1.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.1.0.0_x86_64_base
+
+      Exadata release 22.1.10.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.10.0.0_x86_64_base
+
+      Exadata release 22.1.11.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.11.0.0_x86_64_base
+
+      Exadata release 22.1.12.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.12.0.0_x86_64_base
+
+      Exadata release 22.1.13.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.13.0.0_x86_64_base
+
+      Exadata release 22.1.14.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.14.0.0_x86_64_base
+
+      Exadata release 22.1.15.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.15.0.0_x86_64_base
+
+      Exadata release 22.1.16.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.16.0.0_x86_64_base
+
+      Exadata release 22.1.17.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.17.0.0_x86_64_base
+
+      Exadata release 22.1.18.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.18.0.0_x86_64_base
+
+      Exadata release 22.1.19.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.19.0.0_x86_64_base
+
+      Exadata release 22.1.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.2.0.0_x86_64_base
+
+      Exadata release 22.1.20.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.20.0.0_x86_64_base
+
+      Exadata release 22.1.21.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.21.0.0_x86_64_base
+
+      Exadata release 22.1.22.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.22.0.0_x86_64_base
+
+      Exadata release 22.1.23.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.23.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.23.0.0_x86_64_base
+
+      Exadata release 22.1.24.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.24.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.24.0.0_x86_64_base
+
+      Exadata release 22.1.25.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.25.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.25.0.0_x86_64_base
+
+      Exadata release 22.1.26.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.26.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.26.0.0_x86_64_base
+
+      Exadata release 22.1.27.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.27.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.27.0.0_x86_64_base
+
+      Exadata release 22.1.28.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.28.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.28.0.0_x86_64_base
+
+      Exadata release 22.1.29.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.29.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.29.0.0_x86_64_base
+
+      Exadata release 22.1.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.3.0.0_x86_64_base
+
+      Exadata release 22.1.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.4.0.0_x86_64_base
+
+      Exadata release 22.1.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.5.0.0_x86_64_base
+
+      Exadata release 22.1.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.6.0.0_x86_64_base
+
+      Exadata release 22.1.7.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.7.0.0_x86_64_base
+
+      Exadata release 22.1.8.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.8.0.0_x86_64_base
+
+      Exadata release 22.1.9.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 22.1.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_22.1.9.0.0_x86_64_base
+
+
+  ## PCA
+  pca:
+
+    repos:
+
+      PCA 2.4.4.2 CN:
+        desccription: All Oracle Linux 7 based OVM server packages released for PCA 2.4.4.2 Compute Nodes.
+        uln_label: pca2442_x86_64_cn
+
+      PCA 2.4.4.2 MN:
+        desccription: All Oracle Linux 7 based packages released for PCA 2.4.4.2 Management Nodes.
+        uln_label: pca2442_x86_64_mn
+
+      PCA 2.4.4.3 CN:
+        desccription: All Oracle Linux 7 based OVM server packages released for PCA 2.4.4.3 Compute Nodes.
+        uln_label: pca2443_x86_64_cn
+
+      PCA 2.4.4.3 MN:
+        desccription: All Oracle Linux 7 based packages released for PCA 2.4.4.3 Management Nodes.
+        uln_label: pca2443_x86_64_mn
+
+      PCA 3.0.1 Container Image src:
+        desccription: Container images 3rd_party sources.
+        uln_label: pca301_x86_64_containers_src
+
+      PCA 3.0.1 Container Images:
+        desccription: Container images for services running on PCA 3.0.1 Management Nodes.
+        uln_label: pca301_x86_64_containers
+
+      PCA 3.0.1 Firmware:
+        desccription: Firmware packages for PCA 3.0.1 infrastructure.
+        uln_label: pca301_x86_64_fw
+
+      PCA 3.0.1 Hypervisor:
+        desccription: All hypervisor and OS packages for PCA 3.0.1 Compute Nodes.
+        uln_label: pca301_x86_64_hypervisor
+
+      PCA 3.0.1 Hypervisor src:
+        desccription: Source rpms for hypervisor and OS packages for PCA 3.0.1 Compute Nodes.
+        uln_label: pca301_x86_64_hypervisor_src
+
+      PCA 3.0.1 MN:
+        desccription: All Oracle Linux based packages released for PCA 3.0.1 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).
+        uln_label: pca301_x86_64_mn
+
+      PCA 3.0.1 MN src:
+        desccription: Source rpms for Oracle Linux based packages released for PCA 3.0.1 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).
+        uln_label: pca301_x86_64_mn_src
+
+      PCA 3.0.1 OCI Compute Images:
+        desccription: Compute images for OCI services running on PCA 3.0 Management Nodes.
+        uln_label: pca301_x86_64_oci
+
+      PCA 3.0.2 Container Images:
+        desccription: Container images for services running on PCA 3.0.2 Management Nodes.
+        uln_label: pca302_x86_64_containers
+
+      PCA 3.0.2 Firmware:
+        desccription: Firmware packages for PCA 3.0.2 infrastructure.
+        uln_label: pca302_x86_64_fw
+
+      PCA 3.0.2 Hypervisor:
+        desccription: All hypervisor and OS packages for PCA 3.0.2 Compute Nodes.
+        uln_label: pca302_x86_64_hypervisor
+
+      PCA 3.0.2 Hypervisor src:
+        desccription: Source rpms for hypervisor and OS packages for PCA 3.0.2 Compute Nodes.
+        uln_label: pca302_x86_64_hypervisor_src
+
+      PCA 3.0.2 MN:
+        desccription: All Oracle Linux based packages released for PCA 3.0.2 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).
+        uln_label: pca302_x86_64_mn
+
+      PCA 3.0.2 MN src:
+        desccription: Source rpms for Oracle Linux based packages released for PCA 3.0.2 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).
+        uln_label: pca302_x86_64_mn_src
+
+      PCA 3.0.2 OCI Compute Images:
+        desccription: Compute images for OCI services running on PCA 3.0 Management Nodes.
+        uln_label: pca302_x86_64_oci
+
+      PCA 3.0.2 Region Registry:
+        desccription: Oracle Linux based packages released for PCA 3.0.2 for the region registry
+        uln_label: pca302_x86_64_regionregistry
+

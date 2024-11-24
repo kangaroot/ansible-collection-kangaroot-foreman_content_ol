@@ -1,0 +1,49 @@
+---
+# noqa: var-naming[no-role-prefix]
+
+foreman_products_defaults: &foreman_products_defaults
+  content_type: yum
+  gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol8 }}"
+  # mirror_on_sync: True
+  # mirroring_policy: "additive"
+  # mirroring_policy: "mirror_content_only"
+  # mirroring_policy: "mirror_complete"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
+  # http_proxy: Default Proxy
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
+
+
+foreman_products_defaults_ol8_leapp: &foreman_products_defaults_ol8_leapp
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol8_leapp }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol8_leapp }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8_leapp | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol8_leapp }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol8_leapp | bool }}"
+
+
+foreman_products_ol8_leapp:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol8_leapp }}"
+    repositories:
+      ### Leapp Upgrade Utilities for Oracle Linux 8 (x86_64) | ol8_x86_64_leapp ###
+      - name: Leapp Upgrade Utilities for Oracle Linux 8 (x86_64)
+        description: Latest packages for in-place upgrade from Oracle Linux 8 to Oracle Linux 8 (x86_64) .
+        label: ol8_x86_64_leapp
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/leapp/x86_64/"
+        <<: *foreman_products_defaults_ol8_leapp
+        organization: "{{ foreman_organization_ol8_leapp }}"
+
+
+foreman_content_views_ol8_leapp:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_leapp"
+    organization: "{{ foreman_organization_ol8_leapp }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Leapp Upgrade Utilities for Oracle Linux 8 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_leapp }}"
+

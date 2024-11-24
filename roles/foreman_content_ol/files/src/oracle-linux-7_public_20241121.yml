@@ -1,0 +1,581 @@
+# Oracle Linux 7
+
+
+  ## Latest Packages
+  latest_packages:
+
+    repos:
+
+      Latest:
+        desccription: Latest packages released for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/latest/x86_64/
+          aarch64: /repo/OracleLinux/OL7/latest/aarch64/
+
+
+      Optional Latest:
+        desccription: Latest packages released for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/optional/latest/x86_64/
+          aarch64: /repo/OracleLinux/OL7/optional/latest/aarch64/
+
+      Add-ons:
+        desccription: Latest add-on packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/addons/x86_64/
+          aarch64: /repo/OracleLinux/OL7/addons/aarch64/
+
+
+      Developer Packages:
+        desccription: Latest packages for test and development for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/aarch64/
+
+
+      EPEL Packages:
+        desccription: Mirror of upstream EPEL repository is "End of Life".
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer_EPEL/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer_EPEL/aarch64/
+
+
+      Software Collection Library:
+        desccription: Latest Software Collection Library packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/SoftwareCollections/x86_64/
+          aarch64: /repo/OracleLinux/OL7/SoftwareCollections/aarch64/
+
+
+      Archive:
+        desccription: Archived packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/latest/archive/x86_64/
+
+      Optional Archive:
+        desccription: Archived  optional packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/optional/archive/x86_64/
+
+      Developer Archive:
+        desccription: Archived developer packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/archive/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/archive/aarch64/
+
+
+      Oracle Linux 7 Beta:
+        desccription: Latest packages released for Oracle Linux 7.9 Beta.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/beta/x86_64/
+          aarch64: /repo/OracleLinux/OL7/beta/aarch64/
+
+      Oracle Linux 7 Beta (Optional):
+        desccription: Latest packages released for Oracle Linux 7.9 Beta (Optional).
+        repos:
+          x86_64: /repo/OracleLinux/OL7/optional/beta/x86_64/
+          aarch64: /repo/OracleLinux/OL7/optional/beta/aarch64/
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      GA:
+        desccription: Installation media copy of Oracle Linux 7 GA.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/0/base/x86_64/
+
+      Update 1:
+        desccription: Installation media copy of Oracle Linux 7 Update 1.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/1/base/x86_64/
+
+      Update 2:
+        desccription: Installation media copy of Oracle Linux 7 Update 2.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/2/base/x86_64/
+
+      Update 3:
+        desccription: Installation media copy of Oracle Linux 7 Update 3.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/3/base/x86_64/
+
+      Update 4:
+        desccription: Installation media copy of Oracle Linux 7 Update 4.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/4/base/x86_64/
+
+      Update 5:
+        desccription: Installation media copy of Oracle Linux 7 Update 5.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/5/base/x86_64/
+          aarch64: /repo/OracleLinux/OL7/5/base/aarch64/
+
+      Update 6:
+        desccription: Installation media copy of Oracle Linux 7 Update 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/6/base/x86_64/
+          aarch64: /repo/OracleLinux/OL7/6/base/aarch64/
+
+      Update 7:
+        desccription: Installation media copy of Oracle Linux 7 Update 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/7/base/x86_64/
+          aarch64: /repo/OracleLinux/OL7/7/base/aarch64/
+
+      Update 8:
+        desccription: Installation media copy of Oracle Linux 7 Update 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/8/base/x86_64/
+          aarch64: /repo/OracleLinux/OL7/8/base/aarch64/
+
+      Update 9:
+        desccription: Installation media copy of Oracle Linux 7 Update 9.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/9/base/x86_64/
+          aarch64: /repo/OracleLinux/OL7/9/base/aarch64/
+
+
+  ## UEK
+  uek:
+
+    repos:
+
+      UEK Release 3:
+        desccription: Latest Unbreakable Enterprise Kernel Release 3 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR3/x86_64/
+
+      OFED 2.0:
+        desccription: Latest OFED 2.0 packages for Unbreakable Enterprise Kernel Release 3 packages on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR3_OFED20/x86_64/
+
+
+      UEK Release 4:
+        desccription: Latest Unbreakable Enterprise Kernel Release 4 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR4/x86_64/
+
+      OFED (UEK Release 4):
+        desccription: Latest OFED  packages for Unbreakable Enterprise Kernel Release 4 packages on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR4/OFED/x86_64/
+
+      UEK Release 4 Archive:
+        desccription: Unbreakable Enterprise Kernel Release 4 packages for Oracle Linux 7. - Archive
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR4/archive/x86_64/
+
+
+      UEK Release 5:
+        desccription: Latest Unbreakable Enterprise Kernel Release 5 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR5/x86_64/
+
+      RDMA (UEK Release 5):
+        desccription: Latest RDMA  packages for Unbreakable Enterprise Kernel Release 5 packages on Oracle Linux 7 for the Oracle Integrated Stack.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR5/RDMA/x86_64/
+
+      UEK Release 5 Archive:
+        desccription: Unbreakable Enterprise Kernel Release 5 packages for Oracle Linux 7. - Archive
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR5/archive/x86_64/
+
+
+      UEK Release 6:
+        desccription: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR6/x86_64/
+          aarch64: /repo/OracleLinux/OL7/UEKR6/aarch64/
+
+      RDMA (UEK Release 6):
+        desccription: Latest RDMA  packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 7 for the Oracle Integrated Stack.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/UEKR6/RDMA/x86_64/
+
+
+      RHCK with Oracle fixes:
+        desccription: Latest RHCK with Oracle fixes for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MODRHCK/x86_64/
+
+
+  ## Leapp
+  leapp:
+
+    repos:
+
+      Leapp:
+        desccription: Leapp Upgrade Utilities for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/leapp/x86_64/
+          aarch64: /repo/OracleLinux/OL7/leapp/aarch64/
+
+
+  ## Instant Client
+  instant_client:
+
+    repos:
+
+      Oracle Database Instant Client 19c:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/oracle/instantclient/x86_64/
+          aarch64: /repo/OracleLinux/OL7/oracle/instantclient/aarch64/
+
+      Oracle Database Instant Client 21c:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/oracle/instantclient21/x86_64/
+
+      Oracle Database Tools:
+        desccription: Oracle Database Tools for Developers
+        repos:
+          x86_64: /repo/OracleLinux/OL7/oracle/software/x86_64/
+
+
+  ## Oracle Linux Cloud Native Environment
+  olcne:
+
+    repos:
+
+      Oracle Cloud Native Environment 1.0:
+        desccription: Latest Oracle Cloud Native Environment Release 1.0 Packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/olcne/x86_64/
+
+      Oracle Cloud Native Environment 1.1:
+        desccription: Latest Oracle Cloud Native Environment Release 1.1 Packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/olcne11/x86_64/
+
+      Oracle Cloud Native Environment 1.2:
+        desccription: Latest Oracle Cloud Native Environment Release 1.2 Packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/olcne12/x86_64/
+          aarch64: /repo/OracleLinux/OL7/olcne12/aarch64/
+
+      Oracle Cloud Native Environment 1.3:
+        desccription: Latest Oracle Cloud Native Environment Release 1.3 Packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/olcne13/x86_64/
+
+      Oracle Cloud Native Environment 1.4:
+        desccription: Latest Oracle Cloud Native Environment Release 1.4 Packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/olcne14/x86_64/
+          aarch64: /repo/OracleLinux/OL7/olcne14/aarch64/
+
+      Oracle Cloud Native Environment 1.5:
+        desccription: Latest Oracle Cloud Native Environment Release 1.5 Packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/olcne15/x86_64/
+
+      Oracle Cloud Native Environment 1.6:
+        desccription: Latest Oracle Cloud Native Environment Release 1.6 Packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/olcne16/x86_64/
+
+
+      Oracle Cloud Native Environment (Developer):
+        desccription: Oracle Cloud Native Environment Packages for test and development
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/olcne/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/olcne/aarch64/
+
+
+  ## Security Validations
+  security_validation:
+
+    repos:
+
+      Security Validation (Update 3):
+        desccription: Latest packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 update 3 (x86_64)
+        repos:
+          x86_64: /repo/OracleLinux/OL7/security/validation/x86_64/
+
+      Security Validation (Update 8):
+        desccription: Latest packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 update 8
+        repos:
+          x86_64: /repo/OracleLinux/OL7/8/security/validation/x86_64/
+          aarch64: /repo/OracleLinux/OL7/8/security/validation/aarch64/
+
+
+  ## MySQL
+  mysql:
+
+    repos:
+
+      MySQL 5.5:
+        desccription: Latest MySQL 5.5 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL55/x86_64/
+
+      MySQL 5.6:
+        desccription: Latest MySQL 5.6 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL56/x86_64/
+
+      MySQL 5.7:
+        desccription: Latest MySQL 5.7 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL57_community/x86_64/
+
+
+      MySQL Connectors Community:
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL/connectors/community/x86_64/
+          aarch64: /repo/OracleLinux/OL7/MySQL/connectors/community/aarch64/
+
+
+      MySQL 8.0 Server Community:
+        desccription: Latest MySQL 8.0 Community Server packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL80_community/x86_64/
+          aarch64: /repo/OracleLinux/OL7/MySQL80_community/aarch64/
+
+      MySQL 8.0 Connectors Community:
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL80/connectors/community/x86_64/
+          aarch64: /repo/OracleLinux/OL7/MySQL80/connectors/community/aarch64/
+
+      MySQL 8.0 Tools Community:
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL80/tools/community/x86_64/
+          aarch64: /repo/OracleLinux/OL7/MySQL80/tools/community/aarch64/
+
+
+      MySQL 8.4 Server Community:
+        desccription: Latest MySQL 8.4 Community Server packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL84/community/x86_64/
+          aarch64: /repo/OracleLinux/OL7/MySQL84/community/aarch64/
+
+      MySQL 8.4 Tools Community:
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/MySQL84/tools/community/x86_64/
+          aarch64: /repo/OracleLinux/OL7/MySQL84/tools/community/aarch64/
+
+
+  ## Cloud
+  cloud:
+
+    repos:
+
+      OpenStack 4.0:
+        desccription: Latest OpenStack 4.0  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/openstack40/x86_64/
+
+      OpenStack 4.0 Extra Packages:
+        desccription: Latest Extra Packages for OpenStack 4.0  packages on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/openstack40_extras/x86_64/
+
+
+      OpenStack 5.0:
+        desccription: Latest OpenStack 5.0  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/openstack50/x86_64/
+
+      OpenStack 5.0 Extra Packages:
+        desccription: Latest Extra Packages for OpenStack 5.0  packages on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/openstack50_extras/x86_64/
+
+
+  ## Virtualization
+  virtualization:
+
+    repos:
+
+      KVM Utilities:
+        desccription: KVM Utils for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/kvm/utils/x86_64/
+
+      KVM Utilities (Developer):
+        desccription: KVM Utils for test and development for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/kvm/utils/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/kvm/utils/aarch64/
+
+
+      oVirt 4.2:
+        desccription: Latest package for oVirt Release 4.2 on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/ovirt42/x86_64/
+
+      oVirt 4.2 Extra Packages:
+        desccription: Latest extra packages for oVirt Release 4.2 on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/ovirt42/extras/x86_64/
+
+
+      oVirt 4.3:
+        desccription: Latest package for oVirt Release 4.3 on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/ovirt43/x86_64/
+
+      oVirt 4.3 Extra Packages:
+        desccription: Latest extra packages for oVirt Release 4.3 on Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/ovirt43/extras/x86_64/
+
+
+  ## Storage
+  storage:
+
+    repos:
+
+      Ceph 2.0:
+        desccription: Latest Ceph 2.0  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/ceph/x86_64/
+
+      Ceph 3.0:
+        desccription: Latest Ceph 3.0  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/ceph30/x86_64/
+
+
+      Gluster 3.10 Packages:
+        desccription: Latest Gluster 3.10 packages for test and development for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer_gluster310/x86_64/
+
+      Gluster 3.12 Packages:
+        desccription: Latest Gluster 3.12 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/gluster312/x86_64/
+
+      Gluster 4.1 Packages:
+        desccription: Latest Gluster 4.1 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/gluster41/x86_64/
+          aarch64: /repo/OracleLinux/OL7/gluster41/aarch64/
+
+      Gluster 5 Packages:
+        desccription: Latest Gluster 5 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/gluster5/x86_64/
+          aarch64: /repo/OracleLinux/OL7/gluster5/aarch64/
+
+      Gluster 6 Packages:
+        desccription: Latest Gluster 6 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/gluster6/x86_64/
+          aarch64: /repo/OracleLinux/OL7/gluster6/aarch64/
+
+      Gluster 8 Packages:
+        desccription: Latest Gluster 8 packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/gluster8/x86_64/
+          aarch64: /repo/OracleLinux/OL7/gluster8/aarch64/
+
+
+  ## Packages for Test and Development
+  developer:
+
+    repos:
+
+      Node.js Packages:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/nodejs12/x86_64/
+
+
+      PHP Packages:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/php74/x86_64/
+
+
+      Go 1.17 Packages:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/golang117/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/golang117/aarch64/
+
+      Go 1.18 Packages:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/golang118/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/golang118/aarch64/
+
+      Go 1.19 Packages:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/golang119/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/golang119/aarch64/
+
+      Go 1.21 Packages:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/developer/golang121/x86_64/
+          aarch64: /repo/OracleLinux/OL7/developer/golang121/aarch64/
+
+
+  ## OLM
+  olm:
+
+    repos:
+
+      Spacewalk 2.4 Client:
+        desccription: Latest Spacewalk 2.4 Client  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk24/client//x86_64/
+
+      Spacewalk 2.6 Client:
+        desccription: Latest Spacewalk 2.6 Client  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk26/client//x86_64/
+
+      Spacewalk 2.7 Client:
+        desccription: Latest Spacewalk 2.7 Client  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk27/client//x86_64/
+
+      Spacewalk 2.10 Client:
+        desccription: Latest Spacewalk 2.10 Client  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk210/client//x86_64/
+
+      Spacewalk 2.4 Server:
+        desccription: Latest Spacewalk 2.4 Server  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk24/server//x86_64/
+
+      Spacewalk 2.6 Server:
+        desccription: Latest Spacewalk 2.6 Server  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk26/server//x86_64/
+
+      Spacewalk 2.7 Server:
+        desccription: Latest Spacewalk 2.7 Server  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk27/server//x86_64/
+
+      Spacewalk 2.10 Server:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL7/spacewalk210/server//x86_64/
+
+
+      Oracle Linux Manager 2.10 client:
+        desccription: Latest Oracle Linux Manager 2.10 Server  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/oraclelinuxmanager210/client//x86_64/
+
+      Oracle Linux Manager 2.10 Server:
+        desccription: Latest Oracle Linux Manager 2.10 Server  packages for Oracle Linux 7.
+        repos:
+          x86_64: /repo/OracleLinux/OL7/oraclelinuxmanager210/server//x86_64/
+

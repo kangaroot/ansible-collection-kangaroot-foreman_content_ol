@@ -4,16 +4,16 @@
 foreman_products_defaults: &foreman_products_defaults
   content_type: yum
   gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
-  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol9 }}"
   # mirror_on_sync: True
   # mirroring_policy: "additive"
   # mirroring_policy: "mirror_content_only"
   # mirroring_policy: "mirror_complete"
-  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
-  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
   # http_proxy: Default Proxy
-  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
-  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
 
 
 foreman_products_defaults_ol9_uek: &foreman_products_defaults_ol9_uek
@@ -37,19 +37,6 @@ foreman_products_ol9_uekr7:
         url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/UEKR7/x86_64/"
         <<: *foreman_products_defaults_ol9_uek
         organization: "{{ foreman_organization_ol9_uekr7 }}"
-
-foreman_products_ol9_uekr7_developer:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol9_uekr7_developer }}"
-    repositories:
-      ### Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64) | ol9_x86_64_developer_UEKR7 ###
-      - name: Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64)
-        description: Developer preview of Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64) - (not for production use)
-        label: ol9_x86_64_developer_UEKR7
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/UEKR7/x86_64/"
-        <<: *foreman_products_defaults_ol9_uek
-        organization: "{{ foreman_organization_ol9_uekr7_developer }}"
 
 foreman_products_ol9_rdma:
   - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
@@ -77,11 +64,24 @@ foreman_products_ol9_modrhck:
         <<: *foreman_products_defaults_ol9_uek
         organization: "{{ foreman_organization_ol9_modrhck }}"
 
+foreman_products_ol9_ueknext_developer:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol9_ueknext_developer }}"
+    repositories:
+      ### Oracle Linux 9 UEK-next Developer Release (x86_64) | ol9_x86_64_developer_UEKnext ###
+      - name: Oracle Linux 9 UEK-next Developer Release (x86_64)
+        description: Developer release of UEK-next for Oracle Linux 9 (x86_64) - (unsupported, not for use in production)
+        label: ol9_x86_64_developer_UEKnext
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/UEKnext/x86_64/"
+        <<: *foreman_products_defaults_ol9_uek
+        organization: "{{ foreman_organization_ol9_ueknext_developer }}"
+
 foreman_products_ol9_uek: "{{ [] |
   union( foreman_products_ol9_uekr7 | default([]) if foreman_enable_ol9_uekr7 else [] ) |
-  union( foreman_products_ol9_uekr7_developer | default([]) if foreman_enable_ol9_uekr7_developer else [] ) |
   union( foreman_products_ol9_rdma | default([]) if foreman_enable_ol9_rdma else [] ) |
-  union( foreman_products_ol9_modrhck | default([]) if foreman_enable_ol9_modrhck else [] )
+  union( foreman_products_ol9_modrhck | default([]) if foreman_enable_ol9_modrhck else [] ) |
+  union( foreman_products_ol9_ueknext_developer | default([]) if foreman_enable_ol9_ueknext_developer else [] )
   }}"
 
 
@@ -92,14 +92,6 @@ foreman_content_views_ol9_uekr7:
       - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 UEK Release 7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol9_uekr7 }}"
-
-foreman_content_views_ol9_uekr7_developer:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_developer_UEKR7"
-    organization: "{{ foreman_organization_ol9_uekr7_developer }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol9_uekr7_developer }}"
 
 foreman_content_views_ol9_rdma:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_RDMA"
@@ -117,10 +109,18 @@ foreman_content_views_ol9_modrhck:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol9_modrhck }}"
 
+foreman_content_views_ol9_ueknext_developer:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_developer_UEKnext"
+    organization: "{{ foreman_organization_ol9_ueknext_developer }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 UEK-next Developer Release (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol9_ueknext_developer }}"
+
 foreman_content_views_ol9_uek: "{{ [] |
   union( foreman_content_views_ol9_uekr7 | default([]) if foreman_enable_ol9_uekr7 else [] ) |
-  union( foreman_content_views_ol9_uekr7_developer | default([]) if foreman_enable_ol9_uekr7_developer else [] ) |
   union( foreman_content_views_ol9_rdma | default([]) if foreman_enable_ol9_rdma else [] ) |
-  union( foreman_content_views_ol9_modrhck | default([]) if foreman_enable_ol9_modrhck else [] )
+  union( foreman_content_views_ol9_modrhck | default([]) if foreman_enable_ol9_modrhck else [] ) |
+  union( foreman_content_views_ol9_ueknext_developer | default([]) if foreman_enable_ol9_ueknext_developer else [] )
   }}"
 

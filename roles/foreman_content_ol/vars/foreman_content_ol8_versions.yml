@@ -4,16 +4,16 @@
 foreman_products_defaults: &foreman_products_defaults
   content_type: yum
   gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
-  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol8 }}"
   # mirror_on_sync: True
   # mirroring_policy: "additive"
   # mirroring_policy: "mirror_content_only"
   # mirroring_policy: "mirror_complete"
-  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
-  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol8 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol8 | bool }}"
   # http_proxy: Default Proxy
-  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
-  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol8 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol8 | bool }}"
 
 
 foreman_products_defaults_ol80: &foreman_products_defaults_ol80
@@ -106,202 +106,202 @@ foreman_products_defaults_ol810: &foreman_products_defaults_ol810
 
 
 foreman_products_ol80_content: &foreman_products_ol80_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol80 }}"
-    repositories:
-      ### Oracle Linux 8 BaseOS GA (x86_64) | ol8_x86_64_u0_baseos_base ###
-      - name: Oracle Linux 8 BaseOS GA (x86_64)
-        description: Base operating system packages released for Oracle Linux 8 GA (x86_64). No errata included
-        label: ol8_x86_64_u0_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/0/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol80
-        organization: "{{ foreman_organization_ol80 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol80 }}"
+  repositories:
+    ### Oracle Linux 8 BaseOS GA (x86_64) | ol8_x86_64_u0_baseos_base ###
+    - name: Oracle Linux 8 BaseOS GA (x86_64)
+      description: Base operating system packages released for Oracle Linux 8 GA (x86_64). No errata included
+      label: ol8_x86_64_u0_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/0/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol80
+      organization: "{{ foreman_organization_ol80 }}"
 
 foreman_products_ol80:
-  - *foreman_products_ol80_content
+  - <<: *foreman_products_ol80_content
 foreman_products_ol80_kickstart:
-  - *foreman_products_ol80_content
+  - <<: *foreman_products_ol80_content
 
 foreman_products_ol81_content: &foreman_products_ol81_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol81 }}"
-    repositories:
-      ### Oracle Linux 8.1 BaseOS (x86_64) | ol8_x86_64_u1_baseos_base ###
-      - name: Oracle Linux 8.1 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8 (x86_64). No errata included
-        label: ol8_x86_64_u1_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/1/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol81
-        organization: "{{ foreman_organization_ol81 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol81 }}"
+  repositories:
+    ### Oracle Linux 8.1 BaseOS (x86_64) | ol8_x86_64_u1_baseos_base ###
+    - name: Oracle Linux 8.1 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8 (x86_64). No errata included
+      label: ol8_x86_64_u1_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/1/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol81
+      organization: "{{ foreman_organization_ol81 }}"
 
 foreman_products_ol81:
-  - *foreman_products_ol81_content
+  - <<: *foreman_products_ol81_content
 foreman_products_ol81_kickstart:
-  - *foreman_products_ol81_content
+  - <<: *foreman_products_ol81_content
 
 foreman_products_ol82_content: &foreman_products_ol82_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol82 }}"
-    repositories:
-      ### Oracle Linux 8.2 BaseOS (x86_64) | ol8_x86_64_u2_baseos_base ###
-      - name: Oracle Linux 8.2 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.2 (x86_64). No errata included
-        label: ol8_x86_64_u2_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/2/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol82
-        organization: "{{ foreman_organization_ol82 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol82 }}"
+  repositories:
+    ### Oracle Linux 8.2 BaseOS (x86_64) | ol8_x86_64_u2_baseos_base ###
+    - name: Oracle Linux 8.2 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.2 (x86_64). No errata included
+      label: ol8_x86_64_u2_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/2/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol82
+      organization: "{{ foreman_organization_ol82 }}"
 
 foreman_products_ol82:
-  - *foreman_products_ol82_content
+  - <<: *foreman_products_ol82_content
 foreman_products_ol82_kickstart:
-  - *foreman_products_ol82_content
+  - <<: *foreman_products_ol82_content
 
 foreman_products_ol83_content: &foreman_products_ol83_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol83 }}"
-    repositories:
-      ### Oracle Linux 8.3 BaseOS (x86_64) | ol8_x86_64_u3_baseos_base ###
-      - name: Oracle Linux 8.3 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.3 (x86_64). No errata included
-        label: ol8_x86_64_u3_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/3/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol83
-        organization: "{{ foreman_organization_ol83 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol83 }}"
+  repositories:
+    ### Oracle Linux 8.3 BaseOS (x86_64) | ol8_x86_64_u3_baseos_base ###
+    - name: Oracle Linux 8.3 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.3 (x86_64). No errata included
+      label: ol8_x86_64_u3_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/3/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol83
+      organization: "{{ foreman_organization_ol83 }}"
 
 foreman_products_ol83:
-  - *foreman_products_ol83_content
+  - <<: *foreman_products_ol83_content
 foreman_products_ol83_kickstart:
-  - *foreman_products_ol83_content
+  - <<: *foreman_products_ol83_content
 
 foreman_products_ol84_content: &foreman_products_ol84_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol84 }}"
-    repositories:
-      ### Oracle Linux 8.4 BaseOS (x86_64) | ol8_x86_64_u4_baseos_base ###
-      - name: Oracle Linux 8.4 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.4 (x86_64). No errata included
-        label: ol8_x86_64_u4_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/4/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol84
-        organization: "{{ foreman_organization_ol84 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol84 }}"
+  repositories:
+    ### Oracle Linux 8.4 BaseOS (x86_64) | ol8_x86_64_u4_baseos_base ###
+    - name: Oracle Linux 8.4 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.4 (x86_64). No errata included
+      label: ol8_x86_64_u4_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/4/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol84
+      organization: "{{ foreman_organization_ol84 }}"
 
 foreman_products_ol84:
-  - *foreman_products_ol84_content
+  - <<: *foreman_products_ol84_content
 foreman_products_ol84_kickstart:
-  - *foreman_products_ol84_content
+  - <<: *foreman_products_ol84_content
 
 foreman_products_ol85_content: &foreman_products_ol85_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol85 }}"
-    repositories:
-      ### Oracle Linux 8.5 BaseOS (x86_64) | ol8_x86_64_u5_baseos_base ###
-      - name: Oracle Linux 8.5 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.5 (x86_64). No errata included
-        label: ol8_x86_64_u5_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/5/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol85
-        organization: "{{ foreman_organization_ol85 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol85 }}"
+  repositories:
+    ### Oracle Linux 8.5 BaseOS (x86_64) | ol8_x86_64_u5_baseos_base ###
+    - name: Oracle Linux 8.5 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.5 (x86_64). No errata included
+      label: ol8_x86_64_u5_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/5/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol85
+      organization: "{{ foreman_organization_ol85 }}"
 
 foreman_products_ol85:
-  - *foreman_products_ol85_content
+  - <<: *foreman_products_ol85_content
 foreman_products_ol85_kickstart:
-  - *foreman_products_ol85_content
+  - <<: *foreman_products_ol85_content
 
 foreman_products_ol86_content: &foreman_products_ol86_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol86 }}"
-    repositories:
-      ### Oracle Linux 8.6 BaseOS (x86_64) | ol8_x86_64_u6_baseos_base ###
-      - name: Oracle Linux 8.6 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.6 (x86_64). No errata included
-        label: ol8_x86_64_u6_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/6/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol86
-        organization: "{{ foreman_organization_ol86 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol86 }}"
+  repositories:
+    ### Oracle Linux 8.6 BaseOS (x86_64) | ol8_x86_64_u6_baseos_base ###
+    - name: Oracle Linux 8.6 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.6 (x86_64). No errata included
+      label: ol8_x86_64_u6_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/6/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol86
+      organization: "{{ foreman_organization_ol86 }}"
 
 foreman_products_ol86:
-  - *foreman_products_ol86_content
+  - <<: *foreman_products_ol86_content
 foreman_products_ol86_kickstart:
-  - *foreman_products_ol86_content
+  - <<: *foreman_products_ol86_content
 
 foreman_products_ol87_content: &foreman_products_ol87_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol87 }}"
-    repositories:
-      ### Oracle Linux 8.7 BaseOS (x86_64) | ol8_x86_64_u7_baseos_base ###
-      - name: Oracle Linux 8.7 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.7 (x86_64). No errata included
-        label: ol8_x86_64_u7_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/7/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol87
-        organization: "{{ foreman_organization_ol87 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol87 }}"
+  repositories:
+    ### Oracle Linux 8.7 BaseOS (x86_64) | ol8_x86_64_u7_baseos_base ###
+    - name: Oracle Linux 8.7 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.7 (x86_64). No errata included
+      label: ol8_x86_64_u7_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/7/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol87
+      organization: "{{ foreman_organization_ol87 }}"
 
 foreman_products_ol87:
-  - *foreman_products_ol87_content
+  - <<: *foreman_products_ol87_content
 foreman_products_ol87_kickstart:
-  - *foreman_products_ol87_content
+  - <<: *foreman_products_ol87_content
 
 foreman_products_ol88_content: &foreman_products_ol88_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol88 }}"
-    repositories:
-      ### Oracle Linux 8.8 BaseOS (x86_64) | ol8_x86_64_u8_baseos_base ###
-      - name: Oracle Linux 8.8 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.8 (x86_64). No errata included
-        label: ol8_x86_64_u8_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/8/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol88
-        organization: "{{ foreman_organization_ol88 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol88 }}"
+  repositories:
+    ### Oracle Linux 8.8 BaseOS (x86_64) | ol8_x86_64_u8_baseos_base ###
+    - name: Oracle Linux 8.8 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.8 (x86_64). No errata included
+      label: ol8_x86_64_u8_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/8/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol88
+      organization: "{{ foreman_organization_ol88 }}"
 
 foreman_products_ol88:
-  - *foreman_products_ol88_content
+  - <<: *foreman_products_ol88_content
 foreman_products_ol88_kickstart:
-  - *foreman_products_ol88_content
+  - <<: *foreman_products_ol88_content
 
 foreman_products_ol89_content: &foreman_products_ol89_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol89 }}"
-    repositories:
-      ### Oracle Linux 8.9 BaseOS (x86_64) | ol8_x86_64_u9_baseos_base ###
-      - name: Oracle Linux 8.9 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.9 (x86_64). No errata included
-        label: ol8_x86_64_u9_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/9/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol89
-        organization: "{{ foreman_organization_ol89 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol89 }}"
+  repositories:
+    ### Oracle Linux 8.9 BaseOS (x86_64) | ol8_x86_64_u9_baseos_base ###
+    - name: Oracle Linux 8.9 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.9 (x86_64). No errata included
+      label: ol8_x86_64_u9_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/9/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol89
+      organization: "{{ foreman_organization_ol89 }}"
 
 foreman_products_ol89:
-  - *foreman_products_ol89_content
+  - <<: *foreman_products_ol89_content
 foreman_products_ol89_kickstart:
-  - *foreman_products_ol89_content
+  - <<: *foreman_products_ol89_content
 
 foreman_products_ol810_content: &foreman_products_ol810_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol810 }}"
-    repositories:
-      ### Oracle Linux 8.10 BaseOS (x86_64) | ol8_x86_64_u10_baseos_base ###
-      - name: Oracle Linux 8.10 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 8.10 (x86_64). No errata included
-        label: ol8_x86_64_u10_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/10/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol810
-        organization: "{{ foreman_organization_ol810 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol810 }}"
+  repositories:
+    ### Oracle Linux 8.10 BaseOS (x86_64) | ol8_x86_64_u10_baseos_base ###
+    - name: Oracle Linux 8.10 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 8.10 (x86_64). No errata included
+      label: ol8_x86_64_u10_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/10/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol810
+      organization: "{{ foreman_organization_ol810 }}"
 
 foreman_products_ol810:
-  - *foreman_products_ol810_content
+  - <<: *foreman_products_ol810_content
 foreman_products_ol810_kickstart:
-  - *foreman_products_ol810_content
+  - <<: *foreman_products_ol810_content
 
 foreman_products_ol8_versions: "{{ [] |
   union( foreman_products_ol80 | default([]) if foreman_enable_ol80 | bool else [] ) |

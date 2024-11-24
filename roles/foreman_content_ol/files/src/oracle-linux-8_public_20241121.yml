@@ -1,0 +1,414 @@
+# Oracle Linux 8
+
+  ## Latest Packages
+  latest_packages:
+
+    repos:
+
+      BaseOS Latest:
+        desccription: Oracle Linux 8 BaseOS Latest.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/baseos/latest/x86_64/
+          aarch64: /repo/OracleLinux/OL8/baseos/latest/aarch64/
+
+      AppStream Latest:
+        desccription: Oracle Linux 8 Application Stream Packages.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/appstream/x86_64/
+          aarch64: /repo/OracleLinux/OL8/appstream/aarch64/
+
+
+      Add-ons:
+        desccription: Latest add-on packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/addons/x86_64/
+          aarch64: /repo/OracleLinux/OL8/addons/aarch64/
+
+
+      Developer Packages:
+        desccription: Latest packages for test and development for Oracle Linux 8 (not for production use).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/developer/x86_64/
+          aarch64: /repo/OracleLinux/OL8/developer/aarch64/
+
+
+      EPEL Packages:
+        desccription: Latest EPEL packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/developer/EPEL/x86_64/
+          aarch64: /repo/OracleLinux/OL8/developer/EPEL/aarch64/
+
+      EPEL Modular Packages:
+        desccription: EPEL Modular packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/developer/EPEL/modular/x86_64/
+          aarch64: /repo/OracleLinux/OL8/developer/EPEL/modular/aarch64/
+
+
+      CodeReady Builder:
+        desccription: Latest CodeReady Builder packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/codeready/builder/x86_64/
+          aarch64: /repo/OracleLinux/OL8/codeready/builder/aarch64/
+
+
+      Distro Builder:
+        desccription: Latest Distro Builder packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/distro/builder/x86_64/
+          aarch64: /repo/OracleLinux/OL8/distro/builder/aarch64/
+
+
+      Developer Archive:
+        desccription: Archived developer packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/developer/archive/x86_64/
+          aarch64: /repo/OracleLinux/OL8/developer/archive/aarch64/
+
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      BaseOS GA:
+        desccription: Installation media copy of Oracle Linux 8 BaseOS GA (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/0/baseos/base/x86_64/
+
+      BaseOS 8.1:
+        desccription: Installation media copy of Oracle Linux 8.1 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/1/baseos/base/x86_64/
+
+      BaseOS 8.2:
+        desccription: Installation media copy of Oracle Linux 8.2 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/2/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/2/baseos/base/aarch64/
+
+      BaseOS 8.3:
+        desccription: Installation media copy of Oracle Linux 8.3 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/3/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/3/baseos/base/aarch64/
+
+      BaseOS 8.4:
+        desccription: Installation media copy of Oracle Linux 8.4 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/4/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/4/baseos/base/aarch64/
+
+      BaseOS 8.5:
+        desccription: Installation media copy of Oracle Linux 8.5 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/5/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/5/baseos/base/aarch64/
+
+      BaseOS 8.6:
+        desccription: Installation media copy of Oracle Linux 8.6 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/6/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/6/baseos/base/aarch64/
+
+      BaseOS 8.7:
+        desccription: Installation media copy of Oracle Linux 8.7 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/7/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/7/baseos/base/aarch64/
+
+      BaseOS 8.8:
+        desccription: Installation media copy of Oracle Linux 8.8 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/8/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/8/baseos/base/aarch64/
+
+      BaseOS 8.9:
+        desccription: Installation media copy of Oracle Linux 8.9 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/9/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/9/baseos/base/aarch64/
+
+      BaseOS 8.10:
+        desccription: Installation media copy of Oracle Linux 8.10 BaseOS (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/10/baseos/base/x86_64/
+          aarch64: /repo/OracleLinux/OL8/10/baseos/base/aarch64/
+
+
+  ## UEK
+  uek:
+
+    repos:
+
+      UEK Release 6:
+        desccription: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/UEKR6/x86_64/
+
+      RDMA (UEK Release 6):
+        desccription: Latest RDMA  packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 8 for the Oracle Integrated Stack.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/UEKR6/RDMA/x86_64/
+
+
+      UEK Release 7:
+        desccription: Latest Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/UEKR7/x86_64/
+          aarch64: /repo/OracleLinux/OL8/UEKR7/aarch64/
+
+      RDMA (UEK Release 7):
+        desccription: Latest RDMA  packages for Unbreakable Enterprise Kernel Release 7 packages on Oracle Linux 8 for the Oracle Integrated Stack.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/UEKR7/RDMA/x86_64/
+
+
+      RHCK with Oracle fixes:
+        desccription: Latest RHCK with Oracle fixes for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/MODRHCK/x86_64/
+
+
+  ## Leapp
+  leapp:
+
+    repos:
+
+      Leapp:
+        desccription: Leapp Upgrade Utilities for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/leapp/x86_64/
+          aarch64: /repo/OracleLinux/OL8/leapp/aarch64/
+
+
+  ## Instant Client
+  instant_client:
+
+    repos:
+
+      Oracle Database Instant Client 19c:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL8/oracle/instantclient/x86_64/
+          aarch64: /repo/OracleLinux/OL8/oracle/instantclient/aarch64/
+
+      Oracle Database Instant Client 21c:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL8/oracle/instantclient21/x86_64/
+
+      Oracle Database Instant Client 23ai:
+        desccription: ""
+        repos:
+          x86_64: /repo/OracleLinux/OL8/oracle/instantclient23/x86_64/
+
+
+      Oracle Database Tools:
+        desccription: Oracle Database Tools for Developers
+        repos:
+          x86_64: /repo/OracleLinux/OL8/oracle/software/x86_64/
+
+
+  ## Oracle Linux Cloud Native Environment
+  olcne:
+
+    repos:
+
+      Oracle Cloud Native Environment:
+        desccription: Latest Oracle Cloud Native Environment Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/ocne/x86_64/
+          aarch64: /repo/OracleLinux/OL8/ocne/aarch64/
+
+      Oracle Cloud Native Environment 1.2:
+        desccription: Latest Oracle Cloud Native Environment Release 1.2 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne12/x86_64/
+
+      Oracle Cloud Native Environment 1.3:
+        desccription: Latest Oracle Cloud Native Environment Release 1.3 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne13/x86_64/
+
+      Oracle Cloud Native Environment 1.4:
+        desccription: Latest Oracle Cloud Native Environment Release 1.4 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne14/x86_64/
+          aarch64: /repo/OracleLinux/OL8/olcne14/aarch64/
+
+      Oracle Cloud Native Environment 1.5:
+        desccription: Latest Oracle Cloud Native Environment Release 1.5 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne15/x86_64/
+
+      Oracle Cloud Native Environment 1.6:
+        desccription: Latest Oracle Cloud Native Environment Release 1.6 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne16/x86_64/
+
+      Oracle Cloud Native Environment 1.7:
+        desccription: Latest Oracle Cloud Native Environment Release 1.7 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne17/x86_64/
+
+      Oracle Cloud Native Environment 1.8:
+        desccription: Latest Oracle Cloud Native Environment Release 1.8 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne18/x86_64/
+          aarch64: /repo/OracleLinux/OL8/olcne18/aarch64/
+
+      Oracle Cloud Native Environment 1.9:
+        desccription: Latest Oracle Cloud Native Environment Release 1.9 Packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/olcne19/x86_64/
+          aarch64: /repo/OracleLinux/OL8/olcne19/aarch64/
+
+
+      Oracle Cloud Native Environment (Developer):
+        desccription: Oracle Cloud Native Environment Packages for test and development
+        repos:
+          x86_64: /repo/OracleLinux/OL8/developer/olcne/x86_64/
+          aarch64: /repo/OracleLinux/OL8/developer/olcne/aarch64/
+
+
+  ## Security Validations
+  security_validations:
+
+    repos:
+
+      Security Validation (Update 4):
+        desccription: Latest packages delivered for security validations, like FIPS or common criteria for Oracle Linux 8 update 4
+        repos:
+          x86_64: /repo/OracleLinux/OL8/4/security/validation/x86_64/
+          aarch64: /repo/OracleLinux/OL8/4/security/validation/aarch64/
+
+
+  ## MySQL
+  mysql:
+
+    repos:
+
+      MySQL 8.0 Server Community:
+        desccription: Latest MySQL 8.0 Community Server packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/MySQL80/community/x86_64/
+          aarch64: /repo/OracleLinux/OL8/MySQL80/community/aarch64/
+
+      MySQL 8.0 Connectors Community:
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/MySQL80/connectors/community/x86_64/
+          aarch64: /repo/OracleLinux/OL8/MySQL80/connectors/community/aarch64/
+
+      MySQL 8.0 Tools Community:
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/MySQL80/tools/community/x86_64/
+          aarch64: /repo/OracleLinux/OL8/MySQL80/tools/community/aarch64/
+
+      MySQL 8.4 Server Community:
+        desccription: Latest MySQL 8.4 Community Server packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/MySQL84/community/x86_64/
+          aarch64: /repo/OracleLinux/OL8/MySQL84/community/aarch64/
+
+      MySQL 8.4 Tools Community:
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/MySQL84/tools/community/x86_64/
+          aarch64: /repo/OracleLinux/OL8/MySQL84/tools/community/aarch64/
+
+      MySQL Connectors Community:
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/MySQL/connectors/community/x86_64/
+          aarch64: /repo/OracleLinux/OL8/MySQL/connectors/community/aarch64/
+
+
+  ## Oracle Linux Manager
+  olm:
+
+    repos:
+
+      Oracle Linux Manager 2.10 Client:
+        desccription: Latest Oracle Linux Manager 2.10 Client  packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/oraclelinuxmanager210/client//x86_64/
+
+      Spacewalk 2.10 Client:
+        desccription: Latest Spacewalk 2.10 Client  packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/spacewalk210/client//x86_64/
+
+
+  ## Automation Manager
+  am:
+
+    repos:
+
+      Oracle Linux Automation Manager 1.0:
+        desccription: Latest Packages for Oracle Linux Oracle Linux Automation Manager 1.0.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/automation/x86_64/
+
+      Oracle Linux Automation Manager 2.1:
+        desccription: Latest Packages for Oracle Linux Oracle Linux Automation Manager 2.1.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/automation2/x86_64/
+
+      Oracle Linux Automation Manager 2.2:
+        desccription: Latest Packages for Oracle Linux Oracle Linux Automation Manager 2.2.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/automation2.2/x86_64/
+
+
+  ## Virtualization
+  virtualization:
+
+    repos:
+
+      KVM AppStream Latest:
+        desccription: Latest KVM Application Stream  packages for Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/kvm/appstream/x86_64/
+          aarch64: /repo/OracleLinux/OL8/kvm/appstream/aarch64/
+
+
+      oVirt 4.4:
+        desccription: Latest package for oVirt Release 4.4 on Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/ovirt44/x86_64/
+
+      oVirt 4.4 Extra Packages:
+        desccription: Latest extra packages for oVirt Release 4.4 on Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/ovirt44/extras/x86_64/
+
+
+      oVirt 4.5:
+        desccription: Latest package for oVirt Release 4.5 on Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/ovirt45/x86_64/
+
+      oVirt 4.5 Extra Packages:
+        desccription: Latest extra packages for oVirt Release 4.5 on Oracle Linux 8.
+        repos:
+          x86_64: /repo/OracleLinux/OL8/ovirt45/extras/x86_64/
+
+
+  ## Storage
+  storage:
+
+    repos:
+
+      Gluster AppStream Latest:
+        desccription: Latest Gluster Application Stream  packages for Oracle Linux 8 (x86_64).
+        repos:
+          x86_64: /repo/OracleLinux/OL8/gluster/appstream/x86_64/
+
+      Gluster AppStream Latest Arm:
+        desccription: Developer Preview of Gluster AppStream packages for Oracle Linux 8 (aarch64).
+        repos:
+          aarch64: /repo/OracleLinux/OL8/gluster/appstream/aarch64/
+

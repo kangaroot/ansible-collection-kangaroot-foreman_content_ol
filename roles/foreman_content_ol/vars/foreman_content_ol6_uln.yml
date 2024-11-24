@@ -72,7 +72,7 @@ foreman_products_ol6_uln:
         organization: "{{ foreman_organization_ol6_uln }}"
       ### Packages for creating test and development environments for Oracle Linux 6 (x86_64) | ol6_x86_64_developer ###
       - name: Packages for creating test and development environments for Oracle Linux 6 (x86_64)
-        description: Latest packages for creating test and development environments - Oracle LInux 6 (x86_64)
+        description: Latest packages for creating test and development environments - Oracle Linux 6 (x86_64)
         label: ol6_uln_x86_64_developer
         url: uln://ol6_x86_64_developer
         <<: *foreman_products_defaults

@@ -1,0 +1,248 @@
+# Oracle Linux 6
+
+  ## Sustaining Support
+  sustaining_support:
+
+    repos:
+
+      Latest:
+        desccription: Latest packages released for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/latest/i386/
+          x86_64: /repo/OracleLinux/OL6/latest/x86_64/
+          SPARC64: /repo/OracleLinux/OL6/latest/sparc64/
+
+      UEK Release 4:
+        desccription: Latest Unbreakable Enterprise Kernel Release 4 packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/UEKR4/x86_64/
+          SPARC64: /repo/OracleLinux/OL6/UEKR4/sparc64/
+
+      UEK Release 3:
+        desccription: Latest Unbreakable Enterprise Kernel Release 3 packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/UEKR3/latest/x86_64/
+
+      UEK Release 2:
+        desccription: Latest Unbreakable Enterprise Kernel Release 2 packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/UEK/latest/i386/
+          x86_64: /repo/OracleLinux/OL6/UEK/latest/x86_64/
+
+      Security Validation:
+        desccription: Latest packages delivered for security validations, like FIPS or common criteria for Oracle Linux 6 Update 9 (x86_64)
+        repos:
+          x86_64: /repo/OracleLinux/OL6/security/validation/x86_64/
+
+      Add-ons:
+        desccription: Latest add-on packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/addons/i386/
+          x86_64: /repo/OracleLinux/OL6/addons/x86_64/
+
+      RHCK with Oracle fixes:
+        desccription: Latest RHCK with Oracle fixes for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/MODRHCK/i386/
+          x86_64: /repo/OracleLinux/OL6/MODRHCK/x86_64/
+
+      Archive:
+        desccription: Archived packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/latest/archive/i386/
+          x86_64: /repo/OracleLinux/OL6/latest/archive/x86_64/
+
+      UEK Release 4 Archive:
+        desccription: Unbreakable Enterprise Kernel Release 4 packages for Oracle Linux 6. - Archive
+        repos:
+          x86_64: /repo/OracleLinux/OL6/UEKR4/archive/x86_64/
+
+      OFED (UEK Release 4):
+        desccription: Latest OFED  packages for Unbreakable Enterprise Kernel Release 4 packages on Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/UEKR4/OFED/x86_64/
+          SPARC64: /repo/OracleLinux/OL6/UEKR4/OFED/sparc64/
+
+      OFED 2.0:
+        desccription: Latest OFED 2.0 packages for Unbreakable Enterprise Kernel Release 3 packages on Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/ofed_UEK/x86_64/
+
+      Spacewalk 2.7 Server:
+        desccription: Latest Spacewalk 2.7 Server  packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/spacewalk27/server//x86_64/
+
+      Spacewalk 2.6 Server:
+        desccription: Latest Spacewalk 2.6 Server  packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/spacewalk26/server//x86_64/
+
+      Spacewalk 2.4 Server:
+        desccription: Latest Spacewalk 2.4 Server  packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/spacewalk24/server//x86_64/
+
+      Spacewalk 2.7 Client:
+        desccription: Latest Spacewalk 2.7 Client  packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/spacewalk27/client//i386/
+          x86_64: /repo/OracleLinux/OL6/spacewalk27/client//x86_64/
+
+      Spacewalk 2.6 Client:
+        desccription: Latest Spacewalk 2.6 Client  packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/spacewalk26/client//i386/
+          x86_64: /repo/OracleLinux/OL6/spacewalk26/client//x86_64/
+
+      Spacewalk 2.4 Client:
+        desccription: Latest Spacewalk 2.4 Client  packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/spacewalk24/client//i386/
+          x86_64: /repo/OracleLinux/OL6/spacewalk24/client//x86_64/
+
+      Software Collection Library:
+        desccription: Latest Software Collection Library packages released for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/SoftwareCollections/x86_64/
+
+      Software Collection 1.2:
+        desccription: Latest Software Collection Library 1.2 packages released for Oracle Linux 6 (SPARC64)
+        repos:
+          sparc64: /repo/OracleLinux/OL6/SoftwareCollections/sparc64/
+
+      MySQL 8.0:
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/MySQL80_community/i386/
+          x86_64: /repo/OracleLinux/OL6/MySQL80_community/x86_64/
+
+      MySQL 5.7:
+        desccription: Latest MySQL 5.7 packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/MySQL57_community/i386/
+          x86_64: /repo/OracleLinux/OL6/MySQL57_community/x86_64/
+
+      MySQL 5.6:
+        desccription: Latest MySQL 5.6 packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/MySQL56/i386/
+          x86_64: /repo/OracleLinux/OL6/MySQL56/x86_64/
+
+      MySQL 5.5:
+        desccription: Latest MySQL 5.5 packages for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/MySQL/i386/
+          x86_64: /repo/OracleLinux/OL6/MySQL/x86_64/
+
+      Oracle Instant Client:
+        desccription: Latest Oracle Instant Client packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/oracle/instantclient/x86_64/
+
+      OpenStack 4.0:
+        desccription: Latest OpenStack 4.0  packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/openstack40/x86_64/
+
+      OpenStack 3.0:
+        desccription: Latest OpenStack 3.0  packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/openstack30/x86_64/
+
+      OpenStack 2.1:
+        desccription: Latest OpenStack 2.1  packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/openstack21/x86_64/
+
+      OpenStack 1.0:
+        desccription: Latest OpenStack 1.0  packages for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/openstack10/x86_64/
+
+      Developer Packages:
+        desccription: Latest packages for test and development  for Oracle Linux 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/developer/i386/
+          x86_64: /repo/OracleLinux/OL6/developer/x86_64/
+
+      Gluster 3.12 Packages:
+        desccription: Latest Gluster 3.12 packages for test and development  for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/developer_gluster312/x86_64/
+
+      Gluster 3.10 Packages:
+        desccription: Latest Gluster 3.10 packages for test and development  for Oracle Linux 6.
+        repos:
+          x86_64: /repo/OracleLinux/OL6/developer_gluster310/x86_64/
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      GA:
+        desccription: Installation media copy of Oracle Linux 6 GA.
+        repos:
+          i386: /repo/OracleLinux/OL6/0/base/i386/
+          x86_64: /repo/OracleLinux/OL6/0/base/x86_64/
+
+      Update 1:
+        desccription: Installation media copy of Oracle Linux 6 Update 1.
+        repos:
+          i386: /repo/OracleLinux/OL6/1/base/i386/
+          x86_64: /repo/OracleLinux/OL6/1/base/x86_64/
+
+      Update 2:
+        desccription: Installation media copy of Oracle Linux 6 Update 2.
+        repos:
+          i386: /repo/OracleLinux/OL6/2/base/i386/
+          x86_64: /repo/OracleLinux/OL6/2/base/x86_64/
+
+      Update 3:
+        desccription: Installation media copy of Oracle Linux 6 Update 3.
+        repos:
+          i386: /repo/OracleLinux/OL6/3/base/i386/
+          x86_64: /repo/OracleLinux/OL6/3/base/x86_64/
+
+      Update 4:
+        desccription: Installation media copy of Oracle Linux 6 Update 4.
+        repos:
+          i386: /repo/OracleLinux/OL6/4/base/i386/
+          x86_64: /repo/OracleLinux/OL6/4/base/x86_64/
+
+      Update 5:
+        desccription: Installation media copy of Oracle Linux 6 Update 5.
+        repos:
+          i386: /repo/OracleLinux/OL6/5/base/i386/
+          x86_64: /repo/OracleLinux/OL6/5/base/x86_64/
+
+      Update 6:
+        desccription: Installation media copy of Oracle Linux 6 Update 6.
+        repos:
+          i386: /repo/OracleLinux/OL6/6/base/i386/
+          x86_64: /repo/OracleLinux/OL6/6/base/x86_64/
+
+      Update 7:
+        desccription: Installation media copy of Oracle Linux 6 Update 7.
+        repos:
+          i386: /repo/OracleLinux/OL6/7/base/i386/
+          x86_64: /repo/OracleLinux/OL6/7/base/x86_64/
+
+      Update 8:
+        desccription: Installation media copy of Oracle Linux 6 Update 8.
+        repos:
+          i386: /repo/OracleLinux/OL6/8/base/i386/
+          x86_64: /repo/OracleLinux/OL6/8/base/x86_64/
+
+      Update 9:
+        desccription: Installation media copy of Oracle Linux 6 Update 9.
+        repos:
+          i386: /repo/OracleLinux/OL6/9/base/i386/
+          x86_64: /repo/OracleLinux/OL6/9/base/x86_64/
+
+      Update 10:
+        desccription: Installation media copy of Oracle Linux 6 Update 10.
+        repos:
+          i386: /repo/OracleLinux/OL6/10/base/i386/
+          x86_64: /repo/OracleLinux/OL6/10/base/x86_64/

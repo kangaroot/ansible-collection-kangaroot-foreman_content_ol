@@ -25,97 +25,6 @@ foreman_products_defaults_ol7_developer: &foreman_products_defaults_ol7_develope
   unprotected: "{{ foreman_products_defaults_unprotected_ol7_developer | bool }}"
 
 
-foreman_products_ol7_developer_go110:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_go110 }}"
-    repositories:
-      ### Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang110 ###
-      - name: Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64)
-        description: Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_golang110
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang110/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_go110 }}"
-
-foreman_products_ol7_developer_go111:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_go111 }}"
-    repositories:
-      ### Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang111 ###
-      - name: Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64)
-        description: Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_golang111
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang111/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_go111 }}"
-
-foreman_products_ol7_developer_go112:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_go112 }}"
-    repositories:
-      ### Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang112 ###
-      - name: Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64)
-        description: Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_golang112
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang112/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_go112 }}"
-
-foreman_products_ol7_developer_go113:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_go113 }}"
-    repositories:
-      ### Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang113 ###
-      - name: Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64)
-        description: Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_golang113
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang113/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_go113 }}"
-
-foreman_products_ol7_developer_go114:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_go114 }}"
-    repositories:
-      ### Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang114 ###
-      - name: Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64)
-        description: Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_golang114
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang114/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_go114 }}"
-
-foreman_products_ol7_developer_go115:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_go115 }}"
-    repositories:
-      ### Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang115 ###
-      - name: Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64)
-        description: Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_golang115
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang115/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_go115 }}"
-
-foreman_products_ol7_developer_go116:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_go116 }}"
-    repositories:
-      ### Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang116 ###
-      - name: Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64)
-        description: Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_golang116
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang116/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_go116 }}"
-
 foreman_products_ol7_developer_go117:
   - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     label: "{{ foreman_product_label_prefix | default('') }}OL"
@@ -155,6 +64,32 @@ foreman_products_ol7_developer_go119:
         <<: *foreman_products_defaults_ol7_developer
         organization: "{{ foreman_organization_ol7_developer_go119 }}"
 
+foreman_products_ol7_developer_go120:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_developer_go120 }}"
+    repositories:
+      ### Latest Go Programming Language 1.20 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang120 ###
+      - name: Latest Go Programming Language 1.20 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.20 packages for Oracle Linux 7 (x86_64).
+        label: ol7_x86_64_developer_golang120
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang120/x86_64/"
+        <<: *foreman_products_defaults_ol7_developer
+        organization: "{{ foreman_organization_ol7_developer_go120 }}"
+
+foreman_products_ol7_developer_go121:
+  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    label: "{{ foreman_product_label_prefix | default('') }}OL"
+    organization: "{{ foreman_organization_ol7_developer_go121 }}"
+    repositories:
+      ### Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_golang121 ###
+      - name: Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64)
+        description: Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64).
+        label: ol7_x86_64_developer_golang121
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/golang121/x86_64/"
+        <<: *foreman_products_defaults_ol7_developer
+        organization: "{{ foreman_organization_ol7_developer_go121 }}"
+
 foreman_products_ol7_developer_php74:
   - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     label: "{{ foreman_product_label_prefix | default('') }}OL"
@@ -168,120 +103,43 @@ foreman_products_ol7_developer_php74:
         <<: *foreman_products_defaults_ol7_developer
         organization: "{{ foreman_organization_ol7_developer_php74 }}"
 
-foreman_products_ol7_developer_nodejs4:
+foreman_products_ol7_developer_nodejs:
   - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_nodejs4 }}"
+    organization: "{{ foreman_organization_ol7_developer_nodejs }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 4 Packages for Development and test (x86_64)"
-        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs4"
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_nodejs4/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_nodejs4 }}"
-
-foreman_products_ol7_developer_nodejs6:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_nodejs6 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 6 Packages for Development and test (x86_64)"
-        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs6"
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_nodejs6/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_nodejs6 }}"
-
-foreman_products_ol7_developer_nodejs8:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_nodejs8 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 8 Packages for Development and test (x86_64)"
-        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs8"
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_nodejs8/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_nodejs8 }}"
-
-foreman_products_ol7_developer_nodejs10:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_nodejs10 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 10 Packages for Development and test (x86_64)"
-        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs10"
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_nodejs10/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_nodejs10 }}"
-
-foreman_products_ol7_developer_nodejs12:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_nodejs12 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 12 Packages for Development and test (x86_64)"
-        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs12"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js Packages for Development and test (x86_64)"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs"
         url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/nodejs12/x86_64/"
         <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_nodejs12 }}"
-
-foreman_products_ol7_developer_nodejs14:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_nodejs14 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 14 Packages for Development and test (x86_64)"
-        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs14"
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/nodejs14/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_nodejs14 }}"
-
-foreman_products_ol7_developer_nodejs16:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_developer_nodejs16 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 16 Packages for Development and test (x86_64)"
-        label: "{{ foreman_repo_label_prefix | default('') }}ol7_developer_nodejs16"
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/nodejs16/x86_64/"
-        <<: *foreman_products_defaults_ol7_developer
-        organization: "{{ foreman_organization_ol7_developer_nodejs16 }}"
+        organization: "{{ foreman_organization_ol7_developer_nodejs }}"
 
 foreman_products_ol7_developer: "{{ [] |
-  union( foreman_products_ol7_developer_go110 | default([]) if foreman_enable_ol7_developer_go110 else [] ) |
-  union( foreman_products_ol7_developer_go111 | default([]) if foreman_enable_ol7_developer_go111 else [] ) |
-  union( foreman_products_ol7_developer_go112 | default([]) if foreman_enable_ol7_developer_go112 else [] ) |
-  union( foreman_products_ol7_developer_go113 | default([]) if foreman_enable_ol7_developer_go113 else [] ) |
-  union( foreman_products_ol7_developer_go114 | default([]) if foreman_enable_ol7_developer_go114 else [] ) |
-  union( foreman_products_ol7_developer_go115 | default([]) if foreman_enable_ol7_developer_go115 else [] ) |
-  union( foreman_products_ol7_developer_go116 | default([]) if foreman_enable_ol7_developer_go116 else [] ) |
   union( foreman_products_ol7_developer_go117 | default([]) if foreman_enable_ol7_developer_go117 else [] ) |
   union( foreman_products_ol7_developer_go118 | default([]) if foreman_enable_ol7_developer_go118 else [] ) |
   union( foreman_products_ol7_developer_go119 | default([]) if foreman_enable_ol7_developer_go119 else [] ) |
+  union( foreman_products_ol7_developer_go120 | default([]) if foreman_enable_ol7_developer_go120 else [] ) |
+  union( foreman_products_ol7_developer_go121 | default([]) if foreman_enable_ol7_developer_go121 else [] ) |
   union( foreman_products_ol7_developer_php74 | default([]) if foreman_enable_ol7_developer_php74 else [] ) |
-  union( foreman_products_ol7_developer_nodejs4 | default([]) if foreman_enable_ol7_developer_nodejs4 else [] ) |
-  union( foreman_products_ol7_developer_nodejs6 | default([]) if foreman_enable_ol7_developer_nodejs6 else [] ) |
-  union( foreman_products_ol7_developer_nodejs8 | default([]) if foreman_enable_ol7_developer_nodejs8 else [] ) |
-  union( foreman_products_ol7_developer_nodejs10 | default([]) if foreman_enable_ol7_developer_nodejs10 else [] ) |
-  union( foreman_products_ol7_developer_nodejs12 | default([]) if foreman_enable_ol7_developer_nodejs12 else [] ) |
-  union( foreman_products_ol7_developer_nodejs14 | default([]) if foreman_enable_ol7_developer_nodejs14 else [] ) |
-  union( foreman_products_ol7_developer_nodejs16 | default([]) if foreman_enable_ol7_developer_nodejs16 else [] )
+  union( foreman_products_ol7_developer_nodejs | default([]) if foreman_enable_ol7_developer_nodejs else [] )
   }}"
 
 
-foreman_content_views_ol7_developer_go110:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_golang110"
-    organization: "{{ foreman_organization_ol7_developer_go110 }}"
+foreman_content_views_ol7_developer_go120:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_golang120"
+    organization: "{{ foreman_organization_ol7_developer_go120 }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.20 packages for Oracle Linux 7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_go110 }}"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_go120 }}"
 
-foreman_content_views_ol7_developer_go111:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_golang111"
-    organization: "{{ foreman_organization_ol7_developer_go111 }}"
+foreman_content_views_ol7_developer_go121:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_golang121"
+    organization: "{{ foreman_organization_ol7_developer_go121 }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_go111 }}"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_go121 }}"
 
 foreman_content_views_ol7_developer_go112:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_golang112"
@@ -355,80 +213,21 @@ foreman_content_views_ol7_developer_php74:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_php74 }}"
 
-foreman_content_views_ol7_developer_nodejs4:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs4"
-    organization: "{{ foreman_organization_ol7_developer_nodejs4 }}"
+foreman_content_views_ol7_developer_nodejs:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs"
+    organization: "{{ foreman_organization_ol7_developer_nodejs }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 4 Packages for Development and test (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js Packages for Development and test (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs4 }}"
-
-foreman_content_views_ol7_developer_nodejs6:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs6"
-    organization: "{{ foreman_organization_ol7_developer_nodejs6 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 6 Packages for Development and test (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs6 }}"
-
-foreman_content_views_ol7_developer_nodejs8:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs8"
-    organization: "{{ foreman_organization_ol7_developer_nodejs8 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 8 Packages for Development and test (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs8 }}"
-
-foreman_content_views_ol7_developer_nodejs10:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs10"
-    organization: "{{ foreman_organization_ol7_developer_nodejs10 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 10 Packages for Development and test (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs10 }}"
-
-foreman_content_views_ol7_developer_nodejs12:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs12"
-    organization: "{{ foreman_organization_ol7_developer_nodejs12 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 12 Packages for Development and test (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs12 }}"
-
-foreman_content_views_ol7_developer_nodejs14:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs14"
-    organization: "{{ foreman_organization_ol7_developer_nodejs14 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 14 Packages for Development and test (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs14 }}"
-
-foreman_content_views_ol7_developer_nodejs16:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_developer_nodejs16"
-    organization: "{{ foreman_organization_ol7_developer_nodejs16 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Node.js 16 Packages for Development and test (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs16 }}"
+    allow_promote: "{{ foreman_cv_allow_promote_ol7_developer_nodejs }}"
 
 foreman_content_views_ol7_developer: "{{ [] |
-  union( foreman_content_views_ol7_developer_go110 | default([]) if foreman_enable_ol7_developer_go110 else [] ) |
-  union( foreman_content_views_ol7_developer_go111 | default([]) if foreman_enable_ol7_developer_go111 else [] ) |
-  union( foreman_content_views_ol7_developer_go112 | default([]) if foreman_enable_ol7_developer_go112 else [] ) |
-  union( foreman_content_views_ol7_developer_go113 | default([]) if foreman_enable_ol7_developer_go113 else [] ) |
-  union( foreman_content_views_ol7_developer_go114 | default([]) if foreman_enable_ol7_developer_go114 else [] ) |
-  union( foreman_content_views_ol7_developer_go115 | default([]) if foreman_enable_ol7_developer_go115 else [] ) |
-  union( foreman_content_views_ol7_developer_go116 | default([]) if foreman_enable_ol7_developer_go116 else [] ) |
   union( foreman_content_views_ol7_developer_go117 | default([]) if foreman_enable_ol7_developer_go117 else [] ) |
   union( foreman_content_views_ol7_developer_go118 | default([]) if foreman_enable_ol7_developer_go118 else [] ) |
   union( foreman_content_views_ol7_developer_go119 | default([]) if foreman_enable_ol7_developer_go119 else [] ) |
+  union( foreman_content_views_ol7_developer_go120 | default([]) if foreman_enable_ol7_developer_go120 else [] ) |
+  union( foreman_content_views_ol7_developer_go121 | default([]) if foreman_enable_ol7_developer_go121 else [] ) |
   union( foreman_content_views_ol7_developer_php74 | default([]) if foreman_enable_ol7_developer_php74 else [] ) |
-  union( foreman_content_views_ol7_developer_nodejs4 | default([]) if foreman_enable_ol7_developer_nodejs4 else [] ) |
-  union( foreman_content_views_ol7_developer_nodejs6 | default([]) if foreman_enable_ol7_developer_nodejs6 else [] ) |
-  union( foreman_content_views_ol7_developer_nodejs8 | default([]) if foreman_enable_ol7_developer_nodejs8 else [] ) |
-  union( foreman_content_views_ol7_developer_nodejs10 | default([]) if foreman_enable_ol7_developer_nodejs10 else [] ) |
-  union( foreman_content_views_ol7_developer_nodejs12 | default([]) if foreman_enable_ol7_developer_nodejs12 else [] ) |
-  union( foreman_content_views_ol7_developer_nodejs14 | default([]) if foreman_enable_ol7_developer_nodejs14 else [] ) |
-  union( foreman_content_views_ol7_developer_nodejs16 | default([]) if foreman_enable_ol7_developer_nodejs16 else [] )
+  union( foreman_content_views_ol7_developer_nodejs | default([]) if foreman_enable_ol7_developer_nodejs else [] )
   }}"
 

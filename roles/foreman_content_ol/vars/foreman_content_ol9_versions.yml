@@ -4,16 +4,16 @@
 foreman_products_defaults: &foreman_products_defaults
   content_type: yum
   gpg_key: "{{ foreman_cred_name_prefix | default('') }}RPM-GPG-KEY-oracle"
-  download_policy: "{{ foreman_products_defaults_download_policy_ol7 }}"
+  download_policy: "{{ foreman_products_defaults_download_policy_ol9 }}"
   # mirror_on_sync: True
   # mirroring_policy: "additive"
   # mirroring_policy: "mirror_content_only"
   # mirroring_policy: "mirror_complete"
-  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol7 }}"
-  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol7 | bool }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol9 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol9 | bool }}"
   # http_proxy: Default Proxy
-  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol7 }}"
-  unprotected: "{{ foreman_products_defaults_unprotected_ol7 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol9 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol9 | bool }}"
 
 
 foreman_products_defaults_ol90: &foreman_products_defaults_ol90
@@ -56,96 +56,122 @@ foreman_products_defaults_ol94: &foreman_products_defaults_ol94
   http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol94 }}"
   unprotected: "{{ foreman_products_defaults_unprotected_ol94 | bool }}"
 
+foreman_products_defaults_ol95: &foreman_products_defaults_ol95
+  <<: *foreman_products_defaults
+  download_policy: "{{ foreman_products_defaults_download_policy_ol95 }}"
+  mirroring_policy: "{{ foreman_products_defaults_mirroring_policy_ol95 }}"
+  verify_ssl_on_sync: "{{ foreman_products_defaults_verify_ssl_on_sync_ol95 | bool }}"
+  http_proxy_policy: "{{ foreman_products_defaults_http_proxy_policy_ol95 }}"
+  unprotected: "{{ foreman_products_defaults_unprotected_ol95 | bool }}"
+
 
 foreman_products_ol90_content: &foreman_products_ol90_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol90 }}"
-    repositories:
-      ### Oracle Linux 9 BaseOS GA (x86_64) | ol9_x86_64_u0_baseos_base ###
-      - name: Oracle Linux 9 BaseOS GA (x86_64)
-        description: Base operating system packages released for Oracle Linux 9 (x86_64). No errata included
-        label: ol9_x86_64_u0_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/0/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol90
-        organization: "{{ foreman_organization_ol90 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol90 }}"
+  repositories:
+    ### Oracle Linux 9 BaseOS GA (x86_64) | ol9_x86_64_u0_baseos_base ###
+    - name: Oracle Linux 9 BaseOS GA (x86_64)
+      description: Base operating system packages released for Oracle Linux 9 (x86_64). No errata included
+      label: ol9_x86_64_u0_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/0/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol90
+      organization: "{{ foreman_organization_ol90 }}"
 
 foreman_products_ol90:
-  - *foreman_products_ol90_content
+  - <<: *foreman_products_ol90_content
 foreman_products_ol90_kickstart:
-  - *foreman_products_ol90_content
+  - <<: *foreman_products_ol90_content
 
 foreman_products_ol91_content: &foreman_products_ol91_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol91 }}"
-    repositories:
-      ### Oracle Linux 9.1 BaseOS (x86_64) | ol9_x86_64_u1_baseos_base ###
-      - name: Oracle Linux 9.1 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 9.1 (x86_64). No errata included
-        label: ol9_x86_64_u1_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/1/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol91
-        organization: "{{ foreman_organization_ol91 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol91 }}"
+  repositories:
+    ### Oracle Linux 9.1 BaseOS (x86_64) | ol9_x86_64_u1_baseos_base ###
+    - name: Oracle Linux 9.1 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 9.1 (x86_64). No errata included
+      label: ol9_x86_64_u1_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/1/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol91
+      organization: "{{ foreman_organization_ol91 }}"
 
 foreman_products_ol91:
-  - *foreman_products_ol91_content
+  - <<: *foreman_products_ol91_content
 foreman_products_ol91_kickstart:
-  - *foreman_products_ol91_content
+  - <<: *foreman_products_ol91_content
 
 foreman_products_ol92_content: &foreman_products_ol92_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol92 }}"
-    repositories:
-      ### Oracle Linux 9.2 BaseOS (x86_64) | ol9_x86_64_u2_baseos_base ###
-      - name: Oracle Linux 9.2 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 9.2 (x86_64). No errata included
-        label: ol9_x86_64_u2_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/2/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol92
-        organization: "{{ foreman_organization_ol92 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol92 }}"
+  repositories:
+    ### Oracle Linux 9.2 BaseOS (x86_64) | ol9_x86_64_u2_baseos_base ###
+    - name: Oracle Linux 9.2 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 9.2 (x86_64). No errata included
+      label: ol9_x86_64_u2_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/2/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol92
+      organization: "{{ foreman_organization_ol92 }}"
 
 foreman_products_ol92:
-  - *foreman_products_ol92_content
+  - <<: *foreman_products_ol92_content
 foreman_products_ol92_kickstart:
-  - *foreman_products_ol92_content
+  - <<: *foreman_products_ol92_content
 
 foreman_products_ol93_content: &foreman_products_ol93_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol93 }}"
-    repositories:
-      ### Oracle Linux 9.3 BaseOS (x86_64) | ol9_x86_64_u3_baseos_base ###
-      - name: Oracle Linux 9.3 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 9.3 (x86_64). No errata included
-        label: ol9_x86_64_u3_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/3/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol93
-        organization: "{{ foreman_organization_ol93 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol93 }}"
+  repositories:
+    ### Oracle Linux 9.3 BaseOS (x86_64) | ol9_x86_64_u3_baseos_base ###
+    - name: Oracle Linux 9.3 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 9.3 (x86_64). No errata included
+      label: ol9_x86_64_u3_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/3/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol93
+      organization: "{{ foreman_organization_ol93 }}"
 
 foreman_products_ol93:
-  - *foreman_products_ol93_content
+  - <<: *foreman_products_ol93_content
 foreman_products_ol93_kickstart:
-  - *foreman_products_ol93_content
+  - <<: *foreman_products_ol93_content
 
 foreman_products_ol94_content: &foreman_products_ol94_content
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol94 }}"
-    repositories:
-      ### Oracle Linux 9.4 BaseOS (x86_64) | ol9_x86_64_u4_baseos_base ###
-      - name: Oracle Linux 9.4 BaseOS (x86_64)
-        description: Base operating system packages released for Oracle Linux 9.4 (x86_64). No errata included
-        label: ol9_x86_64_u4_baseos_base
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/4/baseos/base/x86_64/"
-        <<: *foreman_products_defaults_ol94
-        organization: "{{ foreman_organization_ol94 }}"
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol94 }}"
+  repositories:
+    ### Oracle Linux 9.4 BaseOS (x86_64) | ol9_x86_64_u4_baseos_base ###
+    - name: Oracle Linux 9.4 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 9.4 (x86_64). No errata included
+      label: ol9_x86_64_u4_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/4/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol94
+      organization: "{{ foreman_organization_ol94 }}"
 
 foreman_products_ol94:
-  - *foreman_products_ol94_content
+  - <<: *foreman_products_ol94_content
 foreman_products_ol94_kickstart:
-  - *foreman_products_ol94_content
+  - <<: *foreman_products_ol94_content
+
+foreman_products_ol95_content: &foreman_products_ol95_content
+  name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  label: "{{ foreman_product_label_prefix | default('') }}OL"
+  organization: "{{ foreman_organization_ol95 }}"
+  repositories:
+    ### Oracle Linux 9.5 BaseOS (x86_64) | ol9_x86_64_u5_baseos_base ###
+    - name: Oracle Linux 9.5 BaseOS (x86_64)
+      description: Base operating system packages released for Oracle Linux 9.5 (x86_64). No errata included
+      label: ol9_x86_64_u5_baseos_base
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/5/baseos/base/x86_64/"
+      <<: *foreman_products_defaults_ol95
+      organization: "{{ foreman_organization_ol95 }}"
+
+foreman_products_ol95:
+  - <<: *foreman_products_ol95_content
+foreman_products_ol95_kickstart:
+  - <<: *foreman_products_ol95_content
 
 foreman_products_ol9_versions: "{{ [] |
   union( foreman_products_ol90 | default([]) if foreman_enable_ol90 | bool else [] ) |
@@ -153,12 +179,14 @@ foreman_products_ol9_versions: "{{ [] |
   union( foreman_products_ol92 | default([]) if foreman_enable_ol92 | bool else [] ) |
   union( foreman_products_ol93 | default([]) if foreman_enable_ol93 | bool else [] ) |
   union( foreman_products_ol94 | default([]) if foreman_enable_ol94 | bool else [] ) |
+  union( foreman_products_ol95 | default([]) if foreman_enable_ol95 | bool else [] ) |
 
   union( foreman_products_ol90_kickstart | default([]) if foreman_enable_ol90_kickstart | bool else [] ) |
   union( foreman_products_ol91_kickstart | default([]) if foreman_enable_ol91_kickstart | bool else [] ) |
   union( foreman_products_ol92_kickstart | default([]) if foreman_enable_ol92_kickstart | bool else [] ) |
   union( foreman_products_ol93_kickstart | default([]) if foreman_enable_ol93_kickstart | bool else [] ) |
-  union( foreman_products_ol94_kickstart | default([]) if foreman_enable_ol94_kickstart | bool else [] )
+  union( foreman_products_ol94_kickstart | default([]) if foreman_enable_ol94_kickstart | bool else [] ) |
+  union( foreman_products_ol95_kickstart | default([]) if foreman_enable_ol95_kickstart | bool else [] )
   }}"
 
 
@@ -202,18 +230,28 @@ foreman_content_views_ol94:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol94 }}"
 
+foreman_content_views_ol95:
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_u5_baseos_base"
+    organization: "{{ foreman_organization_ol95 }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.5 BaseOS (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol95 }}"
+
 foreman_composite_content_views_ol90: []
 foreman_composite_content_views_ol91: []
 foreman_composite_content_views_ol92: []
 foreman_composite_content_views_ol93: []
 foreman_composite_content_views_ol94: []
+foreman_composite_content_views_ol95: []
 
 foreman_content_views_ol9_versions: "{{ [] |
   union( foreman_content_views_ol90 | default([]) if foreman_enable_ol90 | bool else [] ) |
   union( foreman_content_views_ol91 | default([]) if foreman_enable_ol91 | bool else [] ) |
   union( foreman_content_views_ol92 | default([]) if foreman_enable_ol92 | bool else [] ) |
   union( foreman_content_views_ol93 | default([]) if foreman_enable_ol93 | bool else [] ) |
-  union( foreman_content_views_ol94 | default([]) if foreman_enable_ol94 | bool else [] )
+  union( foreman_content_views_ol94 | default([]) if foreman_enable_ol94 | bool else [] ) |
+  union( foreman_content_views_ol95 | default([]) if foreman_enable_ol95 | bool else [] )
   }}"
 
 foreman_composite_content_views_ol9_versions: "{{ [] |
@@ -221,7 +259,8 @@ foreman_composite_content_views_ol9_versions: "{{ [] |
   union( foreman_composite_content_views_ol91 | default([]) if foreman_enable_ol91 | bool and foreman_enable_ol91_default_ccv | bool else [] ) |
   union( foreman_composite_content_views_ol92 | default([]) if foreman_enable_ol92 | bool and foreman_enable_ol92_default_ccv | bool else [] ) |
   union( foreman_composite_content_views_ol93 | default([]) if foreman_enable_ol93 | bool and foreman_enable_ol93_default_ccv | bool else [] ) |
-  union( foreman_composite_content_views_ol94 | default([]) if foreman_enable_ol94 | bool and foreman_enable_ol94_default_ccv | bool else [] )
+  union( foreman_composite_content_views_ol94 | default([]) if foreman_enable_ol94 | bool and foreman_enable_ol94_default_ccv | bool else [] ) |
+  union( foreman_composite_content_views_ol95 | default([]) if foreman_enable_ol95 | bool and foreman_enable_ol95_default_ccv | bool else [] )
   }}"
 
 
@@ -230,7 +269,8 @@ foreman_operatingsystems_ol9_versions: "{{ [] |
   union( foreman_operatingsystems_ol91 | default([]) if foreman_enable_ol91 | bool or foreman_enable_ol91_kickstart | bool else [] ) |
   union( foreman_operatingsystems_ol92 | default([]) if foreman_enable_ol92 | bool or foreman_enable_ol92_kickstart | bool else [] ) |
   union( foreman_operatingsystems_ol93 | default([]) if foreman_enable_ol93 | bool or foreman_enable_ol93_kickstart | bool else [] ) |
-  union( foreman_operatingsystems_ol94 | default([]) if foreman_enable_ol94 | bool or foreman_enable_ol94_kickstart | bool else [] )
+  union( foreman_operatingsystems_ol94 | default([]) if foreman_enable_ol94 | bool or foreman_enable_ol94_kickstart | bool else [] ) |
+  union( foreman_operatingsystems_ol95 | default([]) if foreman_enable_ol95 | bool or foreman_enable_ol95_kickstart | bool else [] )
   }}"
 
 
@@ -274,10 +314,17 @@ foreman_installation_media_ol93:
 
 foreman_installation_media_ol94:
   - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 9.4 BaseOS"
-    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_linux/ol9_u3_baseos_base/"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_linux/ol9_u4_baseos_base/"
     <<: *foreman_installation_media_defaults
     operatingsystems:
       - Oracle Linux 9.4
+
+foreman_installation_media_ol95:
+  - name: "{{ foreman_media_name_prefix | default('') }}Oracle Linux 9.5 BaseOS"
+    path: "https://{{ foreman_server_hostname }}/pulp/content/{{ foreman_organization }}/Library/custom/Oracle_linux/ol9_u5_baseos_base/"
+    <<: *foreman_installation_media_defaults
+    operatingsystems:
+      - Oracle Linux 9.5
       - Oracle Linux 9
 
 foreman_installation_media_ol9_versions: "{{ [] |
@@ -285,7 +332,8 @@ foreman_installation_media_ol9_versions: "{{ [] |
   union( foreman_installation_media_ol91 | default([]) if foreman_enable_ol91_kickstart | bool else [] ) |
   union( foreman_installation_media_ol92 | default([]) if foreman_enable_ol92_kickstart | bool else [] ) |
   union( foreman_installation_media_ol93 | default([]) if foreman_enable_ol93_kickstart | bool else [] ) |
-  union( foreman_installation_media_ol94 | default([]) if foreman_enable_ol94_kickstart | bool else [] )
+  union( foreman_installation_media_ol94 | default([]) if foreman_enable_ol94_kickstart | bool else [] ) |
+  union( foreman_installation_media_ol95 | default([]) if foreman_enable_ol95_kickstart | bool else [] )
   }}"
 
 
@@ -294,13 +342,15 @@ foreman_activation_keys_ol91: []
 foreman_activation_keys_ol92: []
 foreman_activation_keys_ol93: []
 foreman_activation_keys_ol94: []
+foreman_activation_keys_ol95: []
 
 foreman_activation_keys_redhat7_versions: "{{ [] |
   union( foreman_activation_keys_ol90 | default([]) if foreman_enable_ol90 | bool and foreman_enable_ol90_default_ak | bool else [] ) |
   union( foreman_activation_keys_ol91 | default([]) if foreman_enable_ol91 | bool and foreman_enable_ol91_default_ak | bool else [] ) |
   union( foreman_activation_keys_ol92 | default([]) if foreman_enable_ol92 | bool and foreman_enable_ol92_default_ak | bool else [] ) |
   union( foreman_activation_keys_ol93 | default([]) if foreman_enable_ol93 | bool and foreman_enable_ol93_default_ak | bool else [] ) |
-  union( foreman_activation_keys_ol94 | default([]) if foreman_enable_ol94 | bool and foreman_enable_ol94_default_ak | bool else [] )
+  union( foreman_activation_keys_ol94 | default([]) if foreman_enable_ol94 | bool and foreman_enable_ol94_default_ak | bool else [] ) |
+  union( foreman_activation_keys_ol95 | default([]) if foreman_enable_ol95 | bool and foreman_enable_ol95_default_ak | bool else [] )
   }}"
 
 
@@ -309,12 +359,14 @@ foreman_sync_plan_products_ol91: []
 foreman_sync_plan_products_ol92: []
 foreman_sync_plan_products_ol93: []
 foreman_sync_plan_products_ol94: []
+foreman_sync_plan_products_ol95: []
 
 foreman_sync_plan_products_redhat7_versions: "{{ [] |
   union( foreman_sync_plan_products_ol90 | default([]) if foreman_enable_ol90 | bool or foreman_enable_ol90_kickstart | bool else [] ) |
   union( foreman_sync_plan_products_ol91 | default([]) if foreman_enable_ol91 | bool or foreman_enable_ol91_kickstart | bool else [] ) |
   union( foreman_sync_plan_products_ol92 | default([]) if foreman_enable_ol92 | bool or foreman_enable_ol92_kickstart | bool else [] ) |
   union( foreman_sync_plan_products_ol93 | default([]) if foreman_enable_ol93 | bool or foreman_enable_ol93_kickstart | bool else [] ) |
-  union( foreman_sync_plan_products_ol94 | default([]) if foreman_enable_ol94 | bool or foreman_enable_ol94_kickstart | bool else [] )
+  union( foreman_sync_plan_products_ol94 | default([]) if foreman_enable_ol94 | bool or foreman_enable_ol94_kickstart | bool else [] ) |
+  union( foreman_sync_plan_products_ol95 | default([]) if foreman_enable_ol95 | bool or foreman_enable_ol95_kickstart | bool else [] )
   }}"
 

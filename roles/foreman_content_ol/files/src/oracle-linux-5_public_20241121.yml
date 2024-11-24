@@ -1,0 +1,130 @@
+# Oracle Linux 5
+
+  ## Sustaining Support
+  sustaining_support:
+
+    repos:
+
+      Latest:
+        desccription: Latest packages released for Oracle Linux 5.
+        repos:
+          i386: /repo/OracleLinux/OL5/latest/i386/
+          x86_64: /repo/OracleLinux/OL5/latest/x86_64/
+
+      UEK Release 2:
+        desccription: Latest Unbreakable Enterprise Kernel Release 2 packages for Oracle Linux 5.
+        repos:
+          i386: /repo/OracleLinux/OL5/UEK/latest/i386/
+          x86_64: /repo/OracleLinux/OL5/UEK/latest/x86_64/
+
+      Add-ons:
+        desccription: Latest add-on packages for Oracle Linux 5.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/addons/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/addons/x86_64/
+
+      Oracle add-ons:
+        desccription: Latest Oracle software add-on packages for Oracle Linux 5.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/oracle_addons/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/oracle_addons/x86_64/
+
+      Spacewalk 2.6 Client:
+        desccription: Latest Spacewalk 2.6 Client  packages for Oracle Linux 5.
+        repos:
+          i386: /repo/OracleLinux/OL5/spacewalk26/client/i386/
+          x86_64: /repo/OracleLinux/OL5/spacewalk26/client/x86_64/
+
+      Spacewalk 2.4 Client:
+        desccription: Latest Spacewalk 2.4 Client  packages for Oracle Linux 5.
+        repos:
+          i386: /repo/OracleLinux/OL5/spacewalk24/client/i386/
+          x86_64: /repo/OracleLinux/OL5/spacewalk24/client/x86_64/
+
+      Unsupported:
+        desccription: Productivity Applications for Oracle Linux 5.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/unsupported/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/unsupported/x86_64/
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      GA:
+        desccription: Installation media copy of Oracle Linux 5 GA.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/0/base/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/0/base/x86_64/
+
+      Update 1:
+        desccription: Installation media copy of Oracle Linux 5 Update 1.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/1/base/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/1/base/x86_64/
+
+      Update 2:
+        desccription: Installation media copy of Oracle Linux 5 Update 2.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/2/base/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/2/base/x86_64/
+
+      Update 3:
+        desccription: Installation media copy of Oracle Linux 5 Update 3.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/3/base/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/3/base/x86_64/
+
+      Update 4:
+        desccription: Installation media copy of Oracle Linux 5 Update 4.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/4/base/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/4/base/x86_64/
+
+      Initial Release of Oracle Linux 5 Update 5:
+        desccription: Installation media copy of the initial Oracle Linux 5 Update 5 release.
+        repos:
+          i386: /repo/EnterpriseLinux/EL5/5/base/i386/
+          x86_64: /repo/EnterpriseLinux/EL5/5/base/x86_64/
+
+      Updated Release of Oracle Linux 5 Update 5:
+        desccription: Installation media copy of the updated Oracle Linux 5 Update 5 release.
+        repos:
+          x86_64: /repo/OracleLinux/OL5/5/base/x86_64/
+
+      Update 6:
+        desccription: Installation media copy of Oracle Linux 5 Update 6.
+        repos:
+          i386: /repo/OracleLinux/OL5/6/base/i386/
+          x86_64: /repo/OracleLinux/OL5/6/base/x86_64/
+
+      Update 7:
+        desccription: Installation media copy of Oracle Linux 5 Update 7.
+        repos:
+          i386: /repo/OracleLinux/OL5/7/base/i386/
+          x86_64: /repo/OracleLinux/OL5/7/base/x86_64/
+
+      Update 8:
+        desccription: Installation media copy of Oracle Linux 5 Update 8.
+        repos:
+          i386: /repo/OracleLinux/OL5/8/base/i386/
+          x86_64: /repo/OracleLinux/OL5/8/base/x86_64/
+
+      Update 9:
+        desccription: Installation media copy of Oracle Linux 5 Update 9.
+        repos:
+          i386: /repo/OracleLinux/OL5/9/base/i386/
+          x86_64: /repo/OracleLinux/OL5/9/base/x86_64/
+
+      Update 10:
+        desccription: Installation media copy of Oracle Linux 5 Update 10.
+        repos:
+          i386: /repo/OracleLinux/OL5/10/base/i386/
+          x86_64: /repo/OracleLinux/OL5/10/base/x86_64/
+
+      Update 11:
+        desccription: Installation media copy of Oracle Linux 5 Update 11.
+        repos:
+          i386: /repo/OracleLinux/OL5/11/base/i386/
+          x86_64: /repo/OracleLinux/OL5/11/base/x86_64/

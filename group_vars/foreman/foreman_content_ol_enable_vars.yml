@@ -82,10 +82,8 @@
 # foreman_enable_ol7_uekr4_ofed: false
 # foreman_enable_ol7_uekr5: "{{ foreman_enable_ol7_uek | bool }}"
 # foreman_enable_ol7_uekr5_rdma: false
-# foreman_enable_ol7_uekr5_developer: false
 # foreman_enable_ol7_uekr6: "{{ foreman_enable_ol7_uek | bool }}"
 # foreman_enable_ol7_uekr6_rdma: false
-# foreman_enable_ol7_uekr6_developer: false
 # foreman_enable_ol7_modrhck: "{{ foreman_enable_ol7_uek | bool }}"
 
 # foreman_enable_ol7_leapp: false
@@ -97,12 +95,10 @@
 # foreman_enable_ol7_mysql55: false
 # foreman_enable_ol7_mysql56: false
 # foreman_enable_ol7_mysql57: false
-# foreman_enable_ol7_mysql80: "{{ foreman_enable_ol7_mysql | bool }}"
+# foreman_enable_ol7_mysql80: false
+# foreman_enable_ol7_mysql84: "{{ foreman_enable_ol7_mysql | bool }}"
 
 # foreman_enable_ol7_cloud: false
-# foreman_enable_ol7_cloud_openstack20: false
-# foreman_enable_ol7_cloud_openstack21: false
-# foreman_enable_ol7_cloud_openstack30: false
 # foreman_enable_ol7_cloud_openstack40: false
 # foreman_enable_ol7_cloud_openstack50: "{{ foreman_enable_ol7_cloud | bool }}"
 
@@ -112,9 +108,9 @@
 # foreman_enable_ol7_virtualization_ovirt43: "{{ foreman_enable_ol7_virtualization | bool }}"
 
 # foreman_enable_ol7_storage: false
-# foreman_enable_ol7_storage_ceph10: false
 # foreman_enable_ol7_storage_ceph20: false
 # foreman_enable_ol7_storage_ceph30: false
+# foreman_enable_ol7_storage_gluster310: false
 # foreman_enable_ol7_storage_gluster312: false
 # foreman_enable_ol7_storage_gluster41: false
 # foreman_enable_ol7_storage_gluster5: false
@@ -122,24 +118,13 @@
 # foreman_enable_ol7_storage_gluster8: false
 
 # foreman_enable_ol7_developer: false
-# foreman_enable_ol7_developer_go110: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_go111: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_go112: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_go113: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_go114: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_go115: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_go116: "{{ foreman_enable_ol7_developer | bool }}"
 # foreman_enable_ol7_developer_go117: "{{ foreman_enable_ol7_developer | bool }}"
 # foreman_enable_ol7_developer_go118: "{{ foreman_enable_ol7_developer | bool }}"
 # foreman_enable_ol7_developer_go119: "{{ foreman_enable_ol7_developer | bool }}"
+# foreman_enable_ol7_developer_go120: "{{ foreman_enable_ol7_developer | bool }}"
+# foreman_enable_ol7_developer_go121: "{{ foreman_enable_ol7_developer | bool }}"
 # foreman_enable_ol7_developer_php74: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_nodejs4: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_nodejs6: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_nodejs8: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_nodejs10: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_nodejs12: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_nodejs14: "{{ foreman_enable_ol7_developer | bool }}"
-# foreman_enable_ol7_developer_nodejs16: "{{ foreman_enable_ol7_developer | bool }}"
+# foreman_enable_ol7_developer_nodejs: "{{ foreman_enable_ol7_developer | bool }}"
 
 # foreman_enable_ol7_olm: false
 # foreman_enable_ol7_olm_spacewalk26: false
@@ -206,24 +191,29 @@
 
 # foreman_enable_ol8_uek: false
 # foreman_enable_ol8_uekr6: "{{ foreman_enable_ol8_uek | bool }}"
-# foreman_enable_ol8_uekr6_developer: false
 # foreman_enable_ol8_uekr6_rdma: false
 # foreman_enable_ol8_uekr7: "{{ foreman_enable_ol8_uek | bool }}"
-# foreman_enable_ol8_uekr7_developer: false
 # foreman_enable_ol8_uekr7_rdma: false
 # foreman_enable_ol8_modrhck: "{{ foreman_enable_ol8_uek | bool }}"
 
 # foreman_enable_ol8_instantclient: false
+
 # foreman_enable_ol8_mysql: false
+# foreman_enable_ol8_mysql80: false
+# foreman_enable_ol8_mysql84: "{{ foreman_enable_ol8_mysql | bool }}"
+# foreman_enable_ol8_mysql_innovation: "{{ foreman_enable_ol8_mysql | bool }}"
+
 # foreman_enable_ol8_olm: false
 # foreman_enable_ol8_am: false
-# foreman_enable_ol8_am10: true
-# foreman_enable_ol8_am20: "{{ foreman_enable_ol8_am | bool }}"
+# foreman_enable_ol8_am10: false
+# foreman_enable_ol8_am21: false
+# foreman_enable_ol8_am22: "{{ foreman_enable_ol8_am | bool }}"
 # foreman_enable_ol8_olcne: false
 
 # foreman_enable_ol8_virtualization: false
-# foreman_enable_ol8_virtualization_kvm_utils: false
-# foreman_enable_ol8_virtualization_ovirt44: "{{ foreman_enable_ol8_virtualization | bool }}"
+# foreman_enable_ol8_virtualization_kvm_utils: "{{ foreman_enable_ol8_virtualization | bool }}"
+# foreman_enable_ol8_virtualization_ovirt44: false
+# foreman_enable_ol8_virtualization_ovirt45: "{{ foreman_enable_ol8_virtualization | bool }}"
 
 # foreman_enable_ol8_storage: false
 # foreman_enable_ol8_security_validation: false
@@ -241,40 +231,52 @@
 # foreman_enable_ol92: false
 # foreman_enable_ol93: false
 # foreman_enable_ol94: false
+# foreman_enable_ol95: false
 
 # foreman_enable_ol90_kickstart: "{{ foreman_enable_ol90 | bool }}"
 # foreman_enable_ol91_kickstart: "{{ foreman_enable_ol91 | bool }}"
 # foreman_enable_ol92_kickstart: "{{ foreman_enable_ol92 | bool }}"
 # foreman_enable_ol93_kickstart: "{{ foreman_enable_ol93 | bool }}"
-# foreman_enable_ol94_kickstart: "{{ foreman_enable_ol9_kickstart | bool or
-#                                    foreman_enable_ol94 | bool }}"
+# foreman_enable_ol94_kickstart: "{{ foreman_enable_ol94 | bool }}"
+# foreman_enable_ol95_kickstart: "{{ foreman_enable_ol9_kickstart | bool or
+#                                    foreman_enable_ol95 | bool }}"
 
 # foreman_enable_ol90_default_ccv: "{{ foreman_enable_ol9_default_ccv | bool }}"
 # foreman_enable_ol91_default_ccv: "{{ foreman_enable_ol9_default_ccv | bool }}"
 # foreman_enable_ol92_default_ccv: "{{ foreman_enable_ol9_default_ccv | bool }}"
 # foreman_enable_ol93_default_ccv: "{{ foreman_enable_ol9_default_ccv | bool }}"
 # foreman_enable_ol94_default_ccv: "{{ foreman_enable_ol9_default_ccv | bool }}"
+# foreman_enable_ol95_default_ccv: "{{ foreman_enable_ol9_default_ccv | bool }}"
 
 # foreman_enable_ol90_default_ak: "{{ foreman_enable_ol90_default_ccv | bool }}"
 # foreman_enable_ol91_default_ak: "{{ foreman_enable_ol91_default_ccv | bool }}"
 # foreman_enable_ol92_default_ak: "{{ foreman_enable_ol92_default_ccv | bool }}"
 # foreman_enable_ol93_default_ak: "{{ foreman_enable_ol93_default_ccv | bool }}"
 # foreman_enable_ol94_default_ak: "{{ foreman_enable_ol94_default_ccv | bool }}"
+# foreman_enable_ol95_default_ak: "{{ foreman_enable_ol95_default_ccv | bool }}"
 
 # foreman_enable_ol9_uek: false
 # foreman_enable_ol9_uekr7: "{{ foreman_enable_ol9_uek | bool }}"
-# foreman_enable_ol9_uekr7_developer: false
 # foreman_enable_ol9_rdma: false
 # foreman_enable_ol9_modrhck: "{{ foreman_enable_ol9_uek | bool }}"
+# foreman_enable_ol9_ueknext_developer: false
 
 # foreman_enable_ol9_instantclient: false
+
 # foreman_enable_ol9_mysql: false
+# foreman_enable_ol9_mysql80: false
+# foreman_enable_ol9_mysql84: "{{ foreman_enable_ol9_mysql | bool }}"
+# foreman_enable_ol9_mysql_innovation: "{{ foreman_enable_ol9_mysql | bool }}"
+
 # foreman_enable_ol9_olm: false
 # foreman_enable_ol9_am: false
+# foreman_enable_ol9_am10: false
+# foreman_enable_ol9_am21: false
+# foreman_enable_ol9_am22: "{{ foreman_enable_ol9_am | bool }}"
 # foreman_enable_ol9_olcne: false
 
 # foreman_enable_ol9_virtualization: false
-# foreman_enable_ol9_virtualization_kvm_utils: false
+# foreman_enable_ol9_virtualization_kvm_utils: "{{ foreman_enable_ol9_virtualization | bool }}"
 
 # foreman_enable_ol9_storage: false
 # foreman_enable_ol9_security_validation: false
@@ -380,7 +382,6 @@
 # foreman_enable_ol7_uln_modrhck:  "{{ foreman_enable_ol7_uln_uek | bool }}"
 
 # foreman_enable_ol7_uln_ksplice: false
-# foreman_enable_ol7_uln_sap: false
 # foreman_enable_ol7_uln_leapp: false
 # foreman_enable_ol7_uln_instantclient: false
 # foreman_enable_ol7_uln_olcne: false
@@ -390,7 +391,9 @@
 # foreman_enable_ol7_uln_mysql55: false
 # foreman_enable_ol7_uln_mysql56: false
 # foreman_enable_ol7_uln_mysql57: false
-# foreman_enable_ol7_uln_mysql80: "{{ foreman_enable_ol7_uln_mysql | bool }}"
+# foreman_enable_ol7_uln_mysql80: false
+# foreman_enable_ol7_uln_mysql84: "{{ foreman_enable_ol7_uln_mysql | bool }}"
+# foreman_enable_ol7_uln_mysql_innovation: "{{ foreman_enable_ol7_uln_mysql | bool }}"
 
 # foreman_enable_ol7_uln_cloud: false
 # foreman_enable_ol7_uln_cloud_openstack20: false
@@ -415,13 +418,13 @@
 # foreman_enable_ol7_uln_storage_gluster8: false
 
 # foreman_enable_ol7_uln_developer: false
-# foreman_enable_ol7_uln_developer_go110: "{{ foreman_enable_ol7_uln_developer | bool }}"
-# foreman_enable_ol7_uln_developer_go111: "{{ foreman_enable_ol7_uln_developer | bool }}"
-# foreman_enable_ol7_uln_developer_go112: "{{ foreman_enable_ol7_uln_developer | bool }}"
-# foreman_enable_ol7_uln_developer_go113: "{{ foreman_enable_ol7_uln_developer | bool }}"
-# foreman_enable_ol7_uln_developer_go114: "{{ foreman_enable_ol7_uln_developer | bool }}"
-# foreman_enable_ol7_uln_developer_go115: "{{ foreman_enable_ol7_uln_developer | bool }}"
-# foreman_enable_ol7_uln_developer_go116: "{{ foreman_enable_ol7_uln_developer | bool }}"
+# foreman_enable_ol7_uln_developer_go110: false
+# foreman_enable_ol7_uln_developer_go111: false
+# foreman_enable_ol7_uln_developer_go112: false
+# foreman_enable_ol7_uln_developer_go113: false
+# foreman_enable_ol7_uln_developer_go114: false
+# foreman_enable_ol7_uln_developer_go115: false
+# foreman_enable_ol7_uln_developer_go116: false
 # foreman_enable_ol7_uln_developer_go117: "{{ foreman_enable_ol7_uln_developer | bool }}"
 # foreman_enable_ol7_uln_developer_go118: "{{ foreman_enable_ol7_uln_developer | bool }}"
 # foreman_enable_ol7_uln_developer_go119: "{{ foreman_enable_ol7_uln_developer | bool }}"
@@ -432,8 +435,6 @@
 # foreman_enable_ol7_uln_olm_spacewalk27: false
 # foreman_enable_ol7_uln_olm_spacewalk210: false
 # foreman_enable_ol7_uln_olm_oraclelinuxmanager210: "{{ foreman_enable_ol7_uln_olm | bool }}"
-
-# foreman_enable_ol7_uln_exadata: false
 
 ### ORACLE LINUX 8 ULN
 
@@ -515,16 +516,23 @@
 
 # foreman_enable_ol8_uln_ksplice: false
 # foreman_enable_ol8_uln_instantclient: false
+
 # foreman_enable_ol8_uln_mysql: false
+# foreman_enable_ol8_uln_mysql80: false
+# foreman_enable_ol8_uln_mysql84: "{{ foreman_enable_ol8_uln_mysql | bool }}"
+# foreman_enable_ol8_uln_mysql_innovation: "{{ foreman_enable_ol8_uln_mysql | bool }}"
+
 # foreman_enable_ol8_uln_olm: false
 # foreman_enable_ol8_uln_am: false
-# foreman_enable_ol8_uln_am10: true
-# foreman_enable_ol8_uln_am20: "{{ foreman_enable_ol8_uln_am | bool }}"
+# foreman_enable_ol8_uln_am10: false
+# foreman_enable_ol8_uln_am21: false
+# foreman_enable_ol8_uln_am22: "{{ foreman_enable_ol8_uln_am | bool }}"
 # foreman_enable_ol8_uln_olcne: false
 
 # foreman_enable_ol8_uln_virtualization: false
-# foreman_enable_ol8_uln_virtualization_kvm_utils: false
-# foreman_enable_ol8_uln_virtualization_ovirt44: "{{ foreman_enable_ol8_uln_virtualization | bool }}"
+# foreman_enable_ol8_uln_virtualization_kvm_utils: "{{ foreman_enable_ol8_uln_virtualization | bool }}"
+# foreman_enable_ol8_uln_virtualization_ovirt44: false
+# foreman_enable_ol8_uln_virtualization_ovirt45: "{{ foreman_enable_ol8_uln_virtualization | bool }}"
 
 # foreman_enable_ol8_uln_storage: false
 # foreman_enable_ol8_uln_security_validation: false
@@ -542,49 +550,61 @@
 # foreman_enable_ol92_uln: false
 # foreman_enable_ol93_uln: false
 # foreman_enable_ol94_uln: false
+# foreman_enable_ol95_uln: false
 
 # foreman_enable_ol90_uln_kickstart: "{{ foreman_enable_ol90_uln | bool }}"
 # foreman_enable_ol91_uln_kickstart: "{{ foreman_enable_ol91_uln | bool }}"
 # foreman_enable_ol92_uln_kickstart: "{{ foreman_enable_ol92_uln | bool }}"
 # foreman_enable_ol93_uln_kickstart: "{{ foreman_enable_ol93_uln | bool }}"
-# foreman_enable_ol94_uln_kickstart: "{{ foreman_enable_ol9_uln_kickstart | bool or
-#                                        foreman_enable_ol94_uln | bool }}"
+# foreman_enable_ol94_uln_kickstart: "{{ foreman_enable_ol94_uln | bool }}"
+# foreman_enable_ol95_uln_kickstart: "{{ foreman_enable_ol9_uln_kickstart | bool or
+#                                        foreman_enable_ol95_uln | bool }}"
 
 # foreman_enable_ol90_uln_default_ccv: "{{ foreman_enable_ol9_uln_default_ccv | bool }}"
 # foreman_enable_ol91_uln_default_ccv: "{{ foreman_enable_ol9_uln_default_ccv | bool }}"
 # foreman_enable_ol92_uln_default_ccv: "{{ foreman_enable_ol9_uln_default_ccv | bool }}"
 # foreman_enable_ol93_uln_default_ccv: "{{ foreman_enable_ol9_uln_default_ccv | bool }}"
 # foreman_enable_ol94_uln_default_ccv: "{{ foreman_enable_ol9_uln_default_ccv | bool }}"
+# foreman_enable_ol95_uln_default_ccv: "{{ foreman_enable_ol9_uln_default_ccv | bool }}"
 
 # foreman_enable_ol90_uln_default_ak: "{{ foreman_enable_ol90_uln_default_ccv | bool }}"
 # foreman_enable_ol91_uln_default_ak: "{{ foreman_enable_ol91_uln_default_ccv | bool }}"
 # foreman_enable_ol92_uln_default_ak: "{{ foreman_enable_ol92_uln_default_ccv | bool }}"
 # foreman_enable_ol93_uln_default_ak: "{{ foreman_enable_ol93_uln_default_ccv | bool }}"
 # foreman_enable_ol94_uln_default_ak: "{{ foreman_enable_ol94_uln_default_ccv | bool }}"
+# foreman_enable_ol95_uln_default_ak: "{{ foreman_enable_ol95_uln_default_ccv | bool }}"
 
 # foreman_enable_ol90_patch_uln: "{{ foreman_enable_ol90_uln | bool }}"
 # foreman_enable_ol91_patch_uln: "{{ foreman_enable_ol91_uln | bool }}"
 # foreman_enable_ol92_patch_uln: "{{ foreman_enable_ol92_uln | bool }}"
 # foreman_enable_ol93_patch_uln: "{{ foreman_enable_ol93_uln | bool }}"
 # foreman_enable_ol94_patch_uln: "{{ foreman_enable_ol94_uln | bool }}"
+# foreman_enable_ol95_patch_uln: "{{ foreman_enable_ol95_uln | bool }}"
 
 # foreman_enable_ol9_uln_uek: false
 # foreman_enable_ol9_uln_uekr7: "{{ foreman_enable_ol9_uln_uek | bool }}"
 # foreman_enable_ol9_uln_uekr7_developer: false
 # foreman_enable_ol9_uln_rdma: false
 # foreman_enable_ol9_uln_modrhck: "{{ foreman_enable_ol9_uln_uek | bool }}"
+# foreman_enable_ol9_uln_ueknext_developer: false
 
 # foreman_enable_ol9_uln_ksplice: false
 # foreman_enable_ol9_uln_instantclient: false
+
 # foreman_enable_ol9_uln_mysql: false
+# foreman_enable_ol9_uln_mysql80: false
+# foreman_enable_ol9_uln_mysql84: "{{ foreman_enable_ol9_uln_mysql | bool }}"
+# foreman_enable_ol9_uln_mysql_innovation: "{{ foreman_enable_ol9_uln_mysql | bool }}"
+
 # foreman_enable_ol9_uln_olm: false
 # foreman_enable_ol9_uln_am: false
+# foreman_enable_ol9_uln_am10: false
+# foreman_enable_ol9_uln_am21: false
+# foreman_enable_ol9_uln_am22: "{{ foreman_enable_ol9_uln_am | bool }}"
 # foreman_enable_ol9_uln_olcne: false
 
 # foreman_enable_ol9_uln_virtualization: false
-# foreman_enable_ol9_uln_virtualization_kvm_utils: false
+# foreman_enable_ol9_uln_virtualization_kvm_utils: "{{ foreman_enable_ol9_uln_virtualization | bool }}"
 
 # foreman_enable_ol9_uln_storage: false
 # foreman_enable_ol9_uln_security_validation: false
-
-# foreman_enable_ol9_uln_oci: false

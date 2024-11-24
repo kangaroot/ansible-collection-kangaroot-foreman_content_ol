@@ -50,21 +50,21 @@ foreman_products_ol8_uln:
         organization: "{{ foreman_organization_ol8_uln }}"
       ### Packages for creating test and development environments for Oracle Linux 8 (x86_64) | ol8_x86_64_developer ###
       - name: Packages for creating test and development environments for Oracle Linux 8 (x86_64)
-        description: Latest packages for creating test and development environments - Oracle LInux 8 (x86_64)
+        description: Latest packages for creating test and development environments - Oracle Linux 8 (x86_64)
         label: ol8_uln_x86_64_developer
         url: uln://ol8_x86_64_developer
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol8_uln }}"
       ### EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_EPEL ###
       - name: EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64)
-        description: Latest EPEL packages for creating test and development environments - Oracle LInux 8 (x86_64)
+        description: Latest EPEL packages for creating test and development environments - Oracle Linux 8 (x86_64)
         label: ol8_uln_x86_64_developer_EPEL
         url: uln://ol8_x86_64_developer_EPEL
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol8_uln }}"
       ### EPEL Modular Packages for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_EPEL_modular ###
       - name: EPEL Modular Packages for Oracle Linux 8 (x86_64)
-        description: Latest EPEL Modular packages for creating test and development environments - Oracle LInux 8 (x86_64)
+        description: Latest EPEL Modular packages for creating test and development environments - Oracle Linux 8 (x86_64)
         label: ol8_uln_x86_64_developer_EPEL_modular
         url: uln://ol8_x86_64_developer_EPEL_modular
         <<: *foreman_products_defaults
@@ -81,6 +81,42 @@ foreman_products_ol8_uln:
         description: Latest packages for Oracle Linux 8 Distro Builder (x86_64) - Unsupported.
         label: ol8_uln_x86_64_distro_builder
         url: uln://ol8_x86_64_distro_builder
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol8_uln }}"
+      ### Oracle Linux 8 software for SAP | ol8_x86_64_SAP_addons ###
+      - name: Oracle Linux 8 software for SAP
+        description: Packages required for SAP software to run on Oracle Linux 8
+        label: ol8_uln_x86_64_SAP_addons
+        url: uln://ol8_x86_64_SAP_addons
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol8_uln }}"
+
+      ### Oracle Linux 8 BaseOS Developer Preview (x86_64) | ol8_x86_64_baseos_developer ###
+      - name: Oracle Linux 8 BaseOS Developer Preview (x86_64)
+        description: Packages required for SAP software to run on Oracle Linux 8
+        label: ol8_uln_x86_64_baseos_developer
+        url: uln://ol8_x86_64_baseos_developer
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol8_uln }}"
+      ### Oracle Linux 8 Appstream Developer Preview (x86_64) | ol8_x86_64_appstream_developer ###
+      - name: Oracle Linux 8 Appstream Developer Preview (x86_64)
+        description: Packages required for SAP software to run on Oracle Linux 8
+        label: ol8_uln_x86_64_appstream_developer
+        url: uln://ol8_x86_64_appstream_developer
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol8_uln }}"
+      ### Oracle Linux 8 Developer Packages Archive (x86_64) | ol8_x86_64_developer_archive ###
+      - name: Oracle Linux 8 Developer Packages Archive (x86_64)
+        description: Packages required for SAP software to run on Oracle Linux 8
+        label: ol8_uln_x86_64_developer_archive
+        url: uln://ol8_x86_64_developer_archive
+        <<: *foreman_products_defaults
+        organization: "{{ foreman_organization_ol8_uln }}"
+      ### Oracle Linux 8 CodeReady Builder Developer Preview (x86_64) | ol8_x86_64_codeready_builder_developer ###
+      - name: Oracle Linux 8 CodeReady Builder Developer Preview (x86_64)
+        description: Developer preview of Oracle Linux 8 CodeReady Builder Packages (x86_64) - (Unsupported)
+        label: ol8_uln_x86_64_codeready_builder_developer
+        url: uln://ol8_x86_64_codeready_builder_developer
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol8_uln }}"
 
@@ -135,6 +171,38 @@ foreman_content_views_ol8_uln:
       - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Distro Builder (x86_64) - Unsupported"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_uln }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_uln_x86_64_SAP_addons"
+    organization: "{{ foreman_organization_ol8_uln }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 software for SAP"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uln }}"
+
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_uln_x86_64_baseos_developer"
+    organization: "{{ foreman_organization_ol8_uln }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 BaseOS Developer Preview (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uln }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_uln_x86_64_appstream_developer"
+    organization: "{{ foreman_organization_ol8_uln }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Appstream Developer Preview (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uln }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_uln_x86_64_developer_archive"
+    organization: "{{ foreman_organization_ol8_uln }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Developer Packages Archive (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uln }}"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_uln_x86_64_codeready_builder_developer"
+    organization: "{{ foreman_organization_ol8_uln }}"
+    repositories:
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 CodeReady Builder Developer Preview (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+    allow_promote: "{{ foreman_cv_allow_promote_ol8_uln }}"
+
 
 foreman_composite_content_views_ol8_uln:
   - name: "{{ foreman_ccv_prefix | default('ccv_') }}{{ foreman_ccv_name_prefix | default('') }}ol8"

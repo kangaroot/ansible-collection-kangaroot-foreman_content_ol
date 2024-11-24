@@ -35,10 +35,8 @@
 # foreman_organization_ol7_uekr4_ofed: "{{ foreman_organization_ol7 }}"
 # foreman_organization_ol7_uekr5: "{{ foreman_organization_ol7 }}"
 # foreman_organization_ol7_uekr5_rdma: "{{ foreman_organization_ol7 }}"
-# foreman_organization_ol7_uekr5_developer: "{{ foreman_organization_ol7 }}"
 # foreman_organization_ol7_uekr6: "{{ foreman_organization_ol7 }}"
 # foreman_organization_ol7_uekr6_rdma: "{{ foreman_organization_ol7 }}"
-# foreman_organization_ol7_uekr6_developer: "{{ foreman_organization_ol7 }}"
 # foreman_organization_ol7_modrhck: "{{ foreman_organization_ol7 }}"
 
 # foreman_organization_ol7_leapp: "{{ foreman_organization_ol7 }}"
@@ -51,11 +49,9 @@
 # foreman_organization_ol7_mysql56: "{{ foreman_organization_ol7_mysql }}"
 # foreman_organization_ol7_mysql57: "{{ foreman_organization_ol7_mysql }}"
 # foreman_organization_ol7_mysql80: "{{ foreman_organization_ol7_mysql }}"
+# foreman_organization_ol7_mysql84: "{{ foreman_organization_ol7_mysql }}"
 
 # foreman_organization_ol7_cloud: "{{ foreman_organization_ol7 }}"
-# foreman_organization_ol7_cloud_openstack20: "{{ foreman_organization_ol7_cloud }}"
-# foreman_organization_ol7_cloud_openstack21: "{{ foreman_organization_ol7_cloud }}"
-# foreman_organization_ol7_cloud_openstack30: "{{ foreman_organization_ol7_cloud }}"
 # foreman_organization_ol7_cloud_openstack40: "{{ foreman_organization_ol7_cloud }}"
 # foreman_organization_ol7_cloud_openstack50: "{{ foreman_organization_ol7_cloud }}"
 
@@ -65,9 +61,9 @@
 # foreman_organization_ol7_virtualization_ovirt43: "{{ foreman_organization_ol7_virtualization }}"
 
 # foreman_organization_ol7_storage: "{{ foreman_organization_ol7 }}"
-# foreman_organization_ol7_storage_ceph10: "{{ foreman_organization_ol7_storage }}"
 # foreman_organization_ol7_storage_ceph20: "{{ foreman_organization_ol7_storage }}"
 # foreman_organization_ol7_storage_ceph30: "{{ foreman_organization_ol7_storage }}"
+# foreman_organization_ol7_storage_gluster310: "{{ foreman_organization_ol7_storage }}"
 # foreman_organization_ol7_storage_gluster312: "{{ foreman_organization_ol7_storage }}"
 # foreman_organization_ol7_storage_gluster41: "{{ foreman_organization_ol7_storage }}"
 # foreman_organization_ol7_storage_gluster5: "{{ foreman_organization_ol7_storage }}"
@@ -75,24 +71,13 @@
 # foreman_organization_ol7_storage_gluster8: "{{ foreman_organization_ol7_storage }}"
 
 # foreman_organization_ol7_developer: "{{ foreman_organization_ol7 }}"
-# foreman_organization_ol7_developer_go110: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_go111: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_go112: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_go113: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_go114: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_go115: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_go116: "{{ foreman_organization_ol7_developer }}"
 # foreman_organization_ol7_developer_go117: "{{ foreman_organization_ol7_developer }}"
 # foreman_organization_ol7_developer_go118: "{{ foreman_organization_ol7_developer }}"
 # foreman_organization_ol7_developer_go119: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go120: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_go121: "{{ foreman_organization_ol7_developer }}"
 # foreman_organization_ol7_developer_php74: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_nodejs4: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_nodejs6: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_nodejs8: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_nodejs10: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_nodejs12: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_nodejs14: "{{ foreman_organization_ol7_developer }}"
-# foreman_organization_ol7_developer_nodejs16: "{{ foreman_organization_ol7_developer }}"
+# foreman_organization_ol7_developer_nodejs: "{{ foreman_organization_ol7_developer }}"
 
 # foreman_organization_ol7_olm: "{{ foreman_organization_ol7 }}"
 # foreman_organization_ol7_olm_spacewalk26: "{{ foreman_organization_ol7_olm }}"
@@ -118,10 +103,8 @@
 
 # foreman_organization_ol8_uek: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_uekr6: "{{ foreman_organization_ol8 }}"
-# foreman_organization_ol8_uekr6_developer: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_uekr6_rdma: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_uekr7: "{{ foreman_organization_ol8 }}"
-# foreman_organization_ol8_uekr7_developer: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_uekr7_rdma: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_modrhck: "{{ foreman_organization_ol8 }}"
 
@@ -129,13 +112,15 @@
 # foreman_organization_ol8_mysql: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_olm: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_am: "{{ foreman_organization_ol8 }}"
-# foreman_organization_ol8_am10: "{{ foreman_organization_ol8 }}"
-# foreman_organization_ol8_am20: "{{ foreman_organization_ol8 }}"
+# foreman_organization_ol8_am10: "{{ foreman_organization_ol8_am }}"
+# foreman_organization_ol8_am21: "{{ foreman_organization_ol8_am }}"
+# foreman_organization_ol8_am22: "{{ foreman_organization_ol8_am }}"
 # foreman_organization_ol8_olcne: "{{ foreman_organization_ol8 }}"
 
 # foreman_organization_ol8_virtualization: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_virtualization_kvm_utils: "{{ foreman_organization_ol8_virtualization }}"
-# foreman_organization_ol8_virtualization_ovirt44: "{{ foreman_organization_ol8_virtualization }}"
+# foreman_organization_ol8_virtualization_ovirt44: false
+# foreman_organization_ol8_virtualization_ovirt45: "{{ foreman_organization_ol8_virtualization }}"
 
 # foreman_organization_ol8_storage: "{{ foreman_organization_ol8 }}"
 # foreman_organization_ol8_security_validation: "{{ foreman_organization_ol8 }}"
@@ -149,17 +134,21 @@
 # foreman_organization_ol92: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol93: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol94: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol95: "{{ foreman_organization_ol9 }}"
 
 # foreman_organization_ol9_uek: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol9_uekr7: "{{ foreman_organization_ol9 }}"
-# foreman_organization_ol9_uekr7_developer: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol9_rdma: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol9_modrhck: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_ueknext_developer: "{{ foreman_organization_ol9 }}"
 
 # foreman_organization_ol9_instantclient: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol9_mysql: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol9_olm: "{{ foreman_organization_ol9 }}"
 # foreman_organization_ol9_am: "{{ foreman_organization_ol9 }}"
+# foreman_organization_ol9_am10: "{{ foreman_organization_ol9_am }}"
+# foreman_organization_ol9_am21: "{{ foreman_organization_ol9_am }}"
+# foreman_organization_ol9_am22: "{{ foreman_organization_ol9_am }}"
 # foreman_organization_ol9_olcne: "{{ foreman_organization_ol9 }}"
 
 # foreman_organization_ol9_virtualization: "{{ foreman_organization_ol9 }}"
@@ -222,7 +211,6 @@
 # foreman_organization_ol7_uln_modrhck: "{{ foreman_organization_ol7_uln }}"
 
 # foreman_organization_ol7_uln_ksplice: "{{ foreman_organization_ol7_uln }}"
-# foreman_organization_ol7_uln_sap: "{{ foreman_organization_ol7_uln }}"
 # foreman_organization_ol7_uln_leapp: "{{ foreman_organization_ol7_uln }}"
 # foreman_organization_ol7_uln_instantclient: "{{ foreman_organization_ol7_uln }}"
 # foreman_organization_ol7_uln_olcne: "{{ foreman_organization_ol7_uln }}"
@@ -233,6 +221,8 @@
 # foreman_organization_ol7_uln_mysql56: "{{ foreman_organization_ol7_uln_mysql }}"
 # foreman_organization_ol7_uln_mysql57: "{{ foreman_organization_ol7_uln_mysql }}"
 # foreman_organization_ol7_uln_mysql80: "{{ foreman_organization_ol7_uln_mysql }}"
+# foreman_organization_ol7_uln_mysql84: "{{ foreman_organization_ol7_uln_mysql }}"
+# foreman_organization_ol7_uln_mysql_innovation: "{{ foreman_organization_ol7_uln_mysql }}"
 
 # foreman_organization_ol7_uln_cloud: "{{ foreman_organization_ol7_uln }}"
 # foreman_organization_ol7_uln_cloud_openstack20: "{{ foreman_organization_ol7_uln_cloud }}"
@@ -274,8 +264,6 @@
 # foreman_organization_ol7_uln_olm_spacewalk27: "{{ foreman_organization_ol7_uln_olm }}"
 # foreman_organization_ol7_uln_olm_spacewalk210: "{{ foreman_organization_ol7_uln_olm }}"
 # foreman_organization_ol7_uln_olm_oraclelinuxmanager210: "{{ foreman_organization_ol7_uln_olm }}"
-
-# foreman_organization_ol7_uln_exadata: "{{ foreman_organization_ol7_uln }}"
 
 ### ORACLE LINUX 8 ULN
 
@@ -319,13 +307,15 @@
 # foreman_organization_ol8_uln_mysql: "{{ foreman_organization_ol8_uln }}"
 # foreman_organization_ol8_uln_olm: "{{ foreman_organization_ol8_uln }}"
 # foreman_organization_ol8_uln_am: "{{ foreman_organization_ol8_uln }}"
-# foreman_organization_ol8_uln_am10: "{{ foreman_organization_ol8_uln }}"
-# foreman_organization_ol8_uln_am20: "{{ foreman_organization_ol8_uln }}"
+# foreman_organization_ol8_uln_am10: "{{ foreman_organization_ol8_uln_am }}"
+# foreman_organization_ol8_uln_am21: "{{ foreman_organization_ol8_uln_am }}"
+# foreman_organization_ol8_uln_am22: "{{ foreman_organization_ol8_uln_am }}"
 # foreman_organization_ol8_uln_olcne: "{{ foreman_organization_ol8_uln }}"
 
 # foreman_organization_ol8_uln_virtualization: "{{ foreman_organization_ol8_uln }}"
 # foreman_organization_ol8_uln_virtualization_kvm_utils: "{{ foreman_organization_ol8_uln_virtualization }}"
 # foreman_organization_ol8_uln_virtualization_ovirt44: "{{ foreman_organization_ol8_uln_virtualization }}"
+# foreman_organization_ol8_uln_virtualization_ovirt45: "{{ foreman_organization_ol8_uln_virtualization }}"
 
 # foreman_organization_ol8_uln_storage: "{{ foreman_organization_ol8_uln }}"
 # foreman_organization_ol8_uln_security_validation: "{{ foreman_organization_ol8_uln }}"
@@ -339,12 +329,14 @@
 # foreman_organization_ol92_uln: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol93_uln: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol94_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol95_uln: "{{ foreman_organization_ol9_uln }}"
 
 # foreman_organization_ol90_patch_uln: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol91_patch_uln: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol92_patch_uln: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol93_patch_uln: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol94_patch_uln: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol95_patch_uln: "{{ foreman_organization_ol9_uln }}"
 
 # foreman_organization_ol9_uln_uek: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol9_uln_uekr7: "{{ foreman_organization_ol9_uln }}"
@@ -357,6 +349,9 @@
 # foreman_organization_ol9_uln_mysql: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol9_uln_olm: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol9_uln_am: "{{ foreman_organization_ol9_uln }}"
+# foreman_organization_ol9_uln_am10: "{{ foreman_organization_ol9_uln_am }}"
+# foreman_organization_ol9_uln_am21: "{{ foreman_organization_ol9_uln_am }}"
+# foreman_organization_ol9_uln_am22: "{{ foreman_organization_ol9_uln_am }}"
 # foreman_organization_ol9_uln_olcne: "{{ foreman_organization_ol9_uln }}"
 
 # foreman_organization_ol9_uln_virtualization: "{{ foreman_organization_ol9_uln }}"
@@ -364,5 +359,3 @@
 
 # foreman_organization_ol9_uln_storage: "{{ foreman_organization_ol9_uln }}"
 # foreman_organization_ol9_uln_security_validation: "{{ foreman_organization_ol9_uln }}"
-
-# foreman_organization_ol9_uln_oci: "{{ foreman_organization_ol9_uln }}"

@@ -103,19 +103,6 @@ foreman_products_ol7_uekr5_rdma:
         <<: *foreman_products_defaults_ol7_uek
         organization: "{{ foreman_organization_ol7_uekr5_rdma }}"
 
-foreman_products_ol7_uekr5_developer:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_uekr5_developer }}"
-    repositories:
-      ### Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_UEKR5 ###
-      - name: Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)
-        description: Latest developer preview of Unbreakable Enterprise Kernel Release 5 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)
-        label: ol7_x86_64_developer_UEKR5
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_UEKR5/x86_64/"
-        <<: *foreman_products_defaults_ol7_uek
-        organization: "{{ foreman_organization_ol7_uekr5_developer }}"
-
 foreman_products_ol7_uekr6:
   - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     label: "{{ foreman_product_label_prefix | default('') }}OL"
@@ -142,19 +129,6 @@ foreman_products_ol7_uekr6_rdma:
         <<: *foreman_products_defaults_ol7_uek
         organization: "{{ foreman_organization_ol7_uekr6_rdma }}"
 
-foreman_products_ol7_uekr6_developer:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_uekr6_developer }}"
-    repositories:
-      ### Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_UEKR6 ###
-      - name: Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)
-        description: Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)
-        label: ol7_x86_64_developer_UEKR6
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/UEKR6/x86_64/"
-        <<: *foreman_products_defaults_ol7_uek
-        organization: "{{ foreman_organization_ol7_uekr6_developer }}"
-
 foreman_products_ol7_modrhck:
   - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     label: "{{ foreman_product_label_prefix | default('') }}OL"
@@ -175,10 +149,8 @@ foreman_products_ol7_uek: "{{ [] |
   union( foreman_products_ol7_uekr4_ofed | default([]) if foreman_enable_ol7_uekr4_ofed else [] ) |
   union( foreman_products_ol7_uekr5 | default([]) if foreman_enable_ol7_uekr5 else [] ) |
   union( foreman_products_ol7_uekr5_rdma | default([]) if foreman_enable_ol7_uekr5_rdma else [] ) |
-  union( foreman_products_ol7_uekr5_developer | default([]) if foreman_enable_ol7_uekr5_developer else [] ) |
   union( foreman_products_ol7_uekr6 | default([]) if foreman_enable_ol7_uekr6 else [] ) |
   union( foreman_products_ol7_uekr6_rdma | default([]) if foreman_enable_ol7_uekr6_rdma else [] ) |
-  union( foreman_products_ol7_uekr6_developer | default([]) if foreman_enable_ol7_uekr6_developer else [] ) |
   union( foreman_products_ol7_modrhck | default([]) if foreman_enable_ol7_modrhck else [] )
   }}"
 
@@ -231,14 +203,6 @@ foreman_content_views_ol7_uekr5_rdma:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uekr5_rdma }}"
 
-foreman_content_views_ol7_uekr5_developer:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_UEKR5"
-    organization: "{{ foreman_organization_ol7_uekr5_developer }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_uekr5_developer }}"
-
 foreman_content_views_ol7_uekr6:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_UEKR6"
     organization: "{{ foreman_organization_ol7_uekr6 }}"
@@ -255,14 +219,6 @@ foreman_content_views_ol7_uekr6_rdma:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uekr6_rdma }}"
 
-foreman_content_views_ol7_uekr6_developer:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_developer_UEKR6"
-    organization: "{{ foreman_organization_ol7_uekr6_developer }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_uekr6_developer }}"
-
 foreman_content_views_ol7_modrhck:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_MODRHCK"
     organization: "{{ foreman_organization_ol7_modrhck }}"
@@ -278,10 +234,8 @@ foreman_content_views_ol7_uek: "{{ [] |
   union( foreman_content_views_ol7_uekr4_ofed | default([]) if foreman_enable_ol7_uekr4_ofed else [] ) |
   union( foreman_content_views_ol7_uekr5 | default([]) if foreman_enable_ol7_uekr5 else [] ) |
   union( foreman_content_views_ol7_uekr5_rdma | default([]) if foreman_enable_ol7_uekr5_rdma else [] ) |
-  union( foreman_content_views_ol7_uekr5_developer | default([]) if foreman_enable_ol7_uekr5_developer else [] ) |
   union( foreman_content_views_ol7_uekr6 | default([]) if foreman_enable_ol7_uekr6 else [] ) |
   union( foreman_content_views_ol7_uekr6_rdma | default([]) if foreman_enable_ol7_uekr6_rdma else [] ) |
-  union( foreman_content_views_ol7_uekr6_developer | default([]) if foreman_enable_ol7_uekr6_developer else [] ) |
   union( foreman_content_views_ol7_modrhck | default([]) if foreman_enable_ol7_modrhck else [] )
   }}"
 

@@ -1,0 +1,1040 @@
+# Oracle Linux 5
+
+## Sustaining Support
+
+Enterprise Linux 5 Latest (i386)	el5_i386_latest	All packages released for Enterprise Linux 5 (i386), including the very latest updated packages	4205
+Enterprise Linux 5 Latest (x86_64)	el5_x86_64_latest	All packages released for Enterprise Linux 5 (x86_64), including the very latest updated packages	4732
+Enterprise Linux 5 Add ons (i386)	el5_i386_addons	Enterprise Linux 5 Add ons (i386)	60
+Enterprise Linux 5 Add ons (x86_64)	el5_x86_64_addons	Enterprise Linux 5 Add ons (x86_64)	72
+Productivity Applications for Enterprise Linux 5 (i386)	el5_unsupported_i386_latest	All packages released for Productivity Applications (i386) - Unsupported	154
+RDS packages for Enterprise Linux 5 (i386)	el5_rds_i386_latest	All RDS packages released for Enterprise Linux 5 (i386)	160
+
+Oracle Linux 5 Latest (i386)	ol5_i386_latest	All packages released for Oracle Linux 5 (i386), including the very latest updated packages	3800
+Oracle Linux 5 Latest (x86_64)	ol5_x86_64_latest	All packages required for Unbreakable Enterprise Kernel including	4413
+
+Unbreakable Enterprise Kernel for Oracle Linux 5 (i386)	ol5_i386_UEK_base	Unbreakable Enterprise Kernel for Oracle Linux 5 (i386) released on the install media.	14
+Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64)	ol5_x86_64_UEK_base	Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64) released on the install media.	14
+Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (i386)	ol5_i386_UEK_latest	Latest Unbreakable Enterprise Kernel packages for Oracle Linux 5 (i386)	14
+Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64)	ol5_x86_64_UEK_latest	Latest Unbreakable Enterprise Kernel packages for Oracle Linux 5 (x86_64)	14
+Ksplice for Oracle Linux 5 (i386)	ol5_i386_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 5 (i386).	595
+Ksplice for Oracle Linux 5 (x86_64)	ol5_x86_64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 5 (x86_64).	462
+
+Spacewalk Client 2.6 for Oracle Linux 5 (i386)	ol5_i386_spacewalk26_client	All Spacewalk Client 2.6 packages released for Oracle Linux 5 (i386).	27
+Spacewalk Client 2.6 for Oracle Linux 5 (x86_64)	ol5_x86_64_spacewalk26_client	All Spacewalk Client 2.6 packages released for Oracle Linux 5 (x86_64).	27
+Spacewalk Client 2.7 for Oracle Linux 5 (i386)	ol5_i386_spacewalk27_client	All Spacewalk Client 2.7 packages released for Oracle Linux 5 (i386).	24
+Spacewalk Client 2.7 for Oracle Linux 5 (x86_64)	ol5_x86_64_spacewalk27_client	All Spacewalk Client 2.7 packages released for Oracle Linux 5 (x86_64).	24
+
+Oracle Linux 5 ELS (i386)	ol5_i386_ELS	All packages released for Oracle Linux 5 Extended Lifecycle Support (i386).	105
+Oracle Linux 5 ELS (x86_64)	ol5_x86_64_ELS	All packages released for Oracle Linux 5 Extended Lifecycle Support (x86_64).	99
+Latest Unbreakable Enterprise Kernel for Oracle Linux 5 - ELS (i386)	ol5_i386_UEK_ELS	Latest Unbreakable Enterprise Kernel packages for Oracle Linux 5 - ELS (i386)	6
+Latest Unbreakable Enterprise Kernel for Oracle Linux 5 - ELS (x86_64)	ol5_x86_64_UEK_ELS	Latest Unbreakable Enterprise Kernel packages for Oracle Linux 5 - ELS (x86_64)	6
+Ksplice for Oracle Linux 5 - ELS (i386)	ol5_i386_ksplice_ELS	Oracle Ksplice updates for Oracle Linux 5 - ELS (i386).	266
+Ksplice for Oracle Linux 5 - ELS (x86_64)	ol5_x86_64_ksplice_ELS	Oracle Ksplice updates for Oracle Linux 5 - ELS (x86_64).	231
+
+## Installation Media Packages
+
+Enterprise Linux 5 (i386) installation media copy	el5_ga_i386_base	All packages released on the Enterprise Linux 5 (i386) installation media. This channel does not contain updates	2121
+Enterprise Linux 5 (x86_64) installation media copy	el5_ga_x86_64_base	All packages released on the Enterprise Linux 5 (x86_64) installation media. This channel does not contain updates	2804
+Enterprise Linux 5 Update 1 (i386) installation media copy	el5_u1_i386_base	All packages released on the Enterprise Linux 5 update 1 (i386) installation media. This channel does not contain updates	2173
+Enterprise Linux 5 Update 1 (x86_64) installation media copy	el5_u1_x86_64_base	All packages released on the Enterprise Linux 5 update 1 (x86_64) installation media. This channel does not contain updates	2869
+Enterprise Linux 5 Update 2 installation media copy (i386)	el5_u2_i386_base	All packages released on the Enterprise Linux 5 update 2 (i386) installation media. This channel does not contain updates.	2237
+Enterprise Linux 5 Update 2 installation media copy (x86_64)	el5_u2_x86_64_base	All packages released on the Enterprise Linux 5 update 2 (x86_64) installation media. This channel does not contain updates.	2957
+Enterprise Linux 5 Update 3 installation media copy (i386)	el5_u3_i386_base	All packages released on the Enterprise Linux 5 update 3 (i386) installation media. This channel does not contain updates.	2278
+Enterprise Linux 5 Update 3 installation media copy (x86_64)	el5_u3_x86_64_base	All packages released on the Enterprise Linux 5 update 3 (x86_64) installation media. This channel does not contain updates.	3008
+Enterprise Linux 5 Update 4 installation media copy (i386)	el5_u4_i386_base	All packages released on the Enterprise Linux 5 update 4 (i386) installation media. This channel does not contain updates.	2316
+Enterprise Linux 5 Update 4 installation media copy (x86_64)	el5_u4_x86_64_base	All packages released on the Enterprise Linux 5 update 4 (x86_64) installation media. This channel does not contain updates.	3095
+Enterprise Linux 5 Update 5 installation media copy (i386)	el5_u5_i386_base	All packages released on the Enterprise Linux 5 update 5 (i386) installation media. This channel does not contain updates.	2372
+Enterprise Linux 5 Update 5 installation media copy (x86_64)	el5_u5_x86_64_base	All packages released on the Enterprise Linux 5 update 5 (x86_64) installation media. This channel does not contain updates.	3173
+Oracle Linux 5 Update 6 installation media copy (i386)	ol5_u6_i386_base	All packages released on the Oracle Linux 5 Update 6 (i386) installation media. This channel does not contain updates.	2457
+Oracle Linux 5 Update 6 installation media copy (x86_64)	ol5_u6_x86_64_base	All packages released on the Oracle Linux 5 Update 6 (x86_64) installation media. This channel does not contain updates.	3305
+Oracle Linux 5 Update 7 installation media copy (i386)	ol5_u7_i386_base	All packages released on the Oracle Linux 5 update 7 (i386) installation media. This channel does not contain updates.	2510
+Oracle Linux 5 Update 7 installation media copy (x86_64)	ol5_u7_x86_64_base	All packages released on the Oracle Linux 5 update 7 (x86_64) installation media. This channel does not contain updates.	3333
+Oracle Linux 5 Update 8 installation media copy (i386)	ol5_u8_i386_base	All packages released on the Oracle Linux 5 update 8 (i386) installation media. This channel does not contain updates.	2527
+Oracle Linux 5 Update 8 installation media copy (x86_64)	ol5_u8_x86_64_base	All packages released on the Oracle Linux 5 update 8 (x86_64) installation media. This channel does not contain updates.	3357
+Oracle Linux 5 Update 9 installation media copy (i386)	ol5_u9_i386_base	All packages released on the Oracle Linux 5 update 9 (i386) installation media. This channel does not contain updates.	2563
+Oracle Linux 5 Update 9 installation media copy (x86_64)	ol5_u9_x86_64_base	All packages released on the Oracle Linux 5 update 9 (x86_64) installation media. This channel does not contain updates.	3398
+Oracle Linux 5 Update 10 installation media copy (i386)	ol5_u10_i386_base	All packages released on the Oracle Linux 5 update 10 (i386) installation media. This channel does not contain updates.	2583
+Oracle Linux 5 Update 10 installation media copy (x86_64)	ol5_u10_x86_64_base	All packages released on the Oracle Linux 5 update 10 (x86_64) installation media. This channel does not contain updates.	3419
+Oracle Linux 5 Update 11 installation media copy (i386)	ol5_u11_i386_base	All packages released on the Oracle Linux 5 update 11 (i386) installation media. This channel does not contain updates.	2585
+Oracle Linux 5 Update 11 installation media copy (x86_64)	ol5_u11_x86_64_base	All packages released on the Oracle Linux 5 update 11 (x86_64) installation media. This channel does not contain updates.	3424
+
+Enterprise Linux 5 GA Patches (i386)	el5_ga_i386_patch	Updated packages published after release of Enterprise Linux 5 (i386)	298
+Enterprise Linux 5 GA Patches (x86_64)	el5_ga_x86_64_patch	Updated packages published after release of Enterprise Linux 5 (x86_64)	353
+Enterprise Linux 5 Update 1 Patch (i386)	el5_u1_i386_patch	Updated packages published after release of Enterprise Linux 5 Update 1 (i386)	329
+Enterprise Linux 5 Update 1 Patch (x86_64)	el5_u1_x86_64_patch	Updated packages published after release of Enterprise Linux 5 Update 1 (x86_64)	404
+Enterprise Linux 5 Update 2 Patch (i386)	el5_u2_i386_patch	Updated packages published after release of Enterprise Linux 5 Update 2 (i386)	373
+Enterprise Linux 5 Update 2 Patch (x86_64)	el5_u2_x86_64_patch	Updated packages published after release of Enterprise Linux 5 Update 2 (x86_64)	435
+Enterprise Linux 5 Update 3 Patch (i386)	el5_u3_i386_patch	Updated packages published after release of Enterprise Linux 5 Update 3 (i386)	322
+Enterprise Linux 5 Update 3 Patch (x86_64)	el5_u3_x86_64_patch	Updated packages published after release of Enterprise Linux 5 Update 3 (x86_64)	389
+Enterprise Linux 5 Update 4 Patch (i386)	el5_u4_i386_patch	Updated packages published after release of Enterprise Linux 5 Update 4 (i386)	372
+Enterprise Linux 5 Update 4 Patch (x86_64)	el5_u4_x86_64_patch	Updated packages published after release of Enterprise Linux 5 Update 4 (x86_64)	477
+Enterprise Linux 5 Update 5 Patch (i386)	el5_u5_i386_patch	Updated packages published after release of Enterprise Linux 5 Update 5 (i386)	530
+Enterprise Linux 5 Update 5 Patch (x86_64)	el5_u5_x86_64_patch	Updated packages published after release of Enterprise Linux 5 Update 5 (x86_64)	649
+Oracle Linux 5 Update 5 Patch (x86_64)	ol5_u5_x86_64_patch	All Packages Required for Unbreakable Enterprise Kernel including updates (x86_64)	46
+Oracle Linux 5 Update 6 Patch (i386)	ol5_u6_i386_patch	Updated packages published after release of Oracle Linux 5 Update 6 (i386).	390
+Oracle Linux 5 Update 6 Patch (x86_64)	ol5_u6_x86_64_patch	Updated packages published after release of Oracle Linux 5 Update 6 (x86_64).	503
+Oracle Linux 5 Update 7 Patch (i386)	ol5_u7_i386_patch	Updated packages published after release of Oracle Linux 5 Update 7 (i386)	442
+Oracle Linux 5 Update 7 Patch (x86_64)	ol5_u7_x86_64_patch	Updated packages published after release of Oracle Linux 5 Update 7 (x86_64)	521
+Oracle Linux 5 Update 8 Patch (i386)	ol5_u8_i386_patch	Updated packages published after release of Oracle Linux 5 Update 8 (i386)	579
+Oracle Linux 5 Update 8 Patch (x86_64)	ol5_u8_x86_64_patch	Updated packages published after release of Oracle Linux 5 Update 8 (x86_64)	645
+Oracle Linux 5 Update 9 Patch (i386)	ol5_u9_i386_patch	Updated packages published after release of Oracle Linux 5 Update 9 (i386)	433
+Oracle Linux 5 Update 9 Patch (x86_64)	ol5_u9_x86_64_patch	Updated packages published after release of Oracle Linux 5 Update 9 (x86_64)	475
+Oracle Linux 5 Update 10 Patch (i386)	ol5_u10_i386_patch	Updated packages published after release of Oracle Linux 5 Update 10 (i386)	462
+Oracle Linux 5 Update 10 Patch (x86_64)	ol5_u10_x86_64_patch	Updated packages published after release of Oracle Linux 5 Update 10 (x86_64)	490
+Oracle Linux 5 Update 11 Patch (i386)	ol5_u11_i386_patch	Updated packages published after release of Oracle Linux 5 Update 11 (i386)	589
+Oracle Linux 5 Update 11 Patch (x86_64)	ol5_u11_x86_64_patch	Updated packages published after release of Oracle Linux 5 Update 11 (x86_64)	582
+
+## Exadata
+
+Packages for Oracle Exadata (i386)	el5_exadata_i386_latest	Linux Packages required for Oracle Exadata (i386)	6
+Packages for Oracle Exadata (x86_64)	el5_exadata_x86_64_latest	Linux Packages required for Oracle Exadata (x86_64)	7
+Exadata release 11.2 Latest (x86_64)	exadata_dbserver_11.2_x86_64_latest	All packages released for Exadata release 11.2 (x86_64), including the very latest updated packages	522
+Exadata release 11.2.3.1.0 db server installation packages (x86_64)	exadata_dbserver_11.2.3.1.0_x86_64_base	All packages released on the Exadata release 11.2.3.1.0 (x86_64) installation media. This channel does not contain updates.	458
+Exadata release 11.2.3.1.0 Patch (x86_64)	exadata_dbserver_11.2.3.1.0_x86_64_patch	Updated packages published after release of Exadata release 11.2.3.1.0 (x86_64)	22
+Exadata release 11.2.3.2.0 db server installation packages (x86_64)	exadata_dbserver_11.2.3.2.0_x86_64_base	All packages released on the Exadata release 11.2.3.2.0 (x86_64) installation media. This channel does not contain updates.	475
+Exadata release 11.2.3.2.1 db server installation packages (x86_64)	exadata_dbserver_11.2.3.2.1_x86_64_base	All packages released on the Exadata release 11.2.3.2.1 (x86_64) installation media. This channel does not contain updates.	475
+Exadata release 11.2.3.2.2 db server installation packages (x86_64)	exadata_dbserver_11.2.3.2.2_x86_64_base	All packages released on the Exadata release 11.2.3.2.2 (x86_64) installation media. This channel does not contain updates.	475
+Exadata release 11.2.3.3.0 db server installation packages (x86_64)	exadata_dbserver_11.2.3.3.0_x86_64_base	All packages released on the Exadata release 11.2.3.3.0 (x86_64) installation media. This channel does not contain updates.	454
+Exadata release 11.2.3.3.1 db server installation packages (x86_64)	exadata_dbserver_11.2.3.3.1_x86_64_base	All packages released on the Exadata release 11.2.3.3.1 (x86_64) installation media. This channel does not contain updates.	456
+Exadata release 12.1 Latest (x86_64)	exadata_dbserver_12.1_x86_64_latest	All packages released for Exadata release 12.1 (x86_64), including the very latest updated packages	453
+Exadata release 12.1.1.1.0 db server installation packages (x86_64)	exadata_dbserver_12.1.1.1.0_x86_64_base	All packages released on the Exadata release 12.1.1.1.0 (x86_64) installation media. This channel does not contain updates.	449
+Exadata release 12.1.1.1.1 db server installation packages (x86_64)	exadata_dbserver_12.1.1.1.1_x86_64_base	All packages released on the Exadata release 12.1.1.1.1 (x86_64) installation media. This channel does not contain updates.	448
+Exadata release 12.1.1.1.2 db server installation packages (x86_64)	exadata_dbserver_12.1.1.1.2_x86_64_base	All packages released on the Exadata release 12.1.1.1.2 (x86_64) installation media. This channel does not contain updates.	453
+
+# Oracle Linux 6
+
+## Sustaining Support
+
+Oracle Linux 6 Latest (i386)	ol6_i386_latest	All packages released for Oracle Linux 6 (i386) including the latest errata packages. (i386)	5105
+Oracle Linux 6 Latest (x86_64)	ol6_x86_64_latest	All packages released for Oracle Linux 6 (x86_64) including the latest errata packages. (x86_64)	6798
+
+Unbreakable Enterprise Kernel for Oracle Linux 6 (i386)	ol6_i386_UEK_base	Unbreakable Enterprise Kernel for Oracle Linux 6 (i386) released on the install media.	15
+Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)	ol6_x86_64_UEK_base	Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) released on the install media.	15
+Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (i386)	ol6_i386_UEK_latest	Latest Unbreakable Enterprise Kernel packages for Oracle Linux 6 (i386)	15
+Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)	ol6_x86_64_UEK_latest	Latest Unbreakable Enterprise Kernel packages for Oracle Linux 6 (x86_64)	15
+Dtrace for Oracle Linux 6 (x86_64) - Latest	ol6_x86_64_Dtrace_latest	Latest packages required for Dtrace on Oracle Linux 6 (x86_64) with the Unbreakable Enterprise Kernel Release 2	12
+Oracle Linux 6 Dtrace Userspace Tools (x86_64) - Latest	ol6_x86_64_Dtrace_userspace_latest	The latest Dtrace userspace tools for Unbreakable Enterprise Kernel Release 3 (UEKR3) on Oracle Linux 6 (x86_64).	2
+OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)	ol6_x86_64_ofed_UEK	Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel (UEK) on Oracle Linux 6 (x86_64).	38
+
+Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest	ol6_x86_64_UEKR3_latest	Latest packages for Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64)	166
+
+Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)	ol6_x86_64_UEKR4_ELS	Latest Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)	6
+Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)	ol6_x86_64_UEKR4	Latest packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)	33
+Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 6	ol6_x86_64_UEKR4_DTrace_userspace	The latest Dtrace userspace tools for Oracle Linux 6 (x86_64) with Unbreakable Enterprise Kernel Release 4 (UEKR4).	2
+Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) - Archive	ol6_x86_64_UEKR4_archive	Archived packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)	57
+OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)	ol6_x86_64_UEKR4_OFED	Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel Release 4 (UEK) on Oracle Linux 6 (x86_64).	30
+
+Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (i386)	ol6_i386_MODRHCK	Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (i386).	10
+Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64)	ol6_x86_64_MODRHCK	Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64).	11
+
+Ksplice for Oracle Linux 6 (i386)	ol6_i386_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 6 (i386).	343
+Ksplice for Oracle Linux 6 (x86_64)	ol6_x86_64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 6 (x86_64).	674
+Ksplice aware userspace packages for Oracle Linux 6 - ELS (x86_64)	ol6_x86_64_userspace_ksplice_ELS	Latest packages for Ksplice aware userspace packages for Oracle Linux 6 (x86_64) - ELS	19
+Ksplice aware userspace packages for Oracle Linux 6 (x86_64)	ol6_x86_64_userspace_ksplice	Latest packages for Ksplice aware userspace packages for Oracle Linux 6 (x86_64).	20
+
+Oracle Linux 6 Add ons (i386)	ol6_i386_addons	Oracle Linux 6 Add ons (i386)	25
+Oracle Linux 6 Add ons (x86_64)	ol6_x86_64_addons	Oracle Linux 6 Add ons (x86_64)	80
+Oracle Software Collections for Oracle Linux 6 (x86_64)	ol6_x86_64_SoftwareCollections	Latest Oracle Software Collections 3.0 packages for Oracle Linux 6 (x86_64).	5214
+Oracle Linux 6 software for SAP	ol6_x86_64_SAP_addons	Packages required for SAP software to run on Oracle Linux 6	2
+Packages for creating test and development environments for Oracle Linux 6 (i386)	ol6_i386_developer	Latest packages for creating test and development environments - Oracle Linux 6 (i386)	2
+Packages for creating test and development environments for Oracle Linux 6 (x86_64)	ol6_x86_64_developer	Latest packages for creating test and development environments - Oracle Linux 6 (x86_64)	15
+
+Spacewalk Client 2.6 for Oracle Linux 6 (i386)	ol6_i386_spacewalk26_client	All Spacewalk Client 2.6 packages released for Oracle Linux 6 (i386).	28
+Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)	ol6_x86_64_spacewalk26_client	All Spacewalk Client 2.6 packages released for Oracle Linux 6 (x86_64).	28
+Spacewalk Client 2.7 for Oracle Linux 6 (i386)	ol6_i386_spacewalk27_client	All Spacewalk Client 2.7 packages released for Oracle Linux 6 (i386).	28
+Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)	ol6_x86_64_spacewalk27_client	All Spacewalk Client 2.7 packages released for Oracle Linux 6 (x86_64).	28
+Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)	ol6_x86_64_spacewalk26_server	All Spacewalk Server 2.6 packages released for Oracle Linux 6 (x86_64).	230
+Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)	ol6_x86_64_spacewalk27_server	All Spacewalk Server 2.7 packages released for Oracle Linux 6 (x86_64).	312
+
+Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included	ol6_x86_64_oracle_instantclient	Oracle Instant Client packages for Oracle Linux 6 (x86_64) .	14
+Oracle Software for Oracle Linux 6 (i386)	ol6_i386_oracle	Oracle Software for Oracle Linux 6 (i386)	5
+Oracle Software for Oracle Linux 6 (x86_64)	ol6_x86_64_oracle	Oracle Software for Oracle Linux 6 (x86_64)	5
+
+HA Utilities for MySQL and Oracle Linux 6 (x86_64)	ol6_x86_64_mysql-ha-utils	Management Utilities for MySQL HA with Oracle Linux 6	2
+HA Utilities for MySQL and Oracle Linux 6 (x86)	ol6_i386_mysql-ha-utils	Management Utilities for MySQL HA with Oracle Linux 6	1
+MySQL 5.5 for Oracle Linux 6 (i386)	ol6_i386_MySQL	Latest MySQL packages released on the Oracle Linux 6 (i386).	18
+MySQL 5.5 for Oracle Linux 6 (x86_64)	ol6_x86_64_MySQL	Latest MySQL packages released on the Oracle Linux 6 (x86_64).	24
+MySQL 5.6 for Oracle Linux 6 (i386)	ol6_i386_MySQL56	Latest MySQL 5.6 packages for Oracle Linux 6 (i386).	10
+MySQL 5.6 for Oracle Linux 6 (x86_64)	ol6_x86_64_MySQL56	Latest MySQL 5.6 packages for Oracle Linux 6 (x86_64).	16
+MySQL 5.7 for Oracle Linux 6 (i386)	ol6_i386_MySQL57_community	Latest MySQL 5.7 packages for Oracle Linux 6 (i386).	9
+MySQL 5.7 for Oracle Linux 6 (x86_64)	ol6_x86_64_MySQL57_community	Latest MySQL 5.7 packages for Oracle Linux 6 (x86_64).	15
+MySQL 8.0 for Oracle Linux 6 (i386)	ol6_i386_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 6 (i386).	11
+MySQL 8.0 for Oracle Linux 6 (x86_64)	ol6_x86_64_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 6 (x86_64).	15
+
+Oracle OpenStack 1.0 (x86_64)	ol6_x86_64_openstack10	Latest for Oracle OpenStack version 1.0 (Icehouse).	317
+Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)	ol6_x86_64_openstack21	Latest for Oracle OpenStack version 2.1 for Oracle Linux 6 (x86_64)	32
+Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)	ol6_x86_64_openstack30	Latest for Oracle OpenStack version 3.0	12
+Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)	ol6_x86_64_openstack40	Latest Packages for Oracle OpenStack version 4.0	12
+
+Oracle Linux 6 Archive (i386)	ol6_i386_latest_archive	Archived packages for Oracle Linux 6 (i386)	5637
+Oracle Linux 6 Archive (x86_64)	ol6_x86_64_latest_archive	Archived packages for Oracle Linux 6 (x86_64)	7349
+
+Oracle Linux 6 ELS (i386)	ol6_i386_ELS	All packages released for Oracle Linux 6 Extended Lifecycle Support (i386).	167
+Oracle Linux 6 ELS (x86_64)	ol6_x86_64_ELS	All packages released for Oracle Linux 6 Extended Lifecycle Support (x86_64).	207
+Ksplice for Oracle Linux 6 - ELS (i386)	ol6_i386_ksplice_ELS	Oracle Ksplice Updates for Oracle Linux 6 - ELS (i386).	14
+Ksplice for Oracle Linux 6 - ELS (x86_64)	ol6_x86_64_ksplice_ELS	Oracle Ksplice Updates for Oracle Linux 6 - ELS (x86_64).	261
+
+## Installation Media Packages
+
+Oracle Linux 6 GA (i386)	ol6_ga_i386_base	All packages released for Oracle Linux 6 GA (i386). No errata included.	4544
+Oracle Linux 6 GA (x86_64)	ol6_ga_x86_64_base	All packages released for Oracle Linux 6 GA (x86_64). No errata included.	6010
+Oracle Linux 6 Update 1 installation media copy (i386)	ol6_u1_i386_base	All packages released on the Oracle Linux 6 Update 1 (i386) installation media. This channel does not contain updates.	4647
+Oracle Linux 6 Update 1 installation media copy (x86_64)	ol6_u1_x86_64_base	All packages released on the Oracle Linux 6 Update 1 (x86_64) installation media. This channel does not contain updates.	6148
+Oracle Linux 6 Update 2 installation media copy (i386)	ol6_u2_i386_base	All packages released on the Oracle Linux 6 Update 2 (i386) installation media. This channel does not contain updates.	4744
+Oracle Linux 6 Update 2 installation media copy (x86_64)	ol6_u2_x86_64_base	All packages released on the Oracle Linux 6 Update 2 (x86_64) installation media. This channel does not contain updates.	6279
+Oracle Linux 6 Update 3 installation media copy (i386)	ol6_u3_i386_base	All packages released on the Oracle Linux 6 Update 3 (i386) installation media. This channel does not contain updates.	4780
+Oracle Linux 6 Update 3 installation media copy (x86_64)	ol6_u3_x86_64_base	All packages released on the Oracle Linux 6 Update 3 (x86_64) installation media. This channel does not contain updates.	6324
+Oracle Linux 6 Update 4 installation media copy (i386)	ol6_u4_i386_base	All packages released on the Oracle Linux 6 Update 4 (i386) installation media. This channel does not contain updates.	4675
+Oracle Linux 6 Update 4 installation media copy (x86_64)	ol6_u4_x86_64_base	All packages released on the Oracle Linux 6 Update 4 (x86_64) installation media. This channel does not contain updates.	6245
+Oracle Linux 6 Update 5 installation media copy (i386)	ol6_u5_i386_base	All packages released on the Oracle Linux 6 Update 5 (i386) installation media. This channel does not contain updates.	4840
+Oracle Linux 6 Update 5 installation media copy (x86_64)	ol6_u5_x86_64_base	All packages released on the Oracle Linux 6 Update 5 (x86_64) installation media. This channel does not contain updates.	6421
+Oracle Linux 6 Update 6 installation media copy (i386)	ol6_u6_i386_base	All packages released on the Oracle Linux 6 Update 6 (i386) installation media. This channel does not contain updates.	4957
+Oracle Linux 6 Update 6 installation media copy (x86_64)	ol6_u6_x86_64_base	All packages released on the Oracle Linux 6 Update 6 (x86_64) installation media. This channel does not contain updates.	6595
+Oracle Linux 6 Update 7 installation media copy (i386)	ol6_u7_i386_base	All packages released on the Oracle Linux 6 Update 7 (i386) installation media. This channel does not contain updates.	4991
+Oracle Linux 6 Update 7 installation media copy (x86_64)	ol6_u7_x86_64_base	All packages released on the Oracle Linux 6 Update 7 (x86_64) installation media. This channel does not contain updates.	6629
+Oracle Linux 6 Update 8 installation media copy (i386)	ol6_u8_i386_base	All packages released on the Oracle Linux 6 Update 8 (i386) installation media. This channel does not contain updates.	5085
+Oracle Linux 6 Update 8 installation media copy (x86_64)	ol6_u8_x86_64_base	All packages released on the Oracle Linux 6 Update 8 (x86_64) installation media. This channel does not contain updates.	6756
+Oracle Linux 6 Update 9 installation media copy (i386)	ol6_u9_i386_base	All packages released on the Oracle Linux 6 Update 9 (i386) installation media. This channel does not contain updates.	5093
+Oracle Linux 6 Update 9 installation media copy (x86_64)	ol6_u9_x86_64_base	All packages released on the Oracle Linux 6 Update 9 (x86_64) installation media. This channel does not contain updates.	6769
+Oracle Linux 6 Update 10 installation media copy (i386)	ol6_u10_i386_base	All packages released on the Oracle Linux 6 Update 10 (i386) installation media. This channel does not contain updates.	5098
+Oracle Linux 6 Update 10 installation media copy (x86_64)	ol6_u10_x86_64_base	All packages released on the Oracle Linux 6 Update 10 (x86_64) installation media. This channel does not contain updates.	6777
+
+Oracle Linux 6 GA Patches (i386)	ol6_ga_i386_patch	Updated packages published after release of Oracle Linux 6 (i386)	549
+Oracle Linux 6 GA Patches (x86_64)	ol6_ga_x86_64_patch	Updated packages published after release of Oracle Linux 6 (x86_64)	724
+Oracle Linux 6 Update 1 Patch (i386)	ol6_u1_i386_patch	Updated packages published after release of Oracle Linux 6 Update 1 (i386).	492
+Oracle Linux 6 Update 1 Patch (x86_64)	ol6_u1_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 1 (x86_64).	631
+Oracle Linux 6 Update 2 Patch (i386)	ol6_u2_i386_patch	Updated packages published after release of Oracle Linux 6 Update 2 (i386).	656
+Oracle Linux 6 Update 2 Patch (x86_64)	ol6_u2_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 2 (x86_64).	787
+Oracle Linux 6 Update 3 Patch (i386)	ol6_u3_i386_patch	Updated packages published after release of Oracle Linux 6 Update 3 (i386)	596
+Oracle Linux 6 Update 3 Patch (x86_64)	ol6_u3_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 3 (x86_64)	743
+Oracle Linux 6 Update 4 Patch (i386)	ol6_u4_i386_patch	Updated packages published after release of Oracle Linux 6 Update 4 (i386)	756
+Oracle Linux 6 Update 4 Patch (x86_64)	ol6_u4_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 4 (x86_64)	971
+Oracle Linux 6 Update 5 Patch (i386)	ol6_u5_i386_patch	Updated packages published after release of Oracle Linux 6 Update 5 (i386)	694
+Oracle Linux 6 Update 5 Patch (x86_64)	ol6_u5_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 5 (x86_64)	942
+Oracle Linux 6 Update 6 Patch (i386)	ol6_u6_i386_patch	Updated packages published after release of Oracle Linux 6 Update 6 (i386)	599
+Oracle Linux 6 Update 6 Patch (x86_64)	ol6_u6_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 6 (x86_64)	766
+Oracle Linux 6 Update 7 Patch (i386)	ol6_u7_i386_patch	Updated packages published after release of Oracle Linux 6 Update 7 (i386)	719
+Oracle Linux 6 Update 7 Patch (x86_64)	ol6_u7_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 7 (x86_64)	909
+Oracle Linux 6 Update 8 Patch (i386)	ol6_u8_i386_patch	Updated packages published after release of Oracle Linux 6 Update 8 (i386)	410
+Oracle Linux 6 Update 8 Patch (x86_64)	ol6_u8_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 8 (x86_64)	556
+Oracle Linux 6 Update 9 Patch (i386)	ol6_u9_i386_patch	Updated packages published after release of Oracle Linux 6 Update 9 (i386)	485
+Oracle Linux 6 Update 9 Patch (x86_64)	ol6_u9_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 9 (x86_64)	619
+Oracle Linux 6 Update 10 Patch (i386)	ol6_u10_i386_patch	Updated packages published after release of Oracle Linux 6 Update 10 (i386)	532
+Oracle Linux 6 Update 10 Patch (x86_64)	ol6_u10_x86_64_patch	Updated packages published after release of Oracle Linux 6 Update 10 (x86_64)	694
+
+## Exadata
+
+Exadata release 12.1.2.1.0 db server installation packages (x86_64)	exadata_dbserver_12.1.2.1.0_x86_64_base	All packages released on the Exadata release 12.1.2.1.0 (x86_64) OL6 installation media. This channel does not contain updates.	455
+Exadata release 12.1.2.1.1 db server installation packages (x86_64)	exadata_dbserver_12.1.2.1.1_x86_64_base	All packages released on the Exadata release 12.1.2.1.1 (x86_64) OL6 installation media. This channel does not contain updates.	455
+Exadata release 12.1.2.1.2 db server installation packages (x86_64)	exadata_dbserver_12.1.2.1.2_x86_64_base	All packages released on the Exadata release 12.1.2.1.2 (x86_64) OL6 installation media. This channel does not contain updates.	459
+Exadata release 12.1.2.1.3 db server installation packages (x86_64)	exadata_dbserver_12.1.2.1.3_x86_64_base	All packages released on the Exadata release 12.1.2.1.3 (x86_64) OL6 installation media. This channel does not contain updates.	459
+Exadata release 12.1.2.2.0 db server installation packages (x86_64)	exadata_dbserver_12.1.2.2.0_x86_64_base	All packages released on the Exadata release 12.1.2.2.0 (x86_64) OL6 installation media. This channel does not contain updates.	400
+Exadata release 12.1.2.2.1 db server installation packages (x86_64)	exadata_dbserver_12.1.2.2.1_x86_64_base	All packages released on the Exadata release 12.1.2.2.1 (x86_64) OL6 installation media. This channel does not contain updates.	400
+Exadata release 12.1.2.2.2 db server installation packages (x86_64)	exadata_dbserver_12.1.2.2.2_x86_64_base	All packages released on the Exadata release 12.1.2.2.2 (x86_64) OL6 installation media. This channel does not contain updates.	402
+Exadata release 12.1.2.2.3 db server installation packages (x86_64)	exadata_dbserver_12.1.2.2.3_x86_64_base	All packages released on the Exadata release 12.1.2.2.3 (x86_64) OL6 installation media. This channel does not contain updates.	403
+Exadata release 12.1.2.3.0 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.0_x86_64_base	All packages released on the Exadata release 12.1.2.3.0 (x86_64) OL6 installation media. This channel does not contain updates.	409
+Exadata release 12.1.2.3.1 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.1_x86_64_base	All packages released on the Exadata release 12.1.2.3.1 (x86_64) OL6 installation media. This channel does not contain updates.	409
+Exadata release 12.1.2.3.2 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.2_x86_64_base	All packages released on the Exadata release 12.1.2.3.2 (x86_64) OL6 installation media. This channel does not contain updates.	410
+Exadata release 12.1.2.3.3 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.3_x86_64_base	All packages released on the Exadata release 12.1.2.3.3 (x86_64) OL6 installation media. This channel does not contain updates.	410
+Exadata release 12.1.2.3.4 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.4_x86_64_base	All packages released on the Exadata release 12.1.2.3.4 (x86_64) OL6 installation media. This channel does not contain updates.	411
+Exadata release 12.1.2.3.5 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.5_x86_64_base	All packages released on the Exadata release 12.1.2.3.5 (x86_64) OL6 installation media. This channel does not contain updates.	412
+Exadata release 12.1.2.3.6 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.6_x86_64_base	All packages released on the Exadata release 12.1.2.3.6 (x86_64) OL6 installation media. This channel does not contain updates.	412
+Exadata release 12.1.2.3.7 db server installation packages (x86_64)	exadata_dbserver_12.1.2.3.7_x86_64_base	All packages released on the Exadata release 12.1.2.3.7 (x86_64) OL6 installation media. This channel does not contain updates.	412
+Exadata release 12.2.1.1.0 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.0_x86_64_base	All packages released on the Exadata release 12.2.1.1.0 (x86_64) OL6 installation media. This channel does not contain updates.	454
+Exadata release 12.2.1.1.1 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.1_x86_64_base	All packages released on the Exadata release 12.2.1.1.1 (x86_64) OL6 installation media. This channel does not contain updates.	455
+Exadata release 12.2.1.1.2 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.2_x86_64_base	All packages released on the Exadata release 12.2.1.1.2 (x86_64) OL6 installation media. This channel does not contain updates.	455
+Exadata release 12.2.1.1.3 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.3_x86_64_base	All packages released on the Exadata release 12.2.1.1.3 (x86_64) OL6 installation media. This channel does not contain updates.	455
+Exadata release 12.2.1.1.4 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.4_x86_64_base	All packages released on the Exadata release 12.2.1.1.4 (x86_64) OL6 installation media. This channel does not contain updates.	456
+Exadata release 12.2.1.1.5 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.5_x86_64_base	All packages released on the Exadata release 12.2.1.1.5 (x86_64) OL6 installation media. This channel does not contain updates.	456
+Exadata release 12.2.1.1.6 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.6_x86_64_base	All packages released on the Exadata release 12.2.1.1.6 (x86_64) OL6 installation media. This channel does not contain updates.	456
+Exadata release 12.2.1.1.7 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.7_x86_64_base	All packages released on the Exadata release 12.2.1.1.7 (x86_64) OL6 installation media. This channel does not contain updates.	457
+Exadata release 12.2.1.1.8 db server installation packages (x86_64)	exadata_dbserver_12.2.1.1.8_x86_64_base	All packages released on the Exadata release 12.2.1.1.8 (x86_64) OL6 installation media. This channel does not contain updates.	457
+Exadata release 18.1.0.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.0.0.0_x86_64_base	All packages released on the Exadata release 18.1.0.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	467
+Exadata release 18.1.1.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.1.0.0_x86_64_base	All packages released on the Exadata release 18.1.1.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	467
+Exadata release 18.1.10.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.10.0.0_x86_64_base	All packages released on the Exadata release 18.1.10.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	469
+Exadata release 18.1.11.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.11.0.0_x86_64_base	All packages released on the Exadata release 18.1.11.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	469
+Exadata release 18.1.12.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.12.0.0_x86_64_base	All packages released on the Exadata release 18.1.12.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	470
+Exadata release 18.1.13.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.13.0.0_x86_64_base	All packages released on the Exadata release 18.1.13.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	470
+Exadata release 18.1.14.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.14.0.0_x86_64_base	All packages released on the Exadata release 18.1.14.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	471
+Exadata release 18.1.15.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.15.0.0_x86_64_base	All packages released on the Exadata release 18.1.15.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	471
+Exadata release 18.1.16.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.16.0.0_x86_64_base	All packages released on the Exadata release 18.1.16.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	470
+Exadata release 18.1.17.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.17.0.0_x86_64_base	All packages released on the Exadata release 18.1.17.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	470
+Exadata release 18.1.18.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.18.0.0_x86_64_base	All packages released on the Exadata release 18.1.18.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	471
+Exadata release 18.1.19.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.19.0.0_x86_64_base	All packages released on the Exadata release 18.1.19.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	473
+Exadata release 18.1.2.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.2.0.0_x86_64_base	All packages released on the Exadata release 18.1.2.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	468
+Exadata release 18.1.20.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.20.0.0_x86_64_base	All packages released on the Exadata release 18.1.20.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.21.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.21.0.0_x86_64_base	All packages released on the Exadata release 18.1.21.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.22.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.22.0.0_x86_64_base	All packages released on the Exadata release 18.1.22.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.23.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.23.0.0_x86_64_base	All packages released on the Exadata release 18.1.23.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.25.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.25.0.0_x86_64_base	All packages released on the Exadata release 18.1.25.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.26.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.26.0.0_x86_64_base	All packages released on the Exadata release 18.1.26.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.27.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.27.0.0_x86_64_base	All packages released on the Exadata release 18.1.27.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.28.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.28.0.0_x86_64_base	All packages released on the Exadata release 18.1.28.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.29.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.29.0.0_x86_64_base	All packages released on the Exadata release 18.1.29.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.3.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.3.0.0_x86_64_base	All packages released on the Exadata release 18.1.3.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	468
+Exadata release 18.1.30.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.30.0.0_x86_64_base	All packages released on the Exadata release 18.1.30.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	472
+Exadata release 18.1.31.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.31.0.0_x86_64_base	All packages released on the Exadata release 18.1.31.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	476
+Exadata release 18.1.32.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.32.0.0_x86_64_base	All packages released on the Exadata release 18.1.32.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	477
+Exadata release 18.1.33.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.33.0.0_x86_64_base	All packages released on the Exadata release 18.1.33.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	477
+Exadata release 18.1.34.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.34.0.0_x86_64_base	All packages released on the Exadata release 18.1.34.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	477
+Exadata release 18.1.4.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.4.0.0_x86_64_base	All packages released on the Exadata release 18.1.4.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	468
+Exadata release 18.1.5.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.5.0.0_x86_64_base	All packages released on the Exadata release 18.1.5.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	469
+Exadata release 18.1.6.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.6.0.0_x86_64_base	All packages released on the Exadata release 18.1.6.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	469
+Exadata release 18.1.7.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.7.0.0_x86_64_base	All packages released on the Exadata release 18.1.7.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	469
+Exadata release 18.1.8.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.8.0.0_x86_64_base	All packages released on the Exadata release 18.1.8.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	469
+Exadata release 18.1.9.0.0 db server installation packages (x86_64)	exadata_dbserver_18.1.9.0.0_x86_64_base	All packages released on the Exadata release 18.1.9.0.0 (x86_64) OL6 installation media. This channel does not contain updates.	469
+
+## PCA
+
+PCA 2.4.3.2 CN	pca2432_x86_64_cn	All Oracle Linux 6 based OVM server packages released for PCA 2.4.3.2 Compute Nodes.	19
+PCA 2.4.3.2 MN	pca2432_x86_64_mn	All Oracle Linux 6 based packages released for PCA 2.4.3.2 Management Nodes.	19
+
+# Oracle Linux 7
+
+## Latest Packages
+
+Oracle Linux 7 Latest Packages (aarch64)	ol7_aarch64_latest	All packages released for Oracle Linux 7 (aarch64) including the latest errata packages. (aarch64)	3946
+Oracle Linux 7 Latest (x86_64)	ol7_x86_64_latest	All packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)	5461
+
+Oracle Linux 7 Latest Optional Packages (aarch64)	ol7_aarch64_optional_latest	All optional packages released for Oracle Linux 7 (aarch64) including the latest errata packages. (aarch64)	3778
+Oracle Linux 7 Latest Optional Packages (x86_64)	ol7_x86_64_optional_latest	All optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)	5163
+
+Oracle Linux 7 Addons (aarch64)	ol7_aarch64_addons	Oracle Linux 7 Addons (aarch64).	40
+Oracle Linux 7 Addons (x86_64)	ol7_x86_64_addons	Oracle Linux 7 Addons (x86_64).	140
+
+Oracle Linux 7 (aarch64) Development	ol7_aarch64_developer	Latest packages for creating test and development environments - Oracle Linux 7 (aarch64)	176
+Oracle Linux 7 (x86_64) Development	ol7_x86_64_developer	Latest packages for creating test and development environments - Oracle Linux 7 (x86_64)	301
+
+EPEL Packages for creating test and development environments for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_EPEL	EPEL Packages for Oracle Linux 7 (aarch64) - This repository is 'End of Life'. No more updates including security and bug fixes will be released.	13197
+EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_EPEL	EPEL Packages for Oracle Linux 7 (x86_64) - This repository is 'End of Life'. No more updates including security and bug fixes will be released.	15116
+
+Oracle Software Collections 2 for Oracle Linux 7 (aarch64)	ol7_aarch64_SoftwareCollections	Latest Oracle Software Collections 2.1 packages for Oracle Linux 7 (aarch64).	2900
+Oracle Software Collections for Oracle Linux 7 (x86_64)	ol7_x86_64_SoftwareCollections	Latest Oracle Software Collections 3.0 packages for Oracle Linux 7 (x86_64).	7910
+
+Oracle Linux 7 software for SAP	ol7_x86_64_SAP_addons	Packages required for SAP software to run on Oracle Linux 7	8
+
+Packages considered as preview for test and development environments for Oracle Linux 7 (x86_64)	ol7_x86_64_preview	Technology preview packages for testing and development on Oracle Linux 7.  Not for use in production.	12
+Oracle Linux 7 Archive (x86_64)	ol7_x86_64_latest_archive	Archived packages for Oracle Linux 7 (x86_64)	5220
+Oracle Linux 7 Latest Optional Packages (x86_64) - Archive	ol7_x86_64_optional_archive	Archived optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)	5042
+Oracle Linux 7 Developer Packages Archive (aarch64)	ol7_aarch64_developer_archive	Archived developer packages for Oracle Linux 7 (aarch64)	3
+Oracle Linux 7 Developer Packages Archive (x86_64)	ol7_x86_64_developer_archive	Archived developer packages for Oracle Linux 7 (x86_64)	3
+
+Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)	ol7_x86_64_u5_developer	Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)	5108
+Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)	ol7_x86_64_optional_developer	Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)	4849
+
+Oracle Linux 7 Update 9 Beta (aarch64)	ol7_aarch64_beta	All beta packages for Oracle Linux 7 Update 9 (aarch64). Not for production use.	3873
+Oracle Linux 7 Update 9 Beta (aarch64) Optional	ol7_aarch64_optional_beta	Optional beta packages for Oracle Linux 7 Update 9 (aarch64). Not for production use.	3725
+Oracle Linux 7 Update 9 Beta (x86_64)	ol7_x86_64_beta	All beta packages for Oracle Linux 7 Update 9 (x86_64). Not for production use.	5258
+Oracle Linux 7 Update 9 Beta (x86_64) Optional	ol7_x86_64_optional_beta	Optional beta packages for Oracle Linux 7 Update 9 (x86_64). Not for production use.	4782
+
+
+## Installation Media Packages
+
+Oracle Linux 7 GA installation media copy (x86_64)	ol7_x86_64_u0_base	All packages released for Oracle Linux 7 GA (x86_64). No errata included	4315
+Oracle Linux 7 Update 1 installation media copy (x86_64)	ol7_x86_64_u1_base	All packages released for Oracle Linux 7 Update 1 (x86_64). No errata included	4384
+Oracle Linux 7 Update 2 installation media copy (x86_64)	ol7_x86_64_u2_base	All packages released for Oracle Linux 7 Update 2 (x86_64). No errata included	4634
+Oracle Linux 7 Update 3 installation media copy (x86_64)	ol7_x86_64_u3_base	All packages released for Oracle Linux 7 Update 3 (x86_64). No errata included	4768
+Oracle Linux 7 Update 4 installation media copy (x86_64)	ol7_x86_64_u4_base	All packages released for Oracle Linux 7 Update 4 (x86_64). No errata included	4999
+Oracle Linux 7 Update 5 installation media copy (aarch64)	ol7_aarch64_u5_base	All packages released for Oracle Linux 7 Update 5 (aarch64). No errata included	3810
+Oracle Linux 7 Update 5 installation media copy (x86_64)	ol7_x86_64_u5_base	All packages released for Oracle Linux 7 Update 5 (x86_64). No errata included	5127
+Oracle Linux 7 Update 6 installation media copy (x86_64)	ol7_x86_64_u6_base	All packages released for Oracle Linux 7 Update 6 (x86_64). No errata included	5180
+Oracle Linux 7 Update 7 installation media copy (aarch64)	ol7_aarch64_u7_base	All packages released for Oracle Linux 7 Update 7 (aarch64). No errata included	3889
+Oracle Linux 7 Update 7 installation media copy (x86_64)	ol7_x86_64_u7_base	All packages released for Oracle Linux 7 Update 7 (x86_64). No errata included	5257
+Oracle Linux 7 Update 8 installation media copy (aarch64)	ol7_aarch64_u8_base	All packages released for Oracle Linux 7 Update 8 (aarch64). No errata included	3890
+Oracle Linux 7 Update 8 installation media copy (x86_64)	ol7_x86_64_u8_base	All packages released for Oracle Linux 7 Update 8 (x86_64). No errata included	5258
+Oracle Linux 7 Update 9 installation media copy (aarch64)	ol7_aarch64_u9_base	All packages released for Oracle Linux 7 Update 9 (aarch64). No errata included	3870
+Oracle Linux 7 Update 9 installation media copy (x86_64)	ol7_x86_64_u9_base	All packages released for Oracle Linux 7 Update 9 (x86_64). No errata included	5257
+
+Oracle Linux 7 GA Patch (x86_64)	ol7_x86_64_u0_patch	Updated packages published after release of Oracle Linux 7 GA (x86_64)	583
+Oracle Linux 7 Update 1 Patch (x86_64)	ol7_x86_64_u1_patch	Updated packages published after release of Oracle Linux 7 Update 1 (x86_64)	531
+Oracle Linux 7 Update 2 Patch (x86_64)	ol7_x86_64_u2_patch	Updated packages published after release of Oracle Linux 7 Update 2 (x86_64)	685
+Oracle Linux 7 Update 3 Patch (x86_64)	ol7_x86_64_u3_patch	Updated packages published after release of Oracle Linux 7 Update 3 (x86_64)	545
+Oracle Linux 7 Update 4 Patch (x86_64)	ol7_x86_64_u4_patch	Updated packages published after release of Oracle Linux 7 Update 4 (x86_64)	703
+Oracle Linux 7 Update 5 Patch (x86_64)	ol7_x86_64_u5_patch	Updated packages published after release of Oracle Linux 7 Update 5 (x86_64)	688
+Oracle Linux 7 Update 6 Patch (x86_64)	ol7_x86_64_u6_patch	Updated packages published after release of Oracle Linux 7 Update 6 (x86_64)	769
+Oracle Linux 7 Update 7 Patch (aarch64)	ol7_aarch64_u7_patch	Updated packages published after release of Oracle Linux 7 Update 7 (aarch64)	451
+Oracle Linux 7 Update 7 Patch (x86_64)	ol7_x86_64_u7_patch	Updated packages published after release of Oracle Linux 7 Update 7 (x86_64)	647
+Oracle Linux 7 Update 8 Patch (x86_64)	ol7_x86_64_u8_patch	Updated packages published after release of Oracle Linux 7 Update 8 (x86_64)	554
+Oracle Linux 7 Update 9 Patch (aarch64)	ol7_aarch64_u9_patch	Updated packages published after release of Oracle Linux 7 Update 9 (aarch64)	929
+Oracle Linux 7 Update 9 Patch (x86_64)	ol7_x86_64_u9_patch	Updated packages published after release of Oracle Linux 7 Update 9 (x86_64)	1251
+
+## UEK
+
+Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64) - Latest	ol7_x86_64_UEKR3	Latest packages for Unbreakable Enterprise Kernel Release 3 for Oracle Linux 7 (x86_64)	133
+OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 7 (x86_64)	ol7_x86_64_UEKR3_OFED20	Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel (UEK) on Oracle Linux 7 (x86_64).	42
+Oracle Linux 7 Dtrace Userspace Tools (x86_64) - Latest	ol7_x86_64_Dtrace_userspace	The latest Dtrace userspace tools for Unbreakable Enterprise Kernel Release 3 (UEKR3) on Oracle Linux 7 (x86_64).	2
+
+Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)	ol7_x86_64_UEKR4	Latest packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)	37
+OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 7 (x86_64)	ol7_x86_64_UEKR4_OFED	Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel Release 4 (UEK) on Oracle Linux 7 (x86_64).	30
+Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 7	ol7_x86_64_UEKR4_DTrace_userspace	The latest Dtrace userspace tools for Oracle Linux 7 (x86_64) with Unbreakable Enterprise Kernel Release 4 (UEKR4).	2
+Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64) -Archive	ol7_x86_64_UEKR4_archive	Archived packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 7 (x86_64)	57
+
+Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)	ol7_x86_64_UEKR5	Latest packages for Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)	107
+Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_UEKR5	Latest developer preview of Unbreakable Enterprise Kernel Release 5 packages for creating test and development environments (not for production use) - Oracle Linux 7 (aarch64)	33
+Developer preview of Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_UEKR5	Latest developer preview of Unbreakable Enterprise Kernel Release 5 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)	107
+Oracle Linux 7 Unbreakable Enterprise Kernel Release 5 RDMA (x86_64)	ol7_x86_64_UEKR5_RDMA	Userspace utilities for configuring RDMA with Unbreakable Enterprise Kernel Release 5 on Oracle Linux 7 (x86_64).	25
+Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64) -Archive	ol7_x86_64_UEKR5_archive	Archived packages for Unbreakable Enterprise Kernel Release 5 for Oracle Linux 7 (x86_64)	6
+
+Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (aarch64)	ol7_aarch64_UEKR6	Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 7 (aarch64)	62
+Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)	ol7_x86_64_UEKR6	Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 7 (x86_64)	106
+Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_UEKR6	Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 7 (aarch64)	46
+Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_UEKR6	Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 7 (x86_64)	61
+Oracle Linux 7 (x86_64) UEK Release 6 RDMA	ol7_x86_64_UEKR6_RDMA	Latest RDMA packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 7 for the Oracle Integrated Stack.	25
+
+Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64)	ol7_x86_64_MODRHCK	Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 7 (x86_64).	13
+
+## Ksplice
+
+Ksplice for Oracle Linux 7 (aarch64)	ol7_aarch64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 7 (aarch64).	301
+Ksplice for Oracle Linux 7 (x86_64)	ol7_x86_64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 7 (x86_64).	877
+Ksplice aware userspace packages for Oracle Linux 7 (aarch64)	ol7_aarch64_userspace_ksplice	Latest packages for Ksplice aware userspace packages for Oracle Linux 7 (aarch64).	16
+Ksplice aware userspace packages for Oracle Linux 7 (x86_64)	ol7_x86_64_userspace_ksplice	Latest packages for Ksplice aware userspace packages for Oracle Linux 7 (x86_64).	22
+
+## Leapp
+
+Leapp Upgrade Utilities for Oracle Linux 7 (aarch64)	ol7_aarch64_leapp	Latest packages for in-place upgrade from Oracle Linux 7 to Oracle Linux 8 (aarch64) .	17
+Leapp Upgrade Utilities for Oracle Linux 7 (x86_64)	ol7_x86_64_leapp	Latest packages for in-place upgrade from Oracle Linux 7 to Oracle Linux 8 (x86_64) .	17
+
+## Instant Client
+
+Oracle Instant Client for Oracle Linux 7 (x86_64) - License Included	ol7_x86_64_oracle_instantclient	Oracle Instant Client packages for Oracle Linux 7 (x86_64) .	149
+Oracle Instant Client 21 for Oracle Linux 7 (x86_64) - License Included	ol7_x86_64_oracle_instantclient21	Oracle Instant Client 21 packages for Oracle Linux 7 (x86_64) .	8
+
+Oracle ASMlib for Oracle Linux 7 (x86_64)	ol7_x86_64_oracle	Oracle ASMlib for Oracle Linux 7 (x86_64)	1
+Oracle Software for Oracle Linux 7 (x86_64)	ol7_x86_64_oracle_software	Oracle Software for Oracle Linux 7 (x86_64)	2
+
+## Oracle Linux Cloud Native Environment
+
+Oracle Linux Cloud Native Environment (x86_64)	ol7_x86_64_olcne	Latest packages for components of the Oracle Linux Cloud Native environment (x86_64)	35
+Oracle Linux Cloud Native Environment 1.1 (x86_64)	ol7_x86_64_olcne11	Packages for components of the 1.1 release of Oracle Linux Cloud Native environment (x86_64)	50
+Oracle Linux Cloud Native Environment 1.2 - Oracle Linux 7 (aarch64)	ol7_aarch64_olcne12	Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (aarch64)	1
+Oracle Linux Cloud Native Environment 1.2 - Oracle Linux 7 (x86_64)	ol7_x86_64_olcne12	Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)	36
+Oracle Linux Cloud Native Environment 1.3 - Oracle Linux 7 (aarch64)	ol7_aarch64_olcne13	Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (aarch64)	7
+Oracle Linux Cloud Native Environment 1.3 - Oracle Linux 7 (x86_64)	ol7_x86_64_olcne13	Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)	36
+Oracle Linux Cloud Native Environment 1.4 - Oracle Linux 7 (aarch64)	ol7_aarch64_olcne14	Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (aarch64)	7
+Oracle Linux Cloud Native Environment 1.4 - Oracle Linux 7 (x86_64)	ol7_x86_64_olcne14	Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)	34
+Oracle Linux Cloud Native Environment 1.5 - Oracle Linux 7 (x86_64)	ol7_x86_64_olcne15	Packages for components of the 1.5 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)	36
+Oracle Linux Cloud Native Environment 1.6 - Oracle Linux 7 (x86_64)	ol7_x86_64_olcne16	Packages for components of the 1.6 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)	36
+
+Developer Preview for Oracle Cloud Native Environment (aarch64)	ol7_aarch64_developer_olcne	Developer preview packages for components of the Oracle Cloud Native Environment (aarch64)	2
+Developer Preview for Oracle Linux Cloud Native Environment (x86_64)	ol7_x86_64_developer_olcne	Developer preview packages for components of the Oracle Linux Cloud Native environment (x86_64)	42
+
+## Security Validations
+
+Oracle Linux 7 (x86_64) Security Validations	ol7_x86_64_security_validation	Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 (x86_64).	72
+
+Oracle Linux 7 Update 8 Security Validations packages (aarch64)	ol7_aarch64_u8_security_validation	Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 Update 8 (aarch64).	53
+Oracle Linux 7 Update 8 Security Validations packages (x86_64)	ol7_x86_64_u8_security_validation	Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 Update 8 (x86_64).	73
+
+## MySQL
+
+MySQL 5.5 for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL55_community	Latest MySQL 5.5 packages for Oracle Linux 7 (x86_64).	15
+MySQL 5.6 for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL56_community	Latest MySQL 5.6 packages for Oracle Linux 7 (x86_64).	15
+MySQL 5.7 for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL57_community	Latest MySQL 5.7 packages for Oracle Linux 7 (x86_64).	18
+
+MySQL Connectors Community for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL_connectors_community	Latest MySQL Connectors Community packages for Oracle Linux 7 (aarch64)	9
+MySQL Connectors Community for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL_connectors_community	Latest MySQL Connectors Community packages for Oracle Linux 7 (x86_64)	9
+MySQL 8.0 Connectors Community for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL80_connectors_community	Latest MySQL 8.0 Connectors Community packages for Oracle Linux 7 (aarch64).	9
+MySQL 8.0 Connectors Community for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL80_connectors_community	Latest MySQL 8.0 Connectors Community packages for Oracle Linux 7 (x86_64).	9
+MySQL 8.0 for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 7 (aarch64).	24
+MySQL 8.0 for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 7 (x86_64).	19
+MySQL 8.0 Tools Community for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL80_tools_community	Latest MySQL 8.0 Tools Community packages for Oracle Linux 7 (aarch64).	2
+MySQL 8.0 Tools Community for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL80_tools_community	Latest MySQL 8.0 Tools Community packages for Oracle Linux 7 (x86_64).	2
+MySQL 8.4 Server Community for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL84_community	Latest MySQL 8.4 Server Community packages for Oracle Linux 7 (aarch64)	11
+MySQL 8.4 Server Community for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL84_community	Latest MySQL 8.4 Server Community packages for Oracle Linux 7 (x86_64)	11
+MySQL 8.4 Tools Community for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL84_tools_community	Latest MySQL 8.4 Tools Community packages for Oracle Linux 7 (aarch64)	2
+MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL84_tools_community	Latest MySQL 8.4 Tools Community packages for Oracle Linux 7 (x86_64)	2
+MySQL Innovation Server Community for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL_innovation_community	Latest MySQL Innovation Server Community packages for Oracle Linux 7 (aarch64)	11
+MySQL Innovation Server Community for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL_innovation_community	Latest MySQL Innovation Server Community packages for Oracle Linux 7 (x86_64)	11
+MySQL Innovation Tools Community for Oracle Linux 7 (aarch64)	ol7_aarch64_MySQL_innovation_tools_community	Latest MySQL Innovation Tools Community packages for Oracle Linux 7 (aarch64)	2
+MySQL Innovation Tools Community for Oracle Linux 7 (x86_64)	ol7_x86_64_MySQL_innovation_tools_community	Latest MySQL Innovation Tools Community packages for Oracle Linux 7 (x86_64)	2
+
+## Cloud
+
+Oracle OpenStack 2.0 (x86_64)	ol7_x86_64_openstack20	Latest for Oracle OpenStack version 2.0 .	39
+
+Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64)	ol7_x86_64_openstack21	Latest for Oracle OpenStack version 2.1 for Oracle Linux 7 (x86_64) .	43
+
+Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64)	ol7_x86_64_openstack30	Latest for Oracle OpenStack version 3.0 .	45
+Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64)	ol7_x86_64_openstack_extras	Latest Extra development packages for Oracle OpenStack version 3.0	73
+
+Oracle OpenStack 4.0 for Oracle Linux 7 (x86_64)	ol7_x86_64_openstack40	Latest Packages for Oracle OpenStack version 4.0 .	69
+Extra development packages for Oracle OpenStack 4.0 on Oracle Linux 7 (x86_64)	ol7_x86_64_openstack40_extras	Latest Extra development packages for Oracle OpenStack version 4.0	17
+
+Oracle OpenStack 5.0 for Oracle Linux 7 (x86_64)	ol7_x86_64_openstack50	Latest Packages for Oracle OpenStack version 5.0 .	73
+Extra development packages for Oracle OpenStack 5.0 on Oracle Linux 7 (x86_64)	ol7_x86_64_openstack50_extras	Latest Extra development packages for Oracle OpenStack version 5.0	50
+
+## Virtualization
+
+KVM Utilities for Oracle Linux 7 (x86_64)	ol7_x86_64_kvm_utils	Latest packages for KVM Utilities for Oracle Linux 7 (x86_64).	59
+
+Developer Preview of KVM Utilities for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_kvm_utils	Latest KVM Utility packages for test and development for Oracle Linux 7 (aarch64).	12
+Developer Preview of KVM Utilities for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_kvm_utils	Latest KVM Utility packages for test and development for Oracle Linux 7 (x86_64).	19
+
+oVirt Release 4.2 on Oracle Linux 7 (x86_64)	ol7_x86_64_ovirt42	Latest packages for oVirt Release 4.2 on Oracle Linux 7 (x86_64).	151
+oVirt Release 4.2 on Oracle Linux 7 (x86_64) - Extra	ol7_x86_64_ovirt42_extras	Latest extra packages for oVirt Release 4.2 on Oracle Linux 7 (x86_64).	169
+
+oVirt Release 4.3 on Oracle Linux 7 (x86_64)	ol7_x86_64_ovirt43	Latest packages for oVirt Release 4.3 on Oracle Linux 7 (x86_64).	138
+oVirt Release 4.3 on Oracle Linux 7 (x86_64) - Extra	ol7_x86_64_ovirt43_extras	Latest extra packages for oVirt Release 4.3 on Oracle Linux 7 (x86_64).	117
+
+## Storage
+
+Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later)	ol7_x86_64_ceph	Latest packages for Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later).	59
+Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later)	ol7_x86_64_ceph30	Latest packages for Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later).	72
+
+Glusterfs 3.12 for Oracle Linux 7 (x86_64)	ol7_x86_64_gluster312	Latest GlusterFs 3.12 packages for Oracle Linux 7 (x86_64).	19
+Glusterfs 4.1 for Oracle Linux 7 (aarch64)	ol7_aarch64_gluster41	Latest GlusterFs 4.1 packages for Oracle Linux 7 (aarch64).	21
+Glusterfs 4.1 for Oracle Linux 7 (x86_64)	ol7_x86_64_gluster41	Latest GlusterFs 4.1 packages for Oracle Linux 7 (x86_64).	21
+Gluster 5 for Oracle Linux 7 (aarch64)	ol7_aarch64_gluster5	Latest Gluster 5 packages for Oracle Linux 7 (aarch64).	26
+Gluster 5 for Oracle Linux 7 (x86_64)	ol7_x86_64_gluster5	Latest Gluster 5 packages for Oracle Linux 7 (x86_64).	26
+Gluster 6 for Oracle Linux 7 (aarch64)	ol7_aarch64_gluster6	Latest Gluster 6 packages for Oracle Linux 7 (aarch64).	33
+Gluster 6 for Oracle Linux 7 (x86_64)	ol7_x86_64_gluster6	Latest Gluster 6 packages for Oracle Linux 7 (x86_64).	33
+Gluster 8 for Oracle Linux 7 (aarch64)	ol7_aarch64_gluster8	Latest Gluster 8 packages for Oracle Linux 7 (aarch64).	39
+Gluster 8 for Oracle Linux 7 (x86_64)	ol7_x86_64_gluster8	Latest Gluster 8 packages for Oracle Linux 7 (x86_64).	40
+
+## Packages for Test and Development
+
+Latest Node.js 14 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_nodejs14	Latest Node.js 14 packages for Oracle Linux 7 (aarch64).	1
+Latest PHP 7.4 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_php74	Latest PHP 7.4 packages for Oracle Linux 7 (x86_64).	41
+
+Latest Go Programming Language 1.10 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang110	Latest Go Programming Language 1.10 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang110	Latest Go Programming Language 1.10 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.11 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang111	Latest Go Programming Language 1.11 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang111	Latest Go Programming Language 1.11 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.12 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang112	Latest Go Programming Language 1.12 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang112	Latest Go Programming Language 1.12 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.13 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang113	Latest Go Programming Language 1.13 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang113	Latest Go Programming Language 1.13 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.14 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang114	Latest Go Programming Language 1.14 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang114	Latest Go Programming Language 1.14 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.15 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang115	Latest Go Programming Language 1.15 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang115	Latest Go Programming Language 1.15 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.16 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang116	Latest Go Programming Language 1.16 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang116	Latest Go Programming Language 1.16 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.17 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang117	Latest Go Programming Language 1.17 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang117	Latest Go Programming Language 1.17 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.18 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang118	Latest Go Programming Language 1.18 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang118	Latest Go Programming Language 1.18 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.19 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang119	Latest Go Programming Language 1.19 packages for Oracle Linux 7 (aarch64).	6
+Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang119	Latest Go Programming Language 1.19 packages for Oracle Linux 7 (x86_64).	6
+Latest Go Programming Language 1.21 packages for Oracle Linux 7 (aarch64)	ol7_aarch64_developer_golang121	Latest Go Programming Language 1.21 packages for Oracle Linux 7 (aarch64)	6
+Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64)	ol7_x86_64_developer_golang121	Latest Go Programming Language 1.21 packages for Oracle Linux 7 (x86_64)	6
+
+## OLM
+
+Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 7 (x86_64)	ol7_x86_64_oraclelinuxmanager210_client	All Oracle Linux Manager (formerly Spacewalk) Client 2.10 packages released for Oracle Linux 7 (x86_64).	54
+Oracle Linux Manager (formerly Spacewalk) Server 2.10 for Oracle Linux 7 (x86_64)	ol7_x86_64_oraclelinuxmanager210_server	All Oracle Linux Manager (formerly Spacewalk) Server 2.10 packages released for Oracle Linux 7 (x86_64).	182
+
+Spacewalk Client 2.6 for Oracle Linux 7 (x86_64)	ol7_x86_64_spacewalk26_client	All Spacewalk Client 2.6 packages released for Oracle Linux 7 (x86_64).	28
+Spacewalk Client 2.7 for Oracle Linux 7 (x86_64)	ol7_x86_64_spacewalk27_client	All Spacewalk Client 2.7 packages released for Oracle Linux 7 (x86_64).	27
+Spacewalk Client 2.10 for Oracle Linux 7 (x86_64)	ol7_x86_64_spacewalk210_client	All Spacewalk Client 2.10 packages released for Oracle Linux 7 (x86_64).	54
+Spacewalk Server 2.6 for Oracle Linux 7 (x86_64)	ol7_x86_64_spacewalk26_server	All Spacewalk Server 2.6 packages released for Oracle Linux 7 (x86_64).	207
+Spacewalk Server 2.7 for Oracle Linux 7 (x86_64)	ol7_x86_64_spacewalk27_server	All Spacewalk Server 2.7 packages released for Oracle Linux 7 (x86_64).	174
+Spacewalk Server 2.10 for Oracle Linux 7 (x86_64)	ol7_x86_64_spacewalk210_server	All Spacewalk Server 2.10 packages released for Oracle Linux 7 (x86_64).	182
+
+## Exadata
+
+Exadata release 19.1.0.0.0 db server installation packages (x86_64)	exadata_dbserver_19.1.0.0.0_x86_64_base	All packages released on the Exadata release 19.1.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	587
+Exadata release 19.1.1.0.0 db server installation packages (x86_64)	exadata_dbserver_19.1.1.0.0_x86_64_base	All packages released on the Exadata release 19.1.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	592
+Exadata release 19.1.2.0.0 db server installation packages (x86_64)	exadata_dbserver_19.1.2.0.0_x86_64_base	All packages released on the Exadata release 19.1.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	592
+Exadata release 19.2.0.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.0.0.0_x86_64_base	All packages released on the Exadata release 19.2.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	594
+Exadata release 19.2.1.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.1.0.0_x86_64_base	All packages released on the Exadata release 19.2.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	599
+Exadata release 19.2.10.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.10.0.0_x86_64_base	All packages released on the Exadata release 19.2.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	602
+Exadata release 19.2.11.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.11.0.0_x86_64_base	All packages released on the Exadata release 19.2.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	602
+Exadata release 19.2.12.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.12.0.0_x86_64_base	All packages released on the Exadata release 19.2.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	602
+Exadata release 19.2.13.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.13.0.0_x86_64_base	All packages released on the Exadata release 19.2.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	604
+Exadata release 19.2.14.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.14.0.0_x86_64_base	All packages released on the Exadata release 19.2.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	606
+Exadata release 19.2.15.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.15.0.0_x86_64_base	All packages released on the Exadata release 19.2.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	607
+Exadata release 19.2.16.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.16.0.0_x86_64_base	All packages released on the Exadata release 19.2.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	607
+Exadata release 19.2.17.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.17.0.0_x86_64_base	All packages released on the Exadata release 19.2.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	606
+Exadata release 19.2.18.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.18.0.0_x86_64_base	All packages released on the Exadata release 19.2.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	607
+Exadata release 19.2.19.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.19.0.0_x86_64_base	All packages released on the Exadata release 19.2.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	606
+Exadata release 19.2.2.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.2.0.0_x86_64_base	All packages released on the Exadata release 19.2.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	598
+Exadata release 19.2.20.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.20.0.0_x86_64_base	All packages released on the Exadata release 19.2.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	607
+Exadata release 19.2.21.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.21.0.0_x86_64_base	All packages released on the Exadata release 19.2.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	607
+Exadata release 19.2.22.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.22.0.0_x86_64_base	All packages released on the Exadata release 19.2.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	607
+Exadata release 19.2.3.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.3.0.0_x86_64_base	All packages released on the Exadata release 19.2.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	599
+Exadata release 19.2.4.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.4.0.0_x86_64_base	All packages released on the Exadata release 19.2.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	599
+Exadata release 19.2.5.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.5.0.0_x86_64_base	All packages released on the Exadata release 19.2.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	599
+Exadata release 19.2.6.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.6.0.0_x86_64_base	All packages released on the Exadata release 19.2.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	600
+Exadata release 19.2.7.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.7.0.0_x86_64_base	All packages released on the Exadata release 19.2.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	600
+Exadata release 19.2.8.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.8.0.0_x86_64_base	All packages released on the Exadata release 19.2.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	602
+Exadata release 19.2.9.0.0 db server installation packages (x86_64)	exadata_dbserver_19.2.9.0.0_x86_64_base	All packages released on the Exadata release 19.2.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	602
+Exadata release 19.3.0.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.0.0.0_x86_64_base	All packages released on the Exadata release 19.3.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	691
+Exadata release 19.3.1.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.1.0.0_x86_64_base	All packages released on the Exadata release 19.3.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	691
+Exadata release 19.3.10.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.10.0.0_x86_64_base	All packages released on the Exadata release 19.3.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 19.3.11.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.11.0.0_x86_64_base	All packages released on the Exadata release 19.3.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	700
+Exadata release 19.3.12.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.12.0.0_x86_64_base	All packages released on the Exadata release 19.3.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 19.3.13.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.13.0.0_x86_64_base	All packages released on the Exadata release 19.3.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 19.3.14.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.14.0.0_x86_64_base	All packages released on the Exadata release 19.3.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 19.3.15.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.15.0.0_x86_64_base	All packages released on the Exadata release 19.3.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 19.3.16.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.16.0.0_x86_64_base	All packages released on the Exadata release 19.3.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 19.3.17.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.17.0.0_x86_64_base	All packages released on the Exadata release 19.3.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 19.3.18.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.18.0.0_x86_64_base	All packages released on the Exadata release 19.3.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 19.3.19.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.19.0.0_x86_64_base	All packages released on the Exadata release 19.3.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 19.3.2.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.2.0.0_x86_64_base	All packages released on the Exadata release 19.3.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	691
+Exadata release 19.3.20.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.20.0.0_x86_64_base	All packages released on the Exadata release 19.3.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	703
+Exadata release 19.3.3.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.3.0.0_x86_64_base	All packages released on the Exadata release 19.3.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	691
+Exadata release 19.3.4.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.4.0.0_x86_64_base	All packages released on the Exadata release 19.3.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	692
+Exadata release 19.3.5.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.5.0.0_x86_64_base	All packages released on the Exadata release 19.3.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	692
+Exadata release 19.3.6.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.6.0.0_x86_64_base	All packages released on the Exadata release 19.3.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	692
+Exadata release 19.3.7.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.7.0.0_x86_64_base	All packages released on the Exadata release 19.3.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	692
+Exadata release 19.3.8.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.8.0.0_x86_64_base	All packages released on the Exadata release 19.3.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	694
+Exadata release 19.3.9.0.0 db server installation packages (x86_64)	exadata_dbserver_19.3.9.0.0_x86_64_base	All packages released on the Exadata release 19.3.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.0.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.0.0.0_x86_64_base	All packages released on the Exadata release 20.1.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.1.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.1.0.0_x86_64_base	All packages released on the Exadata release 20.1.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	700
+Exadata release 20.1.10.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.10.0.0_x86_64_base	All packages released on the Exadata release 20.1.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.11.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.11.0.0_x86_64_base	All packages released on the Exadata release 20.1.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.12.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.12.0.0_x86_64_base	All packages released on the Exadata release 20.1.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.13.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.13.0.0_x86_64_base	All packages released on the Exadata release 20.1.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.14.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.14.0.0_x86_64_base	All packages released on the Exadata release 20.1.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.15.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.15.0.0_x86_64_base	All packages released on the Exadata release 20.1.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.16.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.16.0.0_x86_64_base	All packages released on the Exadata release 20.1.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.17.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.17.0.0_x86_64_base	All packages released on the Exadata release 20.1.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	703
+Exadata release 20.1.18.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.18.0.0_x86_64_base	All packages released on the Exadata release 20.1.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	703
+Exadata release 20.1.19.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.19.0.0_x86_64_base	All packages released on the Exadata release 20.1.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	703
+Exadata release 20.1.2.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.2.0.0_x86_64_base	All packages released on the Exadata release 20.1.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.20.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.20.0.0_x86_64_base	All packages released on the Exadata release 20.1.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	703
+Exadata release 20.1.21.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.21.0.0_x86_64_base	All packages released on the Exadata release 20.1.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	703
+Exadata release 20.1.22.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.22.0.0_x86_64_base	All packages released on the Exadata release 20.1.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	703
+Exadata release 20.1.3.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.3.0.0_x86_64_base	All packages released on the Exadata release 20.1.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.4.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.4.0.0_x86_64_base	All packages released on the Exadata release 20.1.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.5.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.5.0.0_x86_64_base	All packages released on the Exadata release 20.1.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.6.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.6.0.0_x86_64_base	All packages released on the Exadata release 20.1.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.7.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.7.0.0_x86_64_base	All packages released on the Exadata release 20.1.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	701
+Exadata release 20.1.8.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.8.0.0_x86_64_base	All packages released on the Exadata release 20.1.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 20.1.9.0.0 db server installation packages (x86_64)	exadata_dbserver_20.1.9.0.0_x86_64_base	All packages released on the Exadata release 20.1.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	702
+Exadata release 21.2.0.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.0.0.0_x86_64_base	All packages released on the Exadata release 21.2.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	721
+Exadata release 21.2.1.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.1.0.0_x86_64_base	All packages released on the Exadata release 21.2.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.10.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.10.0.0_x86_64_base	All packages released on the Exadata release 21.2.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	723
+Exadata release 21.2.11.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.11.0.0_x86_64_base	All packages released on the Exadata release 21.2.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	722
+Exadata release 21.2.12.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.12.0.0_x86_64_base	All packages released on the Exadata release 21.2.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	723
+Exadata release 21.2.13.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.13.0.0_x86_64_base	All packages released on the Exadata release 21.2.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	723
+Exadata release 21.2.14.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.14.0.0_x86_64_base	All packages released on the Exadata release 21.2.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	723
+Exadata release 21.2.15.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.15.0.0_x86_64_base	All packages released on the Exadata release 21.2.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.16.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.16.0.0_x86_64_base	All packages released on the Exadata release 21.2.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.17.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.17.0.0_x86_64_base	All packages released on the Exadata release 21.2.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.18.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.18.0.0_x86_64_base	All packages released on the Exadata release 21.2.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.19.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.19.0.0_x86_64_base	All packages released on the Exadata release 21.2.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.2.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.2.0.0_x86_64_base	All packages released on the Exadata release 21.2.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.20.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.20.0.0_x86_64_base	All packages released on the Exadata release 21.2.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.21.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.21.0.0_x86_64_base	All packages released on the Exadata release 21.2.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.22.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.22.0.0_x86_64_base	All packages released on the Exadata release 21.2.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.23.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.23.0.0_x86_64_base	All packages released on the Exadata release 21.2.23.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.24.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.24.0.0_x86_64_base	All packages released on the Exadata release 21.2.24.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.3.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.3.0.0_x86_64_base	All packages released on the Exadata release 21.2.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.4.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.4.0.0_x86_64_base	All packages released on the Exadata release 21.2.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.5.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.5.0.0_x86_64_base	All packages released on the Exadata release 21.2.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.6.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.6.0.0_x86_64_base	All packages released on the Exadata release 21.2.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	723
+Exadata release 21.2.7.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.7.0.0_x86_64_base	All packages released on the Exadata release 21.2.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.8.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.8.0.0_x86_64_base	All packages released on the Exadata release 21.2.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 21.2.9.0.0 db server installation packages (x86_64)	exadata_dbserver_21.2.9.0.0_x86_64_base	All packages released on the Exadata release 21.2.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 22.1.0.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.0.0.0_x86_64_base	All packages released on the Exadata release 22.1.0.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 22.1.1.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.1.0.0_x86_64_base	All packages released on the Exadata release 22.1.1.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	724
+Exadata release 22.1.10.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.10.0.0_x86_64_base	All packages released on the Exadata release 22.1.10.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.11.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.11.0.0_x86_64_base	All packages released on the Exadata release 22.1.11.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.12.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.12.0.0_x86_64_base	All packages released on the Exadata release 22.1.12.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.13.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.13.0.0_x86_64_base	All packages released on the Exadata release 22.1.13.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.14.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.14.0.0_x86_64_base	All packages released on the Exadata release 22.1.14.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.15.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.15.0.0_x86_64_base	All packages released on the Exadata release 22.1.15.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.16.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.16.0.0_x86_64_base	All packages released on the Exadata release 22.1.16.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.17.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.17.0.0_x86_64_base	All packages released on the Exadata release 22.1.17.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.18.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.18.0.0_x86_64_base	All packages released on the Exadata release 22.1.18.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.19.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.19.0.0_x86_64_base	All packages released on the Exadata release 22.1.19.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.2.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.2.0.0_x86_64_base	All packages released on the Exadata release 22.1.2.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	725
+Exadata release 22.1.20.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.20.0.0_x86_64_base	All packages released on the Exadata release 22.1.20.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.21.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.21.0.0_x86_64_base	All packages released on the Exadata release 22.1.21.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.22.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.22.0.0_x86_64_base	All packages released on the Exadata release 22.1.22.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.23.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.23.0.0_x86_64_base	All packages released on the Exadata release 22.1.23.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.24.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.24.0.0_x86_64_base	All packages released on the Exadata release 22.1.24.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.25.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.25.0.0_x86_64_base	All packages released on the Exadata release 22.1.25.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.26.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.26.0.0_x86_64_base	All packages released on the Exadata release 22.1.26.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.27.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.27.0.0_x86_64_base	All packages released on the Exadata release 22.1.27.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.28.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.28.0.0_x86_64_base	All packages released on the Exadata release 22.1.28.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.29.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.29.0.0_x86_64_base	All packages released on the Exadata release 22.1.29.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+Exadata release 22.1.3.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.3.0.0_x86_64_base	All packages released on the Exadata release 22.1.3.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	725
+Exadata release 22.1.4.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.4.0.0_x86_64_base	All packages released on the Exadata release 22.1.4.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	725
+Exadata release 22.1.5.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.5.0.0_x86_64_base	All packages released on the Exadata release 22.1.5.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	725
+Exadata release 22.1.6.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.6.0.0_x86_64_base	All packages released on the Exadata release 22.1.6.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	725
+Exadata release 22.1.7.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.7.0.0_x86_64_base	All packages released on the Exadata release 22.1.7.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	725
+Exadata release 22.1.8.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.8.0.0_x86_64_base	All packages released on the Exadata release 22.1.8.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	725
+Exadata release 22.1.9.0.0 db server installation packages (x86_64)	exadata_dbserver_22.1.9.0.0_x86_64_base	All packages released on the Exadata release 22.1.9.0.0 (x86_64) OL7 installation media. This channel does not contain updates.	728
+
+## PCA
+
+PCA 2.4.4.2 CN	pca2442_x86_64_cn	All Oracle Linux 7 based OVM server packages released for PCA 2.4.4.2 Compute Nodes.	74
+PCA 2.4.4.2 MN	pca2442_x86_64_mn	All Oracle Linux 7 based packages released for PCA 2.4.4.2 Management Nodes.	103
+PCA 2.4.4.3 CN	pca2443_x86_64_cn	All Oracle Linux 7 based OVM server packages released for PCA 2.4.4.3 Compute Nodes.	40
+PCA 2.4.4.3 MN	pca2443_x86_64_mn	All Oracle Linux 7 based packages released for PCA 2.4.4.3 Management Nodes.	45
+PCA 3.0.1 Container Image src	pca301_x86_64_containers_src	Container images 3rd_party sources.	0
+PCA 3.0.1 Container Images	pca301_x86_64_containers	Container images for services running on PCA 3.0.1 Management Nodes.	89
+PCA 3.0.1 Firmware	pca301_x86_64_fw	Firmware packages for PCA 3.0.1 infrastructure.	1
+PCA 3.0.1 Hypervisor	pca301_x86_64_hypervisor	All hypervisor and OS packages for PCA 3.0.1 Compute Nodes.	37
+PCA 3.0.1 Hypervisor src	pca301_x86_64_hypervisor_src	Source rpms for hypervisor and OS packages for PCA 3.0.1 Compute Nodes.	0
+PCA 3.0.1 MN	pca301_x86_64_mn	All Oracle Linux based packages released for PCA 3.0.1 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).	8
+PCA 3.0.1 MN src	pca301_x86_64_mn_src	Source rpms for Oracle Linux based packages released for PCA 3.0.1 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).	0
+PCA 3.0.1 OCI Compute Images	pca301_x86_64_oci	Compute images for OCI services running on PCA 3.0 Management Nodes.	2
+PCA 3.0.2 Container Images	pca302_x86_64_containers	Container images for services running on PCA 3.0.2 Management Nodes.	170
+PCA 3.0.2 Firmware	pca302_x86_64_fw	Firmware packages for PCA 3.0.2 infrastructure.	4
+PCA 3.0.2 Hypervisor	pca302_x86_64_hypervisor	All hypervisor and OS packages for PCA 3.0.2 Compute Nodes.	95
+PCA 3.0.2 Hypervisor src	pca302_x86_64_hypervisor_src	Source rpms for hypervisor and OS packages for PCA 3.0.2 Compute Nodes.	0
+PCA 3.0.2 MN	pca302_x86_64_mn	All Oracle Linux based packages released for PCA 3.0.2 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).	371
+PCA 3.0.2 MN src	pca302_x86_64_mn_src	Source rpms for Oracle Linux based packages released for PCA 3.0.2 Management Nodes. UEKR6, ol7_olcne, pca, pca3_dependencies (3rd party).	0
+PCA 3.0.2 OCI Compute Images	pca302_x86_64_oci	Compute images for OCI services running on PCA 3.0 Management Nodes.	7
+PCA 3.0.2 Region Registry	pca302_x86_64_regionregistry	Oracle Linux based packages released for PCA 3.0.2 for the region registry	16
+
+# Oracle Linux 8 x86_64
+
+Name	Label	Description	Packages
+
+## Latest Packages
+
+Oracle Linux 8 BaseOS Latest (aarch64)	ol8_aarch64_baseos_latest	Base operating system packages released for Oracle Linux 8 (aarch64) including the latest errata packages. (aarch64).	1318
+Oracle Linux 8 BaseOS Latest (x86_64)	ol8_x86_64_baseos_latest	Base operating system packages released for Oracle Linux 8 (x86_64) including the latest errata packages. (x86_64).	1796
+Oracle Linux 8 Application Stream Packages (aarch64)	ol8_aarch64_appstream	Application packages released for Oracle Linux 8 (aarch64) including the latest errata packages. (aarch64)	4697
+Oracle Linux 8 Application Stream Packages (x86_64)	ol8_x86_64_appstream	Application packages released for Oracle Linux 8 (x86_64) including the latest errata packages. (x86_64)	6052
+
+Oracle Linux 8 Addons (aarch64)	ol8_aarch64_addons	Oracle Linux 8 Addons (aarch64).	72
+Oracle Linux 8 Addons (x86_64)	ol8_x86_64_addons	Oracle Linux 8 Addons (x86_64).	100
+
+Packages for creating test and development environments for Oracle Linux 8 (aarch64)	ol8_aarch64_developer	Latest packages for creating test and development environments - Oracle Linux 8 (aarch64)	165
+Packages for creating test and development environments for Oracle Linux 8 (x86_64)	ol8_x86_64_developer	Latest packages for creating test and development environments - Oracle Linux 8 (x86_64)	179
+
+EPEL Packages for creating test and development environments for Oracle Linux 8 (aarch64)	ol8_aarch64_developer_EPEL	Latest EPEL packages for creating test and development environments - Oracle Linux 8 (aarch64)	10617
+EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64)	ol8_x86_64_developer_EPEL	Latest EPEL packages for creating test and development environments - Oracle Linux 8 (x86_64)	11034
+EPEL Modular Packages for Oracle Linux 8 (aarch64)	ol8_aarch64_developer_EPEL_modular	Latest EPEL Modular packages for creating test and development environments - Oracle Linux 8 (aarch64)	130
+EPEL Modular Packages for Oracle Linux 8 (x86_64)	ol8_x86_64_developer_EPEL_modular	Latest EPEL Modular packages for creating test and development environments - Oracle Linux 8 (x86_64)	130
+
+CodeReady Linux Builder for Oracle Linux 8 (aarch64)	ol8_aarch64_codeready_builder	Repository of additional development and build tools for Oracle Linux 8 (aarch64) - (unsupported)	1690
+CodeReady Linux Builder for Oracle Linux 8 (x86_64)	ol8_x86_64_codeready_builder	Repository of additional development and build tools for Oracle Linux 8 (x86_64) - (unsupported).	2473
+
+Oracle Linux 8 Distro Builder (aarch64) - Unsupported	ol8_aarch64_distro_builder	Latest packages for Oracle Linux 8 Distro Builder (aarch64) - Unsupported.	910
+Oracle Linux 8 Distro Builder (x86_64) - Unsupported	ol8_x86_64_distro_builder	Latest packages for Oracle Linux 8 Distro Builder (x86_64) - Unsupported.	938
+
+Oracle Linux 8 software for SAP	ol8_x86_64_SAP_addons	Packages required for SAP software to run on Oracle Linux 8	1
+
+Oracle Linux 8 BaseOSDeveloper Preview (aarch64)	ol8_aarch64_baseos_developer	Developer preview of Oracle Linux 8 BaseOS Packages (aarch64) - (Unsupported)	1263
+Oracle Linux 8 BaseOS Developer Preview (x86_64)	ol8_x86_64_baseos_developer	Developer preview of Oracle Linux 8 BaseOS Packages (x86_64) - (Unsupported)	1726
+Oracle Linux 8 Appstream Developer Preview (aarch64)	ol8_aarch64_appstream_developer	Developer preview of Oracle Linux 8 Application Stream Packages (aarch64) - (Unsupported)	4461
+Oracle Linux 8 Appstream Developer Preview (x86_64)	ol8_x86_64_appstream_developer	Developer preview of Oracle Linux 8 Application Stream Packages (x86_64) - (Unsupported)	5792
+Oracle Linux 8 Developer Packages Archive (aarch64)	ol8_aarch64_developer_archive	Archived developer packages for Oracle Linux 8 (aarch64)	3
+Oracle Linux 8 Developer Packages Archive (x86_64)	ol8_x86_64_developer_archive	Archived developer packages for Oracle Linux 8 (x86_64)	3
+Oracle Linux 8 CodeReady Builder Developer Preview (aarch64)	ol8_aarch64_codeready_builder_developer	Developer preview of Oracle Linux 8 CodeReady Builder Packages (aarch64) - (Unsupported)	1548
+Oracle Linux 8 CodeReady Builder Developer Preview (x86_64)	ol8_x86_64_codeready_builder_developer	Developer preview of Oracle Linux 8 CodeReady Builder Packages (x86_64) - (Unsupported)	2330
+
+## Installation Media Packages
+
+Oracle Linux 8 BaseOS GA (x86_64)	ol8_x86_64_u0_baseos_base	Base operating system packages released for Oracle Linux 8 GA (x86_64). No errata included	1653
+Oracle Linux 8.1 BaseOS (x86_64)	ol8_x86_64_u1_baseos_base	Base operating system packages released for Oracle Linux 8 (x86_64). No errata included	1642
+Oracle Linux 8.2 BaseOS (aarch64)	ol8_aarch64_u2_baseos_base	Base operating system packages released for Oracle Linux 8.2 (aarch64). No errata included	1247
+Oracle Linux 8.2 BaseOS (x86_64)	ol8_x86_64_u2_baseos_base	Base operating system packages released for Oracle Linux 8.2 (x86_64). No errata included	1677
+Oracle Linux 8.3 BaseOS (aarch64)	ol8_aarch64_u3_baseos_base	Base operating system packages released for Oracle Linux 8.3 (aarch64). No errata included	1252
+Oracle Linux 8.3 BaseOS (x86_64)	ol8_x86_64_u3_baseos_base	Base operating system packages released for Oracle Linux 8.3 (x86_64). No errata included	1691
+Oracle Linux 8.4 BaseOS (aarch64)	ol8_aarch64_u4_baseos_base	Base operating system packages released for Oracle Linux 8.4 (aarch64). No errata included	1256
+Oracle Linux 8.4 BaseOS (x86_64)	ol8_x86_64_u4_baseos_base	Base operating system packages released for Oracle Linux 8.4 (x86_64). No errata included	1704
+Oracle Linux 8.5 BaseOS (aarch64)	ol8_aarch64_u5_baseos_base	Base operating system packages released for Oracle Linux 8.5 (aarch64). No errata included	1253
+Oracle Linux 8.5 BaseOS (x86_64)	ol8_x86_64_u5_baseos_base	Base operating system packages released for Oracle Linux 8.5 (x86_64). No errata included	1702
+Oracle Linux 8.6 BaseOS (aarch64)	ol8_aarch64_u6_baseos_base	Base operating system packages released for Oracle Linux 8.6 (aarch64). No errata included	1259
+Oracle Linux 8.6 BaseOS (x86_64)	ol8_x86_64_u6_baseos_base	Base operating system packages released for Oracle Linux 8.6 (x86_64). No errata included	1710
+Oracle Linux 8.7 BaseOS (aarch64)	ol8_aarch64_u7_baseos_base	Base operating system packages released for Oracle Linux 8.7 (aarch64). No errata included	1257
+Oracle Linux 8.7 BaseOS (x86_64)	ol8_x86_64_u7_baseos_base	Base operating system packages released for Oracle Linux 8.7 (x86_64). No errata included	1716
+Oracle Linux 8.8 BaseOS (aarch64)	ol8_aarch64_u8_baseos_base	Base operating system packages released for Oracle Linux 8.8 (aarch64). No errata included	1266
+Oracle Linux 8.8 BaseOS (x86_64)	ol8_x86_64_u8_baseos_base	Base operating system packages released for Oracle Linux 8.8 (x86_64). No errata included	1729
+Oracle Linux 8.9 BaseOS (aarch64)	ol8_aarch64_u9_baseos_base	Base operating system packages released for Oracle Linux 8.9 (aarch64). No errata included	1275
+Oracle Linux 8.9 BaseOS (x86_64)	ol8_x86_64_u9_baseos_base	Base operating system packages released for Oracle Linux 8.9 (x86_64). No errata included	1738
+Oracle Linux 8.10 BaseOS (aarch64)	ol8_aarch64_u10_baseos_base	Base operating system packages released for Oracle Linux 8.10 (aarch64)	1276
+Oracle Linux 8.10 BaseOS (x86_64)	ol8_x86_64_u10_baseos_base	Base operating system packages released for Oracle Linux 8.10 (x86_64)	1739
+
+Oracle Linux 8 BaseOS GA Patch (x86_64)	ol8_x86_64_u0_baseos_patch	Updated packages published after release of Oracle Linux 8 BaseOS GA (x86_64)	393
+Oracle Linux 8.1 BaseOS Patch (x86_64)	ol8_x86_64_u1_baseos_patch	Updated packages published after release of Oracle Linux 8.1 BaseOS (x86_64)	491
+Oracle Linux 8.2 BaseOS Patch (aarch64)	ol8_aarch64_u2_baseos_patch	Updated packages published after release of Oracle Linux 8.2 BaseOS (aarch64)	179
+Oracle Linux 8.2 BaseOS Patch (x86_64)	ol8_x86_64_u2_baseos_patch	Updated packages published after release of Oracle Linux 8.2 BaseOS (x86_64)	219
+Oracle Linux 8.3 BaseOS Patch (aarch64)	ol8_aarch64_u3_baseos_patch	Updated packages published after release of Oracle Linux 8.3 BaseOS (aarch64)	427
+Oracle Linux 8.3 BaseOS Patch (x86_64)	ol8_x86_64_u3_baseos_patch	Updated packages published after release of Oracle Linux 8.3 BaseOS (x86_64)	507
+Oracle Linux 8.4 BaseOS Patch (aarch64)	ol8_aarch64_u4_baseos_patch	Updated packages published after release of Oracle Linux 8.4 BaseOS (aarch64)	283
+Oracle Linux 8.4 BaseOS Patch (x86_64)	ol8_x86_64_u4_baseos_patch	Updated packages published after release of Oracle Linux 8.4 BaseOS (x86_64)	357
+Oracle Linux 8.5 BaseOS Patch (aarch64)	ol8_aarch64_u5_baseos_patch	Updated packages published after release of Oracle Linux 8.5 BaseOS (aarch64)	466
+Oracle Linux 8.5 BaseOS Patch (x86_64)	ol8_x86_64_u5_baseos_patch	Updated packages published after release of Oracle Linux 8.5 BaseOS (x86_64)	565
+Oracle Linux 8.6 BaseOS Patch (aarch64)	ol8_aarch64_u6_baseos_patch	Updated packages published after release of Oracle Linux 8.6 BaseOS (aarch64)	478
+Oracle Linux 8.6 BaseOS Patch (x86_64)	ol8_x86_64_u6_baseos_patch	Updated packages published after release of Oracle Linux 8.6 BaseOS (x86_64)	574
+Oracle Linux 8.7 BaseOS Patch (aarch64)	ol8_aarch64_u7_baseos_patch	Updated packages published after release of Oracle Linux 8.7 BaseOS (aarch64)	266
+Oracle Linux 8.7 BaseOS Patch (x86_64)	ol8_x86_64_u7_baseos_patch	Updated packages published after release of Oracle Linux 8.7 BaseOS (x86_64)	366
+Oracle Linux 8.8 BaseOS Patch (aarch64)	ol8_aarch64_u8_baseos_patch	Updated packages published after release of Oracle Linux 8.8 BaseOS (aarch64)	466
+Oracle Linux 8.8 BaseOS Patch (x86_64)	ol8_x86_64_u8_baseos_patch	Updated packages published after release of Oracle Linux 8.8 BaseOS (x86_64)	571
+Oracle Linux 8.9 BaseOS Patch (aarch64)	ol8_aarch64_u9_baseos_patch	Updated packages published after release of Oracle Linux 8.9 BaseOS (aarch64)	477
+Oracle Linux 8.9 BaseOS Patch (x86_64)	ol8_x86_64_u9_baseos_patch	Updated packages published after release of Oracle Linux 8.9 BaseOS (x86_64)	579
+Oracle Linux 8.10 BaseOS Patch (aarch64)	ol8_aarch64_u10_baseos_patch	Updated packages published after release of Oracle Linux 8.10 BaseOS (aarch64)	489
+Oracle Linux 8.10 BaseOS Patch (x86_64)	ol8_x86_64_u10_baseos_patch	Updated packages published after release of Oracle Linux 8.10 BaseOS (x86_64)	600
+
+## UEK
+
+Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)	ol8_x86_64_UEKR6	Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 8 (x86_64)	111
+Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (aarch64)	ol8_aarch64_developer_UEKR6	Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 8 (aarch64)	63
+Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)	ol8_x86_64_developer_UEKR6	Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 8 (x86_64)	75
+Oracle Linux 8 (x86_64) UEK Release 6 RDMA	ol8_x86_64_UEKR6_RDMA	Latest RDMA packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 8 for the Oracle Integrated Stack.	22
+
+Oracle Linux 8 UEK Release 7 (aarch64)	ol8_aarch64_UEKR7	Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 8 (aarch64)	52
+Oracle Linux 8 UEK Release 7 (x86_64)	ol8_x86_64_UEKR7	Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 8 (x86_64)	92
+Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 8 (aarch64)	ol8_aarch64_developer_UEKR7	Latest developer preview of Unbreakable Enterprise Kernel Release 7 packages for creating test and development environments (not for production use) - Oracle Linux 8 (aarch64)	75
+Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 8 (x86_64)	ol8_x86_64_developer_UEKR7	Latest developer preview of Unbreakable Enterprise Kernel Release 7 packages for creating test and development environments (not for production use) - Oracle Linux 8 (x86_64)	85
+Oracle Linux 8 (x86_64) UEK Release 7 RDMA	ol8_x86_64_UEKR7_RDMA	Latest RDMA packages for Unbreakable Enterprise Kernel Release 7 packages on Oracle Linux 8 for the Oracle Integrated Stack.	20
+
+Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64)	ol8_x86_64_MODRHCK	Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64).	20
+
+## Ksplice
+
+Ksplice for Oracle Linux 8 (aarch64)	ol8_aarch64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 8 (aarch64).	162
+Ksplice for Oracle Linux 8 (x86_64)	ol8_x86_64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 8 (x86_64).	242
+Ksplice aware userspace packages for Oracle Linux 8 (aarch64)	ol8_aarch64_userspace_ksplice	Latest packages for Ksplice aware userspace packages for Oracle Linux 8 (aarch64).	224
+Ksplice aware userspace packages for Oracle Linux 8 (x86_64)	ol8_x86_64_userspace_ksplice	Latest packages for Ksplice aware userspace packages for Oracle Linux 8 (x86_64).	233
+
+## Instant Client
+
+Oracle Instant Client for Oracle Linux 8 (x86_64) - License Included	ol8_x86_64_oracle_instantclient	Oracle Instant Client packages for Oracle Linux 8 (x86_64) .	107
+Oracle Instant Client 21 for Oracle Linux 8 (x86_64) - License Included	ol8_x86_64_oracle_instantclient21	Oracle Instant Client 21 packages for Oracle Linux 8 (x86_64) .	8
+Oracle Instant Client 23 for Oracle Linux 8 (x86_64) - License Included	ol8_x86_64_oracle_instantclient23	Oracle Instant Client 23 packages for Oracle Linux 8 (x86_64)	8
+
+Oracle ASMlib for Oracle Linux 8 (aarch64)	ol8_aarch64_oracle	Oracle ASMlib for Oracle Linux 8 (aarch64)	1
+Oracle ASMlib for Oracle Linux 8 (x86_64)	ol8_x86_64_oracle	Oracle ASMlib for Oracle Linux 8 (x86_64)	1
+
+Oracle Software for Oracle Linux 8 (aarch64)	ol8_aarch64_oracle_software	Oracle Software for Oracle Linux 8 (aarch64)	2
+Oracle Software for Oracle Linux 8 (x86_64)	ol8_x86_64_oracle_software	Oracle Software for Oracle Linux 8 (x86_64)	2
+
+## Oracle Linux Cloud Native Environment
+
+Oracle Cloud Native Environment - Oracle Linux 8 (aarch64)	ol8_aarch64_ocne	Packages for components of Oracle Cloud Native Environment for Oracle Linux 8 (aarch64)	17
+Oracle Cloud Native Environment - Oracle Linux 8 (x86_64)	ol8_x86_64_ocne	Packages for components of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)	17
+Oracle Linux Cloud Native Environment 1.2 (x86_64)	ol8_x86_64_olcne12	Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)	51
+Oracle Linux Cloud Native Environment 1.3 (aarch64)	ol8_aarch64_olcne13	Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (aarch64)	4
+Oracle Linux Cloud Native Environment 1.3 (x86_64)	ol8_x86_64_olcne13	Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)	45
+Oracle Linux Cloud Native Environment 1.4 (aarch64)	ol8_aarch64_olcne14	Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (aarch64)	4
+Oracle Linux Cloud Native Environment 1.4 (x86_64)	ol8_x86_64_olcne14	Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)	43
+Oracle Linux Cloud Native Environment 1.5 (x86_64)	ol8_x86_64_olcne15	Packages for components of the 1.5 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)	45
+Oracle Linux Cloud Native Environment 1.6 (x86_64)	ol8_x86_64_olcne16	Packages for components of the 1.6 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)	36
+Oracle Cloud Native Environment 1.7 - Oracle Linux 8 (x86_64)	ol8_x86_64_olcne17	Packages for components of the 1.7 release of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)	39
+Oracle Cloud Native Environment 1.8 - Oracle Linux 8 (aarch64)	ol8_aarch64_olcne18	Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 8 (aarch64)	41
+Oracle Cloud Native Environment 1.8 - Oracle Linux 8 (x86_64)	ol8_x86_64_olcne18	Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)	41
+Oracle Cloud Native Environment 1.9 - Oracle Linux 8 (aarch64)	ol8_aarch64_olcne19	Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 8 (aarch64)	35
+Oracle Cloud Native Environment 1.9 - Oracle Linux 8 (x86_64)	ol8_x86_64_olcne19	Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)	35
+
+Developer Preview for Oracle Linux Cloud Native Environment -Oracle Linux 8 (aarch64)	ol8_aarch64_developer_olcne	Developer preview packages for components of the Oracle Linux Cloud Native Environment (aarch64)	25
+Developer Preview for Oracle Linux Cloud Native Environment - Oracle Linux 8 (x86_64)	ol8_x86_64_developer_olcne	Developer preview packages for components of the Oracle Linux Cloud Native environment (x86_64)	11
+
+## Security Validations
+
+Oracle Linux 8 Update 4 Security Validations packages (aarch64)	ol8_aarch64_u4_security_validation	Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 8 Update 4 (aarch64).	33
+Oracle Linux 8 Update 4 Security Validations packages (x86_64)	ol8_x86_64_u4_security_validation	Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 8 Update 4 (x86_64).	55
+
+## MySQL
+
+MySQL Connectors Community for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL_connectors_community	Latest MySQL Connectors Community packages for Oracle Linux 8 (aarch64)	9
+MySQL Connectors Community for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL_connectors_community	Latest MySQL Connectors Community packages for Oracle Linux 8 (x86_64)	9
+MySQL 8.0 Connectors Community for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL80_connectors_community	Latest MySQL 8.0 Connectors Community packages for Oracle Linux 8 (aarch64).	9
+MySQL 8.0 Connectors Community for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL80_connectors_community	Latest MySQL 8.0 Connectors Community packages for Oracle Linux 8 (x86_64).	9
+MySQL 8.0 for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 8 (aarch64).	17
+MySQL 8.0 for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 8 (x86_64).	17
+MySQL 8.0 Tools Community for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL80_tools_community	Latest MySQL 8.0 Tools Community packages for Oracle Linux 8 (aarch64).	2
+MySQL 8.0 Tools Community for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL80_tools_community	Latest MySQL 8.0 Tools Community packages for Oracle Linux 8 (x86_64).	3
+MySQL 8.4 Server Community for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL84_community	Latest MySQL 8.4 Server Community packages for Oracle Linux 8 (aarch64)	11
+MySQL 8.4 Server Community for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL84_community	Latest MySQL 8.4 Server Community packages for Oracle Linux 8 (x86_64)	11
+MySQL 8.4 Tools Community for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL84_tools_community	Latest MySQL 8.4 Tools Community packages for Oracle Linux 8 (aarch64)	2
+MySQL 8.4 Tools Community for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL84_tools_community	Latest MySQL 8.4 Tools Community packages for Oracle Linux 8 (x86_64)	2
+MySQL Innovation Server Community for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL_innovation_community	Latest MySQL Innovation Server Community packages for Oracle Linux 8 (aarch64)	11
+MySQL Innovation Server Community for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL_innovation_community	Latest MySQL Innovation Server Community packages for Oracle Linux 8 (x86_64)	11
+MySQL Innovation Tools Community for Oracle Linux 8 (aarch64)	ol8_aarch64_MySQL_innovation_tools_community	Latest MySQL Innovation Tools Community packages for Oracle Linux 8 (aarch64)	2
+MySQL Innovation Tools Community for Oracle Linux 8 (x86_64)	ol8_x86_64_MySQL_innovation_tools_community	Latest MySQL Innovation Tools Community packages for Oracle Linux 8 (x86_64)	2
+
+## Oracle Linux Manager
+
+Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 8 (x86_64)	ol8_x86_64_oraclelinuxmanager210_client	All Oracle Linux Manager (formerly Spacewalk) Client 2.10 packages released for Oracle Linux 8 (x86_64).	56
+Spacewalk Client 2.10 for Oracle Linux 8 (x86_64)	ol8_x86_64_spacewalk210_client	All Spacewalk Client 2.10 packages released for Oracle Linux 8 (x86_64).	56
+
+## Automation Manager
+
+Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX	ol8_x86_64_automation	Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX.	7
+Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX	ol8_x86_64_automation2	Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX.	159
+Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX (x86_64)	ol8_x86_64_automation2.2	Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX (x86_64)	184
+
+## Virtualization
+
+Oracle Linux 8 KVM Application Stream (aarch64)	ol8_aarch64_kvm_appstream	Latest KVM Application Stream Packages for Oracle Linux 8 (aarch64)	117
+Oracle Linux 8 KVM Application Stream (x86_64)	ol8_x86_64_kvm_appstream	Latest KVM Application Stream Packages for Oracle Linux 8 (x86_64)	127
+Developer Preview of Oracle Linux 8 KVM Application Stream (aarch64)	ol8_aarch64_developer_kvm_appstream	Developer Preview of KVM Application Stream Packages for Oracle Linux 8 (aarch64)	1
+Developer Preview of Oracle Linux 8 KVM Application Stream (x86_64)	ol8_x86_64_developer_kvm_appstream	Developer Preview of KVM Application Stream Packages for Oracle Linux 8 (x86_64)	1
+oVirt Release 4.4 on Oracle Linux 8 (x86_64)	ol8_x86_64_ovirt44	Latest packages for oVirt Release 4.4 on Oracle Linux 8 (x86_64).	136
+oVirt Release 4.4 on Oracle Linux 8 (x86_64) - Extra	ol8_x86_64_ovirt44_extras	Latest extra packages for oVirt Release 4.4 on Oracle Linux 8 (x86_64).	533
+oVirt Release 4.5 on Oracle Linux 8 (x86_64)	ol8_x86_64_ovirt45	Latest packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64)	128
+oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra	ol8_x86_64_ovirt45_extras	Latest extra packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64)	420
+
+## Storage
+
+Oracle Linux 8 (aarch64) Gluster AppStream	ol8_aarch64_gluster_appstream	Appstream Gluster packages for Oracle Linux 8 (aarch64).	55
+Oracle Linux 8 (x86_64) Gluster AppStream	ol8_x86_64_gluster_appstream	Appstream Gluster packages for Oracle Linux 8 (x86_64)	55
+
+## Exadata
+
+Exadata release 23.1.0.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.0.0.0_x86_64_base	All packages released on the Exadata release 23.1.0.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1058
+Exadata release 23.1.1.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.1.0.0_x86_64_base	All packages released on the Exadata release 23.1.1.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1070
+Exadata release 23.1.10.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.10.0.0_x86_64_base	All packages released on the Exadata release 23.1.10.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1071
+Exadata release 23.1.11.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.11.0.0_x86_64_base	All packages released on the Exadata release 23.1.11.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1071
+Exadata release 23.1.12.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.12.0.0_x86_64_base	All packages released on the Exadata release 23.1.12.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1071
+Exadata release 23.1.13.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.13.0.0_x86_64_base	All packages released on the Exadata release 23.1.13.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1071
+Exadata release 23.1.14.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.14.0.0_x86_64_base	All packages released on the Exadata release 23.1.14.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1071
+Exadata release 23.1.15.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.15.0.0_x86_64_base	All packages released on the Exadata release 23.1.15.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1071
+Exadata release 23.1.16.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.16.0.0_x86_64_base	All packages released on the Exadata release 23.1.16.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1071
+Exadata release 23.1.17.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.17.0.0_x86_64_base	All packages released on the Exadata release 23.1.17.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1072
+Exadata release 23.1.18.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.18.0.0_x86_64_base	All packages released on the Exadata release 23.1.18.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1072
+Exadata release 23.1.19.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.19.0.0_x86_64_base	All packages released on the Exadata release 23.1.19.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1072
+Exadata release 23.1.2.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.2.0.0_x86_64_base	All packages released on the Exadata release 23.1.2.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1060
+Exadata release 23.1.20.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.20.0.0_x86_64_base	All packages released on the Exadata release 23.1.20.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1074
+Exadata release 23.1.3.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.3.0.0_x86_64_base	All packages released on the Exadata release 23.1.3.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1064
+Exadata release 23.1.4.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.4.0.0_x86_64_base	All packages released on the Exadata release 23.1.4.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1064
+Exadata release 23.1.5.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.5.0.0_x86_64_base	All packages released on the Exadata release 23.1.5.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1066
+Exadata release 23.1.6.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.6.0.0_x86_64_base	All packages released on the Exadata release 23.1.6.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1066
+Exadata release 23.1.7.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.7.0.0_x86_64_base	All packages released on the Exadata release 23.1.7.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1069
+Exadata release 23.1.8.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.8.0.0_x86_64_base	All packages released on the Exadata release 23.1.8.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1070
+Exadata release 23.1.9.0.0 db server installation packages (x86_64)	exadata_dbserver_23.1.9.0.0_x86_64_base	All packages released on the Exadata release 23.1.9.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1070
+Exadata release 24.1.0.0.0 db server installation packages (x86_64)	exadata_dbserver_24.1.0.0.0_x86_64_base	All packages released on the Exadata release 24.1.0.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1096
+Exadata release 24.1.1.0.0 db server installation packages (x86_64)	exadata_dbserver_24.1.1.0.0_x86_64_base	All packages released on the Exadata release 24.1.1.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1096
+Exadata release 24.1.2.0.0 db server installation packages (x86_64)	exadata_dbserver_24.1.2.0.0_x86_64_base	All packages released on the Exadata release 24.1.2.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1096
+Exadata release 24.1.3.0.0 db server installation packages (x86_64)	exadata_dbserver_24.1.3.0.0_x86_64_base	All packages released on the Exadata release 24.1.3.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1101
+Exadata release 24.1.4.0.0 db server installation packages (x86_64)	exadata_dbserver_24.1.4.0.0_x86_64_base	All packages released on the Exadata release 24.1.4.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1101
+Exadata release 24.1.5.0.0 db server installation packages (x86_64)	exadata_dbserver_24.1.5.0.0_x86_64_base	All packages released on the Exadata release 24.1.5.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1097
+Exadata release 24.1.6.0.0 db server installation packages (x86_64)	exadata_dbserver_24.1.6.0.0_x86_64_base	All packages released on the Exadata release 24.1.6.0.0 (x86_64) OL8 installation media. This channel does not contain updates.	1099
+
+# Oracle Linux 9
+
+Name	Label	Description	Packages
+
+## Latest Packages
+
+Oracle Linux 9 BaseOS Latest(x86_64)	ol9_x86_64_baseos_latest	Base operating system packages released for Oracle Linux 9 (x86_64) including the latest errata packages. (x86_64)	1190
+Oracle Linux 9 BaseOS(aarch64)	ol9_aarch64_baseos_latest	Base operating system packages released for Oracle Linux 9 (aarch64) including the latest errata packages. (aarch64)	913
+Oracle Linux 9 Application Stream Packages (aarch64)	ol9_aarch64_appstream	Application Stream packages released for Oracle Linux 9 including the latest errata packages. (aarch64)	4489
+Oracle Linux 9 Application Stream Packages (x86_64)	ol9_x86_64_appstream	Application Stream packages released for Oracle Linux 9 including the latest errata packages. (x86_64)	5765
+
+Oracle Linux 9 Addons (aarch64)	ol9_aarch64_addons	Latest Add-on packages for Oracle Linux 9 (aarch64)	80
+Oracle Linux 9 Addons (x86_64)	ol9_x86_64_addons	Latest Add-on packages for Oracle Linux 9 (x86_64)	108
+
+Packages for creating test and development environments for Oracle Linux 9 (aarch64)	ol9_aarch64_developer	Latest packages for creating test and development environments - Oracle Linux 9 (aarch64)	129
+Packages for creating test and development environments for Oracle Linux 9 (x86_64)	ol9_x86_64_developer	Latest packages for creating test and development environments - Oracle Linux 9 (x86_64)	131
+
+Oracle Linux 9 EPEL Packages (aarch64)	ol9_aarch64_developer_EPEL	EPEL packages for Oracle Linux 9 (aarch64)	23519
+Oracle Linux 9 EPEL Packages (x86_64)	ol9_x86_64_developer_EPEL	EPEL packages for Oracle Linux 9 (x86_64)	23663
+
+Oracle Linux 9 CodeReady Builder (aarch64)	ol9_aarch64_codeready_builder	Repository of additional development and build tools for Oracle Linux 9 (aarch64) - (Unsupported)	1420
+Oracle Linux 9 CodeReady Builder (x86_64)	ol9_x86_64_codeready_builder	Repository of additional development and build tools for Oracle Linux 9 (x86_64) - (Unsupported)	2028
+
+Oracle Linux 9 Distro Builder (aarch64)	ol9_aarch64_distro_builder	Oracle Linux 9 Distro Builder Packages (aarch64) - (Unsupported)	736
+Oracle Linux 9 Distro Builder (x86_64)	ol9_x86_64_distro_builder	Oracle Linux 9 Distro Builder Packages (x86_64) - (Unsupported)	719
+
+Oracle Linux 9 BaseOS Developer Preview (aarch64)	ol9_aarch64_baseos_developer	Developer preview of Oracle Linux 9 BaseOS Packages (aarch64) - (Unsupported)	888
+Oracle Linux 9 BaseOS Developer Preview (x86_64)	ol9_x86_64_baseos_developer	Developer preview of Oracle Linux 9 BaseOS Packages (x86_64) - (Unsupported)	1161
+Oracle Linux 9 Appstream Developer Preview (aarch64)	ol9_aarch64_appstream_developer	Developer preview of Oracle Linux 9 Application Stream Packages (aarch64) - (Unsupported)	4229
+Oracle Linux 9 Appstream Developer Preview (x86_64)	ol9_x86_64_appstream_developer	Developer preview of Oracle Linux 9 Application Stream Packages (x86_64) - (Unsupported)	5460
+Oracle Linux 9 Developer Packages Archive (aarch64)	ol9_aarch64_developer_archive	Archived developer packages for Oracle Linux 9 (aarch64)	1
+Oracle Linux 9 Developer Packages Archive (x86_64)	ol9_x86_64_developer_archive	Archived developer packages for Oracle Linux 9 (x86_64)	1
+Oracle Linux 9 CodeReady Builder Developer Preview (aarch64)	ol9_aarch64_codeready_builder_developer	Developer preview of Oracle Linux 9 CodeReady Builder Packages (aarch64) - (Unsupported)	1055
+Oracle Linux 9 CodeReady Builder Developer Preview (x86_64)	ol9_x86_64_codeready_builder_developer	Developer preview of Oracle Linux 9 CodeReady Builder Packages (x86_64) - (Unsupported)	1623
+
+## Installation Media Packages
+
+Oracle Linux 9 BaseOS GA (aarch64)	ol9_aarch64_u0_baseos_base	Base operating system packages released for Oracle Linux 9 GA (aarch64). No errata included	878
+Oracle Linux 9 BaseOS GA (x86_64)	ol9_x86_64_u0_baseos_base	Base operating system packages released for Oracle Linux 9 GA (x86_64). No errata included	1140
+Oracle Linux 9.1 BaseOS (aarch64)	ol9_aarch64_u1_baseos_base	Base operating system packages released for Oracle Linux 9.1 GA (aarch64). No errata included	880
+Oracle Linux 9.1 BaseOS (x86_64)	ol9_x86_64_u1_baseos_base	Base operating system packages released for Oracle Linux 9.1 GA (x86_64). No errata included	1146
+Oracle Linux 9.2 BaseOS (aarch64)	ol9_aarch64_u2_baseos_base	Base operating system packages released for Oracle Linux 9.2 GA (aarch64). No errata included	891
+Oracle Linux 9.2 BaseOS (x86_64)	ol9_x86_64_u2_baseos_base	Base operating system packages released for Oracle Linux 9.2 GA (x86_64). No errata included	1164
+Oracle Linux 9.3 BaseOS (aarch64)	ol9_aarch64_u3_baseos_base	Base operating system packages released for Oracle Linux 9.3 (aarch64)	893
+Oracle Linux 9.3 BaseOS (x86_64)	ol9_x86_64_u3_baseos_base	Base operating system packages released for Oracle Linux 9.3 (x86_64)	1164
+Oracle Linux 9.4 BaseOS (aarch64)	ol9_aarch64_u4_baseos_base	Base operating system packages released for Oracle Linux 9.4 (aarch64)	899
+Oracle Linux 9.4 BaseOS (x86_64)	ol9_x86_64_u4_baseos_base	Base operating system packages released for Oracle Linux 9.4 (x86_64)	1175
+Oracle Linux 9.5 BaseOS (aarch64)	ol9_aarch64_u5_baseos_base	Base operating system packages released for Oracle Linux 9.5 (aarch64)	903
+Oracle Linux 9.5 BaseOS (x86_64)	ol9_x86_64_u5_baseos_base	Base operating system packages released for Oracle Linux 9.5 (x86_64)	1182
+
+Oracle Linux 9 BaseOS GA Patch (aarch64)	ol9_aarch64_u0_baseos_patch	Updated packages published after release of Oracle Linux 9 BaseOS GA (aarch64).	410
+Oracle Linux 9 BaseOS GA Patch (x86_64)	ol9_x86_64_u0_baseos_patch	Updated packages published after release of Oracle Linux 9 BaseOS GA (x86_64).	459
+Oracle Linux 9.1 BaseOS Patch (aarch64)	ol9_aarch64_u1_baseos_patch	Updated packages published after release of Oracle Linux 9.1 BaseOS GA (aarch64).	400
+Oracle Linux 9.1 BaseOS Patch (x86_64)	ol9_x86_64_u1_baseos_patch	Updated packages published after release of Oracle Linux 9.1 BaseOS GA (x86_64).	461
+Oracle Linux 9.2 BaseOS Patch (aarch64)	ol9_aarch64_u2_baseos_patch	Updated packages published after release of Oracle Linux 9.2 BaseOS GA (aarch64)	404
+Oracle Linux 9.2 BaseOS Patch (x86_64)	ol9_x86_64_u2_baseos_patch	Updated packages published after release of Oracle Linux 9.2 BaseOS GA (x86_64)	469
+Oracle Linux 9.4 BaseOS Patch (aarch64)	ol9_aarch64_u4_baseos_patch	Updated packages published after release of Oracle Linux 9.4 BaseOS (aarch64)	405
+Oracle Linux 9.4 BaseOS Patch (x86_64)	ol9_x86_64_u4_baseos_patch	Updated packages published after release of Oracle Linux 9.4 BaseOS (x86_64)	458
+Oracle Linux 9.5 BaseOS Patch (aarch64)	ol9_aarch64_u5_baseos_patch	Updated packages published after release of Oracle Linux 9.5 BaseOS (aarch64)	64
+Oracle Linux 9.5 BaseOS Patch (x86_64)	ol9_x86_64_u5_baseos_patch	Updated packages published after release of Oracle Linux 9.5 BaseOS (x86_64)	101
+
+## UEK
+
+Oracle Linux 9 UEK Release 7 (aarch64)	ol9_aarch64_UEKR7	Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (aarch64)	17
+Oracle Linux 9 UEK Release 7 (x86_64)	ol9_x86_64_UEKR7	Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64)	78
+Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (aarch64)	ol9_aarch64_developer_UEKR7	Developer preview of Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (aarch64) - (not for production use)	40
+Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64)	ol9_x86_64_developer_UEKR7	Developer preview of Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64) - (not for production use)	72
+Oracle Linux 9 RDMA (x86_64)	ol9_x86_64_RDMA	Latest RDMA packages for Oracle Linux 9 (x86_64)	20
+
+Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64)	ol9_x86_64_MODRHCK	Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64).	30
+
+Oracle Linux 9 UEK-next Developer Release (aarch64)	ol9_aarch64_developer_UEKnext	Developer release of UEK-next for Oracle Linux 9 (aarch64) - (unsupported, not for use in production)	9
+Oracle Linux 9 UEK-next Developer Release (x86_64)	ol9_x86_64_developer_UEKnext	Developer release of UEK-next for Oracle Linux 9 (x86_64) - (unsupported, not for use in production)	9
+
+## Ksplice
+
+Ksplice for Oracle Linux 9 (aarch64)	ol9_aarch64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 9 (aarch64)	52
+Ksplice for Oracle Linux 9 (x86_64)	ol9_x86_64_ksplice	Oracle Ksplice clients, updates, and dependencies for Oracle Linux 9 (x86_64)	117
+Ksplice aware userspace packages for Oracle Linux 9 (aarch64)	ol9_aarch64_userspace_ksplice	Latest packages for Ksplice aware userspace packages for Oracle Linux 9 (aarch64)	223
+Ksplice aware userspace packages for Oracle Linux 9 (x86_64)	ol9_x86_64_userspace_ksplice	Latest packages for Ksplice aware userspace packages for Oracle Linux 9 (x86_64)	235
+
+## Instant Client
+
+Oracle Instant Client 23 for Oracle Linux 9 (x86_64) - License Included	ol9_x86_64_oracle_instantclient23	Oracle Instant Client 23 packages for Oracle Linux 9 (x86_64)	8
+
+Oracle ASMlib for Oracle Linux 9 (aarch64)	ol9_aarch64_oracle	Oracle ASMlib for Oracle Linux 9 (aarch64)	1
+Oracle ASMlib for Oracle Linux 9 (x86_64)	ol9_x86_64_oracle	Oracle ASMlib for Oracle Linux 9 (x86_64)	1
+
+Oracle Software for Oracle Linux 9 (aarch64)	ol9_aarch64_oracle_software	Oracle Software for Oracle Linux 9 (aarch64)	2
+Oracle Software for Oracle Linux 9 (x86_64)	ol9_x86_64_oracle_software	Oracle Software for Oracle Linux 9 (x86_64)	2
+
+## Oracle Linux Cloud Native Environment
+
+Oracle Cloud Native Environment - Oracle Linux 9 (aarch64)	ol9_aarch64_ocne	Packages for components of Oracle Cloud Native Environment for Oracle Linux 9 (aarch64)	2
+Oracle Cloud Native Environment - Oracle Linux 9 (x86_64)	ol9_x86_64_ocne	Packages for components of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)	2
+Oracle Cloud Native Environment 1.7 - Oracle Linux 9 (x86_64)	ol9_x86_64_olcne17	Packages for components of the 1.7 release of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)	39
+Oracle Cloud Native Environment 1.8 - Oracle Linux 9 (aarch64)	ol9_aarch64_olcne18	Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 9 (aarch64)	41
+Oracle Cloud Native Environment 1.8 - Oracle Linux 9 (x86_64)	ol9_x86_64_olcne18	Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)	41
+Oracle Cloud Native Environment 1.9 - Oracle Linux 9 (aarch64)	ol9_aarch64_olcne19	Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 9 (aarch64)	35
+Oracle Cloud Native Environment 1.9 - Oracle Linux 9 (x86_64)	ol9_x86_64_olcne19	Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 9 (x86_64)	35
+
+## Security Validations
+
+Oracle Linux 9 Update 3 Security Validation (aarch64)	ol9_aarch64_u3_security_validation	Latest packages delivered for security validations, like FIPS or Common Criteria for Oracle Linux 9 Update 3 (aarch64)	42
+Oracle Linux 9 Update 3 Security Validation (x86_64)	ol9_x86_64_u3_security_validation	Latest packages delivered for security validations, like FIPS or Common Criteria for Oracle Linux 9 Update 3 (x86_64)	82
+
+## MySQL
+
+MySQL Connectors Community for Oracle Linux 9 (aarch64)	ol9_aarch64_MySQL_connectors_community	Latest MySQL Connectors Community packages for Oracle Linux 9 (aarch64)	9
+MySQL Connectors Community for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL_connectors_community	Latest MySQL Connectors Community packages for Oracle Linux 9 (x86_64)	9
+MySQL 8.0 Connectors Community for Oracle Linux 9 (aarch64)	ol9_aarch64_MySQL80_connectors_community	Latest MySQL 8.0 Connectors Community packages for Oracle Linux 9 (aarch64).	7
+MySQL 8.0 Connectors Community for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL80_connectors_community	Latest MySQL 8.0 Connectors Community packages for Oracle Linux 9 (x86_64).	7
+MySQL 8.0 for Oracle Linux 9 (aarch64)	ol9_aarch64_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 9 (aarch64).	10
+MySQL 8.0 for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL80_community	Latest MySQL 8.0 packages for Oracle Linux 9 (x86_64).	10
+MySQL 8.0 Tools Community for Oracle Linux 9 (aarch64)	ol9_aarch64_MySQL80_tools_community	Latest MySQL 8.0 Tools Community packages for Oracle Linux 9 (aarch64).	2
+MySQL 8.0 Tools Community for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL80_tools_community	Latest MySQL 8.0 Tools Community packages for Oracle Linux 9 (x86_64).	3
+MySQL 8.4 Server Community for Oracle Linux 9 (aarch64)	ol9_aarch64_MySQL84_community	Latest MySQL 8.4 Server Community packages for Oracle Linux 9 (aarch64)	11
+MySQL 8.4 Server Community for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL84_community	Latest MySQL 8.4 Server Community packages for Oracle Linux 9 (x86_64)	11
+MySQL 8.4 Tools Community for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL84_tools_community	Latest MySQL 8.4 Tools Community packages for Oracle Linux 9 (x86_64)	2
+MySQL Innovation Server Community for Oracle Linux 9 (aarch64)	ol9_aarch64_MySQL_innovation_community	Latest MySQL Innovation Server Community packages for Oracle Linux 9 (aarch64)	11
+MySQL Innovation Server Community for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL_innovation_community	Latest MySQL Innovation Server Community packages for Oracle Linux 9 (x86_64)	11
+MySQL Innovation Tools Community for Oracle Linux 9 (aarch64)	ol9_aarch64_MySQL_innovation_tools_community	Latest MySQL Innovation Tools Community packages for Oracle Linux 9 (aarch64)	2
+MySQL Innovation Tools Community for Oracle Linux 9 (x86_64)	ol9_x86_64_MySQL_innovation_tools_community	Latest MySQL Innovation Tools Community packages for Oracle Linux 9 (x86_64)	2
+
+## Oracle Linux Manager
+
+Oracle Linux Manager 2.10 Client (aarch64)	ol9_aarch64_oraclelinuxmanager210_client	Latest Oracle Linux Manager 2.10 Client packages for Oracle Linux 9 (aarch64)	46
+Oracle Linux Manager 2.10 Client (x86_64)	ol9_x86_64_oraclelinuxmanager210_client	Latest Oracle Linux Manager 2.10 Client packages for Oracle Linux 9 (x86_64)	46
+
+## Virtualization
+
+Oracle Linux 9 KVM Utilities (aarch64)	ol9_aarch64_kvm_utils	Latest Oracle Linux 9 KVM Utilities Packages (aarch64)	39
+Oracle Linux 9 KVM Utilities (x86_64)	ol9_x86_64_kvm_utils	Latest Oracle Linux 9 KVM Utilities Packages (x86_64)	39
+Developer Preview of KVM Utilities for Oracle Linux 9 (aarch64)	ol9_aarch64_developer_kvm_utils	Latest KVM Utility packages for test and development for Oracle Linux 9 (aarch64).	1
+Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64)	ol9_x86_64_developer_kvm_utils	Latest KVM Utility packages for test and development for Oracle Linux 9 (x86_64).	1
+

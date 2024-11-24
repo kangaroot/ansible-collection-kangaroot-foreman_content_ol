@@ -49,14 +49,14 @@ foreman_products_ol7:
         organization: "{{ foreman_organization_ol7 }}"
       ### Oracle Linux 7 (x86_64) Development | ol7_x86_64_developer ###
       - name: Oracle Linux 7 (x86_64) Development
-        description: Latest packages for creating test and development environments - Oracle LInux 7 (x86_64)
+        description: Latest packages for creating test and development environments - Oracle Linux 7 (x86_64)
         label: ol7_x86_64_developer
         url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/x86_64/"
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol7 }}"
       ### EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_EPEL ###
       - name: EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)
-        description: Latest EPEL packages for creating test and development environments - Oracle LInux 7 (x86_64)
+        description: Latest EPEL packages for creating test and development environments - Oracle Linux 7 (x86_64)
         label: ol7_x86_64_developer_EPEL
         url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_EPEL/x86_64/"
         <<: *foreman_products_defaults
@@ -68,12 +68,6 @@ foreman_products_ol7:
         url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/SoftwareCollections/x86_64/"
         <<: *foreman_products_defaults
         organization: "{{ foreman_organization_ol7 }}"
-
-      # - name: Oracle Linux 7 Debuginfo (x86_64)
-      #   label: ol7_debuginfo
-      #   url: https://oss.oracle.com/ol7/debuginfo/
-      #   <<: *foreman_products_defaults
-      #   organization: "{{ foreman_organization_ol7 }}"
 
 
 foreman_content_views_ol7:
@@ -116,12 +110,6 @@ foreman_content_views_ol7:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_debuginfo"
-  #   organization: "{{ foreman_organization_ol7 }}"
-  #   repositories:
-  #     - name: Oracle Linux 7 Debuginfo (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol7 }}"
 
 foreman_composite_content_views_ol7:
   - name: "{{ foreman_ccv_prefix | default('ccv_') }}{{ foreman_ccv_name_prefix | default('') }}ol7"
@@ -142,8 +130,6 @@ foreman_composite_content_views_ol7:
         latest: true
       - content_view: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_SoftwareCollections"
         latest: true
-      # - content_view: "{{ foreman_cv_prefix | default('cv_') }}ol7_debuginfo"
-      #   latest: true
 
 
 foreman_operatingsystems_defaults: &foreman_operatingsystems_defaults
@@ -277,8 +263,6 @@ foreman_activation_keys_ol7:
         override: disabled
       - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_x86_64_{{ foreman_repo_label_prefix | default('') }}SoftwareCollections"
         override: disabled
-      # - label: "{{ foreman_organization }}_{{ foreman_product_label_prefix | default('') }}OL_ol7_{{ foreman_repo_label_prefix | default('') }}debuginfo"
-      #   override: disabled
 
 
 foreman_sync_plan_products_ol7: []

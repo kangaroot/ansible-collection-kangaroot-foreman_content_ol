@@ -1,0 +1,746 @@
+# Oracle Linux 8 x86_64
+
+oracle_linux_8:
+
+  ## Latest Packages
+  latest_packages:
+
+    repos:
+
+      Oracle Linux 8 BaseOS Latest (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8 (aarch64) including the latest errata packages. (aarch64).
+        uln_label: ol8_aarch64_baseos_latest
+
+      Oracle Linux 8 BaseOS Latest (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8 (x86_64) including the latest errata packages. (x86_64).
+        uln_label: ol8_x86_64_baseos_latest
+
+      Oracle Linux 8 Application Stream Packages (aarch64):
+        desccription: Application packages released for Oracle Linux 8 (aarch64) including the latest errata packages. (aarch64)
+        uln_label: ol8_aarch64_appstream
+
+      Oracle Linux 8 Application Stream Packages (x86_64):
+        desccription: Application packages released for Oracle Linux 8 (x86_64) including the latest errata packages. (x86_64)
+        uln_label: ol8_x86_64_appstream
+
+
+      Oracle Linux 8 Addons (aarch64):
+        desccription: Oracle Linux 8 Addons (aarch64).
+        uln_label: ol8_aarch64_addons
+
+      Oracle Linux 8 Addons (x86_64):
+        desccription: Oracle Linux 8 Addons (x86_64).
+        uln_label: ol8_x86_64_addons
+
+
+      Packages for creating test and development environments for Oracle Linux 8 (aarch64):
+        desccription: Latest packages for creating test and development environments - Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_developer
+
+      Packages for creating test and development environments for Oracle Linux 8 (x86_64):
+        desccription: Latest packages for creating test and development environments - Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_developer
+
+
+      EPEL Packages for creating test and development environments for Oracle Linux 8 (aarch64):
+        desccription: Latest EPEL packages for creating test and development environments - Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_developer_EPEL
+
+      EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64):
+        desccription: Latest EPEL packages for creating test and development environments - Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_developer_EPEL
+
+      EPEL Modular Packages for Oracle Linux 8 (aarch64):
+        desccription: Latest EPEL Modular packages for creating test and development environments - Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_developer_EPEL_modular
+
+      EPEL Modular Packages for Oracle Linux 8 (x86_64):
+        desccription: Latest EPEL Modular packages for creating test and development environments - Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_developer_EPEL_modular
+
+
+      CodeReady Linux Builder for Oracle Linux 8 (aarch64):
+        desccription: Repository of additional development and build tools for Oracle Linux 8 (aarch64) - (unsupported)
+        uln_label: ol8_aarch64_codeready_builder
+
+      CodeReady Linux Builder for Oracle Linux 8 (x86_64):
+        desccription: Repository of additional development and build tools for Oracle Linux 8 (x86_64) - (unsupported).
+        uln_label: ol8_x86_64_codeready_builder
+
+
+      Oracle Linux 8 Distro Builder (aarch64) - Unsupported:
+        desccription: Latest packages for Oracle Linux 8 Distro Builder (aarch64) - Unsupported.
+        uln_label: ol8_aarch64_distro_builder
+
+      Oracle Linux 8 Distro Builder (x86_64) - Unsupported:
+        desccription: Latest packages for Oracle Linux 8 Distro Builder (x86_64) - Unsupported.
+        uln_label: ol8_x86_64_distro_builder
+
+
+      Oracle Linux 8 software for SAP:
+        desccription: Packages required for SAP software to run on Oracle Linux 8
+        uln_label: ol8_x86_64_SAP_addons
+
+
+      Oracle Linux 8 BaseOSDeveloper Preview (aarch64):
+        desccription: Developer preview of Oracle Linux 8 BaseOS Packages (aarch64) - (Unsupported)
+        uln_label: ol8_aarch64_baseos_developer
+
+      Oracle Linux 8 BaseOS Developer Preview (x86_64):
+        desccription: Developer preview of Oracle Linux 8 BaseOS Packages (x86_64) - (Unsupported)
+        uln_label: ol8_x86_64_baseos_developer
+
+      Oracle Linux 8 Appstream Developer Preview (aarch64):
+        desccription: Developer preview of Oracle Linux 8 Application Stream Packages (aarch64) - (Unsupported)
+        uln_label: ol8_aarch64_appstream_developer
+
+      Oracle Linux 8 Appstream Developer Preview (x86_64):
+        desccription: Developer preview of Oracle Linux 8 Application Stream Packages (x86_64) - (Unsupported)
+        uln_label: ol8_x86_64_appstream_developer
+
+      Oracle Linux 8 Developer Packages Archive (aarch64):
+        desccription: Archived developer packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_developer_archive
+
+      Oracle Linux 8 Developer Packages Archive (x86_64):
+        desccription: Archived developer packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_developer_archive
+
+      Oracle Linux 8 CodeReady Builder Developer Preview (aarch64):
+        desccription: Developer preview of Oracle Linux 8 CodeReady Builder Packages (aarch64) - (Unsupported)
+        uln_label: ol8_aarch64_codeready_builder_developer
+
+      Oracle Linux 8 CodeReady Builder Developer Preview (x86_64):
+        desccription: Developer preview of Oracle Linux 8 CodeReady Builder Packages (x86_64) - (Unsupported)
+        uln_label: ol8_x86_64_codeready_builder_developer
+
+
+  ## Installation Media Packages
+  installation_media:
+
+    repos:
+
+      Oracle Linux 8 BaseOS GA (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8 GA (x86_64). No errata included
+        uln_label: ol8_x86_64_u0_baseos_base
+
+      Oracle Linux 8.1 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8 (x86_64). No errata included
+        uln_label: ol8_x86_64_u1_baseos_base
+
+      Oracle Linux 8.2 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.2 (aarch64). No errata included
+        uln_label: ol8_aarch64_u2_baseos_base
+
+      Oracle Linux 8.2 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.2 (x86_64). No errata included
+        uln_label: ol8_x86_64_u2_baseos_base
+
+      Oracle Linux 8.3 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.3 (aarch64). No errata included
+        uln_label: ol8_aarch64_u3_baseos_base
+
+      Oracle Linux 8.3 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.3 (x86_64). No errata included
+        uln_label: ol8_x86_64_u3_baseos_base
+
+      Oracle Linux 8.4 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.4 (aarch64). No errata included
+        uln_label: ol8_aarch64_u4_baseos_base
+
+      Oracle Linux 8.4 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.4 (x86_64). No errata included
+        uln_label: ol8_x86_64_u4_baseos_base
+
+      Oracle Linux 8.5 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.5 (aarch64). No errata included
+        uln_label: ol8_aarch64_u5_baseos_base
+
+      Oracle Linux 8.5 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.5 (x86_64). No errata included
+        uln_label: ol8_x86_64_u5_baseos_base
+
+      Oracle Linux 8.6 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.6 (aarch64). No errata included
+        uln_label: ol8_aarch64_u6_baseos_base
+
+      Oracle Linux 8.6 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.6 (x86_64). No errata included
+        uln_label: ol8_x86_64_u6_baseos_base
+
+      Oracle Linux 8.7 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.7 (aarch64). No errata included
+        uln_label: ol8_aarch64_u7_baseos_base
+
+      Oracle Linux 8.7 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.7 (x86_64). No errata included
+        uln_label: ol8_x86_64_u7_baseos_base
+
+      Oracle Linux 8.8 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.8 (aarch64). No errata included
+        uln_label: ol8_aarch64_u8_baseos_base
+
+      Oracle Linux 8.8 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.8 (x86_64). No errata included
+        uln_label: ol8_x86_64_u8_baseos_base
+
+      Oracle Linux 8.9 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.9 (aarch64). No errata included
+        uln_label: ol8_aarch64_u9_baseos_base
+
+      Oracle Linux 8.9 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.9 (x86_64). No errata included
+        uln_label: ol8_x86_64_u9_baseos_base
+
+      Oracle Linux 8.10 BaseOS (aarch64):
+        desccription: Base operating system packages released for Oracle Linux 8.10 (aarch64)
+        uln_label: ol8_aarch64_u10_baseos_base
+
+      Oracle Linux 8.10 BaseOS (x86_64):
+        desccription: Base operating system packages released for Oracle Linux 8.10 (x86_64)
+        uln_label: ol8_x86_64_u10_baseos_base
+
+
+      Oracle Linux 8 BaseOS GA Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8 BaseOS GA (x86_64)
+        uln_label: ol8_x86_64_u0_baseos_patch
+
+      Oracle Linux 8.1 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.1 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u1_baseos_patch
+
+      Oracle Linux 8.2 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.2 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u2_baseos_patch
+
+      Oracle Linux 8.2 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.2 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u2_baseos_patch
+
+      Oracle Linux 8.3 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.3 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u3_baseos_patch
+
+      Oracle Linux 8.3 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.3 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u3_baseos_patch
+
+      Oracle Linux 8.4 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.4 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u4_baseos_patch
+
+      Oracle Linux 8.4 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.4 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u4_baseos_patch
+
+      Oracle Linux 8.5 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.5 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u5_baseos_patch
+
+      Oracle Linux 8.5 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.5 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u5_baseos_patch
+
+      Oracle Linux 8.6 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.6 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u6_baseos_patch
+
+      Oracle Linux 8.6 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.6 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u6_baseos_patch
+
+      Oracle Linux 8.7 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.7 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u7_baseos_patch
+
+      Oracle Linux 8.7 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.7 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u7_baseos_patch
+
+      Oracle Linux 8.8 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.8 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u8_baseos_patch
+
+      Oracle Linux 8.8 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.8 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u8_baseos_patch
+
+      Oracle Linux 8.9 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.9 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u9_baseos_patch
+
+      Oracle Linux 8.9 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.9 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u9_baseos_patch
+
+      Oracle Linux 8.10 BaseOS Patch (aarch64):
+        desccription: Updated packages published after release of Oracle Linux 8.10 BaseOS (aarch64)
+        uln_label: ol8_aarch64_u10_baseos_patch
+
+      Oracle Linux 8.10 BaseOS Patch (x86_64):
+        desccription: Updated packages published after release of Oracle Linux 8.10 BaseOS (x86_64)
+        uln_label: ol8_x86_64_u10_baseos_patch
+
+
+  ## UEK
+  uek:
+
+    repos:
+
+      Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64):
+        desccription: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_UEKR6
+
+      Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (aarch64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_developer_UEKR6
+
+      Developer preview of Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 6 packages for creating test and development environments (not for production use) - Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_developer_UEKR6
+
+      Oracle Linux 8 (x86_64) UEK Release 6 RDMA:
+        desccription: Latest RDMA packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 8 for the Oracle Integrated Stack.
+        uln_label: ol8_x86_64_UEKR6_RDMA
+
+
+      Oracle Linux 8 UEK Release 7 (aarch64):
+        desccription: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_UEKR7
+
+      Oracle Linux 8 UEK Release 7 (x86_64):
+        desccription: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_UEKR7
+
+      Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 8 (aarch64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 7 packages for creating test and development environments (not for production use) - Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_developer_UEKR7
+
+      Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 8 (x86_64):
+        desccription: Latest developer preview of Unbreakable Enterprise Kernel Release 7 packages for creating test and development environments (not for production use) - Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_developer_UEKR7
+
+      Oracle Linux 8 (x86_64) UEK Release 7 RDMA:
+        desccription: Latest RDMA packages for Unbreakable Enterprise Kernel Release 7 packages on Oracle Linux 8 for the Oracle Integrated Stack.
+        uln_label: ol8_x86_64_UEKR7_RDMA
+
+
+      Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64):
+        desccription: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_MODRHCK
+
+
+  ## Ksplice
+  ksplice:
+
+    repos:
+
+      Ksplice for Oracle Linux 8 (aarch64):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 8 (aarch64).
+        uln_label: ol8_aarch64_ksplice
+
+      Ksplice for Oracle Linux 8 (x86_64):
+        desccription: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_ksplice
+
+      Ksplice aware userspace packages for Oracle Linux 8 (aarch64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 8 (aarch64).
+        uln_label: ol8_aarch64_userspace_ksplice
+
+      Ksplice aware userspace packages for Oracle Linux 8 (x86_64):
+        desccription: Latest packages for Ksplice aware userspace packages for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_userspace_ksplice
+
+
+  ## Instant Client
+  instant_client:
+
+    repos:
+
+      Oracle Instant Client for Oracle Linux 8 (x86_64) - License Included:
+        desccription: Oracle Instant Client packages for Oracle Linux 8 (x86_64) .
+        uln_label: ol8_x86_64_oracle_instantclient
+
+      Oracle Instant Client 21 for Oracle Linux 8 (x86_64) - License Included:
+        desccription: Oracle Instant Client 21 packages for Oracle Linux 8 (x86_64) .
+        uln_label: ol8_x86_64_oracle_instantclient21
+
+      Oracle Instant Client 23 for Oracle Linux 8 (x86_64) - License Included:
+        desccription: Oracle Instant Client 23 packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_oracle_instantclient23
+
+
+      Oracle ASMlib for Oracle Linux 8 (aarch64):
+        desccription: Oracle ASMlib for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_oracle
+
+      Oracle ASMlib for Oracle Linux 8 (x86_64):
+        desccription: Oracle ASMlib for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_oracle
+
+
+      Oracle Software for Oracle Linux 8 (aarch64):
+        desccription: Oracle Software for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_oracle_software
+
+      Oracle Software for Oracle Linux 8 (x86_64):
+        desccription: Oracle Software for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_oracle_software
+
+
+  ## Oracle Linux Cloud Native Environment
+  olcne:
+
+    repos:
+
+      Oracle Cloud Native Environment - Oracle Linux 8 (aarch64):
+        desccription: Packages for components of Oracle Cloud Native Environment for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_ocne
+
+      Oracle Cloud Native Environment - Oracle Linux 8 (x86_64):
+        desccription: Packages for components of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_ocne
+
+      Oracle Linux Cloud Native Environment 1.2 (x86_64):
+        desccription: Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne12
+
+      Oracle Linux Cloud Native Environment 1.3 (aarch64):
+        desccription: Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_olcne13
+
+      Oracle Linux Cloud Native Environment 1.3 (x86_64):
+        desccription: Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne13
+
+      Oracle Linux Cloud Native Environment 1.4 (aarch64):
+        desccription: Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_olcne14
+
+      Oracle Linux Cloud Native Environment 1.4 (x86_64):
+        desccription: Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne14
+
+      Oracle Linux Cloud Native Environment 1.5 (x86_64):
+        desccription: Packages for components of the 1.5 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne15
+
+      Oracle Linux Cloud Native Environment 1.6 (x86_64):
+        desccription: Packages for components of the 1.6 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne16
+
+      Oracle Cloud Native Environment 1.7 - Oracle Linux 8 (x86_64):
+        desccription: Packages for components of the 1.7 release of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne17
+
+      Oracle Cloud Native Environment 1.8 - Oracle Linux 8 (aarch64):
+        desccription: Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_olcne18
+
+      Oracle Cloud Native Environment 1.8 - Oracle Linux 8 (x86_64):
+        desccription: Packages for components of the 1.8 release of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne18
+
+      Oracle Cloud Native Environment 1.9 - Oracle Linux 8 (aarch64):
+        desccription: Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_olcne19
+
+      Oracle Cloud Native Environment 1.9 - Oracle Linux 8 (x86_64):
+        desccription: Packages for components of the 1.9 release of Oracle Cloud Native Environment for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_olcne19
+
+
+      Developer Preview for Oracle Linux Cloud Native Environment -Oracle Linux 8 (aarch64):
+        desccription: Developer preview packages for components of the Oracle Linux Cloud Native Environment (aarch64)
+        uln_label: ol8_aarch64_developer_olcne
+
+      Developer Preview for Oracle Linux Cloud Native Environment - Oracle Linux 8 (x86_64):
+        desccription: Developer preview packages for components of the Oracle Linux Cloud Native environment (x86_64)
+        uln_label: ol8_x86_64_developer_olcne
+
+
+  ## Security Validations
+  security_validations:
+
+    repos:
+
+      Oracle Linux 8 Update 4 Security Validations packages (aarch64):
+        desccription: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 8 Update 4 (aarch64).
+        uln_label: ol8_aarch64_u4_security_validation
+
+      Oracle Linux 8 Update 4 Security Validations packages (x86_64):
+        desccription: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 8 Update 4 (x86_64).
+        uln_label: ol8_x86_64_u4_security_validation
+
+
+  ## MySQL
+  mysql:
+
+    repos:
+
+      MySQL Connectors Community for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_MySQL_connectors_community
+
+      MySQL Connectors Community for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL Connectors Community packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_MySQL_connectors_community
+
+      MySQL 8.0 Connectors Community for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 8 (aarch64).
+        uln_label: ol8_aarch64_MySQL80_connectors_community
+
+      MySQL 8.0 Connectors Community for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_MySQL80_connectors_community
+
+      MySQL 8.0 for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 8 (aarch64).
+        uln_label: ol8_aarch64_MySQL80_community
+
+      MySQL 8.0 for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL 8.0 packages for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_MySQL80_community
+
+      MySQL 8.0 Tools Community for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 8 (aarch64).
+        uln_label: ol8_aarch64_MySQL80_tools_community
+
+      MySQL 8.0 Tools Community for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL 8.0 Tools Community packages for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_MySQL80_tools_community
+
+      MySQL 8.4 Server Community for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL 8.4 Server Community packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_MySQL84_community
+
+      MySQL 8.4 Server Community for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL 8.4 Server Community packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_MySQL84_community
+
+      MySQL 8.4 Tools Community for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_MySQL84_tools_community
+
+      MySQL 8.4 Tools Community for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL 8.4 Tools Community packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_MySQL84_tools_community
+
+      MySQL Innovation Server Community for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL Innovation Server Community packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_MySQL_innovation_community
+
+      MySQL Innovation Server Community for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL Innovation Server Community packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_MySQL_innovation_community
+
+      MySQL Innovation Tools Community for Oracle Linux 8 (aarch64):
+        desccription: Latest MySQL Innovation Tools Community packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_MySQL_innovation_tools_community
+
+      MySQL Innovation Tools Community for Oracle Linux 8 (x86_64):
+        desccription: Latest MySQL Innovation Tools Community packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_MySQL_innovation_tools_community
+
+
+  ## Oracle Linux Manager
+  olm:
+
+    repos:
+
+      Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 8 (x86_64):
+        desccription: All Oracle Linux Manager (formerly Spacewalk) Client 2.10 packages released for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_oraclelinuxmanager210_client
+
+      Spacewalk Client 2.10 for Oracle Linux 8 (x86_64):
+        desccription: All Spacewalk Client 2.10 packages released for Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_spacewalk210_client
+
+
+  ## Automation Manager
+  am:
+
+    repos:
+
+      Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX:
+        desccription: Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX.
+        uln_label: ol8_x86_64_automation
+
+      Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX:
+        desccription: Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX.
+        uln_label: ol8_x86_64_automation2
+
+      Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX (x86_64):
+        desccription: Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX (x86_64)
+        uln_label: ol8_x86_64_automation2.2
+
+
+  ## Virtualization
+  virtualization:
+
+    repos:
+
+      Oracle Linux 8 KVM Application Stream (aarch64):
+        desccription: Latest KVM Application Stream Packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_kvm_appstream
+
+      Oracle Linux 8 KVM Application Stream (x86_64):
+        desccription: Latest KVM Application Stream Packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_kvm_appstream
+
+      Developer Preview of Oracle Linux 8 KVM Application Stream (aarch64):
+        desccription: Developer Preview of KVM Application Stream Packages for Oracle Linux 8 (aarch64)
+        uln_label: ol8_aarch64_developer_kvm_appstream
+
+      Developer Preview of Oracle Linux 8 KVM Application Stream (x86_64):
+        desccription: Developer Preview of KVM Application Stream Packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_developer_kvm_appstream
+
+      oVirt Release 4.4 on Oracle Linux 8 (x86_64):
+        desccription: Latest packages for oVirt Release 4.4 on Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_ovirt44
+
+      oVirt Release 4.4 on Oracle Linux 8 (x86_64) - Extra:
+        desccription: Latest extra packages for oVirt Release 4.4 on Oracle Linux 8 (x86_64).
+        uln_label: ol8_x86_64_ovirt44_extras
+
+      oVirt Release 4.5 on Oracle Linux 8 (x86_64):
+        desccription: Latest packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_ovirt45
+
+      oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra:
+        desccription: Latest extra packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_ovirt45_extras
+
+
+  ## Storage
+  storage:
+
+    repos:
+
+      Oracle Linux 8 (aarch64) Gluster AppStream:
+        desccription: Appstream Gluster packages for Oracle Linux 8 (aarch64).
+        uln_label: ol8_aarch64_gluster_appstream
+
+      Oracle Linux 8 (x86_64) Gluster AppStream:
+        desccription: Appstream Gluster packages for Oracle Linux 8 (x86_64)
+        uln_label: ol8_x86_64_gluster_appstream
+
+
+  ## Exadata
+  exadata:
+
+    repos:
+
+      Exadata release 23.1.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.0.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.0.0.0_x86_64_base
+
+      Exadata release 23.1.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.1.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.1.0.0_x86_64_base
+
+      Exadata release 23.1.10.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.10.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.10.0.0_x86_64_base
+
+      Exadata release 23.1.11.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.11.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.11.0.0_x86_64_base
+
+      Exadata release 23.1.12.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.12.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.12.0.0_x86_64_base
+
+      Exadata release 23.1.13.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.13.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.13.0.0_x86_64_base
+
+      Exadata release 23.1.14.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.14.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.14.0.0_x86_64_base
+
+      Exadata release 23.1.15.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.15.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.15.0.0_x86_64_base
+
+      Exadata release 23.1.16.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.16.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.16.0.0_x86_64_base
+
+      Exadata release 23.1.17.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.17.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.17.0.0_x86_64_base
+
+      Exadata release 23.1.18.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.18.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.18.0.0_x86_64_base
+
+      Exadata release 23.1.19.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.19.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.19.0.0_x86_64_base
+
+      Exadata release 23.1.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.2.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.2.0.0_x86_64_base
+
+      Exadata release 23.1.20.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.20.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.20.0.0_x86_64_base
+
+      Exadata release 23.1.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.3.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.3.0.0_x86_64_base
+
+      Exadata release 23.1.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.4.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.4.0.0_x86_64_base
+
+      Exadata release 23.1.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.5.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.5.0.0_x86_64_base
+
+      Exadata release 23.1.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.6.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.6.0.0_x86_64_base
+
+      Exadata release 23.1.7.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.7.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.7.0.0_x86_64_base
+
+      Exadata release 23.1.8.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.8.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.8.0.0_x86_64_base
+
+      Exadata release 23.1.9.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 23.1.9.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_23.1.9.0.0_x86_64_base
+
+      Exadata release 24.1.0.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 24.1.0.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_24.1.0.0.0_x86_64_base
+
+      Exadata release 24.1.1.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 24.1.1.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_24.1.1.0.0_x86_64_base
+
+      Exadata release 24.1.2.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 24.1.2.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_24.1.2.0.0_x86_64_base
+
+      Exadata release 24.1.3.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 24.1.3.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_24.1.3.0.0_x86_64_base
+
+      Exadata release 24.1.4.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 24.1.4.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_24.1.4.0.0_x86_64_base
+
+      Exadata release 24.1.5.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 24.1.5.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_24.1.5.0.0_x86_64_base
+
+      Exadata release 24.1.6.0.0 db server installation packages (x86_64):
+        desccription: All packages released on the Exadata release 24.1.6.0.0 (x86_64) OL8 installation media. This channel does not contain updates.
+        uln_label: exadata_dbserver_24.1.6.0.0_x86_64_base
+

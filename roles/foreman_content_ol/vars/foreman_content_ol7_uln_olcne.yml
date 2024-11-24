@@ -46,29 +46,29 @@ foreman_products_ol7_uln_olcne:
         url: uln://ol7_x86_64_olcne11
         <<: *foreman_products_defaults_ol7_uln_olcne
         organization: "{{ foreman_organization_ol7_uln_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.2 - Oracle LInux 7 (x86_64) | ol7_x86_64_olcne12 ###
-      - name: Oracle Linux Cloud Native Environment 1.2 - Oracle LInux 7 (x86_64)
+      ### Oracle Linux Cloud Native Environment 1.2 - Oracle Linux 7 (x86_64) | ol7_x86_64_olcne12 ###
+      - name: Oracle Linux Cloud Native Environment 1.2 - Oracle Linux 7 (x86_64)
         description: Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
         label: ol7_uln_x86_64_olcne12
         url: uln://ol7_x86_64_olcne12
         <<: *foreman_products_defaults_ol7_uln_olcne
         organization: "{{ foreman_organization_ol7_uln_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.3 - Oracle LInux 7 (x86_64) | ol7_x86_64_olcne13 ###
-      - name: Oracle Linux Cloud Native Environment 1.3 - Oracle LInux 7 (x86_64)
+      ### Oracle Linux Cloud Native Environment 1.3 - Oracle Linux 7 (x86_64) | ol7_x86_64_olcne13 ###
+      - name: Oracle Linux Cloud Native Environment 1.3 - Oracle Linux 7 (x86_64)
         description: Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
         label: ol7_uln_x86_64_olcne13
         url: uln://ol7_x86_64_olcne13
         <<: *foreman_products_defaults_ol7_uln_olcne
         organization: "{{ foreman_organization_ol7_uln_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.4 - Oracle LInux 7 (x86_64) | ol7_x86_64_olcne14 ###
-      - name: Oracle Linux Cloud Native Environment 1.4 - Oracle LInux 7 (x86_64)
+      ### Oracle Linux Cloud Native Environment 1.4 - Oracle Linux 7 (x86_64) | ol7_x86_64_olcne14 ###
+      - name: Oracle Linux Cloud Native Environment 1.4 - Oracle Linux 7 (x86_64)
         description: Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
         label: ol7_uln_x86_64_olcne14
         url: uln://ol7_x86_64_olcne14
         <<: *foreman_products_defaults_ol7_uln_olcne
         organization: "{{ foreman_organization_ol7_uln_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.5 - Oracle LInux 7 (x86_64) | ol7_x86_64_olcne15 ###
-      - name: Oracle Linux Cloud Native Environment 1.5 - Oracle LInux 7 (x86_64)
+      ### Oracle Linux Cloud Native Environment 1.5 - Oracle Linux 7 (x86_64) | ol7_x86_64_olcne15 ###
+      - name: Oracle Linux Cloud Native Environment 1.5 - Oracle Linux 7 (x86_64)
         description: Packages for components of the 1.5 release of Oracle Linux Cloud Native environment for Oracle Linux 7 (x86_64)
         label: ol7_uln_x86_64_olcne15
         url: uln://ol7_x86_64_olcne15
@@ -99,25 +99,25 @@ foreman_content_views_ol7_uln_olcne:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_olcne12"
     organization: "{{ foreman_organization_ol7_uln_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.2 - Oracle LInux 7 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.2 - Oracle Linux 7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_olcne13"
     organization: "{{ foreman_organization_ol7_uln_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.3 - Oracle LInux 7 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.3 - Oracle Linux 7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_olcne14"
     organization: "{{ foreman_organization_ol7_uln_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.4 - Oracle LInux 7 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.4 - Oracle Linux 7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_olcne15"
     organization: "{{ foreman_organization_ol7_uln_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.5 - Oracle LInux 7 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.5 - Oracle Linux 7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uln_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_developer_olcne"

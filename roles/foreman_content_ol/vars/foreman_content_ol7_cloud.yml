@@ -25,52 +25,6 @@ foreman_products_defaults_ol7_cloud: &foreman_products_defaults_ol7_cloud
   unprotected: "{{ foreman_products_defaults_unprotected_ol7_cloud | bool }}"
 
 
-foreman_products_ol7_cloud_openstack20:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_cloud_openstack20 }}"
-    repositories:
-      ### Oracle OpenStack 2.0 (x86_64) | ol7_x86_64_openstack20 ###
-      - name: Oracle OpenStack 2.0 (x86_64)
-        description: Latest for Oracle OpenStack version 2.0 .
-        label: ol7_x86_64_openstack20
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/openstack20/x86_64/"
-        <<: *foreman_products_defaults
-        organization: "{{ foreman_organization_ol7_cloud_openstack20 }}"
-
-foreman_products_ol7_cloud_openstack21:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_cloud_openstack21 }}"
-    repositories:
-      ### Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64) | ol7_x86_64_openstack21 ###
-      - name: Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64)
-        description: Latest for Oracle OpenStack version 2.1 for Oracle Linux 7 (x86_64) .
-        label: ol7_x86_64_openstack21
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/openstack21/x86_64/"
-        <<: *foreman_products_defaults
-        organization: "{{ foreman_organization_ol7_cloud_openstack21 }}"
-
-foreman_products_ol7_cloud_openstack30:
-  - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    label: "{{ foreman_product_label_prefix | default('') }}OL"
-    organization: "{{ foreman_organization_ol7_cloud_openstack30 }}"
-    repositories:
-      ### Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64) | ol7_x86_64_openstack30 ###
-      - name: Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64)
-        description: Latest for Oracle OpenStack version 3.0 .
-        label: ol7_x86_64_openstack30
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/openstack30/x86_64/"
-        <<: *foreman_products_defaults
-        organization: "{{ foreman_organization_ol7_cloud_openstack30 }}"
-      ### Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64) | ol7_x86_64_openstack_extras ###
-      - name: Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64)
-        description: Latest Extra development packages for Oracle OpenStack version 3.0
-        label: ol7_x86_64_openstack_extras
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/openstack_extras/x86_64/"
-        <<: *foreman_products_defaults
-        organization: "{{ foreman_organization_ol7_cloud_openstack30 }}"
-
 foreman_products_ol7_cloud_openstack40:
   - name: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     label: "{{ foreman_product_label_prefix | default('') }}OL"
@@ -112,43 +66,10 @@ foreman_products_ol7_cloud_openstack50:
         organization: "{{ foreman_organization_ol7_cloud_openstack50 }}"
 
 foreman_products_ol7_cloud: "{{ [] |
-  union( foreman_products_ol7_cloud_openstack20 | default([]) if foreman_enable_ol7_cloud_openstack20 else [] ) |
-  union( foreman_products_ol7_cloud_openstack21 | default([]) if foreman_enable_ol7_cloud_openstack21 else [] ) |
-  union( foreman_products_ol7_cloud_openstack30 | default([]) if foreman_enable_ol7_cloud_openstack30 else [] ) |
   union( foreman_products_ol7_cloud_openstack40 | default([]) if foreman_enable_ol7_cloud_openstack40 else [] ) |
   union( foreman_products_ol7_cloud_openstack50 | default([]) if foreman_enable_ol7_cloud_openstack50 else [] )
   }}"
 
-
-foreman_content_views_ol7_cloud_openstack20:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_openstack20"
-    organization: "{{ foreman_organization_ol7_cloud_openstack20 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.0 (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_cloud_openstack20 }}"
-
-foreman_content_views_ol7_cloud_openstack21:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_openstack21"
-    organization: "{{ foreman_organization_ol7_cloud_openstack21 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_cloud_openstack21 }}"
-
-foreman_content_views_ol7_cloud_openstack30:
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_openstack30"
-    organization: "{{ foreman_organization_ol7_cloud_openstack30 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_cloud_openstack30 }}"
-  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_openstack_extras"
-    organization: "{{ foreman_organization_ol7_cloud_openstack30 }}"
-    repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64)"
-        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
-    allow_promote: "{{ foreman_cv_allow_promote_ol7_cloud_openstack30 }}"
 
 foreman_content_views_ol7_cloud_openstack40:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_x86_64_openstack40"
@@ -179,9 +100,6 @@ foreman_content_views_ol7_cloud_openstack50:
     allow_promote: "{{ foreman_cv_allow_promote_ol7_cloud_openstack50 }}"
 
 foreman_content_views_ol7_cloud: "{{ [] |
-  union( foreman_content_views_ol7_cloud_openstack20 | default([]) if foreman_enable_ol7_cloud_openstack20 else [] ) |
-  union( foreman_content_views_ol7_cloud_openstack21 | default([]) if foreman_enable_ol7_cloud_openstack21 else [] ) |
-  union( foreman_content_views_ol7_cloud_openstack30 | default([]) if foreman_enable_ol7_cloud_openstack30 else [] ) |
   union( foreman_content_views_ol7_cloud_openstack40 | default([]) if foreman_enable_ol7_cloud_openstack40 else [] ) |
   union( foreman_content_views_ol7_cloud_openstack50 | default([]) if foreman_enable_ol7_cloud_openstack50 else [] )
   }}"
