@@ -117,7 +117,7 @@ foreman_content_views_ol8_virtualization_ovirt45:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_ovirt45_extras"
     organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4. on Oracle Linux 8 (x86_64) - Extra"
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_virtualization_ovirt45 }}"
 
