@@ -30,73 +30,73 @@ foreman_products_ol8_olcne:
     label: "{{ foreman_product_label_prefix | default('') }}OL"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      ### Oracle Linux Cloud Native Environment (x86_64) | ol8_x86_64_olcne ###
-      - name: Oracle Linux Cloud Native Environment (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment (x86_64) | ol8_x86_64_olcne ###
+      - name: Oracle Linux 8 Cloud Native Environment (x86_64)
         description: Latest Oracle Cloud Native Environment Packages for Oracle Linux 8
         label: ol8_x86_64_olcne
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.2 (x86_64) | ol8_x86_64_olcne12 ###
-      - name: Oracle Linux Cloud Native Environment 1.2 (x86_64)
-        description: Packages for components of the 1.2 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.2 (x86_64) | ol8_x86_64_olcne12 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.2 (x86_64)
+        description: Packages for components of the 1.2 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne12
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne12/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.3 (x86_64) | ol8_x86_64_olcne13 ###
-      - name: Oracle Linux Cloud Native Environment 1.3 (x86_64)
-        description: Packages for components of the 1.3 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.3 (x86_64) | ol8_x86_64_olcne13 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.3 (x86_64)
+        description: Packages for components of the 1.3 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne13
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne13/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.4 (x86_64) | ol8_x86_64_olcne14 ###
-      - name: Oracle Linux Cloud Native Environment 1.4 (x86_64)
-        description: Packages for components of the 1.4 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.4 (x86_64) | ol8_x86_64_olcne14 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.4 (x86_64)
+        description: Packages for components of the 1.4 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne14
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne14/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.5 (x86_64) | ol8_x86_64_olcne15 ###
-      - name: Oracle Linux Cloud Native Environment 1.5 (x86_64)
-        description: Packages for components of the 1.5 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.5 (x86_64) | ol8_x86_64_olcne15 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.5 (x86_64)
+        description: Packages for components of the 1.5 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne15
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne15/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.6 (x86_64) | ol8_x86_64_olcne16 ###
-      - name: Oracle Linux Cloud Native Environment 1.6 (x86_64)
-        description: Packages for components of the 1.6 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.6 (x86_64) | ol8_x86_64_olcne16 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.6 (x86_64)
+        description: Packages for components of the 1.6 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne16
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne16/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.7 (x86_64) | ol8_x86_64_olcne17 ###
-      - name: Oracle Linux Cloud Native Environment 1.7 (x86_64)
-        description: Packages for components of the 1.7 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.7 (x86_64) | ol8_x86_64_olcne17 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.7 (x86_64)
+        description: Packages for components of the 1.7 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne17
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne17/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.8 (x86_64) | ol8_x86_64_olcne18 ###
-      - name: Oracle Linux Cloud Native Environment 1.8 (x86_64)
-        description: Packages for components of the 1.8 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.8 (x86_64) | ol8_x86_64_olcne18 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.8 (x86_64)
+        description: Packages for components of the 1.8 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne18
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne18/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
-      ### Oracle Linux Cloud Native Environment 1.9 (x86_64) | ol8_x86_64_olcne19 ###
-      - name: Oracle Linux Cloud Native Environment 1.9 (x86_64)
-        description: Packages for components of the 1.9 release of Oracle Linux Cloud Native environment for Oracle Linux 8 (x86_64)
+      ### Oracle Linux 8 Cloud Native Environment 1.9 (x86_64) | ol8_x86_64_olcne19 ###
+      - name: Oracle Linux 8 Cloud Native Environment 1.9 (x86_64)
+        description: Packages for components of the 1.9 release of Oracle Linux 8 Cloud Native environment for Oracle Linux 8 (x86_64)
         label: ol8_x86_64_olcne19
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/olcne19/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
         organization: "{{ foreman_organization_ol8_olcne }}"
 
-      ### Developer Preview for Oracle Linux Cloud Native Environment - Oracle Linux 8 (x86_64) | ol8_x86_64_developer_olcne ###
-      - name: Developer Preview for Oracle Linux Cloud Native Environment - Oracle Linux 8 (x86_64)
-        description: Developer preview packages for components of the Oracle Linux Cloud Native environment (x86_64)
+      ### Developer Preview for Oracle Linux 8 Cloud Native Environment - Oracle Linux 8 (x86_64) | ol8_x86_64_developer_olcne ###
+      - name: Developer Preview for Oracle Linux 8 Cloud Native Environment - Oracle Linux 8 (x86_64)
+        description: Developer preview packages for components of the Oracle Linux 8 Cloud Native environment (x86_64)
         label: ol8_x86_64_developer_olcne
         url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/olcne/x86_64/"
         <<: *foreman_products_defaults_ol8_olcne
@@ -107,62 +107,62 @@ foreman_content_views_ol8_olcne:
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne12"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.2 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.2 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne13"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.3 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.3 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne14"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.4 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.4 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne15"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.5 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.5 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne16"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.6 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.6 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne17"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.7 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.7 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne18"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.8 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.8 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_olcne19"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Cloud Native Environment 1.9 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Cloud Native Environment 1.9 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
 
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol8_x86_64_developer_olcne"
     organization: "{{ foreman_organization_ol8_olcne }}"
     repositories:
-      - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview for Oracle Linux Cloud Native Environment - Oracle Linux 8 (x86_64)"
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview for Oracle Linux 8 Cloud Native Environment - Oracle Linux 8 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol8_olcne }}"
 
