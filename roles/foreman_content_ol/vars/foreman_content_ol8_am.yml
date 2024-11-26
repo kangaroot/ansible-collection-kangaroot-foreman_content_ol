@@ -31,11 +31,11 @@ foreman_products_ol8_am10:
     organization: "{{ foreman_organization_ol8_am10 }}"
     repositories:
       ### Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX | ol8_x86_64_automation ###
-      - name: Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX"
         description: Oracle Linux Automation Manager 1.0, based on the open source projects Ansible and AWX.
-        label: ol8_x86_64_automation
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/automation/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_automation"
         <<: *foreman_products_defaults_ol8_am
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/automation/x86_64/"
         organization: "{{ foreman_organization_ol8_am10 }}"
 
 foreman_products_ol8_am21:
@@ -44,11 +44,11 @@ foreman_products_ol8_am21:
     organization: "{{ foreman_organization_ol8_am21 }}"
     repositories:
       ### Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX | ol8_x86_64_automation2 ###
-      - name: Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX"
         description: Oracle Linux Automation Manager 2.1, based on the open source projects Ansible and AWX.
-        label: ol8_x86_64_automation2
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/automation2/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_automation2"
         <<: *foreman_products_defaults_ol8_am
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/automation2/x86_64/"
         organization: "{{ foreman_organization_ol8_am21 }}"
 
 foreman_products_ol8_am22:
@@ -57,11 +57,11 @@ foreman_products_ol8_am22:
     organization: "{{ foreman_organization_ol8_am22 }}"
     repositories:
       ### Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX | ol8_x86_64_automation2.2 ###
-      - name: Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX"
         description: Oracle Linux Automation Manager 2.2 based on the open source projects Ansible and AWX.
-        label: ol8_x86_64_automation22
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/automation2.2/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_automation22"
         <<: *foreman_products_defaults_ol8_am
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/automation2.2/x86_64/"
         organization: "{{ foreman_organization_ol8_am22 }}"
 
 foreman_products_ol8_am: "{{ [] |

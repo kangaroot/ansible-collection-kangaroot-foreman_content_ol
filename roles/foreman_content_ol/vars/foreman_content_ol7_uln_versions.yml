@@ -186,11 +186,11 @@ foreman_products_ol70_uln_content: &foreman_products_ol70_uln_content
   organization: "{{ foreman_organization_ol70_uln }}"
   repositories:
     ### Oracle Linux 7 GA installation media copy (x86_64) | ol7_x86_64_u0_base ###
-    - name: Oracle Linux 7 GA installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 GA installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 GA (x86_64). No errata included
-      label: ol7_uln_x86_64_u0_base
-      url: uln://ol7_x86_64_u0_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u0_base"
       <<: *foreman_products_defaults_ol70_uln
+      url: uln://ol7_x86_64_u0_base
       organization: "{{ foreman_organization_ol70_uln }}"
 
 foreman_products_ol70_uln:
@@ -204,11 +204,11 @@ foreman_products_ol71_uln_content: &foreman_products_ol71_uln_content
   organization: "{{ foreman_organization_ol71_uln }}"
   repositories:
     ### Oracle Linux 7 Update 1 installation media copy (x86_64) | ol7_x86_64_u1_base ###
-    - name: Oracle Linux 7 Update 1 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 1 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 1 (x86_64). No errata included
-      label: ol7_uln_x86_64_u1_base
-      url: uln://ol7_x86_64_u1_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u1_base"
       <<: *foreman_products_defaults_ol71_uln
+      url: uln://ol7_x86_64_u1_base
       organization: "{{ foreman_organization_ol71_uln }}"
 
 foreman_products_ol71_uln:
@@ -222,11 +222,11 @@ foreman_products_ol72_uln_content: &foreman_products_ol72_uln_content
   organization: "{{ foreman_organization_ol72_uln }}"
   repositories:
     ### Oracle Linux 7 Update 2 installation media copy (x86_64) | ol7_x86_64_u2_base ###
-    - name: Oracle Linux 7 Update 2 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 2 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 2 (x86_64). No errata included
-      label: ol7_uln_x86_64_u2_base
-      url: uln://ol7_x86_64_u2_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u2_base"
       <<: *foreman_products_defaults_ol72_uln
+      url: uln://ol7_x86_64_u2_base
       organization: "{{ foreman_organization_ol72_uln }}"
 
 foreman_products_ol72_uln:
@@ -240,11 +240,11 @@ foreman_products_ol73_uln_content: &foreman_products_ol73_uln_content
   organization: "{{ foreman_organization_ol73_uln }}"
   repositories:
     ### Oracle Linux 7 Update 3 installation media copy (x86_64) | ol7_x86_64_u3_base ###
-    - name: Oracle Linux 7 Update 3 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 3 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 3 (x86_64). No errata included
-      label: ol7_uln_x86_64_u3_base
-      url: uln://ol7_x86_64_u3_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u3_base"
       <<: *foreman_products_defaults_ol73_uln
+      url: uln://ol7_x86_64_u3_base
       organization: "{{ foreman_organization_ol73_uln }}"
 
 foreman_products_ol73_uln:
@@ -258,11 +258,11 @@ foreman_products_ol74_uln_content: &foreman_products_ol74_uln_content
   organization: "{{ foreman_organization_ol74_uln }}"
   repositories:
     ### Oracle Linux 7 Update 4 installation media copy (x86_64) | ol7_x86_64_u4_base ###
-    - name: Oracle Linux 7 Update 4 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 4 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 4 (x86_64). No errata included
-      label: ol7_uln_x86_64_u4_base
-      url: uln://ol7_x86_64_u4_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u4_base"
       <<: *foreman_products_defaults_ol74_uln
+      url: uln://ol7_x86_64_u4_base
       organization: "{{ foreman_organization_ol74_uln }}"
 
 foreman_products_ol74_uln:
@@ -276,11 +276,11 @@ foreman_products_ol75_uln_content: &foreman_products_ol75_uln_content
   organization: "{{ foreman_organization_ol75_uln }}"
   repositories:
     ### Oracle Linux 7 Update 5 installation media copy (x86_64) | ol7_x86_64_u5_base ###
-    - name: Oracle Linux 7 Update 5 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 5 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 5 (x86_64). No errata included
-      label: ol7_uln_x86_64_u5_base
-      url: uln://ol7_x86_64_u5_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u5_base"
       <<: *foreman_products_defaults_ol75_uln
+      url: uln://ol7_x86_64_u5_base
       organization: "{{ foreman_organization_ol75_uln }}"
 
 foreman_products_ol75_uln:
@@ -294,11 +294,11 @@ foreman_products_ol76_uln_content: &foreman_products_ol76_uln_content
   organization: "{{ foreman_organization_ol76_uln }}"
   repositories:
     ### Oracle Linux 7 Update 6 installation media copy (x86_64) | ol7_x86_64_u6_base ###
-    - name: Oracle Linux 7 Update 6 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 6 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 6 (x86_64). No errata included
-      label: ol7_uln_x86_64_u6_base
-      url: uln://ol7_x86_64_u6_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u6_base"
       <<: *foreman_products_defaults_ol76_uln
+      url: uln://ol7_x86_64_u6_base
       organization: "{{ foreman_organization_ol76_uln }}"
 
 foreman_products_ol76_uln:
@@ -312,11 +312,11 @@ foreman_products_ol77_uln_content: &foreman_products_ol77_uln_content
   organization: "{{ foreman_organization_ol77_uln }}"
   repositories:
     ### Oracle Linux 7 Update 7 installation media copy (x86_64) | ol7_x86_64_u7_base ###
-    - name: Oracle Linux 7 Update 7 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 7 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 7 (x86_64). No errata included
-      label: ol7_uln_x86_64_u7_base
-      url: uln://ol7_x86_64_u7_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u7_base"
       <<: *foreman_products_defaults_ol77_uln
+      url: uln://ol7_x86_64_u7_base
       organization: "{{ foreman_organization_ol77_uln }}"
 
 foreman_products_ol77_uln:
@@ -330,11 +330,11 @@ foreman_products_ol78_uln_content: &foreman_products_ol78_uln_content
   organization: "{{ foreman_organization_ol78_uln }}"
   repositories:
     ### Oracle Linux 7 Update 8 installation media copy (x86_64) | ol7_x86_64_u8_base ###
-    - name: Oracle Linux 7 Update 8 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 8 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 8 (x86_64). No errata included
-      label: ol7_uln_x86_64_u8_base
-      url: uln://ol7_x86_64_u8_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u8_base"
       <<: *foreman_products_defaults_ol78_uln
+      url: uln://ol7_x86_64_u8_base
       organization: "{{ foreman_organization_ol78_uln }}"
 
 foreman_products_ol78_uln:
@@ -348,11 +348,11 @@ foreman_products_ol79_uln_content: &foreman_products_ol79_uln_content
   organization: "{{ foreman_organization_ol79_uln }}"
   repositories:
     ### Oracle Linux 7 Update 9 installation media copy (x86_64) | ol7_x86_64_u9_base ###
-    - name: Oracle Linux 7 Update 9 installation media copy (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 9 installation media copy (x86_64)"
       description: All packages released for Oracle Linux 7 Update 9 (x86_64). No errata included
-      label: ol7_uln_x86_64_u9_base
-      url: uln://ol7_x86_64_u9_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u9_base"
       <<: *foreman_products_defaults_ol79_uln
+      url: uln://ol7_x86_64_u9_base
       organization: "{{ foreman_organization_ol79_uln }}"
 
 foreman_products_ol79_uln:
@@ -366,11 +366,11 @@ foreman_products_ol70_patch_uln:
     organization: "{{ foreman_organization_ol70_patch_uln }}"
     repositories:
       ### Oracle Linux 7 GA Patch (x86_64) | ol7_x86_64_u0_patch ###
-      - name: Oracle Linux 7 GA Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 GA Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 GA (x86_64)
-        label: ol7_uln_x86_64_u0_patch
-        url: uln://ol7_x86_64_u0_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u0_patch"
         <<: *foreman_products_defaults_ol70_patch_uln
+        url: uln://ol7_x86_64_u0_patch
         organization: "{{ foreman_organization_ol70_patch_uln }}"
 
 foreman_products_ol71_patch_uln:
@@ -379,11 +379,11 @@ foreman_products_ol71_patch_uln:
     organization: "{{ foreman_organization_ol71_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 1 Patch (x86_64) | ol7_x86_64_u1_patch ###
-      - name: Oracle Linux 7 Update 1 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 1 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 1 (x86_64)
-        label: ol7_uln_x86_64_u1_patch
-        url: uln://ol7_x86_64_u1_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u1_patch"
         <<: *foreman_products_defaults_ol71_patch_uln
+        url: uln://ol7_x86_64_u1_patch
         organization: "{{ foreman_organization_ol71_patch_uln }}"
 
 foreman_products_ol72_patch_uln:
@@ -392,11 +392,11 @@ foreman_products_ol72_patch_uln:
     organization: "{{ foreman_organization_ol72_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 2 Patch (x86_64) | ol7_x86_64_u2_patch ###
-      - name: Oracle Linux 7 Update 2 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 2 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 2 (x86_64)
-        label: ol7_uln_x86_64_u2_patch
-        url: uln://ol7_x86_64_u2_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u2_patch"
         <<: *foreman_products_defaults_ol72_patch_uln
+        url: uln://ol7_x86_64_u2_patch
         organization: "{{ foreman_organization_ol72_patch_uln }}"
 
 foreman_products_ol73_patch_uln:
@@ -405,11 +405,11 @@ foreman_products_ol73_patch_uln:
     organization: "{{ foreman_organization_ol73_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 3 Patch (x86_64) | ol7_x86_64_u3_patch ###
-      - name: Oracle Linux 7 Update 3 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 3 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 3 (x86_64)
-        label: ol7_uln_x86_64_u3_patch
-        url: uln://ol7_x86_64_u3_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u3_patch"
         <<: *foreman_products_defaults_ol73_patch_uln
+        url: uln://ol7_x86_64_u3_patch
         organization: "{{ foreman_organization_ol73_patch_uln }}"
 
 foreman_products_ol74_patch_uln:
@@ -418,11 +418,11 @@ foreman_products_ol74_patch_uln:
     organization: "{{ foreman_organization_ol74_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 4 Patch (x86_64) | ol7_x86_64_u4_patch ###
-      - name: Oracle Linux 7 Update 4 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 4 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 4 (x86_64)
-        label: ol7_uln_x86_64_u4_patch
-        url: uln://ol7_x86_64_u4_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u4_patch"
         <<: *foreman_products_defaults_ol74_patch_uln
+        url: uln://ol7_x86_64_u4_patch
         organization: "{{ foreman_organization_ol74_patch_uln }}"
 
 foreman_products_ol75_patch_uln:
@@ -431,11 +431,11 @@ foreman_products_ol75_patch_uln:
     organization: "{{ foreman_organization_ol75_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 5 Patch (x86_64) | ol7_x86_64_u5_patch ###
-      - name: Oracle Linux 7 Update 5 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 5 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 5 (x86_64)
-        label: ol7_uln_x86_64_u5_patch
-        url: uln://ol7_x86_64_u5_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u5_patch"
         <<: *foreman_products_defaults_ol75_patch_uln
+        url: uln://ol7_x86_64_u5_patch
         organization: "{{ foreman_organization_ol75_patch_uln }}"
 
 foreman_products_ol76_patch_uln:
@@ -444,11 +444,11 @@ foreman_products_ol76_patch_uln:
     organization: "{{ foreman_organization_ol76_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 6 Patch (x86_64) | ol7_x86_64_u6_patch ###
-      - name: Oracle Linux 7 Update 6 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 6 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 6 (x86_64)
-        label: ol7_uln_x86_64_u6_patch
-        url: uln://ol7_x86_64_u6_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u6_patch"
         <<: *foreman_products_defaults_ol76_patch_uln
+        url: uln://ol7_x86_64_u6_patch
         organization: "{{ foreman_organization_ol76_patch_uln }}"
 
 foreman_products_ol77_patch_uln:
@@ -457,11 +457,11 @@ foreman_products_ol77_patch_uln:
     organization: "{{ foreman_organization_ol77_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 7 Patch (x86_64) | ol7_x86_64_u7_patch ###
-      - name: Oracle Linux 7 Update 7 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 7 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 7 (x86_64)
-        label: ol7_uln_x86_64_u7_patch
-        url: uln://ol7_x86_64_u7_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u7_patch"
         <<: *foreman_products_defaults_ol77_patch_uln
+        url: uln://ol7_x86_64_u7_patch
         organization: "{{ foreman_organization_ol77_patch_uln }}"
 
 foreman_products_ol78_patch_uln:
@@ -470,11 +470,11 @@ foreman_products_ol78_patch_uln:
     organization: "{{ foreman_organization_ol78_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 8 Patch (x86_64) | ol7_x86_64_u8_patch ###
-      - name: Oracle Linux 7 Update 8 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 8 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 8 (x86_64)
-        label: ol7_uln_x86_64_u8_patch
-        url: uln://ol7_x86_64_u8_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u8_patch"
         <<: *foreman_products_defaults_ol78_patch_uln
+        url: uln://ol7_x86_64_u8_patch
         organization: "{{ foreman_organization_ol78_patch_uln }}"
 
 foreman_products_ol79_patch_uln:
@@ -483,11 +483,11 @@ foreman_products_ol79_patch_uln:
     organization: "{{ foreman_organization_ol79_patch_uln }}"
     repositories:
       ### Oracle Linux 7 Update 9 Patch (x86_64) | ol7_x86_64_u9_patch ###
-      - name: Oracle Linux 7 Update 9 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 9 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 7 Update 9 (x86_64)
-        label: ol7_uln_x86_64_u9_patch
-        url: uln://ol7_x86_64_u9_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u9_patch"
         <<: *foreman_products_defaults_ol79_patch_uln
+        url: uln://ol7_x86_64_u9_patch
         organization: "{{ foreman_organization_ol79_patch_uln }}"
 
 foreman_products_ol7_uln_versions: "{{ [] |

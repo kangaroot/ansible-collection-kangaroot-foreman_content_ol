@@ -33,11 +33,11 @@ foreman_products_ol7_uln_sap:
     organization: "{{ foreman_organization_ol7_uln_sap }}"
     repositories:
       ### Oracle Linux 7 software for SAP | ol7_x86_64_SAP_addons ###
-      - name: Oracle Linux 7 software for SAP
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 software for SAP"
         description: Packages required for SAP software to run on Oracle Linux 7
-        label: ol7_uln_x86_64_SAP_addons
-        url: uln://ol7_x86_64_SAP_addons
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_SAP_addons"
         <<: *foreman_products_defaults_ol7_uln_sap
+        url: uln://ol7_x86_64_SAP_addons
         organization: "{{ foreman_organization_ol7_uln_sap }}"
 
 

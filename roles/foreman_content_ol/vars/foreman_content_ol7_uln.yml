@@ -27,99 +27,99 @@ foreman_products_ol7_uln:
     organization: "{{ foreman_organization_ol7_uln }}"
     repositories:
       ### Oracle Linux 7 Latest (x86_64) | ol7_x86_64_latest ###
-      - name: Oracle Linux 7 Latest (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest (x86_64)"
         description: All packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
-        label: ol7_uln_x86_64_latest
-        url: uln://ol7_x86_64_latest
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_latest"
         <<: *foreman_products_defaults
+        url: uln://ol7_x86_64_latest
         organization: "{{ foreman_organization_ol7_uln }}"
       # ### Oracle Linux 7 Archive (x86_64) | ol7_x86_64_latest_archive ###
-      # - name: Oracle Linux 7 Archive (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Archive (x86_64)"
       #   description: Archived packages for Oracle Linux 7 (x86_64)
-      #   label: ol7_uln_x86_64_latest_archive
-      #   url: uln://ol7_x86_64_latest_archive
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_latest_archive"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol7_x86_64_latest_archive
       #   organization: "{{ foreman_organization_ol7_uln }}"
 
       ### Oracle Linux 7 Latest Optional Packages (x86_64) | ol7_x86_64_optional_latest ###
-      - name: Oracle Linux 7 Latest Optional Packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest Optional Packages (x86_64)"
         description: All optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
-        label: ol7_uln_x86_64_optional_latest
-        url: uln://ol7_x86_64_optional_latest
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_optional_latest"
         <<: *foreman_products_defaults
+        url: uln://ol7_x86_64_optional_latest
         organization: "{{ foreman_organization_ol7_uln }}"
       # ### Oracle Linux 7 Latest Optional Packages (x86_64) - Archive | ol7_x86_64_optional_archive ###
-      # - name: Oracle Linux 7 Latest Optional Packages (x86_64) - Archive
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest Optional Packages (x86_64) - Archive"
       #   description: Archived optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
-      #   label: ol7_uln_x86_64_optional_archive
-      #   url: uln://ol7_x86_64_optional_archive
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_optional_archive"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol7_x86_64_optional_archive
       #   organization: "{{ foreman_organization_ol7_uln }}"
 
       ### Oracle Linux 7 Addons (x86_64) | ol7_x86_64_addons ###
-      - name: Oracle Linux 7 Addons (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Addons (x86_64)"
         description: Oracle Linux 7 Addons (x86_64).
-        label: ol7_uln_x86_64_addons
-        url: uln://ol7_x86_64_addons
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_addons"
         <<: *foreman_products_defaults
+        url: uln://ol7_x86_64_addons
         organization: "{{ foreman_organization_ol7_uln }}"
       ### Oracle Linux 7 (x86_64) Development | ol7_x86_64_developer ###
-      - name: Oracle Linux 7 (x86_64) Development
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 (x86_64) Development"
         description: Latest packages for creating test and development environments - Oracle Linux 7 (x86_64)
-        label: ol7_uln_x86_64_developer
-        url: uln://ol7_x86_64_developer
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_developer"
         <<: *foreman_products_defaults
+        url: uln://ol7_x86_64_developer
         organization: "{{ foreman_organization_ol7_uln }}"
       ### EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_EPEL ###
-      - name: EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)"
         description: Latest EPEL packages for creating test and development environments - Oracle Linux 7 (x86_64)
-        label: ol7_uln_x86_64_developer_EPEL
-        url: uln://ol7_x86_64_developer_EPEL
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_developer_EPEL"
         <<: *foreman_products_defaults
+        url: uln://ol7_x86_64_developer_EPEL
         organization: "{{ foreman_organization_ol7_uln }}"
       ### Oracle Software Collections for Oracle Linux 7 (x86_64) | ol7_x86_64_SoftwareCollections ###
-      - name: Oracle Software Collections for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Software Collections for Oracle Linux 7 (x86_64)"
         description: Latest Oracle Software Collections 3.0 packages for Oracle Linux 7 (x86_64).
-        label: ol7_uln_x86_64_SoftwareCollections
-        url: uln://ol7_x86_64_SoftwareCollections
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_SoftwareCollections"
         <<: *foreman_products_defaults
+        url: uln://ol7_x86_64_SoftwareCollections
         organization: "{{ foreman_organization_ol7_uln }}"
 
       # ### Packages considered as preview for test and development environments for Oracle Linux 7 (x86_64) | ol7_x86_64_preview ###
-      # - name: Packages considered as preview for test and development environments for Oracle Linux 7 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Packages considered as preview for test and development environments for Oracle Linux 7 (x86_64)"
       #   description: Technology preview packages for testing and development on Oracle Linux 7.  Not for use in production.
-      #   label: ol7_uln_x86_64_preview
-      #   url: uln://ol7_x86_64_preview
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_preview"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol7_x86_64_preview
       #   organization: "{{ foreman_organization_ol7_uln }}"
 
       # ### Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use) | ol7_x86_64_u5_developer ###
-      # - name: Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)"
       #   description: Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)
-      #   label: ol7_uln_x86_64_u5_developer
-      #   url: uln://ol7_x86_64_u5_developer
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u5_developer"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol7_x86_64_u5_developer
       #   organization: "{{ foreman_organization_ol7_uln }}"
       # ### Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use) | ol7_x86_64_optional_developer ###
-      # - name: Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)"
       #   description: Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)
-      #   label: ol7_uln_x86_64_optional_developer
-      #   url: uln://ol7_x86_64_optional_developer
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_optional_developer"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol7_x86_64_optional_developer
       #   organization: "{{ foreman_organization_ol7_uln }}"
       # ### Oracle Linux 7 Update 9 Beta (x86_64) Optional | ol7_x86_64_optional_beta ###
-      # - name: Oracle Linux 7 Update 9 Beta (x86_64) Optional
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 9 Beta (x86_64) Optional"
       #   description: Optional beta packages for Oracle Linux 7 Update 9 (x86_64). Not for production use.
-      #   label: ol7_uln_x86_64_optional_beta
-      #   url: uln://ol7_x86_64_optional_beta
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_optional_beta"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol7_x86_64_optional_beta
       #   organization: "{{ foreman_organization_ol7_uln }}"
       # ### Oracle Linux 7 Update 9 Beta (x86_64) | ol7_x86_64_beta ###
-      # - name: Oracle Linux 7 Update 9 Beta (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 9 Beta (x86_64)"
       #   description: All beta packages for Oracle Linux 7 Update 9 (x86_64). Not for production use.
-      #   label: ol7_uln_x86_64_beta
-      #   url: uln://ol7_x86_64_beta
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_beta"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol7_x86_64_beta
       #   organization: "{{ foreman_organization_ol7_uln }}"
 
 
@@ -130,11 +130,11 @@ foreman_content_views_ol7_uln:
       - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_uln_x86_64_latest_archive"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_latest_archive"
   #   organization: "{{ foreman_organization_ol7_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 7 Archive (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Archive (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
 
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_optional_latest"
@@ -143,11 +143,11 @@ foreman_content_views_ol7_uln:
       - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest Optional Packages (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_uln_x86_64_optional_archive"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_optional_archive"
   #   organization: "{{ foreman_organization_ol7_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 7 Latest Optional Packages (x86_64) - Archive
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest Optional Packages (x86_64) - Archive"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
 
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_addons"
@@ -175,36 +175,36 @@ foreman_content_views_ol7_uln:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_uln_x86_64_preview"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_preview"
   #   organization: "{{ foreman_organization_ol7_uln }}"
   #   repositories:
-  #     - name: Packages considered as preview for test and development environments for Oracle Linux 7 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Packages considered as preview for test and development environments for Oracle Linux 7 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_uln_x86_64_u5_developer"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_u5_developer"
   #   organization: "{{ foreman_organization_ol7_uln }}"
   #   repositories:
-  #     - name: Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview of Oracle Linux 7 Update 5 (x86_64) - (not for production use)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_uln_x86_64_optional_developer"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_optional_developer"
   #   organization: "{{ foreman_organization_ol7_uln }}"
   #   repositories:
-  #     - name: Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview of Oracle Linux 7 Update 5 (x86_64) Optional Packages (not for production use)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_uln_x86_64_beta"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_beta"
   #   organization: "{{ foreman_organization_ol7_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 7 Update 9 Beta (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 9 Beta (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol7_uln_x86_64_optional_beta"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol7_uln_x86_64_optional_beta"
   #   organization: "{{ foreman_organization_ol7_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 7 Update 9 Beta (x86_64) Optional
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 9 Beta (x86_64) Optional"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol7_uln }}"
 
 foreman_composite_content_views_ol7_uln:

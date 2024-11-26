@@ -33,11 +33,11 @@ foreman_products_ol9_uln_olm:
     organization: "{{ foreman_organization_ol9_uln_olm }}"
     repositories:
       ### Oracle Linux Manager 2.10 Client (x86_64) | ol9_x86_64_oraclelinuxmanager210_client ###
-      - name: Oracle Linux Manager 2.10 Client (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Manager 2.10 Client (x86_64)"
         description: Latest Oracle Linux Manager 2.10 Client packages for Oracle Linux 9 (x86_64)
-        label: ol9_uln_x86_64_oraclelinuxmanager210_client
-        url: uln://ol9_x86_64_oraclelinuxmanager210_client
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_oraclelinuxmanager210_client"
         <<: *foreman_products_defaults_ol9_uln_olm
+        url: uln://ol9_x86_64_oraclelinuxmanager210_client
         organization: "{{ foreman_organization_ol9_uln_olm }}"
 
 

@@ -25,288 +25,288 @@ foreman_products_ol5:
     organization: "{{ foreman_organization_ol5 }}"
     repositories:
       ### Oracle Linux 5 Latest (i386) | ol5_i386_latest ###
-      - name: Oracle Linux 5 Latest (i386)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Latest (i386)"
         description: All packages released for Oracle Linux 5 (i386), including the very latest updated packages
-        label: ol5_i386_latest
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/latest/i386/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_i386_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/latest/i386/"
         organization: "{{ foreman_organization_ol5 }}"
 
       # ### Productivity Applications for Enterprise Linux 5 (i386) | el5_unsupported_i386_latest ###
-      # - name: Productivity Applications for Enterprise Linux 5 (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Productivity Applications for Enterprise Linux 5 (i386)"
       #   description: All packages released for Productivity Applications (i386) - Unsupported
-      #   label: el5_unsupported_i386_latest
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/unsupported/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_unsupported_i386_latest"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/unsupported/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
 
       ### Unbreakable Enterprise Kernel for Oracle Linux 5 (i386) | ol5_i386_UEK_base ###
-      - name: Unbreakable Enterprise Kernel for Oracle Linux 5 (i386)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel for Oracle Linux 5 (i386)"
         description: Unbreakable Enterprise Kernel for Oracle Linux 5 (i386) released on the install media.
-        label: ol5_i386_UEK_base
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/base/i386/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_i386_UEK_base"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/base/i386/"
         organization: "{{ foreman_organization_ol5 }}"
       ### Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (i386) | ol5_i386_UEK_latest ###
-      - name: Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (i386)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (i386)"
         description: Latest Unbreakable Enterprise Kernel packages for Oracle Linux 5 (i386)
-        label: ol5_i386_UEK_latest
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/latest/i386/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_i386_UEK_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/latest/i386/"
         organization: "{{ foreman_organization_ol5 }}"
 
       # ### Spacewalk Client 2.6 for Oracle Linux 5 (i386) | ol5_i386_spacewalk26_client ###
-      # - name: Spacewalk Client 2.6 for Oracle Linux 5 (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 5 (i386)"
       #   description: All Spacewalk Client 2.6 packages released for Oracle Linux 5 (i386).
-      #   label: ol5_i386_spacewalk26_client
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk26/client/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_i386_spacewalk26_client"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk26/client/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Spacewalk Client 2.7 for Oracle Linux 5 (i386) | ol5_i386_spacewalk27_client ###
-      # - name: Spacewalk Client 2.7 for Oracle Linux 5 (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 5 (i386)"
       #   description: All Spacewalk Client 2.7 packages released for Oracle Linux 5 (i386).
-      #   label: ol5_i386_spacewalk27_client
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk27/client/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_i386_spacewalk27_client"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk27/client/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
 
       # ### Enterprise Linux 5 Latest (i386) | el5_i386_latest ###
-      # - name: Enterprise Linux 5 Latest (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Latest (i386)"
       #   description: All packages released for Enterprise Linux 5 (i386), including the very latest updated packages
-      #   label: el5_i386_latest
-      #   url: uln://el5_i386_latest
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_i386_latest"
       #   <<: *foreman_products_defaults
+      #   url: uln://el5_i386_latest
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Add ons (i386) | el5_i386_addons ###
-      # - name: Enterprise Linux 5 Add ons (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Add ons (i386)"
       #   description: Enterprise Linux 5 Add ons (i386)
-      #   label: el5_i386_addons
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/addons/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_i386_addons"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/addons/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
 
       # ### Enterprise Linux 5 (i386) installation media copy | el5_ga_i386_base ###
-      # - name: Enterprise Linux 5 (i386) installation media copy
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 (i386) installation media copy"
       #   description: All packages released on the Enterprise Linux 5 (i386) installation media. This channel does not contain updates
-      #   label: el5_ga_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/0/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_ga_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/0/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 1 (i386) installation media copy | el5_u1_i386_base ###
-      # - name: Enterprise Linux 5 Update 1 (i386) installation media copy
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 1 (i386) installation media copy"
       #   description: All packages released on the Enterprise Linux 5 update 1 (i386) installation media. This channel does not contain updates
-      #   label: el5_u1_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/1/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u1_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/1/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 2 installation media copy (i386) | el5_u2_i386_base ###
-      # - name: Enterprise Linux 5 Update 2 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 2 installation media copy (i386)"
       #   description: All packages released on the Enterprise Linux 5 update 2 (i386) installation media. This channel does not contain updates.
-      #   label: el5_u2_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/2/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u2_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/2/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 3 installation media copy (i386) | el5_u3_i386_base ###
-      # - name: Enterprise Linux 5 Update 3 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 3 installation media copy (i386)"
       #   description: All packages released on the Enterprise Linux 5 update 3 (i386) installation media. This channel does not contain updates.
-      #   label: el5_u3_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/3/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u3_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/3/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 4 installation media copy (i386) | el5_u4_i386_base ###
-      # - name: Enterprise Linux 5 Update 4 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 4 installation media copy (i386)"
       #   description: All packages released on the Enterprise Linux 5 update 4 (i386) installation media. This channel does not contain updates.
-      #   label: el5_u4_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/4/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u4_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/4/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 5 installation media copy (i386) | el5_u5_i386_base ###
-      # - name: Enterprise Linux 5 Update 5 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 5 installation media copy (i386)"
       #   description: All packages released on the Enterprise Linux 5 update 5 (i386) installation media. This channel does not contain updates.
-      #   label: el5_u5_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/5/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u5_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/5/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 6 installation media copy (i386) | ol5_u6_i386_base ###
-      # - name: Oracle Linux 5 Update 6 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 6 installation media copy (i386)"
       #   description: All packages released on the Oracle Linux 5 Update 6 (i386) installation media. This channel does not contain updates.
-      #   label: ol5_u6_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/6/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u6_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/6/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 7 installation media copy (i386) | ol5_u7_i386_base ###
-      # - name: Oracle Linux 5 Update 7 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 7 installation media copy (i386)"
       #   description: All packages released on the Oracle Linux 5 update 7 (i386) installation media. This channel does not contain updates.
-      #   label: ol5_u7_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/7/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u7_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/7/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 8 installation media copy (i386) | ol5_u8_i386_base ###
-      # - name: Oracle Linux 5 Update 8 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 8 installation media copy (i386)"
       #   description: All packages released on the Oracle Linux 5 update 8 (i386) installation media. This channel does not contain updates.
-      #   label: ol5_u8_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/8/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u8_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/8/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 9 installation media copy (i386) | ol5_u9_i386_base ###
-      # - name: Oracle Linux 5 Update 9 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 9 installation media copy (i386)"
       #   description: All packages released on the Oracle Linux 5 update 9 (i386) installation media. This channel does not contain updates.
-      #   label: ol5_u9_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/9/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u9_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/9/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 10 installation media copy (i386) | ol5_u10_i386_base ###
-      # - name: Oracle Linux 5 Update 10 installation media copy (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 10 installation media copy (i386)"
       #   description: All packages released on the Oracle Linux 5 update 10 (i386) installation media. This channel does not contain updates.
-      #   label: ol5_u10_i386_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/10/base/i386/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u10_i386_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/10/base/i386/"
       #   organization: "{{ foreman_organization_ol5 }}"
       ### Oracle Linux 5 Update 11 installation media copy (i386) | ol5_u11_i386_base ###
-      - name: Oracle Linux 5 Update 11 installation media copy (i386)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 11 installation media copy (i386)"
         description: All packages released on the Oracle Linux 5 update 11 (i386) installation media. This channel does not contain updates.
-        label: ol5_u11_i386_base
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/11/base/i386/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_u11_i386_base"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/11/base/i386/"
         organization: "{{ foreman_organization_ol5 }}"
 
       ### Oracle Linux 5 Latest (x86_64) | ol5_x86_64_latest ###
-      - name: Oracle Linux 5 Latest (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Latest (x86_64)"
         description: All packages required for Unbreakable Enterprise Kernel including the very latest updated packages
-        label: ol5_x86_64_latest
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_x86_64_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/latest/x86_64/"
         organization: "{{ foreman_organization_ol5 }}"
 
       # ### Productivity Applications for Enterprise Linux 5 (x86_64) | el5_unsupported_x86_64_latest ###
-      # - name: Productivity Applications for Enterprise Linux 5 (i386)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Productivity Applications for Enterprise Linux 5 (i386)"
       #   description: All packages released for Productivity Applications (x86_64) - Unsupported
-      #   label: el5_unsupported_x86_64_latest
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/unsupported/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_unsupported_x86_64_latest"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/unsupported/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
 
       ### Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64) | ol5_x86_64_UEK_base ###
-      - name: Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64)"
         description: Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64) released on the install media.
-        label: ol5_x86_64_UEK_base
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/base/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_x86_64_UEK_base"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/base/x86_64/"
         organization: "{{ foreman_organization_ol5 }}"
       ### Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64) | ol5_x86_64_UEK_latest ###
-      - name: Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Unbreakable Enterprise Kernel for Oracle Linux 5 (x86_64)"
         description: Latest Unbreakable Enterprise Kernel packages for Oracle Linux 5 (x86_64)
-        label: ol5_x86_64_UEK_latest
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_x86_64_UEK_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/UEK/latest/x86_64/"
         organization: "{{ foreman_organization_ol5 }}"
 
       # ### Spacewalk Client 2.6 for Oracle Linux 5 (x86_64) | ol5_x86_64_spacewalk26_client ###
-      # - name: Spacewalk Client 2.6 for Oracle Linux 5 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 5 (x86_64)"
       #   description: All Spacewalk Client 2.6 packages released for Oracle Linux 5 (x86_64).
-      #   label: ol5_x86_64_spacewalk26_client
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk26/client/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_x86_64_spacewalk26_client"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk26/client/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Spacewalk Client 2.7 for Oracle Linux 5 (x86_64) | ol5_x86_64_spacewalk27_client ###
-      # - name: Spacewalk Client 2.7 for Oracle Linux 5 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 5 (x86_64)"
       #   description: All Spacewalk Client 2.7 packages released for Oracle Linux 5 (x86_64).
-      #   label: ol5_x86_64_spacewalk27_client
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk27/client/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_x86_64_spacewalk27_client"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/spacewalk27/client/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
 
       # ### Enterprise Linux 5 Add ons (x86_64) | el5_x86_64_addons ###
-      # - name: Enterprise Linux 5 Add ons (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Add ons (x86_64)"
       #   description: Enterprise Linux 5 Add ons (x86_64)
-      #   label: el5_x86_64_addons
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/addons/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_x86_64_addons"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/addons/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
 
       # ### Enterprise Linux 5 (x86_64) installation media copy | el5_ga_x86_64_base ###
-      # - name: Enterprise Linux 5 (x86_64) installation media copy
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 (x86_64) installation media copy"
       #   description: All packages released on the Enterprise Linux 5 (x86_64) installation media. This channel does not contain updates
-      #   label: el5_ga_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/0/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_ga_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/0/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 1 (x86_64) installation media copy | el5_u1_x86_64_base ###
-      # - name: Enterprise Linux 5 Update 1 (x86_64) installation media copy
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 1 (x86_64) installation media copy"
       #   description: All packages released on the Enterprise Linux 5 update 1 (x86_64) installation media. This channel does not contain updates
-      #   label: el5_u1_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/1/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u1_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/1/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 2 installation media copy (x86_64) | el5_u2_x86_64_base ###
-      # - name: Enterprise Linux 5 Update 2 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 2 installation media copy (x86_64)"
       #   description: All packages released on the Enterprise Linux 5 update 2 (x86_64) installation media. This channel does not contain updates.
-      #   label: el5_u2_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/2/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u2_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/2/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 3 installation media copy (x86_64) | el5_u3_x86_64_base ###
-      # - name: Enterprise Linux 5 Update 3 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 3 installation media copy (x86_64)"
       #   description: All packages released on the Enterprise Linux 5 update 3 (x86_64) installation media. This channel does not contain updates.
-      #   label: el5_u3_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/3/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u3_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/3/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 4 installation media copy (x86_64) | el5_u4_x86_64_base ###
-      # - name: Enterprise Linux 5 Update 4 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 4 installation media copy (x86_64)"
       #   description: All packages released on the Enterprise Linux 5 update 4 (x86_64) installation media. This channel does not contain updates.
-      #   label: el5_u4_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/4/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u4_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5_el }}/EL5/4/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Enterprise Linux 5 Update 5 installation media copy (x86_64) | el5_u5_x86_64_base ###
-      # - name: Enterprise Linux 5 Update 5 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Update 5 installation media copy (x86_64)"
       #   description: All packages released on the Enterprise Linux 5 update 5 (x86_64) installation media. This channel does not contain updates.
-      #   label: el5_u5_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/5/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}el5_u5_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/5/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 6 installation media copy (x86_64) | ol5_u6_x86_64_base ###
-      # - name: Oracle Linux 5 Update 6 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 6 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 5 Update 6 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol5_u6_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/6/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u6_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/6/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 7 installation media copy (x86_64) | ol5_u7_x86_64_base ###
-      # - name: Oracle Linux 5 Update 7 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 7 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 5 update 7 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol5_u7_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/7/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u7_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/7/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 8 installation media copy (x86_64) | ol5_u8_x86_64_base ###
-      # - name: Oracle Linux 5 Update 8 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 8 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 5 update 8 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol5_u8_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/8/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u8_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/8/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 9 installation media copy (x86_64) | ol5_u9_x86_64_base ###
-      # - name: Oracle Linux 5 Update 9 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 9 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 5 update 9 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol5_u9_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/9/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u9_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/9/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       # ### Oracle Linux 5 Update 10 installation media copy (x86_64) | ol5_u10_x86_64_base ###
-      # - name: Oracle Linux 5 Update 10 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 10 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 5 update 10 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol5_u10_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/10/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol5_u10_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/10/base/x86_64/"
       #   organization: "{{ foreman_organization_ol5 }}"
       ### Oracle Linux 5 Update 11 installation media copy (x86_64) | ol5_u11_x86_64_base ###
-      - name: Oracle Linux 5 Update 11 installation media copy (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 5 Update 11 installation media copy (x86_64)"
         description: All packages released on the Oracle Linux 5 update 11 (x86_64) installation media. This channel does not contain updates.
-        label: ol5_u11_x86_64_base
-        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/11/base/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol5_u11_x86_64_base"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle5 }}/OL5/11/base/x86_64/"
         organization: "{{ foreman_organization_ol5 }}"
 
 foreman_content_views_ol5:
@@ -317,11 +317,11 @@ foreman_content_views_ol5:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}el5_unsupported_i386_latest"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}el5_unsupported_i386_latest"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Productivity Applications for Enterprise Linux 5 (i386)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Productivity Applications for Enterprise Linux 5 (i386)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_i386_UEK_base"
@@ -337,44 +337,44 @@ foreman_content_views_ol5:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol5_i386_spacewalk26_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_i386_spacewalk26_client"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.6 for Oracle Linux 5 (i386)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 5 (i386)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol5_i386_spacewalk27_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_i386_spacewalk27_client"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.7 for Oracle Linux 5 (i386)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 5 (i386)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol5_i386_ksplice"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_i386_ksplice"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Ksplice for Oracle Linux 5 (i386)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice for Oracle Linux 5 (i386)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol5_i386_ksplice_ELS"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_i386_ksplice_ELS"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Ksplice for Oracle Linux 5 - ELS (i386)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice for Oracle Linux 5 - ELS (i386)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}el5_i386_latest"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}el5_i386_latest"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Enterprise Linux 5 Latest (i386)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Latest (i386)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}el5_i386_addons"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}el5_i386_addons"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Enterprise Linux 5 Add ons (i386)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Add ons (i386)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_x86_64_latest"
@@ -384,11 +384,11 @@ foreman_content_views_ol5:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}el5_unsupported_x86_64_latest"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}el5_unsupported_x86_64_latest"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Productivity Applications for Enterprise Linux 5 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Productivity Applications for Enterprise Linux 5 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_x86_64_UEK_base"
@@ -404,30 +404,30 @@ foreman_content_views_ol5:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol5_x86_64_spacewalk26_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_x86_64_spacewalk26_client"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.6 for Oracle Linux 5 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 5 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol5_x86_64_spacewalk27_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol5_x86_64_spacewalk27_client"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.7 for Oracle Linux 5 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 5 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}el5_x86_64_latest"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}el5_x86_64_latest"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Enterprise Linux 5 Latest (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Latest (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}el5_x86_64_addons"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}el5_x86_64_addons"
   #   organization: "{{ foreman_organization_ol5 }}"
   #   repositories:
-  #     - name: Enterprise Linux 5 Add ons (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Enterprise Linux 5 Add ons (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol5 }}"
 
 foreman_composite_content_views_ol5:

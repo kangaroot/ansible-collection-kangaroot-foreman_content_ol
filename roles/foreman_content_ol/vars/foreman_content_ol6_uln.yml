@@ -27,851 +27,851 @@ foreman_products_ol6_uln:
     organization: "{{ foreman_organization_ol6_uln }}"
     repositories:
       ### Oracle Linux 6 Latest (x86_64) | ol6_x86_64_latest ###
-      - name: Oracle Linux 6 Latest (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Latest (x86_64)"
         description: All packages released for Oracle Linux 6 (x86_64) including the latest errata packages. (x86_64)
-        label: ol6_uln_x86_64_latest
-        url: uln://ol6_x86_64_latest
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_latest"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_latest
         organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Oracle Linux 6 Archive (x86_64) | ol6_x86_64_latest_archive ###
-      # - name: Oracle Linux 6 Archive (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Archive (x86_64)"
       #   description: Archived packages for Oracle Linux 6 (x86_64)
-      #   label: ol6_uln_x86_64_latest_archive
-      #   url: uln://ol6_x86_64_latest_archive
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_latest_archive"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_latest_archive
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 ELS (x86_64) | ol6_x86_64_ELS ###
-      # - name: Oracle Linux 6 ELS (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 ELS (x86_64)"
       #   description: All packages released for Oracle Linux 6 Extended Lifecycle Support (x86_64).
-      #   label: ol6_uln_x86_64_ELS
-      #   url: uln://ol6_x86_64_ELS
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_ELS"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_ELS
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       ### Oracle Linux 6 Add ons (x86_64) | ol6_x86_64_addons ###
-      - name: Oracle Linux 6 Add ons (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Add ons (x86_64)"
         description: Oracle Linux 6 Add ons (x86_64)
-        label: ol6_uln_x86_64_addons
-        url: uln://ol6_x86_64_addons
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_addons"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_addons
         organization: "{{ foreman_organization_ol6_uln }}"
       ### Oracle Software Collections for Oracle Linux 6 (x86_64) | ol6_x86_64_SoftwareCollections ###
-      - name: Oracle Software Collections for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Software Collections for Oracle Linux 6 (x86_64)"
         description: Latest Oracle Software Collections 3.0 packages for Oracle Linux 6 (x86_64).
-        label: ol6_uln_x86_64_SoftwareCollections
-        url: uln://ol6_x86_64_SoftwareCollections
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_SoftwareCollections"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_SoftwareCollections
         organization: "{{ foreman_organization_ol6_uln }}"
       ### Oracle Software for Oracle Linux 6 (x86_64) | ol6_x86_64_oracle ###
-      - name: Oracle Software for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Software for Oracle Linux 6 (x86_64)"
         description: Oracle Software for Oracle Linux 6 (x86_64)
-        label: ol6_uln_x86_64_oracle
-        url: uln://ol6_x86_64_oracle
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_oracle"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_oracle
         organization: "{{ foreman_organization_ol6_uln }}"
       ### Packages for creating test and development environments for Oracle Linux 6 (x86_64) | ol6_x86_64_developer ###
-      - name: Packages for creating test and development environments for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Packages for creating test and development environments for Oracle Linux 6 (x86_64)"
         description: Latest packages for creating test and development environments - Oracle Linux 6 (x86_64)
-        label: ol6_uln_x86_64_developer
-        url: uln://ol6_x86_64_developer
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_developer"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_developer
         organization: "{{ foreman_organization_ol6_uln }}"
 
       ### Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) | ol6_x86_64_UEK_base ###
-      - name: Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)"
         description: Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) released on the install media.
-        label: ol6_uln_x86_64_UEK_base
-        url: uln://ol6_x86_64_UEK_base
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEK_base"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_UEK_base
         organization: "{{ foreman_organization_ol6_uln }}"
       ### Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) | ol6_x86_64_UEK_latest ###
-      - name: Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)"
         description: Latest Unbreakable Enterprise Kernel packages for Oracle Linux 6 (x86_64)
-        label: ol6_uln_x86_64_UEK_latest
-        url: uln://ol6_x86_64_UEK_latest
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEK_latest"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_UEK_latest
         organization: "{{ foreman_organization_ol6_uln }}"
       ### Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest | ol6_x86_64_UEKR3_latest ###
-      - name: Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest"
         description: Latest packages for Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64)
-        label: ol6_uln_x86_64_UEKR3_latest
-        url: uln://ol6_x86_64_UEKR3_latest
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEKR3_latest"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_UEKR3_latest
         organization: "{{ foreman_organization_ol6_uln }}"
       ### Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) | ol6_x86_64_UEKR4 ###
-      - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)"
         description: Latest packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)
-        label: ol6_uln_x86_64_UEKR4
-        url: uln://ol6_x86_64_UEKR4
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEKR4"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_UEKR4
         organization: "{{ foreman_organization_ol6_uln }}"
       # ### Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) - Archive | ol6_x86_64_UEKR4_archive ###
-      # - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) - Archive
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) - Archive"
       #   description: Archived packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)
-      #   label: ol6_uln_x86_64_UEKR4_archive
-      #   url: uln://ol6_x86_64_UEKR4_archive
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEKR4_archive"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_UEKR4_archive
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64) | ol6_x86_64_UEKR4_ELS ###
-      # - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)"
       #   description: Latest Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)
-      #   label: ol6_uln_x86_64_UEKR4_ELS
-      #   url: uln://ol6_x86_64_UEKR4_ELS
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEKR4_ELS"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_UEKR4_ELS
       #   organization: "{{ foreman_organization_ol6_uln }}"
       ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64) | ol6_x86_64_MODRHCK ###
-      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64)"
         description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64).
-        label: ol6_uln_x86_64_MODRHCK
-        url: uln://ol6_x86_64_MODRHCK
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_MODRHCK"
         <<: *foreman_products_defaults
+        url: uln://ol6_x86_64_MODRHCK
         organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64) | ol6_x86_64_ofed_UEK ###
-      # - name: OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)"
       #   description: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel (UEK) on Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_ofed_UEK
-      #   url: uln://ol6_x86_64_ofed_UEK
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_ofed_UEK"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_ofed_UEK
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64) | ol6_x86_64_UEKR4_OFED ###
-      # - name: OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)"
       #   description: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel Release 4 (UEK) on Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_UEKR4_OFED
-      #   url: uln://ol6_x86_64_UEKR4_OFED
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEKR4_OFED"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_UEKR4_OFED
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Dtrace for Oracle Linux 6 (x86_64) - Latest | ol6_x86_64_Dtrace_latest ###
-      # - name: Dtrace for Oracle Linux 6 (x86_64) - Latest
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Dtrace for Oracle Linux 6 (x86_64) - Latest"
       #   description: Latest packages required for Dtrace on Oracle Linux 6 (x86_64) with the Unbreakable Enterprise Kernel Release 2
-      #   label: ol6_uln_x86_64_Dtrace_latest
-      #   url: uln://ol6_x86_64_Dtrace_latest
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_Dtrace_latest"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_Dtrace_latest
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Dtrace Userspace Tools (x86_64) - Latest | ol6_x86_64_Dtrace_userspace_latest ###
-      # - name: Oracle Linux 6 Dtrace Userspace Tools (x86_64) - Latest
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Dtrace Userspace Tools (x86_64) - Latest"
       #   description: The latest Dtrace userspace tools for Unbreakable Enterprise Kernel Release 3 (UEKR3) on Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_Dtrace_userspace_latest
-      #   url: uln://ol6_x86_64_Dtrace_userspace_latest
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_Dtrace_userspace_latest"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_Dtrace_userspace_latest
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 6 | ol6_x86_64_UEKR4_DTrace_userspace ###
-      # - name: Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 6
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 6"
       #   description: The latest Dtrace userspace tools for Oracle Linux 6 (x86_64) with Unbreakable Enterprise Kernel Release 4 (UEKR4).
-      #   label: ol6_uln_x86_64_UEKR4_DTrace_userspace
-      #   url: uln://ol6_x86_64_UEKR4_DTrace_userspace
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_UEKR4_DTrace_userspace"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_UEKR4_DTrace_userspace
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### HA Utilities for MySQL and Oracle Linux 6 (x86_64) | ol6_x86_64_mysql-ha-utils ###
-      # - name: HA Utilities for MySQL and Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}HA Utilities for MySQL and Oracle Linux 6 (x86_64)"
       #   description: Management Utilities for MySQL HA with Oracle Linux 6
-      #   label: ol6_uln_x86_64_mysql-ha-utils
-      #   url: uln://ol6_x86_64_mysql-ha-utils
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_mysql-ha-utils"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_mysql-ha-utils
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### MySQL 5.5 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL ###
-      # - name: MySQL 5.5 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.5 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL packages released on the Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_MySQL
-      #   url: uln://ol6_x86_64_MySQL
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_MySQL"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_MySQL
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### MySQL 5.6 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL56 ###
-      # - name: MySQL 5.6 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.6 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL 5.6 packages for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_MySQL56
-      #   url: uln://ol6_x86_64_MySQL56
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_MySQL56"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_MySQL56
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### MySQL 5.7 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL57_community ###
-      # - name: MySQL 5.7 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.7 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL 5.7 packages for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_MySQL57_community
-      #   url: uln://ol6_x86_64_MySQL57_community
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_MySQL57_community"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_MySQL57_community
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### MySQL 8.0 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL80_community ###
-      # - name: MySQL 8.0 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL 8.0 packages for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_MySQL80_community
-      #   url: uln://ol6_x86_64_MySQL80_community
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_MySQL80_community"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_MySQL80_community
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included | ol6_x86_64_oracle_instantclient ###
-      # - name: Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included"
       #   description: Oracle Instant Client packages for Oracle Linux 6 (x86_64) .
-      #   label: ol6_uln_x86_64_oracle_instantclient
-      #   url: uln://ol6_x86_64_oracle_instantclient
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_oracle_instantclient"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_oracle_instantclient
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Oracle Linux 6 software for SAP | ol6_x86_64_SAP_addons ###
-      # - name: Oracle Linux 6 software for SAP
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 software for SAP"
       #   description: Packages required for SAP software to run on Oracle Linux 6
-      #   label: ol6_uln_x86_64_SAP_addons
-      #   url: uln://ol6_x86_64_SAP_addons
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_SAP_addons"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_SAP_addons
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Oracle OpenStack 1.0 (x86_64) | ol6_x86_64_openstack10 ###
-      # - name: Oracle OpenStack 1.0 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 1.0 (x86_64)"
       #   description: Latest for Oracle OpenStack version 1.0 (Icehouse).
-      #   label: ol6_uln_x86_64_openstack10
-      #   url: uln://ol6_x86_64_openstack10
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_openstack10"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_openstack10
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64) | ol6_x86_64_openstack21 ###
-      # - name: Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)"
       #   description: Latest for Oracle OpenStack version 2.1 for Oracle Linux 6 (x86_64)
-      #   label: ol6_uln_x86_64_openstack21
-      #   url: uln://ol6_x86_64_openstack21
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_openstack21"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_openstack21
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64) | ol6_x86_64_openstack30 ###
-      # - name: Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)"
       #   description: Latest for Oracle OpenStack version 3.0
-      #   label: ol6_uln_x86_64_openstack30
-      #   url: uln://ol6_x86_64_openstack30
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_openstack30"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_openstack30
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64) | ol6_x86_64_openstack40 ###
-      # - name: Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)"
       #   description: Latest Packages for Oracle OpenStack version 4.0
-      #   label: ol6_uln_x86_64_openstack40
-      #   url: uln://ol6_x86_64_openstack40
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_openstack40"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_openstack40
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Spacewalk Client 2.6 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk26_client ###
-      # - name: Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Client 2.6 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_spacewalk26_client
-      #   url: uln://ol6_x86_64_spacewalk26_client
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_spacewalk26_client"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_spacewalk26_client
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Spacewalk Client 2.7 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk27_client ###
-      # - name: Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Client 2.7 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_spacewalk27_client
-      #   url: uln://ol6_x86_64_spacewalk27_client
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_spacewalk27_client"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_spacewalk27_client
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Spacewalk Server 2.6 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk26_server ###
-      # - name: Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Server 2.6 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_spacewalk26_server
-      #   url: uln://ol6_x86_64_spacewalk26_server
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_spacewalk26_server"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_spacewalk26_server
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Spacewalk Server 2.7 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk27_server ###
-      # - name: Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Server 2.7 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_spacewalk27_server
-      #   url: uln://ol6_x86_64_spacewalk27_server
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_spacewalk27_server"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_spacewalk27_server
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Ksplice for Oracle Linux 6 (x86_64) | ol6_x86_64_ksplice ###
-      # - name: Ksplice for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice for Oracle Linux 6 (x86_64)"
       #   description: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_ksplice
-      #   url: uln://ol6_x86_64_ksplice
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_ksplice"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_ksplice
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Ksplice aware userspace packages for Oracle Linux 6 (x86_64) | ol6_x86_64_userspace_ksplice ###
-      # - name: Ksplice aware userspace packages for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice aware userspace packages for Oracle Linux 6 (x86_64)"
       #   description: Latest packages for Ksplice aware userspace packages for Oracle Linux 6 (x86_64).
-      #   label: ol6_uln_x86_64_userspace_ksplice
-      #   url: uln://ol6_x86_64_userspace_ksplice
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_userspace_ksplice"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_userspace_ksplice
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Ksplice for Oracle Linux 6 - ELS (x86_64) | ol6_x86_64_ksplice_ELS ###
-      # - name: Ksplice for Oracle Linux 6 - ELS (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice for Oracle Linux 6 - ELS (x86_64)"
       #   description: Oracle Ksplice Updates for Oracle Linux 6 - ELS (x86_64).
-      #   label: ol6_uln_x86_64_ksplice_ELS
-      #   url: uln://ol6_x86_64_ksplice_ELS
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_ksplice_ELS"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_ksplice_ELS
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Ksplice aware userspace packages for Oracle Linux 6 - ELS (x86_64) | ol6_x86_64_userspace_ksplice_ELS ###
-      # - name: Ksplice aware userspace packages for Oracle Linux 6 - ELS (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice aware userspace packages for Oracle Linux 6 - ELS (x86_64)"
       #   description: Latest packages for Ksplice aware userspace packages for Oracle Linux 6 (x86_64) - ELS
-      #   label: ol6_uln_x86_64_userspace_ksplice_ELS
-      #   url: uln://ol6_x86_64_userspace_ksplice_ELS
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_x86_64_userspace_ksplice_ELS"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_x86_64_userspace_ksplice_ELS
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Oracle Linux 6 GA Patches (x86_64) | ol6_ga_x86_64_patch ###
-      # - name: Oracle Linux 6 GA Patches (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 GA Patches (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 (x86_64)
-      #   label: ol6_uln_ga_x86_64_patch
-      #   url: uln://ol6_ga_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_ga_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_ga_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 1 Patch (x86_64) | ol6_u1_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 1 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 1 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 1 (x86_64).
-      #   label: ol6_uln_u1_x86_64_patch
-      #   url: uln://ol6_u1_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u1_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u1_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 2 Patch (x86_64) | ol6_u2_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 2 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 2 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 2 (x86_64).
-      #   label: ol6_uln_u2_x86_64_patch
-      #   url: uln://ol6_u2_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u2_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u2_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 3 Patch (x86_64) | ol6_u3_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 3 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 3 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 3 (x86_64)
-      #   label: ol6_uln_u3_x86_64_patch
-      #   url: uln://ol6_u3_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u3_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u3_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 4 Patch (x86_64) | ol6_u4_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 4 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 4 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 4 (x86_64)
-      #   label: ol6_uln_u4_x86_64_patch
-      #   url: uln://ol6_u4_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u4_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u4_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 5 Patch (x86_64) | ol6_u5_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 5 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 5 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 5 (x86_64)
-      #   label: ol6_uln_u5_x86_64_patch
-      #   url: uln://ol6_u5_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u5_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u5_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 6 Patch (x86_64) | ol6_u6_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 6 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 6 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 6 (x86_64)
-      #   label: ol6_uln_u6_x86_64_patch
-      #   url: uln://ol6_u6_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u6_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u6_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 7 Patch (x86_64) | ol6_u7_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 7 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 7 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 7 (x86_64)
-      #   label: ol6_uln_u7_x86_64_patch
-      #   url: uln://ol6_u7_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u7_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u7_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 8 Patch (x86_64) | ol6_u8_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 8 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 8 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 8 (x86_64)
-      #   label: ol6_uln_u8_x86_64_patch
-      #   url: uln://ol6_u8_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u8_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u8_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 9 Patch (x86_64) | ol6_u9_x86_64_patch ###
-      # - name: Oracle Linux 6 Update 9 Patch (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 9 Patch (x86_64)"
       #   description: Updated packages published after release of Oracle Linux 6 Update 9 (x86_64)
-      #   label: ol6_uln_u9_x86_64_patch
-      #   url: uln://ol6_u9_x86_64_patch
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u9_x86_64_patch"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u9_x86_64_patch
       #   organization: "{{ foreman_organization_ol6_uln }}"
       ### Oracle Linux 6 Update 10 Patch (x86_64) | ol6_u10_x86_64_patch ###
-      - name: Oracle Linux 6 Update 10 Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 10 Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 6 Update 10 (x86_64)
-        label: ol6_uln_u10_x86_64_patch
-        url: uln://ol6_u10_x86_64_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u10_x86_64_patch"
         <<: *foreman_products_defaults
+        url: uln://ol6_u10_x86_64_patch
         organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Oracle Linux 6 GA (x86_64) | ol6_ga_x86_64_base ###
-      # - name: Oracle Linux 6 GA (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 GA (x86_64)"
       #   description: All packages released for Oracle Linux 6 GA (x86_64). No errata included.
-      #   label: ol6_uln_ga_x86_64_base
-      #   url: uln://ol6_ga_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_ga_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_ga_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 1 installation media copy (x86_64) | ol6_u1_x86_64_base ###
-      # - name: Oracle Linux 6 Update 1 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 1 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 1 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u1_x86_64_base
-      #   url: uln://ol6_u1_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u1_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u1_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 2 installation media copy (x86_64) | ol6_u2_x86_64_base ###
-      # - name: Oracle Linux 6 Update 2 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 2 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 2 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u2_x86_64_base
-      #   url: uln://ol6_u2_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u2_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u2_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 3 installation media copy (x86_64) | ol6_u3_x86_64_base ###
-      # - name: Oracle Linux 6 Update 3 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 3 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 3 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u3_x86_64_base
-      #   url: uln://ol6_u3_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u3_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u3_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 4 installation media copy (x86_64) | ol6_u4_x86_64_base ###
-      # - name: Oracle Linux 6 Update 4 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 4 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 4 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u4_x86_64_base
-      #   url: uln://ol6_u4_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u4_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u4_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 5 installation media copy (x86_64) | ol6_u5_x86_64_base ###
-      # - name: Oracle Linux 6 Update 5 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 5 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 5 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u5_x86_64_base
-      #   url: uln://ol6_u5_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u5_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u5_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 6 installation media copy (x86_64) | ol6_u6_x86_64_base ###
-      # - name: Oracle Linux 6 Update 6 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 6 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 6 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u6_x86_64_base
-      #   url: uln://ol6_u6_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u6_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u6_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 7 installation media copy (x86_64) | ol6_u7_x86_64_base ###
-      # - name: Oracle Linux 6 Update 7 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 7 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 7 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u7_x86_64_base
-      #   url: uln://ol6_u7_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u7_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u7_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 8 installation media copy (x86_64) | ol6_u8_x86_64_base ###
-      # - name: Oracle Linux 6 Update 8 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 8 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 8 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u8_x86_64_base
-      #   url: uln://ol6_u8_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u8_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u8_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Update 9 installation media copy (x86_64) | ol6_u9_x86_64_base ###
-      # - name: Oracle Linux 6 Update 9 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 9 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 9 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_uln_u9_x86_64_base
-      #   url: uln://ol6_u9_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u9_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://ol6_u9_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       ### Oracle Linux 6 Update 10 installation media copy (x86_64) | ol6_u10_x86_64_base ###
-      - name: Oracle Linux 6 Update 10 installation media copy (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 10 installation media copy (x86_64)"
         description: All packages released on the Oracle Linux 6 Update 10 (x86_64) installation media. This channel does not contain updates.
-        label: ol6_uln_u10_x86_64_base
-        url: uln://ol6_u10_x86_64_base
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_u10_x86_64_base"
         <<: *foreman_products_defaults
+        url: uln://ol6_u10_x86_64_base
         organization: "{{ foreman_organization_ol6_uln }}"
 
       # ### Oracle Linux 6 Exadata release 12.1.2.1.0 db server installation packages (x86_64) | exadata_dbserver_12.1.2.1.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.1.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.1.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_1_0_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.1.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_1_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.1.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.1.1 db server installation packages (x86_64) | exadata_dbserver_12.1.2.1.1_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.1.1 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.1 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.1.1 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_1_1_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.1.1_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_1_1_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.1.1_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.1.2 db server installation packages (x86_64) | exadata_dbserver_12.1.2.1.2_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.1.2 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.2 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.1.2 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_1_2_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.1.2_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_1_2_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.1.2_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.1.3 db server installation packages (x86_64) | exadata_dbserver_12.1.2.1.3_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.1.3 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.3 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.1.3 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_1_3_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.1.3_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_1_3_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.1.3_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.2.0 db server installation packages (x86_64) | exadata_dbserver_12.1.2.2.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.2.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.2.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_2_0_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.2.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_2_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.2.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.2.1 db server installation packages (x86_64) | exadata_dbserver_12.1.2.2.1_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.2.1 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.1 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.2.1 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_2_1_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.2.1_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_2_1_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.2.1_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.2.2 db server installation packages (x86_64) | exadata_dbserver_12.1.2.2.2_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.2.2 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.2 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.2.2 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_2_2_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.2.2_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_2_2_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.2.2_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.2.3 db server installation packages (x86_64) | exadata_dbserver_12.1.2.2.3_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.2.3 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.3 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.2.3 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_2_3_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.2.3_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_2_3_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.2.3_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.0 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_0_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.1 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.1_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.1 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.1 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.1 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_1_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.1_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_1_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.1_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.2 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.2_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.2 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.2 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.2 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_2_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.2_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_2_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.2_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.3 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.3_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.3 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.3 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.3 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_3_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.3_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_3_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.3_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.4 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.4_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.4 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.4 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.4 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_4_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.4_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_4_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.4_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.5 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.5_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.5 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.5 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.5 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_5_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.5_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_5_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.5_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.6 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.6_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.6 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.6 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.6 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_6_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.6_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_6_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.6_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.1.2.3.7 db server installation packages (x86_64) | exadata_dbserver_12.1.2.3.7_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.1.2.3.7 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.7 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.1.2.3.7 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_1_2_3_7_x86_64_base
-      #   url: uln://exadata_dbserver_12.1.2.3.7_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_1_2_3_7_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.1.2.3.7_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.0 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_0_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.1 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.1_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.1 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.1 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.1 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_1_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.1_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_1_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.1_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.2 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.2_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.2 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.2 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.2 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_2_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.2_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_2_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.2_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.3 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.3_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.3 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.3 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.3 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_3_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.3_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_3_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.3_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.4 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.4_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.4 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.4 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.4 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_4_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.4_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_4_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.4_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.5 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.5_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.5 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.5 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.5 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_5_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.5_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_5_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.5_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.6 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.6_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.6 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.6 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.6 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_6_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.6_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_6_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.6_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.7 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.7_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.7 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.7 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.7 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_7_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.7_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_7_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.7_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 12.2.1.1.8 db server installation packages (x86_64) | exadata_dbserver_12.2.1.1.8_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 12.2.1.1.8 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.8 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 12.2.1.1.8 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_12_2_1_1_8_x86_64_base
-      #   url: uln://exadata_dbserver_12.2.1.1.8_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_12_2_1_1_8_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_12.2.1.1.8_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.0.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.0.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.0.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.0.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.0.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_0_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.0.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_0_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.0.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.1.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.1.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.1.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.1.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.1.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_1_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.1.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_1_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.1.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.10.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.10.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.10.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.10.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.10.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_10_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.10.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_10_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.10.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.11.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.11.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.11.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.11.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.11.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_11_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.11.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_11_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.11.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.12.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.12.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.12.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.12.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.12.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_12_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.12.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_12_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.12.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.13.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.13.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.13.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.13.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.13.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_13_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.13.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_13_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.13.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.14.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.14.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.14.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.14.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.14.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_14_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.14.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_14_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.14.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.15.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.15.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.15.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.15.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.15.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_15_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.15.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_15_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.15.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.16.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.16.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.16.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.16.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.16.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_16_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.16.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_16_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.16.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.17.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.17.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.17.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.17.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.17.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_17_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.17.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_17_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.17.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.18.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.18.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.18.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.18.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.18.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_18_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.18.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_18_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.18.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.19.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.19.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.19.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.19.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.19.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_19_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.19.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_19_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.19.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.2.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.2.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.2.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.2.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.2.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_2_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.2.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_2_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.2.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.20.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.20.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.20.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.20.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.20.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_20_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.20.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_20_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.20.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.21.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.21.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.21.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.21.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.21.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_21_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.21.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_21_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.21.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.22.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.22.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.22.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.22.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.22.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_22_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.22.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_22_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.22.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.23.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.23.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.23.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.23.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.23.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_23_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.23.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_23_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.23.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.25.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.25.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.25.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.25.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.25.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_25_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.25.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_25_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.25.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.26.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.26.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.26.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.26.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.26.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_26_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.26.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_26_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.26.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.27.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.27.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.27.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.27.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.27.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_27_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.27.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_27_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.27.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.28.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.28.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.28.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.28.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.28.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_28_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.28.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_28_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.28.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.29.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.29.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.29.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.29.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.29.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_29_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.29.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_29_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.29.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.3.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.3.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.3.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.3.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.3.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_3_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.3.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_3_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.3.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.30.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.30.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.30.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.30.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.30.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_30_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.30.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_30_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.30.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.31.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.31.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.31.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.31.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.31.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_31_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.31.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_31_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.31.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.32.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.32.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.32.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.32.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.32.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_32_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.32.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_32_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.32.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.33.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.33.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.33.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.33.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.33.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_33_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.33.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_33_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.33.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.34.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.34.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.34.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.34.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.34.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_34_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.34.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_34_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.34.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.4.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.4.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.4.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.4.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.4.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_4_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.4.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_4_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.4.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.5.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.5.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.5.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.5.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.5.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_5_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.5.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_5_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.5.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.6.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.6.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.6.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.6.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.6.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_6_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.6.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_6_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.6.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.7.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.7.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.7.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.7.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.7.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_7_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.7.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_7_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.7.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.8.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.8.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.8.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.8.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.8.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_8_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.8.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_8_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.8.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
       # ### Oracle Linux 6 Exadata release 18.1.9.0.0 db server installation packages (x86_64) | exadata_dbserver_18.1.9.0.0_x86_64_base ###
-      # - name: Oracle Linux 6 Exadata release 18.1.9.0.0 db server installation packages (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.9.0.0 db server installation packages (x86_64)"
       #   description: All packages released on the Exadata release 18.1.9.0.0 (x86_64) OL6 installation media. This channel does not contain updates.
-      #   label: ol6_uln_exadata_dbserver_18_1_9_0_0_x86_64_base
-      #   url: uln://exadata_dbserver_18.1.9.0.0_x86_64_base
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_uln_exadata_dbserver_18_1_9_0_0_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: uln://exadata_dbserver_18.1.9.0.0_x86_64_base
       #   organization: "{{ foreman_organization_ol6_uln }}"
 
 foreman_content_views_ol6_uln:
@@ -882,17 +882,17 @@ foreman_content_views_ol6_uln:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_latest_archive"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_latest_archive"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Archive (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Archive (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_ELS"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_ELS"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 ELS (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 ELS (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_addons"
@@ -944,17 +944,17 @@ foreman_content_views_ol6_uln:
       - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_UEKR4_archive"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_UEKR4_archive"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) - Archive
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) - Archive"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_UEKR4_ELS"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_UEKR4_ELS"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 - ELS (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MODRHCK"
     organization: "{{ foreman_organization_ol6_uln }}"
@@ -963,36 +963,36 @@ foreman_content_views_ol6_uln:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_ofed_UEK"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_ofed_UEK"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_UEKR4_OFED"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_UEKR4_OFED"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_Dtrace_latest"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_Dtrace_latest"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Dtrace for Oracle Linux 6 (x86_64) - Latest
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Dtrace for Oracle Linux 6 (x86_64) - Latest"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_Dtrace_userspace_latest"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_Dtrace_userspace_latest"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Dtrace Userspace Tools (x86_64) - Latest
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Dtrace Userspace Tools (x86_64) - Latest"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_UEKR4_DTrace_userspace"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_UEKR4_DTrace_userspace"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 6
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Dtrace Userspace Tools (x86_64) for UEKR4 on Oracle Linux 6"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
   # - name: cv_ol6_x86_64_mysql-ha-utils
@@ -1001,179 +1001,179 @@ foreman_content_views_ol6_uln:
   #     - name: HA Utilities for MySQL and Oracle Linux 6 (x86_64)
   #       product: Oracle Linux
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: MySQL 5.5 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.5 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL56"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL56"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: MySQL 5.6 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.6 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL57_community"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL57_community"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: MySQL 5.7 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.7 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL80_community"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL80_community"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: MySQL 8.0 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_oracle_instantclient"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_SAP_addons"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_oracle_instantclient"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 software for SAP
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack10"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_SAP_addons"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle OpenStack 1.0 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack21"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack30"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack40"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 software for SAP"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk26_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack10"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 1.0 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk27_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack21"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk26_server"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack30"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk27_server"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack40"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_ksplice"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Ksplice for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_userspace_ksplice"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Ksplice aware userspace packages for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_ksplice_ELS"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Ksplice for Oracle Linux 6 - ELS (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_userspace_ksplice_ELS"
-  #   organization: "{{ foreman_organization_ol6_uln }}"
-  #   repositories:
-  #     - name: Ksplice aware userspace packages for Oracle Linux 6 - ELS (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_ga_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk26_client"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 GA Patches (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u1_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk27_client"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 1 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u2_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk26_server"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 2 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u3_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk27_server"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 3 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u4_x86_64_patch"
+
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_ksplice"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 4 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u5_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_userspace_ksplice"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 5 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice aware userspace packages for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u6_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_ksplice_ELS"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 6 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice for Oracle Linux 6 - ELS (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u7_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_userspace_ksplice_ELS"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 7 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice aware userspace packages for Oracle Linux 6 - ELS (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u8_x86_64_patch"
+
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_ga_x86_64_patch"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 8 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 GA Patches (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_u9_x86_64_patch"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u1_x86_64_patch"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Update 9 Patch (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 1 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u2_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 2 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u3_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 3 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u4_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 4 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u5_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 5 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u6_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 6 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u7_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 7 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u8_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 8 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u9_x86_64_patch"
+  #   organization: "{{ foreman_organization_ol6_uln }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 9 Patch (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
   - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_u10_x86_64_patch"
     organization: "{{ foreman_organization_ol6_uln }}"
@@ -1182,359 +1182,359 @@ foreman_content_views_ol6_uln:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_1_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_1_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.1.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_1_1_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_1_1_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.1.1 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.1 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_1_2_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_1_2_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.1.2 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.2 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_1_3_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_1_3_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.1.3 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.1.3 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_2_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_2_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.2.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_2_1_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_2_1_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.2.1 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.1 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_2_2_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_2_2_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.2.2 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.2 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_2_3_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_2_3_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.2.3 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.2.3 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_1_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_1_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.1 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.1 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_2_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_2_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.2 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.2 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_3_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_3_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.3 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.3 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_4_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_4_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.4 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.4 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_5_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_5_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.5 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.5 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_6_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_6_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.6 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.6 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_1_2_3_7_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_1_2_3_7_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.1.2.3.7 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.1.2.3.7 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_1_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_1_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.1 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.1 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_2_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_2_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.2 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.2 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_3_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_3_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.3 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.3 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_4_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_4_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.4 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.4 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_5_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_5_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.5 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.5 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_6_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_6_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.6 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.6 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_7_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_7_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.7 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.7 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_12_2_1_1_8_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_12_2_1_1_8_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 12.2.1.1.8 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 12.2.1.1.8 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_0_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_0_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.0.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.0.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_1_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_1_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.1.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.1.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_10_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_10_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.10.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.10.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_11_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_11_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.11.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.11.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_12_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_12_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.12.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.12.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_13_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_13_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.13.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.13.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_14_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_14_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.14.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.14.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_15_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_15_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.15.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.15.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_16_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_16_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.16.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.16.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_17_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_17_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.17.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.17.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_18_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_18_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.18.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.18.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_19_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_19_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.19.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.19.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_2_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_2_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.2.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.2.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_20_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_20_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.20.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.20.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_21_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_21_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.21.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.21.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_22_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_22_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.22.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.22.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_23_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_23_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.23.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.23.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_25_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_25_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.25.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.25.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_26_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_26_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.26.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.26.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_27_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_27_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.27.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.27.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_28_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_28_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.28.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.28.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_29_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_29_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.29.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.29.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_3_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_3_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.3.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.3.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_30_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_30_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.30.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.30.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_31_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_31_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.31.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.31.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_32_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_32_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.32.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.32.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_33_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_33_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.33.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.33.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_34_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_34_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.34.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.34.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_4_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_4_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.4.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.4.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_5_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_5_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.5.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.5.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_6_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_6_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.6.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.6.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_7_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_7_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.7.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.7.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_8_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_8_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.8.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.8.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_exadata_dbserver_18_1_9_0_0_x86_64_base"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_exadata_dbserver_18_1_9_0_0_x86_64_base"
   #   organization: "{{ foreman_organization_ol6_uln }}"
   #   repositories:
-  #     - name: Oracle Linux 6 Exadata release 18.1.9.0.0 db server installation packages (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Exadata release 18.1.9.0.0 db server installation packages (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6_uln }}"
 
 foreman_composite_content_views_ol6_uln:

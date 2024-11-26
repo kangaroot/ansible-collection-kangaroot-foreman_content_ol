@@ -121,11 +121,11 @@ foreman_products_ol90_uln_content: &foreman_products_ol90_uln_content
   organization: "{{ foreman_organization_ol90_uln }}"
   repositories:
     ### Oracle Linux 9 BaseOS GA (x86_64) | ol9_x86_64_u0_baseos_base ###
-    - name: Oracle Linux 9 BaseOS GA (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 BaseOS GA (x86_64)"
       description: Base operating system packages released for Oracle Linux 9 (x86_64). No errata included
-      label: ol9_uln_x86_64_u0_baseos_base
-      url: uln://ol9_x86_64_u0_baseos_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u0_baseos_base"
       <<: *foreman_products_defaults_ol90_uln
+      url: uln://ol9_x86_64_u0_baseos_base
       organization: "{{ foreman_organization_ol90_uln }}"
 
 foreman_products_ol90_uln:
@@ -139,11 +139,11 @@ foreman_products_ol91_uln_content: &foreman_products_ol91_uln_content
   organization: "{{ foreman_organization_ol91_uln }}"
   repositories:
     ### Oracle Linux 9.1 BaseOS (x86_64) | ol9_x86_64_u1_baseos_base ###
-    - name: Oracle Linux 9.1 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.1 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.1 (x86_64). No errata included
-      label: ol9_uln_x86_64_u1_baseos_base
-      url: uln://ol9_x86_64_u1_baseos_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u1_baseos_base"
       <<: *foreman_products_defaults_ol91_uln
+      url: uln://ol9_x86_64_u1_baseos_base
       organization: "{{ foreman_organization_ol91_uln }}"
 
 foreman_products_ol91_uln:
@@ -157,11 +157,11 @@ foreman_products_ol92_uln_content: &foreman_products_ol92_uln_content
   organization: "{{ foreman_organization_ol92_uln }}"
   repositories:
     ### Oracle Linux 9.2 BaseOS (x86_64) | ol9_x86_64_u2_baseos_base ###
-    - name: Oracle Linux 9.2 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.2 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.2 (x86_64). No errata included
-      label: ol9_uln_x86_64_u2_baseos_base
-      url: uln://ol9_x86_64_u2_baseos_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u2_baseos_base"
       <<: *foreman_products_defaults_ol92_uln
+      url: uln://ol9_x86_64_u2_baseos_base
       organization: "{{ foreman_organization_ol92_uln }}"
 
 foreman_products_ol92_uln:
@@ -175,11 +175,11 @@ foreman_products_ol93_uln_content: &foreman_products_ol93_uln_content
   organization: "{{ foreman_organization_ol93_uln }}"
   repositories:
     ### Oracle Linux 9.3 BaseOS (x86_64) | ol9_x86_64_u3_baseos_base ###
-    - name: Oracle Linux 9.3 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.3 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.3 (x86_64). No errata included
-      label: ol9_uln_x86_64_u3_baseos_base
-      url: uln://ol9_x86_64_u3_baseos_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u3_baseos_base"
       <<: *foreman_products_defaults_ol93_uln
+      url: uln://ol9_x86_64_u3_baseos_base
       organization: "{{ foreman_organization_ol93_uln }}"
 
 foreman_products_ol93_uln:
@@ -193,11 +193,11 @@ foreman_products_ol94_uln_content: &foreman_products_ol94_uln_content
   organization: "{{ foreman_organization_ol94_uln }}"
   repositories:
     ### Oracle Linux 9.4 BaseOS (x86_64) | ol9_x86_64_u4_baseos_base ###
-    - name: Oracle Linux 9.4 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.4 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.4 (x86_64). No errata included
-      label: ol9_uln_x86_64_u4_baseos_base
-      url: uln://ol9_x86_64_u4_baseos_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u4_baseos_base"
       <<: *foreman_products_defaults_ol94_uln
+      url: uln://ol9_x86_64_u4_baseos_base
       organization: "{{ foreman_organization_ol94_uln }}"
 
 foreman_products_ol94_uln:
@@ -211,11 +211,11 @@ foreman_products_ol95_uln_content: &foreman_products_ol95_uln_content
   organization: "{{ foreman_organization_ol95_uln }}"
   repositories:
     ### Oracle Linux 9.5 BaseOS (x86_64) | ol9_x86_64_u4_baseos_base ###
-    - name: Oracle Linux 9.5 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.5 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.5 (x86_64). No errata included
-      label: ol9_uln_x86_64_u4_baseos_base
-      url: uln://ol9_x86_64_u4_baseos_base
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u4_baseos_base"
       <<: *foreman_products_defaults_ol95_uln
+      url: uln://ol9_x86_64_u4_baseos_base
       organization: "{{ foreman_organization_ol95_uln }}"
 
 foreman_products_ol95_uln:
@@ -229,11 +229,11 @@ foreman_products_ol90_patch_uln:
     organization: "{{ foreman_organization_ol90_patch_uln }}"
     repositories:
       ### Oracle Linux 9 BaseOS GA Patch (x86_64) | ol9_x86_64_u0_baseos_patch ###
-      - name: Oracle Linux 9 BaseOS GA Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 BaseOS GA Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 9 BaseOS GA (x86_64).
-        label: ol9_uln_x86_64_u0_baseos_patch
-        url: uln://ol9_x86_64_u0_baseos_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u0_baseos_patch"
         <<: *foreman_products_defaults_ol90_patch_uln
+        url: uln://ol9_x86_64_u0_baseos_patch
         organization: "{{ foreman_organization_ol90_patch_uln }}"
 
 foreman_products_ol91_patch_uln:
@@ -242,11 +242,11 @@ foreman_products_ol91_patch_uln:
     organization: "{{ foreman_organization_ol91_patch_uln }}"
     repositories:
       ### Oracle Linux 9.1 BaseOS Patch (x86_64) | ol9_x86_64_u1_baseos_patch ###
-      - name: Oracle Linux 9.1 BaseOS Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.1 BaseOS Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 9.1 BaseOS GA (x86_64).
-        label: ol9_uln_x86_64_u1_baseos_patch
-        url: uln://ol9_x86_64_u1_baseos_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u1_baseos_patch"
         <<: *foreman_products_defaults_ol91_patch_uln
+        url: uln://ol9_x86_64_u1_baseos_patch
         organization: "{{ foreman_organization_ol91_patch_uln }}"
 
 foreman_products_ol92_patch_uln:
@@ -255,11 +255,11 @@ foreman_products_ol92_patch_uln:
     organization: "{{ foreman_organization_ol92_patch_uln }}"
     repositories:
       ### Oracle Linux 9.2 BaseOS Patch (x86_64) | ol9_x86_64_u2_baseos_patch ###
-      - name: Oracle Linux 9.2 BaseOS Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.2 BaseOS Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 9.2 BaseOS GA (x86_64).
-        label: ol9_uln_x86_64_u2_baseos_patch
-        url: uln://ol9_x86_64_u2_baseos_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u2_baseos_patch"
         <<: *foreman_products_defaults_ol92_patch_uln
+        url: uln://ol9_x86_64_u2_baseos_patch
         organization: "{{ foreman_organization_ol92_patch_uln }}"
 
 foreman_products_ol93_patch_uln:
@@ -268,11 +268,11 @@ foreman_products_ol93_patch_uln:
     organization: "{{ foreman_organization_ol93_patch_uln }}"
     repositories:
       ### Oracle Linux 9.3 BaseOS Patch (x86_64) | ol9_x86_64_u3_baseos_patch ###
-      - name: Oracle Linux 9.3 BaseOS Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.3 BaseOS Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 9.3 BaseOS GA (x86_64).
-        label: ol9_uln_x86_64_u3_baseos_patch
-        url: uln://ol9_x86_64_u3_baseos_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u3_baseos_patch"
         <<: *foreman_products_defaults_ol93_patch_uln
+        url: uln://ol9_x86_64_u3_baseos_patch
         organization: "{{ foreman_organization_ol93_patch_uln }}"
 
 foreman_products_ol94_patch_uln:
@@ -281,11 +281,11 @@ foreman_products_ol94_patch_uln:
     organization: "{{ foreman_organization_ol94_patch_uln }}"
     repositories:
       ### Oracle Linux 9.4 BaseOS Patch (x86_64) | ol9_x86_64_u4_baseos_patch ###
-      - name: Oracle Linux 9.4 BaseOS Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.4 BaseOS Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 9.4 BaseOS GA (x86_64).
-        label: ol9_uln_x86_64_u4_baseos_patch
-        url: uln://ol9_x86_64_u4_baseos_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u4_baseos_patch"
         <<: *foreman_products_defaults_ol94_patch_uln
+        url: uln://ol9_x86_64_u4_baseos_patch
         organization: "{{ foreman_organization_ol94_patch_uln }}"
 
 foreman_products_ol95_patch_uln:
@@ -294,11 +294,11 @@ foreman_products_ol95_patch_uln:
     organization: "{{ foreman_organization_ol95_patch_uln }}"
     repositories:
       ### Oracle Linux 9.5 BaseOS Patch (x86_64) | ol9_x86_64_u4_baseos_patch ###
-      - name: Oracle Linux 9.5 BaseOS Patch (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.5 BaseOS Patch (x86_64)"
         description: Updated packages published after release of Oracle Linux 9.5 BaseOS GA (x86_64).
-        label: ol9_uln_x86_64_u4_baseos_patch
-        url: uln://ol9_x86_64_u4_baseos_patch
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u4_baseos_patch"
         <<: *foreman_products_defaults_ol95_patch_uln
+        url: uln://ol9_x86_64_u4_baseos_patch
         organization: "{{ foreman_organization_ol95_patch_uln }}"
 
 foreman_products_ol9_uln_versions: "{{ [] |

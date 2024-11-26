@@ -31,32 +31,32 @@ foreman_products_ol8_instantclient:
     organization: "{{ foreman_organization_ol8_instantclient }}"
     repositories:
       ### Oracle Instant Client for Oracle Linux 8 (x86_64) - License Included | ol8_x86_64_oracle_instantclient ###
-      - name: Oracle Instant Client for Oracle Linux 8 (x86_64) - License Included
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client for Oracle Linux 8 (x86_64) - License Included"
         description: Oracle Instant Client packages for Oracle Linux 8 (x86_64) .
-        label: ol8_x86_64_oracle_instantclient
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/instantclient/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_oracle_instantclient"
         <<: *foreman_products_defaults_ol8_instantclient
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/instantclient/x86_64/"
         organization: "{{ foreman_organization_ol8_instantclient }}"
       ### Oracle Instant Client 21 for Oracle Linux 8 (x86_64) - License Included | ol8_x86_64_oracle_instantclient21 ###
-      - name: Oracle Instant Client 21 for Oracle Linux 8 (x86_64) - License Included
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client 21 for Oracle Linux 8 (x86_64) - License Included"
         description: Oracle Instant Client 21 packages for Oracle Linux 8 (x86_64) .
-        label: ol8_x86_64_oracle_instantclient21
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/instantclient21/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_oracle_instantclient21"
         <<: *foreman_products_defaults_ol8_instantclient
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/instantclient21/x86_64/"
         organization: "{{ foreman_organization_ol8_instantclient }}"
       ### Oracle Instant Client 23 for Oracle Linux 8 (x86_64) - License Included | ol8_x86_64_oracle_instantclient23 ###
-      - name: Oracle Instant Client 23 for Oracle Linux 8 (x86_64) - License Included
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client 23 for Oracle Linux 8 (x86_64) - License Included"
         description: Oracle Instant Client 23 packages for Oracle Linux 8 (x86_64) .
-        label: ol8_x86_64_oracle_instantclient23
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/instantclient23/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_oracle_instantclient23"
         <<: *foreman_products_defaults_ol8_instantclient
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/instantclient23/x86_64/"
         organization: "{{ foreman_organization_ol8_instantclient }}"
       ### Oracle Software for Oracle Linux 8 (x86_64) | ol8_x86_64_oracle_software ###
-      - name: Oracle Software for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Software for Oracle Linux 8 (x86_64)"
         description: Oracle Software for Oracle Linux 8 (x86_64)
-        label: ol8_x86_64_oracle_software
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/software/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_oracle_software"
         <<: *foreman_products_defaults_ol8_instantclient
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oracle/software/x86_64/"
         organization: "{{ foreman_organization_ol8_instantclient }}"
 
 

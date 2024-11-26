@@ -31,11 +31,11 @@ foreman_products_ol8_uekr6:
     organization: "{{ foreman_organization_ol8_uekr6 }}"
     repositories:
       ### Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64) | ol8_x86_64_UEKR6 ###
-      - name: Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 6 for Oracle Linux 8 (x86_64)"
         description: Latest Unbreakable Enterprise Kernel Release 6 packages for Oracle Linux 8 (x86_64)
-        label: ol8_x86_64_UEKR6
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR6/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_UEKR6"
         <<: *foreman_products_defaults_ol8_uek
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR6/x86_64/"
         organization: "{{ foreman_organization_ol8_uekr6 }}"
 
 foreman_products_ol8_uekr6_rdma:
@@ -44,11 +44,11 @@ foreman_products_ol8_uekr6_rdma:
     organization: "{{ foreman_organization_ol8_uekr6_rdma }}"
     repositories:
       ### Oracle Linux 8 (x86_64) UEK Release 6 RDMA | ol8_x86_64_UEKR6_RDMA ###
-      - name: Oracle Linux 8 (x86_64) UEK Release 6 RDMA
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 (x86_64) UEK Release 6 RDMA"
         description: Latest RDMA packages for Unbreakable Enterprise Kernel Release 6 packages on Oracle Linux 8 for the Oracle Integrated Stack.
-        label: ol8_x86_64_UEKR6_RDMA
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR6/RDMA/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_UEKR6_RDMA"
         <<: *foreman_products_defaults_ol8_uek
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR6/RDMA/x86_64/"
         organization: "{{ foreman_organization_ol8_uekr6_rdma }}"
 
 foreman_products_ol8_uekr7:
@@ -57,11 +57,11 @@ foreman_products_ol8_uekr7:
     organization: "{{ foreman_organization_ol8_uekr7 }}"
     repositories:
       ### Oracle Linux 8 UEK Release 7 (x86_64) | ol8_x86_64_UEKR7 ###
-      - name: Oracle Linux 8 UEK Release 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 UEK Release 7 (x86_64)"
         description: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 8 (x86_64)
-        label: ol8_x86_64_UEKR7
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR7/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_UEKR7"
         <<: *foreman_products_defaults_ol8_uek
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR7/x86_64/"
         organization: "{{ foreman_organization_ol8_uekr7 }}"
 
 foreman_products_ol8_uekr7_rdma:
@@ -70,11 +70,11 @@ foreman_products_ol8_uekr7_rdma:
     organization: "{{ foreman_organization_ol8_uekr7_rdma }}"
     repositories:
       ### Oracle Linux 8 (x86_64) UEK Release 7 RDMA | ol8_x86_64_UEKR7_RDMA ###
-      - name: Oracle Linux 8 (x86_64) UEK Release 7 RDMA
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 (x86_64) UEK Release 7 RDMA"
         description: Latest RDMA packages for Unbreakable Enterprise Kernel Release 7 packages on Oracle Linux 8 for the Oracle Integrated Stack.
-        label: ol8_x86_64_UEKR7_RDMA
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR7/RDMA/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_UEKR7_RDMA"
         <<: *foreman_products_defaults_ol8_uek
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/UEKR7/RDMA/x86_64/"
         organization: "{{ foreman_organization_ol8_uekr7_rdma }}"
 
 foreman_products_ol8_modrhck:
@@ -83,11 +83,11 @@ foreman_products_ol8_modrhck:
     organization: "{{ foreman_organization_ol8_modrhck }}"
     repositories:
       ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64) | ol8_x86_64_MODRHCK ###
-      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64)"
         description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 8 (x86_64).
-        label: ol8_x86_64_MODRHCK
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/MODRHCK/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_MODRHCK"
         <<: *foreman_products_defaults_ol8_uek
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/MODRHCK/x86_64/"
         organization: "{{ foreman_organization_ol8_modrhck }}"
 
 foreman_products_ol8_uek: "{{ [] |

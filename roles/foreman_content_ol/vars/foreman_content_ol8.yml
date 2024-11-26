@@ -25,61 +25,61 @@ foreman_products_ol8:
     organization: "{{ foreman_organization_ol8 }}"
     repositories:
       ### Oracle Linux 8 BaseOS Latest (x86_64) | ol8_x86_64_baseos_latest ###
-      - name: Oracle Linux 8 BaseOS Latest (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 BaseOS Latest (x86_64)"
         description: Base operating system packages released for Oracle Linux 8 (x86_64) including the latest errata packages. (x86_64).
-        label: ol8_x86_64_baseos_latest
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/baseos/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_baseos_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/baseos/latest/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
       ### Oracle Linux 8 Application Stream Packages (x86_64) | ol8_x86_64_appstream ###
-      - name: Oracle Linux 8 Application Stream Packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Application Stream Packages (x86_64)"
         description: Application packages released for Oracle Linux 8 (x86_64) including the latest errata packages. (x86_64)
-        label: ol8_x86_64_appstream
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/appstream/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_appstream"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/appstream/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
 
       ### Oracle Linux 8 Addons (x86_64) | ol8_x86_64_addons ###
-      - name: Oracle Linux 8 Addons (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Addons (x86_64)"
         description: Oracle Linux 8 Addons (x86_64).
-        label: ol8_x86_64_addons
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/addons/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_addons"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/addons/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
       ### Packages for creating test and development environments for Oracle Linux 8 (x86_64) | ol8_x86_64_developer ###
-      - name: Packages for creating test and development environments for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Packages for creating test and development environments for Oracle Linux 8 (x86_64)"
         description: Latest packages for creating test and development environments - Oracle Linux 8 (x86_64)
-        label: ol8_x86_64_developer
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_developer"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
       ### EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_EPEL ###
-      - name: EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}EPEL Packages for creating test and development environments for Oracle Linux 8 (x86_64)"
         description: Latest EPEL packages for creating test and development environments - Oracle Linux 8 (x86_64)
-        label: ol8_x86_64_developer_EPEL
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/EPEL/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_developer_EPEL"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/EPEL/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
       ### EPEL Modular Packages for Oracle Linux 8 (x86_64) | ol8_x86_64_developer_EPEL_modular ###
-      - name: EPEL Modular Packages for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}EPEL Modular Packages for Oracle Linux 8 (x86_64)"
         description: Latest EPEL Modular packages for creating test and development environments - Oracle Linux 8 (x86_64)
-        label: ol8_x86_64_developer_EPEL_modular
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/EPEL/modular/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_developer_EPEL_modular"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/developer/EPEL/modular/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
       ### CodeReady Linux Builder for Oracle Linux 8 (x86_64) | ol8_x86_64_codeready_builder ###
-      - name: CodeReady Linux Builder for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}CodeReady Linux Builder for Oracle Linux 8 (x86_64)"
         description: Repository of additional development and build tools for Oracle Linux 8 (x86_64) - (unsupported).
-        label: ol8_x86_64_codeready_builder
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/codeready/builder/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_codeready_builder"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/codeready/builder/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
       ### Oracle Linux 8 Distro Builder (x86_64) - Unsupported | ol8_x86_64_distro_builder ###
-      - name: Oracle Linux 8 Distro Builder (x86_64) - Unsupported
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Distro Builder (x86_64) - Unsupported"
         description: Latest packages for Oracle Linux 8 Distro Builder (x86_64) - Unsupported.
-        label: ol8_x86_64_distro_builder
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/distro/builder/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_distro_builder"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/distro/builder/x86_64/"
         organization: "{{ foreman_organization_ol8 }}"
 
 

@@ -33,11 +33,11 @@ foreman_products_ol9_uln_security_validation:
     organization: "{{ foreman_organization_ol9_uln_security_validation }}"
     repositories:
       ### Oracle Linux 9 Update 3 Security Validations packages (x86_64) | ol9_x86_64_u3_security_validation ###
-      - name: Oracle Linux 9 Update 3 Security Validations packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Update 3 Security Validations packages (x86_64)"
         description: Latest packages delivered for security validations, like FIPS or Common Criteria for Oracle Linux 9 Update 3 (x86_64)
-        label: ol9_uln_x86_64_u3_security_validation
-        url: uln://ol9_x86_64_u3_security_validation
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_u3_security_validation"
         <<: *foreman_products_defaults_ol9_uln_security_validation
+        url: uln://ol9_x86_64_u3_security_validation
         organization: "{{ foreman_organization_ol9_uln_security_validation }}"
 
 

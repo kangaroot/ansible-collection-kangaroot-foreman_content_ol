@@ -31,11 +31,11 @@ foreman_products_ol7_leapp:
     organization: "{{ foreman_organization_ol7_leapp }}"
     repositories:
       ### Leapp Upgrade Utilities for Oracle Linux 7 (x86_64) | ol7_x86_64_leapp ###
-      - name: Leapp Upgrade Utilities for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Leapp Upgrade Utilities for Oracle Linux 7 (x86_64)"
         description: Latest packages for in-place upgrade from Oracle Linux 7 to Oracle Linux 7 (x86_64) .
-        label: ol7_x86_64_leapp
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/leapp/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_leapp"
         <<: *foreman_products_defaults_ol7_leapp
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/leapp/x86_64/"
         organization: "{{ foreman_organization_ol7_leapp }}"
 
 

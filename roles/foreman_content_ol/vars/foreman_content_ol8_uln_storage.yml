@@ -33,11 +33,11 @@ foreman_products_ol8_uln_storage:
     organization: "{{ foreman_organization_ol8_uln_storage }}"
     repositories:
       ### Oracle Linux 8 (x86_64) Gluster AppStream | ol8_x86_64_gluster_appstream ###
-      - name: Oracle Linux 8 (x86_64) Gluster AppStream
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 (x86_64) Gluster AppStream"
         description: Appstream Gluster packages for Oracle Linux 8 (x86_64)
-        label: ol8_uln_x86_64_gluster_appstream
-        url: uln://ol8_x86_64_gluster_appstream
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_gluster_appstream"
         <<: *foreman_products_defaults_ol8_uln_storage
+        url: uln://ol8_x86_64_gluster_appstream
         organization: "{{ foreman_organization_ol8_uln_storage }}"
 
 

@@ -71,11 +71,11 @@ foreman_products_ol90_content: &foreman_products_ol90_content
   organization: "{{ foreman_organization_ol90 }}"
   repositories:
     ### Oracle Linux 9 BaseOS GA (x86_64) | ol9_x86_64_u0_baseos_base ###
-    - name: Oracle Linux 9 BaseOS GA (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 BaseOS GA (x86_64)"
       description: Base operating system packages released for Oracle Linux 9 (x86_64). No errata included
-      label: ol9_x86_64_u0_baseos_base
-      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/0/baseos/base/x86_64/"
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_u0_baseos_base"
       <<: *foreman_products_defaults_ol90
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/0/baseos/base/x86_64/"
       organization: "{{ foreman_organization_ol90 }}"
 
 foreman_products_ol90:
@@ -89,11 +89,11 @@ foreman_products_ol91_content: &foreman_products_ol91_content
   organization: "{{ foreman_organization_ol91 }}"
   repositories:
     ### Oracle Linux 9.1 BaseOS (x86_64) | ol9_x86_64_u1_baseos_base ###
-    - name: Oracle Linux 9.1 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.1 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.1 (x86_64). No errata included
-      label: ol9_x86_64_u1_baseos_base
-      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/1/baseos/base/x86_64/"
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_u1_baseos_base"
       <<: *foreman_products_defaults_ol91
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/1/baseos/base/x86_64/"
       organization: "{{ foreman_organization_ol91 }}"
 
 foreman_products_ol91:
@@ -107,11 +107,11 @@ foreman_products_ol92_content: &foreman_products_ol92_content
   organization: "{{ foreman_organization_ol92 }}"
   repositories:
     ### Oracle Linux 9.2 BaseOS (x86_64) | ol9_x86_64_u2_baseos_base ###
-    - name: Oracle Linux 9.2 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.2 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.2 (x86_64). No errata included
-      label: ol9_x86_64_u2_baseos_base
-      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/2/baseos/base/x86_64/"
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_u2_baseos_base"
       <<: *foreman_products_defaults_ol92
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/2/baseos/base/x86_64/"
       organization: "{{ foreman_organization_ol92 }}"
 
 foreman_products_ol92:
@@ -125,11 +125,11 @@ foreman_products_ol93_content: &foreman_products_ol93_content
   organization: "{{ foreman_organization_ol93 }}"
   repositories:
     ### Oracle Linux 9.3 BaseOS (x86_64) | ol9_x86_64_u3_baseos_base ###
-    - name: Oracle Linux 9.3 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.3 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.3 (x86_64). No errata included
-      label: ol9_x86_64_u3_baseos_base
-      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/3/baseos/base/x86_64/"
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_u3_baseos_base"
       <<: *foreman_products_defaults_ol93
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/3/baseos/base/x86_64/"
       organization: "{{ foreman_organization_ol93 }}"
 
 foreman_products_ol93:
@@ -143,11 +143,11 @@ foreman_products_ol94_content: &foreman_products_ol94_content
   organization: "{{ foreman_organization_ol94 }}"
   repositories:
     ### Oracle Linux 9.4 BaseOS (x86_64) | ol9_x86_64_u4_baseos_base ###
-    - name: Oracle Linux 9.4 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.4 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.4 (x86_64). No errata included
-      label: ol9_x86_64_u4_baseos_base
-      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/4/baseos/base/x86_64/"
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_u4_baseos_base"
       <<: *foreman_products_defaults_ol94
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/4/baseos/base/x86_64/"
       organization: "{{ foreman_organization_ol94 }}"
 
 foreman_products_ol94:
@@ -161,11 +161,11 @@ foreman_products_ol95_content: &foreman_products_ol95_content
   organization: "{{ foreman_organization_ol95 }}"
   repositories:
     ### Oracle Linux 9.5 BaseOS (x86_64) | ol9_x86_64_u5_baseos_base ###
-    - name: Oracle Linux 9.5 BaseOS (x86_64)
+    - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9.5 BaseOS (x86_64)"
       description: Base operating system packages released for Oracle Linux 9.5 (x86_64). No errata included
-      label: ol9_x86_64_u5_baseos_base
-      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/5/baseos/base/x86_64/"
+      label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_u5_baseos_base"
       <<: *foreman_products_defaults_ol95
+      url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/5/baseos/base/x86_64/"
       organization: "{{ foreman_organization_ol95 }}"
 
 foreman_products_ol95:

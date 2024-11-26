@@ -31,11 +31,11 @@ foreman_products_ol7_storage_ceph20:
     organization: "{{ foreman_organization_ol7_storage_ceph20 }}"
     repositories:
       ### Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later) | ol7_x86_64_ceph ###
-      - name: Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later)"
         description: Latest packages for Ceph Storage for Oracle Linux Release 2.0 (Oracle Linux 7.2 and later).
-        label: ol7_x86_64_ceph
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ceph/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_ceph"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ceph/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_ceph20 }}"
 
 foreman_products_ol7_storage_ceph30:
@@ -44,11 +44,11 @@ foreman_products_ol7_storage_ceph30:
     organization: "{{ foreman_organization_ol7_storage_ceph30 }}"
     repositories:
       ### Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later) | ol7_x86_64_ceph30 ###
-      - name: Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later)"
         description: Latest packages for Ceph Storage for Oracle Linux Release 3.0 (Oracle Linux 7.5 and later).
-        label: ol7_x86_64_ceph30
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ceph30/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_ceph30"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ceph30/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_ceph30 }}"
 
 foreman_products_ol7_storage_gluster310:
@@ -57,11 +57,11 @@ foreman_products_ol7_storage_gluster310:
     organization: "{{ foreman_organization_ol7_storage_gluster310 }}"
     repositories:
       ### Glusterfs 3.10 for Oracle Linux 7 (x86_64) | ol7_x86_64_gluster310 ###
-      - name: Glusterfs 3.10 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Glusterfs 3.10 for Oracle Linux 7 (x86_64)"
         description: Latest GlusterFs 3.10 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_gluster310
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster310/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_gluster310"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster310/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_gluster310 }}"
 
 foreman_products_ol7_storage_gluster312:
@@ -70,11 +70,11 @@ foreman_products_ol7_storage_gluster312:
     organization: "{{ foreman_organization_ol7_storage_gluster312 }}"
     repositories:
       ### Glusterfs 3.12 for Oracle Linux 7 (x86_64) | ol7_x86_64_gluster312 ###
-      - name: Glusterfs 3.12 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Glusterfs 3.12 for Oracle Linux 7 (x86_64)"
         description: Latest GlusterFs 3.12 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_gluster312
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster312/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_gluster312"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster312/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_gluster312 }}"
 
 foreman_products_ol7_storage_gluster41:
@@ -83,11 +83,11 @@ foreman_products_ol7_storage_gluster41:
     organization: "{{ foreman_organization_ol7_storage_gluster41 }}"
     repositories:
       ### Glusterfs 4.1 for Oracle Linux 7 (x86_64) | ol7_x86_64_gluster41 ###
-      - name: Glusterfs 4.1 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Glusterfs 4.1 for Oracle Linux 7 (x86_64)"
         description: Latest GlusterFs 4.1 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_gluster41
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster41/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_gluster41"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster41/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_gluster41 }}"
 
 foreman_products_ol7_storage_gluster5:
@@ -96,11 +96,11 @@ foreman_products_ol7_storage_gluster5:
     organization: "{{ foreman_organization_ol7_storage_gluster5 }}"
     repositories:
       ### Gluster 5 for Oracle Linux 7 (x86_64) | ol7_x86_64_gluster5 ###
-      - name: Gluster 5 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Gluster 5 for Oracle Linux 7 (x86_64)"
         description: Latest Gluster 5 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_gluster5
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster5/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_gluster5"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster5/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_gluster5 }}"
 
 foreman_products_ol7_storage_gluster6:
@@ -109,11 +109,11 @@ foreman_products_ol7_storage_gluster6:
     organization: "{{ foreman_organization_ol7_storage_gluster6 }}"
     repositories:
       ### Gluster 6 for Oracle Linux 7 (x86_64) | ol7_x86_64_gluster6 ###
-      - name: Gluster 6 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Gluster 6 for Oracle Linux 7 (x86_64)"
         description: Latest Gluster 6 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_gluster6
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster6/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_gluster6"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster6/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_gluster6 }}"
 
 foreman_products_ol7_storage_gluster8:
@@ -122,11 +122,11 @@ foreman_products_ol7_storage_gluster8:
     organization: "{{ foreman_organization_ol7_storage_gluster8 }}"
     repositories:
       ### Gluster 8 for Oracle Linux 7 (x86_64) | ol7_x86_64_gluster8 ###
-      - name: Gluster 8 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Gluster 8 for Oracle Linux 7 (x86_64)"
         description: Latest Gluster 8 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_gluster8
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster8/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_gluster8"
         <<: *foreman_products_defaults_ol7_storage
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/gluster8/x86_64/"
         organization: "{{ foreman_organization_ol7_storage_gluster8 }}"
 
 foreman_products_ol7_storage: "{{ [] |

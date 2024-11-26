@@ -33,18 +33,18 @@ foreman_products_ol7_uln_security_validation:
     organization: "{{ foreman_organization_ol7_uln_security_validation }}"
     repositories:
       ### Oracle Linux 7 (x86_64) Security Validations | ol7_x86_64_security_validation ###
-      - name: Oracle Linux 7 (x86_64) Security Validations
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 (x86_64) Security Validations"
         description: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 (x86_64).
-        label: ol7_uln_x86_64_security_validation
-        url: uln://ol7_x86_64_security_validation
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_security_validation"
         <<: *foreman_products_defaults_ol7_uln_security_validation
+        url: uln://ol7_x86_64_security_validation
         organization: "{{ foreman_organization_ol7_uln_security_validation }}"
       ### Oracle Linux 7 Update 8 Security Validations packages (x86_64) | ol7_x86_64_u8_security_validation ###
-      - name: Oracle Linux 7 Update 8 Security Validations packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Update 8 Security Validations packages (x86_64)"
         description: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 7 Update 8 (x86_64).
-        label: ol7_uln_x86_64_u8_security_validation
-        url: uln://ol7_x86_64_u8_security_validation
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_u8_security_validation"
         <<: *foreman_products_defaults_ol7_uln_security_validation
+        url: uln://ol7_x86_64_u8_security_validation
         organization: "{{ foreman_organization_ol7_uln_security_validation }}"
 
 

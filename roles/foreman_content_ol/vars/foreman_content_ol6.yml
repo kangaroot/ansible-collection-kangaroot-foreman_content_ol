@@ -25,305 +25,305 @@ foreman_products_ol6:
     organization: "{{ foreman_organization_ol6 }}"
     repositories:
       ### Oracle Linux 6 Latest (x86_64) | ol6_x86_64_latest ###
-      - name: Oracle Linux 6 Latest (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Latest (x86_64)"
         description: All packages released for Oracle Linux 6 (x86_64) including the latest errata packages. (x86_64)
-        label: ol6_x86_64_latest
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/latest/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
 
       ### Oracle Linux 6 Add ons (x86_64) | ol6_x86_64_addons ###
-      - name: Oracle Linux 6 Add ons (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Add ons (x86_64)"
         description: Oracle Linux 6 Add ons (x86_64)
-        label: ol6_x86_64_addons
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/addons/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_addons"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/addons/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
       ### Oracle Software Collections for Oracle Linux 6 (x86_64) | ol6_x86_64_SoftwareCollections ###
-      - name: Oracle Software Collections for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Software Collections for Oracle Linux 6 (x86_64)"
         description: Latest Oracle Software Collections 3.0 packages for Oracle Linux 6 (x86_64).
-        label: ol6_x86_64_SoftwareCollections
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/SoftwareCollections/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_SoftwareCollections"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/SoftwareCollections/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
       ### Packages for creating test and development environments for Oracle Linux 6 (x86_64) | ol6_x86_64_developer ###
-      - name: Packages for creating test and development environments for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Packages for creating test and development environments for Oracle Linux 6 (x86_64)"
         description: Latest packages for creating test and development environments - Oracle Linux 6 (x86_64)
-        label: ol6_x86_64_developer
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_developer"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
 
       ### Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) | ol6_x86_64_UEK_base ###
-      - name: Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)"
         description: Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) released on the install media.
-        label: ol6_x86_64_UEK_base
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEK/base/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_UEK_base"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEK/base/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
       ### Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64) | ol6_x86_64_UEK_latest ###
-      - name: Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Latest Unbreakable Enterprise Kernel for Oracle Linux 6 (x86_64)"
         description: Latest Unbreakable Enterprise Kernel packages for Oracle Linux 6 (x86_64)
-        label: ol6_x86_64_UEK_latest
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEK/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_UEK_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEK/latest/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
       ### Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest | ol6_x86_64_UEKR3_latest ###
-      - name: Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64) - Latest"
         description: Latest packages for Unbreakable Enterprise Kernel Release 3 for Oracle Linux 6 (x86_64)
-        label: ol6_x86_64_UEKR3_latest
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEKR3/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_UEKR3_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEKR3/latest/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
       ### Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64) | ol6_x86_64_UEKR4 ###
-      - name: Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)"
         description: Latest packages for Unbreakable Enterprise Kernel Release 4 for Oracle Linux 6 (x86_64)
-        label: ol6_x86_64_UEKR4
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEKR4/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_UEKR4"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEKR4/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
       ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64) | ol6_x86_64_MODRHCK ###
-      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64)"
         description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 6 (x86_64).
-        label: ol6_x86_64_MODRHCK
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MODRHCK/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_MODRHCK"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MODRHCK/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
 
       # ### OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64) | ol6_x86_64_ofed_UEK ###
-      # - name: OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)"
       #   description: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel (UEK) on Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_ofed_UEK
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/ofed_UEK/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_ofed_UEK"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/ofed_UEK/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64) | ol6_x86_64_UEKR4_OFED ###
-      # - name: OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)"
       #   description: Latest OpenFabrics Enterprise Distribution (OFED) supporting tools for the Unbreakable Enterprise Kernel Release 4 (UEK) on Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_UEKR4_OFED
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEKR4/OFED/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_UEKR4_OFED"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/UEKR4/OFED/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
 
       # ### MySQL 5.5 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL ###
-      # - name: MySQL 5.5 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.5 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL packages released on the Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_MySQL
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_MySQL"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### MySQL 5.6 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL56 ###
-      # - name: MySQL 5.6 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.6 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL 5.6 packages for Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_MySQL56
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL56/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_MySQL56"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL56/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### MySQL 5.7 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL57_community ###
-      # - name: MySQL 5.7 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.7 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL 5.7 packages for Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_MySQL57_community
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL57_community/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_MySQL57_community"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL57_community/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### MySQL 8.0 for Oracle Linux 6 (x86_64) | ol6_x86_64_MySQL80_community ###
-      # - name: MySQL 8.0 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 for Oracle Linux 6 (x86_64)"
       #   description: Latest MySQL 8.0 packages for Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_MySQL80_community
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL80_community/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_MySQL80_community"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/MySQL80_community/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
 
       # ### Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included | ol6_x86_64_oracle_instantclient ###
-      # - name: Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included"
       #   description: Oracle Instant Client packages for Oracle Linux 6 (x86_64) .
-      #   label: ol6_x86_64_oracle_instantclient
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_oracle_instantclient"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/oracle/instantclient/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
 
-      # - name: Oracle Linux 6 Gluster 3.10 Packages for Development and test (x86_64)
-      #   label: ol6_developer_gluster310
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Gluster 3.10 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_gluster310"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_gluster310/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
-      # - name: Oracle Linux 6 Gluster 3.12 Packages for Development and test (x86_64)
-      #   label: ol6_developer_gluster312
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Gluster 3.12 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_gluster312"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_gluster312/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
 
-      # - name: Oracle Linux 6 Node.js 4 Packages for Development and test (x86_64)
-      #   label: ol6_developer_nodejs4
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Node.js 4 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_nodejs4"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_nodejs4/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
-      # - name: Oracle Linux 6 Node.js 6 Packages for Development and test (x86_64)
-      #   label: ol6_developer_nodejs6
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Node.js 6 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_nodejs6"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_nodejs6/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
-      # - name: Oracle Linux 6 Node.js 8 Packages for Development and test (x86_64)
-      #   label: ol6_developer_nodejs8
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Node.js 8 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_nodejs8"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_nodejs8/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
-      # - name: Oracle Linux 6 Node.js 10 Packages for Development and test (x86_64)
-      #   label: ol6_developer_nodejs10
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_nodejs10/x86_64/"
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Node.js 10 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_nodejs10"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_nodejs10/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
 
-      # - name: Oracle Linux 6 PHP 7.0 Packages for Development and test (x86_64)
-      #   label: ol6_developer_php70
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 PHP 7.0 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_php70"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_php70/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
-      # - name: Oracle Linux 6 PHP 7.1 Packages for Development and test (x86_64)
-      #   label: ol6_developer_php71
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 PHP 7.1 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_php71"
+      #   <<: *foreman_products_defaults
       #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_php71/x86_64/"
-      #   <<: *foreman_products_defaults
       #   organization: "{{ foreman_organization_ol6 }}"
-      # - name: Oracle Linux 6 PHP 7.2 Packages for Development and test (x86_64)
-      #   label: ol6_developer_php72
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_php72/x86_64/"
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 PHP 7.2 Packages for Development and test (x86_64)"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_developer_php72"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/developer_php72/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
 
       # ### Oracle OpenStack 1.0 (x86_64) | ol6_x86_64_openstack10 ###
-      # - name: Oracle OpenStack 1.0 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 1.0 (x86_64)"
       #   description: Latest for Oracle OpenStack version 1.0 (Icehouse).
-      #   label: ol6_x86_64_openstack10
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack10/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_openstack10"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack10/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64) | ol6_x86_64_openstack21 ###
-      # - name: Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)"
       #   description: Latest for Oracle OpenStack version 2.1 for Oracle Linux 6 (x86_64)
-      #   label: ol6_x86_64_openstack21
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack21/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_openstack21"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack21/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64) | ol6_x86_64_openstack30 ###
-      # - name: Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)"
       #   description: Latest for Oracle OpenStack version 3.0
-      #   label: ol6_x86_64_openstack30
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack30/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_openstack30"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack30/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64) | ol6_x86_64_openstack40 ###
-      # - name: Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)"
       #   description: Latest Packages for Oracle OpenStack version 4.0
-      #   label: ol6_x86_64_openstack40
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack40/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_openstack40"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/openstack40/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
 
       # ### Spacewalk Client 2.6 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk26_client ###
-      # - name: Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Client 2.6 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_spacewalk26_client
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk26/client/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_spacewalk26_client"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk26/client/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Spacewalk Client 2.7 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk27_client ###
-      # - name: Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Client 2.7 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_spacewalk27_client
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk27/client/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_spacewalk27_client"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk27/client/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Spacewalk Server 2.6 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk26_server ###
-      # - name: Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Server 2.6 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_spacewalk26_server
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk26/server/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_spacewalk26_server"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk26/server/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Spacewalk Server 2.7 for Oracle Linux 6 (x86_64) | ol6_x86_64_spacewalk27_server ###
-      # - name: Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)"
       #   description: All Spacewalk Server 2.7 packages released for Oracle Linux 6 (x86_64).
-      #   label: ol6_x86_64_spacewalk27_server
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk27/server/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_x86_64_spacewalk27_server"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/spacewalk27/server/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
 
       # ### Oracle Linux 6 GA (x86_64) | ol6_ga_x86_64_base ###
-      # - name: Oracle Linux 6 GA (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 GA (x86_64)"
       #   description: All packages released for Oracle Linux 6 GA (x86_64). No errata included.
-      #   label: ol6_ga_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/0/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_ga_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/0/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 1 installation media copy (x86_64) | ol6_u1_x86_64_base ###
-      # - name: Oracle Linux 6 Update 1 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 1 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 1 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u1_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/1/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u1_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/1/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 2 installation media copy (x86_64) | ol6_u2_x86_64_base ###
-      # - name: Oracle Linux 6 Update 2 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 2 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 2 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u2_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/2/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u2_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/2/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 3 installation media copy (x86_64) | ol6_u3_x86_64_base ###
-      # - name: Oracle Linux 6 Update 3 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 3 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 3 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u3_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/3/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u3_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/3/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 4 installation media copy (x86_64) | ol6_u4_x86_64_base ###
-      # - name: Oracle Linux 6 Update 4 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 4 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 4 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u4_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/4/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u4_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/4/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 5 installation media copy (x86_64) | ol6_u5_x86_64_base ###
-      # - name: Oracle Linux 6 Update 5 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 5 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 5 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u5_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/5/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u5_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/5/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 6 installation media copy (x86_64) | ol6_u6_x86_64_base ###
-      # - name: Oracle Linux 6 Update 6 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 6 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 6 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u6_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/6/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u6_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/6/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 7 installation media copy (x86_64) | ol6_u7_x86_64_base ###
-      # - name: Oracle Linux 6 Update 7 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 7 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 7 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u7_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/7/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u7_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/7/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 8 installation media copy (x86_64) | ol6_u8_x86_64_base ###
-      # - name: Oracle Linux 6 Update 8 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 8 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 8 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u8_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/8/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u8_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/8/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       # ### Oracle Linux 6 Update 9 installation media copy (x86_64) | ol6_u9_x86_64_base ###
-      # - name: Oracle Linux 6 Update 9 installation media copy (x86_64)
+      # - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 9 installation media copy (x86_64)"
       #   description: All packages released on the Oracle Linux 6 Update 9 (x86_64) installation media. This channel does not contain updates.
-      #   label: ol6_u9_x86_64_base
-      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/9/base/x86_64/"
+      #   label: "{{ foreman_repo_label_prefix | default('') }}ol6_u9_x86_64_base"
       #   <<: *foreman_products_defaults
+      #   url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/9/base/x86_64/"
       #   organization: "{{ foreman_organization_ol6 }}"
       ### Oracle Linux 6 Update 10 installation media copy (x86_64) | ol6_u10_x86_64_base ###
-      - name: Oracle Linux 6 Update 10 installation media copy (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 6 Update 10 installation media copy (x86_64)"
         description: All packages released on the Oracle Linux 6 Update 10 (x86_64) installation media. This channel does not contain updates.
-        label: ol6_u10_x86_64_base
-        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/10/base/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol6_u10_x86_64_base"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle6 }}/OL6/10/base/x86_64/"
         organization: "{{ foreman_organization_ol6 }}"
 
 foreman_content_views_ol6:
@@ -384,99 +384,99 @@ foreman_content_views_ol6:
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_ofed_UEK"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_ofed_UEK"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_UEKR4_OFED"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_UEKR4_OFED"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL"
-  #   organization: "{{ foreman_organization_ol6 }}"
-  #   repositories:
-  #     - name: MySQL 5.5 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL56"
-  #   organization: "{{ foreman_organization_ol6 }}"
-  #   repositories:
-  #     - name: MySQL 5.6 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL57_community"
-  #   organization: "{{ foreman_organization_ol6 }}"
-  #   repositories:
-  #     - name: MySQL 5.7 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_MySQL80_community"
-  #   organization: "{{ foreman_organization_ol6 }}"
-  #   repositories:
-  #     - name: MySQL 8.0 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_oracle_instantclient"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.5 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL56"
+  #   organization: "{{ foreman_organization_ol6 }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.6 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL57_community"
+  #   organization: "{{ foreman_organization_ol6 }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.7 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_MySQL80_community"
+  #   organization: "{{ foreman_organization_ol6 }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack10"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_oracle_instantclient"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: Oracle OpenStack 1.0 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack21"
-  #   organization: "{{ foreman_organization_ol6 }}"
-  #   repositories:
-  #     - name: Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack30"
-  #   organization: "{{ foreman_organization_ol6 }}"
-  #   repositories:
-  #     - name: Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
-  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_openstack40"
-  #   organization: "{{ foreman_organization_ol6 }}"
-  #   repositories:
-  #     - name: Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Instant Client for Oracle Linux 6 (x86_64) - License Included"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
 
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk26_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack10"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 1.0 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk27_client"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack21"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.1 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk26_server"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack30"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 3.0 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
-  # - name: "{{ foreman_cv_prefix | default('cv_') }}ol6_x86_64_spacewalk27_server"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_openstack40"
   #   organization: "{{ foreman_organization_ol6 }}"
   #   repositories:
-  #     - name: Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)
-  #       product: Oracle Linux
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 4.0 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
+
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk26_client"
+  #   organization: "{{ foreman_organization_ol6 }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk27_client"
+  #   organization: "{{ foreman_organization_ol6 }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk26_server"
+  #   organization: "{{ foreman_organization_ol6 }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.6 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
+  #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
+  # - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol6_x86_64_spacewalk27_server"
+  #   organization: "{{ foreman_organization_ol6 }}"
+  #   repositories:
+  #     - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.7 for Oracle Linux 6 (x86_64)"
+  #       product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
   #   allow_promote: "{{ foreman_cv_allow_promote_ol6 }}"
 
 foreman_composite_content_views_ol6:

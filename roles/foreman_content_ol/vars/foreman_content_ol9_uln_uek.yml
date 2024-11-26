@@ -33,11 +33,11 @@ foreman_products_ol9_uln_uekr7:
     organization: "{{ foreman_organization_ol9_uln_uekr7 }}"
     repositories:
       ### Oracle Linux 9 UEK Release 7 (x86_64) | ol9_x86_64_UEKR7 ###
-      - name: Oracle Linux 9 UEK Release 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 UEK Release 7 (x86_64)"
         description: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64)
-        label: ol9_uln_x86_64_UEKR7
-        url: uln://ol9_x86_64_UEKR7
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_UEKR7"
         <<: *foreman_products_defaults_ol9_uln_uek
+        url: uln://ol9_x86_64_UEKR7
         organization: "{{ foreman_organization_ol9_uln_uekr7 }}"
 
 foreman_products_ol9_uln_uekr7_developer:
@@ -46,11 +46,11 @@ foreman_products_ol9_uln_uekr7_developer:
     organization: "{{ foreman_organization_ol9_uln_uekr7_developer }}"
     repositories:
       ### Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64) | ol9_x86_64_developer_UEKR7 ###
-      - name: Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer preview of Unbreakable Enterprise Kernel Release 7 for Oracle Linux 9 (x86_64)"
         description: Developer preview of Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64) - (not for production use)
-        label: ol9_uln_x86_64_developer_UEKR7
-        url: uln://ol9_x86_64_developer_UEKR7
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_developer_UEKR7"
         <<: *foreman_products_defaults_ol9_uln_uek
+        url: uln://ol9_x86_64_developer_UEKR7
         organization: "{{ foreman_organization_ol9_uln_uekr7_developer }}"
 
 foreman_products_ol9_uln_rdma:
@@ -59,11 +59,11 @@ foreman_products_ol9_uln_rdma:
     organization: "{{ foreman_organization_ol9_uln_rdma }}"
     repositories:
       ### Oracle Linux 9 RDMA (x86_64) | ol9_x86_64_RDMA ###
-      - name: Oracle Linux 9 RDMA (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 RDMA (x86_64)"
         description: Latest RDMA packages for Oracle Linux 9 (x86_64)
-        label: ol9_uln_x86_64_RDMA
-        url: uln://ol9_x86_64_RDMA
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_RDMA"
         <<: *foreman_products_defaults_ol9_uln_uek
+        url: uln://ol9_x86_64_RDMA
         organization: "{{ foreman_organization_ol9_uln_rdma }}"
 
 foreman_products_ol9_uln_modrhck:
@@ -72,11 +72,11 @@ foreman_products_ol9_uln_modrhck:
     organization: "{{ foreman_organization_ol9_uln_modrhck }}"
     repositories:
       ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64) | ol9_x86_64_MODRHCK ###
-      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64)"
         description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64).
-        label: ol9_uln_x86_64_MODRHCK
-        url: uln://ol9_x86_64_MODRHCK
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_MODRHCK"
         <<: *foreman_products_defaults_ol9_uln_uek
+        url: uln://ol9_x86_64_MODRHCK
         organization: "{{ foreman_organization_ol9_uln_modrhck }}"
 
 foreman_products_ol9_uln_ueknext_developer:
@@ -85,11 +85,11 @@ foreman_products_ol9_uln_ueknext_developer:
     organization: "{{ foreman_organization_ol9_uln_ueknext_developer }}"
     repositories:
       ### Oracle Linux 9 UEK-next Developer Release (x86_64) | ol9_x86_64_developer_UEKnext ###
-      - name: Oracle Linux 9 UEK-next Developer Release (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 UEK-next Developer Release (x86_64)"
         description: Developer release of UEK-next for Oracle Linux 9 (x86_64) - (unsupported, not for use in production)
-        label: ol9_uln_x86_64_developer_UEKnext
-        url: uln://ol9_x86_64_developer_UEKnext
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_uln_x86_64_developer_UEKnext"
         <<: *foreman_products_defaults_ol9_uln_uek
+        url: uln://ol9_x86_64_developer_UEKnext
         organization: "{{ foreman_organization_ol9_uln_ueknext_developer }}"
 
 foreman_products_ol9_uln_uek: "{{ [] |

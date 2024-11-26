@@ -33,18 +33,18 @@ foreman_products_ol7_uln_ksplice:
     organization: "{{ foreman_organization_ol7_uln_ksplice }}"
     repositories:
       ### Ksplice for Oracle Linux 7 (x86_64) | ol7_x86_64_ksplice ###
-      - name: Ksplice for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice for Oracle Linux 7 (x86_64)"
         description: Oracle Ksplice clients, updates, and dependencies for Oracle Linux 7 (x86_64).
-        label: ol7_uln_x86_64_ksplice
-        url: uln://ol7_x86_64_ksplice
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_ksplice"
         <<: *foreman_products_defaults_ol7_uln_ksplice
+        url: uln://ol7_x86_64_ksplice
         organization: "{{ foreman_organization_ol7_uln_ksplice }}"
       ### Ksplice aware userspace packages for Oracle Linux 7 (x86_64) | ol7_x86_64_userspace_ksplice ###
-      - name: Ksplice aware userspace packages for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Ksplice aware userspace packages for Oracle Linux 7 (x86_64)"
         description: Latest packages for Ksplice aware userspace packages for Oracle Linux 7 (x86_64).
-        label: ol7_uln_x86_64_userspace_ksplice
-        url: uln://ol7_x86_64_userspace_ksplice
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_userspace_ksplice"
         <<: *foreman_products_defaults_ol7_uln_ksplice
+        url: uln://ol7_x86_64_userspace_ksplice
         organization: "{{ foreman_organization_ol7_uln_ksplice }}"
 
 

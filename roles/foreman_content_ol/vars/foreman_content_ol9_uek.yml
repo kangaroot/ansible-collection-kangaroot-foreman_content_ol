@@ -31,11 +31,11 @@ foreman_products_ol9_uekr7:
     organization: "{{ foreman_organization_ol9_uekr7 }}"
     repositories:
       ### Oracle Linux 9 UEK Release 7 (x86_64) | ol9_x86_64_UEKR7 ###
-      - name: Oracle Linux 9 UEK Release 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 UEK Release 7 (x86_64)"
         description: Unbreakable Enterprise Kernel Release 7 packages for Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_UEKR7
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/UEKR7/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_UEKR7"
         <<: *foreman_products_defaults_ol9_uek
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/UEKR7/x86_64/"
         organization: "{{ foreman_organization_ol9_uekr7 }}"
 
 foreman_products_ol9_rdma:
@@ -44,11 +44,11 @@ foreman_products_ol9_rdma:
     organization: "{{ foreman_organization_ol9_rdma }}"
     repositories:
       ### Oracle Linux 9 RDMA (x86_64) | ol9_x86_64_RDMA ###
-      - name: Oracle Linux 9 RDMA (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 RDMA (x86_64)"
         description: Latest RDMA packages for Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_RDMA
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/RDMA/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_RDMA"
         <<: *foreman_products_defaults_ol9_uek
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/RDMA/x86_64/"
         organization: "{{ foreman_organization_ol9_rdma }}"
 
 foreman_products_ol9_modrhck:
@@ -57,11 +57,11 @@ foreman_products_ol9_modrhck:
     organization: "{{ foreman_organization_ol9_modrhck }}"
     repositories:
       ### Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64) | ol9_x86_64_MODRHCK ###
-      - name: Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64)"
         description: Latest Red Hat compatible kernel with Oracle provided fixes for Oracle Linux 9 (x86_64).
-        label: ol9_x86_64_MODRHCK
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/MODRHCK/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_MODRHCK"
         <<: *foreman_products_defaults_ol9_uek
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/MODRHCK/x86_64/"
         organization: "{{ foreman_organization_ol9_modrhck }}"
 
 foreman_products_ol9_ueknext_developer:
@@ -70,11 +70,11 @@ foreman_products_ol9_ueknext_developer:
     organization: "{{ foreman_organization_ol9_ueknext_developer }}"
     repositories:
       ### Oracle Linux 9 UEK-next Developer Release (x86_64) | ol9_x86_64_developer_UEKnext ###
-      - name: Oracle Linux 9 UEK-next Developer Release (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 UEK-next Developer Release (x86_64)"
         description: Developer release of UEK-next for Oracle Linux 9 (x86_64) - (unsupported, not for use in production)
-        label: ol9_x86_64_developer_UEKnext
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/UEKnext/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_developer_UEKnext"
         <<: *foreman_products_defaults_ol9_uek
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/UEKnext/x86_64/"
         organization: "{{ foreman_organization_ol9_ueknext_developer }}"
 
 foreman_products_ol9_uek: "{{ [] |

@@ -31,11 +31,11 @@ foreman_products_ol8_olm:
     organization: "{{ foreman_organization_ol8_olm }}"
     repositories:
       ### Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 8 (x86_64) | ol8_x86_64_oraclelinuxmanager210_client ###
-      - name: Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 8 (x86_64)"
         description: All Oracle Linux Manager (formerly Spacewalk) Client 2.10 packages released for Oracle Linux 8 (x86_64).
-        label: ol8_x86_64_oraclelinuxmanager210_client
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oraclelinuxmanager210/client/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_oraclelinuxmanager210_client"
         <<: *foreman_products_defaults_ol8_olm
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/oraclelinuxmanager210/client/x86_64/"
         organization: "{{ foreman_organization_ol8_olm }}"
 
 

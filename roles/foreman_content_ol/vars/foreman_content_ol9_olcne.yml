@@ -31,32 +31,32 @@ foreman_products_ol9_olcne:
     organization: "{{ foreman_organization_ol9_olcne }}"
     repositories:
       ### Oracle Linux 9 Cloud Native Environment (x86_64) | ol9_x86_64_olcne ###
-      - name: Oracle Linux 9 Cloud Native Environment (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Cloud Native Environment (x86_64)"
         description: Latest Oracle Cloud Native Environment Packages for Oracle Linux 9
-        label: ol9_x86_64_olcne
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_olcne"
         <<: *foreman_products_defaults_ol9_olcne
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne/x86_64/"
         organization: "{{ foreman_organization_ol9_olcne }}"
       ### Oracle Linux 9 Cloud Native Environment 1.7 (x86_64) | ol9_x86_64_olcne17 ###
-      - name: Oracle Linux 9 Cloud Native Environment 1.7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Cloud Native Environment 1.7 (x86_64)"
         description: Packages for components of the 1.7 release of Oracle Linux 9 Cloud Native environment for Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_olcne17
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne17/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_olcne17"
         <<: *foreman_products_defaults_ol9_olcne
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne17/x86_64/"
         organization: "{{ foreman_organization_ol9_olcne }}"
       ### Oracle Linux 9 Cloud Native Environment 1.8 (x86_64) | ol9_x86_64_olcne18 ###
-      - name: Oracle Linux 9 Cloud Native Environment 1.8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Cloud Native Environment 1.8 (x86_64)"
         description: Packages for components of the 1.8 release of Oracle Linux 9 Cloud Native environment for Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_olcne18
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne18/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_olcne18"
         <<: *foreman_products_defaults_ol9_olcne
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne18/x86_64/"
         organization: "{{ foreman_organization_ol9_olcne }}"
       ### Oracle Linux 9 Cloud Native Environment 1.9 (x86_64) | ol9_x86_64_olcne19 ###
-      - name: Oracle Linux 9 Cloud Native Environment 1.9 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Cloud Native Environment 1.9 (x86_64)"
         description: Packages for components of the 1.9 release of Oracle Linux 9 Cloud Native environment for Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_olcne19
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne19/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_olcne19"
         <<: *foreman_products_defaults_ol9_olcne
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/olcne19/x86_64/"
         organization: "{{ foreman_organization_ol9_olcne }}"
 
 

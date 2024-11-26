@@ -31,11 +31,11 @@ foreman_products_ol7_mysql55:
     organization: "{{ foreman_organization_ol7_mysql55 }}"
     repositories:
       ### MySQL 5.5 for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL55_community ###
-      - name: MySQL 5.5 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.5 for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 5.5 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL55_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL55/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL55_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL55/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql55 }}"
 
 foreman_products_ol7_mysql56:
@@ -44,11 +44,11 @@ foreman_products_ol7_mysql56:
     organization: "{{ foreman_organization_ol7_mysql56 }}"
     repositories:
       ### MySQL 5.6 for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL56_community ###
-      - name: MySQL 5.6 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.6 for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 5.6 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL56_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL56/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL56_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL56/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql56 }}"
 
 foreman_products_ol7_mysql57:
@@ -57,11 +57,11 @@ foreman_products_ol7_mysql57:
     organization: "{{ foreman_organization_ol7_mysql57 }}"
     repositories:
       ### MySQL 5.7 for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL57_community ###
-      - name: MySQL 5.7 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 5.7 for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 5.7 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL57_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL57_community/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL57_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL57_community/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql57 }}"
 
 foreman_products_ol7_mysql80:
@@ -70,25 +70,25 @@ foreman_products_ol7_mysql80:
     organization: "{{ foreman_organization_ol7_mysql80 }}"
     repositories:
       ### MySQL 8.0 Connectors Community for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL80_connectors_community ###
-      - name: MySQL 8.0 Connectors Community for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 Connectors Community for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL80_connectors_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL80/connectors/community/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL80_connectors_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL80/connectors/community/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql80 }}"
       ### MySQL 8.0 for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL80_community ###
-      - name: MySQL 8.0 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 8.0 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL80_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL80_community/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL80_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL80_community/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql80 }}"
       ### MySQL 8.0 Tools Community for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL80_tools_community ###
-      - name: MySQL 8.0 Tools Community for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 Tools Community for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 8.0 Tools Community packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL80_tools_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL80/tools/community/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL80_tools_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL80/tools/community/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql80 }}"
 
 foreman_products_ol7_mysql84:
@@ -97,18 +97,18 @@ foreman_products_ol7_mysql84:
     organization: "{{ foreman_organization_ol7_mysql84 }}"
     repositories:
       ### MySQL 8.4 for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL84_community ###
-      - name: MySQL 8.4 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.4 for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 8.4 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL84_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL84_community/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL84_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL84_community/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql84 }}"
       ### MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL84_tools_community ###
-      - name: MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.4 Tools Community for Oracle Linux 7 (x86_64)"
         description: Latest MySQL 8.4 Tools Community packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL84_tools_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL84/tools/community/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL84_tools_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL84/tools/community/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql84 }}"
 
 foreman_products_ol7_mysql_main:
@@ -117,11 +117,11 @@ foreman_products_ol7_mysql_main:
     organization: "{{ foreman_organization_ol7_mysql80 }}"
     repositories:
       ### MySQL Connectors Community for Oracle Linux 7 (x86_64) | ol7_x86_64_MySQL_connectors_community ###
-      - name: MySQL Connectors Community for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL Connectors Community for Oracle Linux 7 (x86_64)"
         description: Latest MySQL Connectors Community packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_MySQL_connectors_community
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL/connectors/community/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_MySQL_connectors_community"
         <<: *foreman_products_defaults_ol7_mysql
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/MySQL/connectors/community/x86_64/"
         organization: "{{ foreman_organization_ol7_mysql }}"
 
 foreman_products_ol7_mysql: "{{ ( foreman_products_ol7_mysql_main | default([]) if foreman_enable_ol7_mysql else [] ) |

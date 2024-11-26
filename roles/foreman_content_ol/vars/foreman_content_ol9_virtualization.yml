@@ -31,18 +31,18 @@ foreman_products_ol9_virtualization_kvm_utils:
     organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
     repositories:
       ### Oracle Linux 9 KVM Utilities (x86_64) | ol9_x86_64_kvm_utils ###
-      - name: Oracle Linux 9 KVM Utilities (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 KVM Utilities (x86_64)"
         description: Latest Oracle Linux 9 KVM Utilities Packages (x86_64)
-        label: ol9_x86_64_kvm_utils
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/kvm/utils/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_kvm_utils"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/kvm/utils/x86_64/"
         organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
       ### Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64) | ol9_x86_64_developer_kvm_utils ###
-      - name: Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64)"
         description: Latest KVM Utility packages for test and development for Oracle Linux 9 (x86_64).
-        label: ol9_x86_64_developer_kvm_utils
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/kvm/utils/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_developer_kvm_utils"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/kvm/utils/x86_64/"
         organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
 
 foreman_products_ol9_virtualization: "{{ [] |
@@ -57,11 +57,11 @@ foreman_content_views_ol9_virtualization_kvm_utils:
       - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 KVM Utilities (x86_64)"
         product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol9_virtualization_kvm_utils }}"
-  - name: "{{ foreman_cv_prefix | default('cv_') }}ol9_x86_64_developer_kvm_utils"
+  - name: "{{ foreman_cv_prefix | default('cv_') }}{{ foreman_cv_name_prefix | default('') }}ol9_x86_64_developer_kvm_utils"
     organization: "{{ foreman_organization_ol9_virtualization_kvm_utils }}"
     repositories:
-      - name: Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64)
-        product: Oracle Linux
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview of KVM Utilities for Oracle Linux 9 (x86_64)"
+        product: "{{ foreman_product_name_prefix | default('') }}Oracle Linux"
     allow_promote: "{{ foreman_cv_allow_promote_ol9_virtualization_kvm_utils }}"
 
 foreman_content_views_ol9_virtualization: "{{ [] |

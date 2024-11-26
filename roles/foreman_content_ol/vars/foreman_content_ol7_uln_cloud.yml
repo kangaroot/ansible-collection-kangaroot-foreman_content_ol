@@ -33,11 +33,11 @@ foreman_products_ol7_uln_cloud_openstack20:
     organization: "{{ foreman_organization_ol7_uln_cloud_openstack20 }}"
     repositories:
       ### Oracle OpenStack 2.0 (x86_64) | ol7_x86_64_openstack20 ###
-      - name: Oracle OpenStack 2.0 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.0 (x86_64)"
         description: Latest for Oracle OpenStack version 2.0 .
-        label: ol7_uln_x86_64_openstack20
-        url: uln://ol7_x86_64_openstack20
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack20"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack20
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack20 }}"
 
 foreman_products_ol7_uln_cloud_openstack21:
@@ -46,11 +46,11 @@ foreman_products_ol7_uln_cloud_openstack21:
     organization: "{{ foreman_organization_ol7_uln_cloud_openstack21 }}"
     repositories:
       ### Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64) | ol7_x86_64_openstack21 ###
-      - name: Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 2.1 for Oracle Linux 7 (x86_64)"
         description: Latest for Oracle OpenStack version 2.1 for Oracle Linux 7 (x86_64) .
-        label: ol7_uln_x86_64_openstack21
-        url: uln://ol7_x86_64_openstack21
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack21"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack21
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack21 }}"
 
 foreman_products_ol7_uln_cloud_openstack30:
@@ -59,18 +59,18 @@ foreman_products_ol7_uln_cloud_openstack30:
     organization: "{{ foreman_organization_ol7_uln_cloud_openstack30 }}"
     repositories:
       ### Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64) | ol7_x86_64_openstack30 ###
-      - name: Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 3.0 for Oracle Linux 7 (x86_64)"
         description: Latest for Oracle OpenStack version 3.0 .
-        label: ol7_uln_x86_64_openstack30
-        url: uln://ol7_x86_64_openstack30
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack30"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack30
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack30 }}"
       ### Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64) | ol7_x86_64_openstack_extras ###
-      - name: Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Extra development packages for Oracle OpenStack 3.0 on Oracle Linux 7 (x86_64)"
         description: Latest Extra development packages for Oracle OpenStack version 3.0
-        label: ol7_uln_x86_64_openstack_extras
-        url: uln://ol7_x86_64_openstack_extras
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack_extras"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack_extras
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack30 }}"
 
 foreman_products_ol7_uln_cloud_openstack40:
@@ -79,18 +79,18 @@ foreman_products_ol7_uln_cloud_openstack40:
     organization: "{{ foreman_organization_ol7_uln_cloud_openstack40 }}"
     repositories:
       ### Oracle OpenStack 4.0 for Oracle Linux 7 (x86_64) | ol7_x86_64_openstack40 ###
-      - name: Oracle OpenStack 4.0 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 4.0 for Oracle Linux 7 (x86_64)"
         description: Latest Packages for Oracle OpenStack version 4.0 .
-        label: ol7_uln_x86_64_openstack40
-        url: uln://ol7_x86_64_openstack40
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack40"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack40
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack40 }}"
       ### Extra development packages for Oracle OpenStack 4.0 on Oracle Linux 7 (x86_64) | ol7_x86_64_openstack40_extras ###
-      - name: Extra development packages for Oracle OpenStack 4.0 on Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Extra development packages for Oracle OpenStack 4.0 on Oracle Linux 7 (x86_64)"
         description: Latest Extra development packages for Oracle OpenStack version 4.0
-        label: ol7_uln_x86_64_openstack40_extras
-        url: uln://ol7_x86_64_openstack40_extras
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack40_extras"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack40_extras
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack40 }}"
 
 foreman_products_ol7_uln_cloud_openstack50:
@@ -99,18 +99,18 @@ foreman_products_ol7_uln_cloud_openstack50:
     organization: "{{ foreman_organization_ol7_uln_cloud_openstack50 }}"
     repositories:
       ### Oracle OpenStack 5.0 for Oracle Linux 7 (x86_64) | ol7_x86_64_openstack50 ###
-      - name: Oracle OpenStack 5.0 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle OpenStack 5.0 for Oracle Linux 7 (x86_64)"
         description: Latest Packages for Oracle OpenStack version 5.0 .
-        label: ol7_uln_x86_64_openstack50
-        url: uln://ol7_x86_64_openstack50
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack50"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack50
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack50 }}"
       ### Extra development packages for Oracle OpenStack 5.0 on Oracle Linux 7 (x86_64) | ol7_x86_64_openstack50_extras ###
-      - name: Extra development packages for Oracle OpenStack 5.0 on Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Extra development packages for Oracle OpenStack 5.0 on Oracle Linux 7 (x86_64)"
         description: Latest Extra development packages for Oracle OpenStack version 5.0
-        label: ol7_uln_x86_64_openstack50_extras
-        url: uln://ol7_x86_64_openstack50_extras
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_uln_x86_64_openstack50_extras"
         <<: *foreman_products_defaults_ol7_uln_cloud
+        url: uln://ol7_x86_64_openstack50_extras
         organization: "{{ foreman_organization_ol7_uln_cloud_openstack50 }}"
 
 foreman_products_ol7_uln_cloud: "{{ [] |

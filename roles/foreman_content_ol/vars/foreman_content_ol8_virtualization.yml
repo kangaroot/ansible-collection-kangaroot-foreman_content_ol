@@ -31,11 +31,11 @@ foreman_products_ol8_virtualization_kvm_utils:
     organization: "{{ foreman_organization_ol8_virtualization_kvm_utils }}"
     repositories:
       ### Oracle Linux 8 KVM Application Stream (x86_64) | ol8_x86_64_kvm_appstream ###
-      - name: Oracle Linux 8 KVM Application Stream (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 KVM Application Stream (x86_64)"
         description: Latest KVM Application Stream Packages for Oracle Linux 8 (x86_64)
-        label: ol8_x86_64_kvm_appstream
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/kvm/appstream/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_kvm_appstream"
         <<: *foreman_products_defaults_ol8_virtualization
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/kvm/appstream/x86_64/"
         organization: "{{ foreman_organization_ol8_virtualization_kvm_utils }}"
 
 foreman_products_ol8_virtualization_ovirt44:
@@ -44,18 +44,18 @@ foreman_products_ol8_virtualization_ovirt44:
     organization: "{{ foreman_organization_ol8_virtualization_ovirt44 }}"
     repositories:
       ### oVirt Release 4.4 on Oracle Linux 8 (x86_64) | ol8_x86_64_ovirt44 ###
-      - name: oVirt Release 4.4 on Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.4 on Oracle Linux 8 (x86_64)"
         description: Latest packages for oVirt Release 4.4 on Oracle Linux 8 (x86_64).
-        label: ol8_x86_64_ovirt44
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt44/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_ovirt44"
         <<: *foreman_products_defaults_ol8_virtualization
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt44/x86_64/"
         organization: "{{ foreman_organization_ol8_virtualization_ovirt44 }}"
       ### oVirt Release 4.4 on Oracle Linux 8 (x86_64) - Extra | ol8_x86_64_ovirt44_extras ###
-      - name: oVirt Release 4.4 on Oracle Linux 8 (x86_64) - Extra
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.4 on Oracle Linux 8 (x86_64) - Extra"
         description: Latest extra packages for oVirt Release 4.4 on Oracle Linux 8 (x86_64).
-        label: ol8_x86_64_ovirt44_extras
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt44/extras/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_ovirt44_extras"
         <<: *foreman_products_defaults_ol8_virtualization
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt44/extras/x86_64/"
         organization: "{{ foreman_organization_ol8_virtualization_ovirt44 }}"
 
 foreman_products_ol8_virtualization_ovirt45:
@@ -64,18 +64,18 @@ foreman_products_ol8_virtualization_ovirt45:
     organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
     repositories:
       ### oVirt Release 4.5 on Oracle Linux 8 (x86_64) | ol8_x86_64_ovirt45 ###
-      - name: oVirt Release 4.5 on Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.5 on Oracle Linux 8 (x86_64)"
         description: Latest packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64).
-        label: ol8_x86_64_ovirt45
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt45/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_ovirt45"
         <<: *foreman_products_defaults_ol8_virtualization
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt45/x86_64/"
         organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
       ### oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra | ol8_x86_64_ovirt45_extras ###
-      - name: oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.5 on Oracle Linux 8 (x86_64) - Extra"
         description: Latest extra packages for oVirt Release 4.5 on Oracle Linux 8 (x86_64).
-        label: ol8_x86_64_ovirt45_extras
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt45/extras/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_ovirt45_extras"
         <<: *foreman_products_defaults_ol8_virtualization
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/ovirt45/extras/x86_64/"
         organization: "{{ foreman_organization_ol8_virtualization_ovirt45 }}"
 
 foreman_products_ol8_virtualization: "{{ [] |

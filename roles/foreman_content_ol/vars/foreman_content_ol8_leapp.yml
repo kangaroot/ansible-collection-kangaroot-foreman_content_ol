@@ -31,11 +31,11 @@ foreman_products_ol8_leapp:
     organization: "{{ foreman_organization_ol8_leapp }}"
     repositories:
       ### Leapp Upgrade Utilities for Oracle Linux 8 (x86_64) | ol8_x86_64_leapp ###
-      - name: Leapp Upgrade Utilities for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Leapp Upgrade Utilities for Oracle Linux 8 (x86_64)"
         description: Latest packages for in-place upgrade from Oracle Linux 8 to Oracle Linux 8 (x86_64) .
-        label: ol8_x86_64_leapp
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/leapp/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_leapp"
         <<: *foreman_products_defaults_ol8_leapp
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/leapp/x86_64/"
         organization: "{{ foreman_organization_ol8_leapp }}"
 
 

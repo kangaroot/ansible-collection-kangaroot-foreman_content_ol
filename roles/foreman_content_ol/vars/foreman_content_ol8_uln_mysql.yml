@@ -33,25 +33,25 @@ foreman_products_ol8_uln_mysql80:
     organization: "{{ foreman_organization_ol8_uln_mysql }}"
     repositories:
       ### MySQL 8.0 Connectors Community for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL80_connectors_community ###
-      - name: MySQL 8.0 Connectors Community for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 Connectors Community for Oracle Linux 8 (x86_64)"
         description: Latest MySQL 8.0 Connectors Community packages for Oracle Linux 8 (x86_64).
-        label: ol8_uln_x86_64_MySQL80_connectors_community
-        url: uln://ol8_x86_64_MySQL80_connectors_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL80_connectors_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL80_connectors_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
       ### MySQL 8.0 for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL80_community ###
-      - name: MySQL 8.0 for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 for Oracle Linux 8 (x86_64)"
         description: Latest MySQL 8.0 packages for Oracle Linux 8 (x86_64).
-        label: ol8_uln_x86_64_MySQL80_community
-        url: uln://ol8_x86_64_MySQL80_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL80_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL80_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
       ### MySQL 8.0 Tools Community for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL80_tools_community ###
-      - name: MySQL 8.0 Tools Community for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.0 Tools Community for Oracle Linux 8 (x86_64)"
         description: Latest MySQL 8.0 Tools Community packages for Oracle Linux 8 (x86_64).
-        label: ol8_uln_x86_64_MySQL80_tools_community
-        url: uln://ol8_x86_64_MySQL80_tools_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL80_tools_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL80_tools_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
 
 foreman_products_ol8_uln_mysql84:
@@ -60,18 +60,18 @@ foreman_products_ol8_uln_mysql84:
     organization: "{{ foreman_organization_ol8_uln_mysql }}"
     repositories:
       ### MySQL 8.4 Server Community for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL84_community ###
-      - name: MySQL 8.4 Server Community for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.4 Server Community for Oracle Linux 8 (x86_64)"
         description: Latest MySQL 8.4 Server Community packages for Oracle Linux 8 (x86_64)
-        label: ol8_uln_x86_64_MySQL84_community
-        url: uln://ol8_x86_64_MySQL84_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL84_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL84_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
       ### MySQL 8.4 Tools Community for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL84_tools_community ###
-      - name: MySQL 8.4 Tools Community for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL 8.4 Tools Community for Oracle Linux 8 (x86_64)"
         description: Latest MySQL 8.4 Tools Community packages for Oracle Linux 8 (x86_64)
-        label: ol8_uln_x86_64_MySQL84_tools_community
-        url: uln://ol8_x86_64_MySQL84_tools_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL84_tools_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL84_tools_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
 
 foreman_products_ol8_uln_mysql_innovation:
@@ -80,18 +80,18 @@ foreman_products_ol8_uln_mysql_innovation:
     organization: "{{ foreman_organization_ol8_uln_mysql }}"
     repositories:
       ### MySQL Innovation Server Community for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL_innovation_community ###
-      - name: MySQL Innovation Server Community for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL Innovation Server Community for Oracle Linux 8 (x86_64)"
         description: Latest MySQL Innovation Server Community packages for Oracle Linux 8 (x86_64)
-        label: ol8_uln_x86_64_MySQL_innovation_community
-        url: uln://ol8_x86_64_MySQL_innovation_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL_innovation_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL_innovation_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
       ### MySQL Innovation Tools Community for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL_innovation_tools_community ###
-      - name: MySQL Innovation Tools Community for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL Innovation Tools Community for Oracle Linux 8 (x86_64)"
         description: Latest MySQL Innovation Tools Community packages for Oracle Linux 8 (x86_64)
-        label: ol8_uln_x86_64_MySQL_innovation_tools_community
-        url: uln://ol8_x86_64_MySQL_innovation_tools_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL_innovation_tools_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL_innovation_tools_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
 
 foreman_products_ol8_uln_mysql_main:
@@ -100,11 +100,11 @@ foreman_products_ol8_uln_mysql_main:
     organization: "{{ foreman_organization_ol8_uln_mysql }}"
     repositories:
       ### MySQL Connectors Community for Oracle Linux 8 (x86_64) | ol8_x86_64_MySQL_connectors_community ###
-      - name: MySQL Connectors Community for Oracle Linux 8 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}MySQL Connectors Community for Oracle Linux 8 (x86_64)"
         description: Latest MySQL Connectors Community packages for Oracle Linux 8 (x86_64)
-        label: ol8_uln_x86_64_MySQL_connectors_community
-        url: uln://ol8_x86_64_MySQL_connectors_community
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_uln_x86_64_MySQL_connectors_community"
         <<: *foreman_products_defaults_ol8_uln_mysql
+        url: uln://ol8_x86_64_MySQL_connectors_community
         organization: "{{ foreman_organization_ol8_uln_mysql }}"
 
 foreman_products_ol8_uln_mysql: "{{ ( foreman_products_ol8_uln_mysql_main | default([]) if foreman_enable_ol8_uln_mysql | bool else [] ) |

@@ -31,18 +31,18 @@ foreman_products_ol7_virtualization_kvm_utils:
     organization: "{{ foreman_organization_ol7_virtualization_kvm_utils }}"
     repositories:
       ### KVM Utilities for Oracle Linux 7 (x86_64) | ol7_x86_64_kvm_utils ###
-      - name: KVM Utilities for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}KVM Utilities for Oracle Linux 7 (x86_64)"
         description: Latest packages for KVM Utilities for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_kvm_utils
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/kvm/utils/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_kvm_utils"
         <<: *foreman_products_defaults_ol7_virtualization
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/kvm/utils/x86_64/"
         organization: "{{ foreman_organization_ol7_virtualization_kvm_utils }}"
       ### Developer Preview of KVM Utilities for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_kvm_utils ###
-      - name: Developer Preview of KVM Utilities for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Developer Preview of KVM Utilities for Oracle Linux 7 (x86_64)"
         description: Latest KVM Utility packages for test and development for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_developer_kvm_utils
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/kvm/utils/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_developer_kvm_utils"
         <<: *foreman_products_defaults_ol7_virtualization
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/kvm/utils/x86_64/"
         organization: "{{ foreman_organization_ol7_virtualization_kvm_utils }}"
 
 foreman_products_ol7_virtualization_ovirt42:
@@ -51,18 +51,18 @@ foreman_products_ol7_virtualization_ovirt42:
     organization: "{{ foreman_organization_ol7_virtualization_ovirt42 }}"
     repositories:
       ### oVirt Release 4.2 on Oracle Linux 7 (x86_64) | ol7_x86_64_ovirt42 ###
-      - name: oVirt Release 4.2 on Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.2 on Oracle Linux 7 (x86_64)"
         description: Latest packages for oVirt Release 4.2 on Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_ovirt42
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt42/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_ovirt42"
         <<: *foreman_products_defaults_ol7_virtualization
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt42/x86_64/"
         organization: "{{ foreman_organization_ol7_virtualization_ovirt42 }}"
       ### oVirt Release 4.2 on Oracle Linux 7 (x86_64) - Extra | ol7_x86_64_ovirt42_extras ###
-      - name: oVirt Release 4.2 on Oracle Linux 7 (x86_64) - Extra
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.2 on Oracle Linux 7 (x86_64) - Extra"
         description: Latest extra packages for oVirt Release 4.2 on Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_ovirt42_extras
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt42/extras/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_ovirt42_extras"
         <<: *foreman_products_defaults_ol7_virtualization
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt42/extras/x86_64/"
         organization: "{{ foreman_organization_ol7_virtualization_ovirt42 }}"
 
 foreman_products_ol7_virtualization_ovirt43:
@@ -71,18 +71,18 @@ foreman_products_ol7_virtualization_ovirt43:
     organization: "{{ foreman_organization_ol7_virtualization_ovirt43 }}"
     repositories:
       ### oVirt Release 4.3 on Oracle Linux 7 (x86_64) | ol7_x86_64_ovirt43 ###
-      - name: oVirt Release 4.3 on Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.3 on Oracle Linux 7 (x86_64)"
         description: Latest packages for oVirt Release 4.3 on Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_ovirt43
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt43/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_ovirt43"
         <<: *foreman_products_defaults_ol7_virtualization
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt43/x86_64/"
         organization: "{{ foreman_organization_ol7_virtualization_ovirt43 }}"
       ### oVirt Release 4.3 on Oracle Linux 7 (x86_64) - Extra | ol7_x86_64_ovirt43_extras ###
-      - name: oVirt Release 4.3 on Oracle Linux 7 (x86_64) - Extra
+      - name: "{{ foreman_repo_name_prefix | default('') }}oVirt Release 4.3 on Oracle Linux 7 (x86_64) - Extra"
         description: Latest extra packages for oVirt Release 4.3 on Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_ovirt43_extras
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt43/extras/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_ovirt43_extras"
         <<: *foreman_products_defaults_ol7_virtualization
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/ovirt43/extras/x86_64/"
         organization: "{{ foreman_organization_ol7_virtualization_ovirt43 }}"
 
 foreman_products_ol7_virtualization: "{{ [] |

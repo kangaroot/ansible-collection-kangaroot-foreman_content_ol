@@ -31,18 +31,18 @@ foreman_products_ol7_olm_spacewalk26:
     organization: "{{ foreman_organization_ol7_olm_spacewalk26 }}"
     repositories:
       ### Spacewalk Client 2.6 for Oracle Linux 7 (x86_64) | ol7_x86_64_spacewalk26_client ###
-      - name: Spacewalk Client 2.6 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.6 for Oracle Linux 7 (x86_64)"
         description: All Spacewalk Client 2.6 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_spacewalk26_client
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk26/client/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_spacewalk26_client"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk26/client/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_spacewalk26 }}"
       ### Spacewalk Server 2.6 for Oracle Linux 7 (x86_64) | ol7_x86_64_spacewalk26_server ###
-      - name: Spacewalk Server 2.6 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.6 for Oracle Linux 7 (x86_64)"
         description: All Spacewalk Server 2.6 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_spacewalk26_server
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk26/server/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_spacewalk26_server"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk26/server/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_spacewalk26 }}"
 
 foreman_products_ol7_olm_spacewalk27:
@@ -51,18 +51,18 @@ foreman_products_ol7_olm_spacewalk27:
     organization: "{{ foreman_organization_ol7_olm_spacewalk27 }}"
     repositories:
       ### Spacewalk Client 2.7 for Oracle Linux 7 (x86_64) | ol7_x86_64_spacewalk27_client ###
-      - name: Spacewalk Client 2.7 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.7 for Oracle Linux 7 (x86_64)"
         description: All Spacewalk Client 2.7 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_spacewalk27_client
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk27/client/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_spacewalk27_client"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk27/client/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_spacewalk27 }}"
       ### Spacewalk Server 2.7 for Oracle Linux 7 (x86_64) | ol7_x86_64_spacewalk27_server ###
-      - name: Spacewalk Server 2.7 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.7 for Oracle Linux 7 (x86_64)"
         description: All Spacewalk Server 2.7 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_spacewalk27_server
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk27/server/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_spacewalk27_server"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk27/server/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_spacewalk27 }}"
 
 foreman_products_ol7_olm_spacewalk210:
@@ -71,18 +71,18 @@ foreman_products_ol7_olm_spacewalk210:
     organization: "{{ foreman_organization_ol7_olm_spacewalk210 }}"
     repositories:
       ### Spacewalk Client 2.10 for Oracle Linux 7 (x86_64) | ol7_x86_64_spacewalk210_client ###
-      - name: Spacewalk Client 2.10 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Client 2.10 for Oracle Linux 7 (x86_64)"
         description: All Spacewalk Client 2.10 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_spacewalk210_client
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk210/client/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_spacewalk210_client"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk210/client/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_spacewalk210 }}"
       ### Spacewalk Server 2.10 for Oracle Linux 7 (x86_64) | ol7_x86_64_spacewalk210_server ###
-      - name: Spacewalk Server 2.10 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Spacewalk Server 2.10 for Oracle Linux 7 (x86_64)"
         description: All Spacewalk Server 2.10 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_spacewalk210_server
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk210/server/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_spacewalk210_server"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/spacewalk210/server/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_spacewalk210 }}"
 
 foreman_products_ol7_olm_oraclelinuxmanager210:
@@ -91,18 +91,18 @@ foreman_products_ol7_olm_oraclelinuxmanager210:
     organization: "{{ foreman_organization_ol7_olm_oraclelinuxmanager210 }}"
     repositories:
       ### Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 7 (x86_64) | ol7_x86_64_oraclelinuxmanager210_client ###
-      - name: Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Manager (formerly Spacewalk) Client 2.10 for Oracle Linux 7 (x86_64)"
         description: All Oracle Linux Manager (formerly Spacewalk) Client 2.10 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_oraclelinuxmanager210_client
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/oraclelinuxmanager210/client/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_oraclelinuxmanager210_client"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/oraclelinuxmanager210/client/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_oraclelinuxmanager210 }}"
       ### Oracle Linux Manager (formerly Spacewalk) Server 2.10 for Oracle Linux 7 (x86_64) | ol7_x86_64_oraclelinuxmanager210_server ###
-      - name: Oracle Linux Manager (formerly Spacewalk) Server 2.10 for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux Manager (formerly Spacewalk) Server 2.10 for Oracle Linux 7 (x86_64)"
         description: All Oracle Linux Manager (formerly Spacewalk) Server 2.10 packages released for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_oraclelinuxmanager210_server
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/oraclelinuxmanager210/server/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_oraclelinuxmanager210_server"
         <<: *foreman_products_defaults_ol7_olm
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/oraclelinuxmanager210/server/x86_64/"
         organization: "{{ foreman_organization_ol7_olm_oraclelinuxmanager210 }}"
 
 foreman_products_ol7_olm: "{{ [] |

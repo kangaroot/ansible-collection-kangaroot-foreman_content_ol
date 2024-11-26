@@ -31,11 +31,11 @@ foreman_products_ol8_security_validation:
     organization: "{{ foreman_organization_ol8_security_validation }}"
     repositories:
       ### Oracle Linux 8 Update 4 Security Validations packages (x86_64) | ol8_x86_64_u4_security_validation ###
-      - name: Oracle Linux 8 Update 4 Security Validations packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 8 Update 4 Security Validations packages (x86_64)"
         description: Packages delivered for security validations, like FIPS or common criteria for Oracle Linux 8 Update 4 (x86_64).
-        label: ol8_x86_64_u4_security_validation
-        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/4/security/validation/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol8_x86_64_u4_security_validation"
         <<: *foreman_products_defaults_ol8_security_validation
+        url: "{{ foreman_repo_baseurl_oracle8 }}/OL8/4/security/validation/x86_64/"
         organization: "{{ foreman_organization_ol8_security_validation }}"
 
 

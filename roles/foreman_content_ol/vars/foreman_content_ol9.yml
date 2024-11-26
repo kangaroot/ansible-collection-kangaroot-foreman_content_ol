@@ -25,54 +25,54 @@ foreman_products_ol9:
     organization: "{{ foreman_organization_ol9 }}"
     repositories:
       ### Oracle Linux 9 BaseOS Latest (x86_64) | ol9_x86_64_baseos_latest ###
-      - name: Oracle Linux 9 BaseOS Latest (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 BaseOS Latest (x86_64)"
         description: Base operating system packages released for Oracle Linux 9 (x86_64) including the latest errata packages. (x86_64)
-        label: ol9_x86_64_baseos_latest
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/baseos/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_baseos_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/baseos/latest/x86_64/"
         organization: "{{ foreman_organization_ol9 }}"
       ### Oracle Linux 9 Application Stream Packages (x86_64) | ol9_x86_64_appstream ###
-      - name: Oracle Linux 9 Application Stream Packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Application Stream Packages (x86_64)"
         description: Application Stream packages released for Oracle Linux 9 including the latest errata packages. (x86_64)
-        label: ol9_x86_64_appstream
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/appstream/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_appstream"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/appstream/x86_64/"
         organization: "{{ foreman_organization_ol9 }}"
 
       ### Oracle Linux 9 Addons (x86_64) | ol9_x86_64_addons ###
-      - name: Oracle Linux 9 Addons (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Addons (x86_64)"
         description: Latest Add-on packages for Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_addons
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/addons/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_addons"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/addons/x86_64/"
         organization: "{{ foreman_organization_ol9 }}"
       ### Packages for creating test and development environments for Oracle Linux 9 (x86_64) | ol9_x86_64_developer ###
-      - name: Packages for creating test and development environments for Oracle Linux 9 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Packages for creating test and development environments for Oracle Linux 9 (x86_64)"
         description: Latest packages for creating test and development environments - Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_developer
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_developer"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/x86_64/"
         organization: "{{ foreman_organization_ol9 }}"
       ### Oracle Linux 9 EPEL Packages (x86_64) | ol9_x86_64_developer_EPEL ###
-      - name: Oracle Linux 9 EPEL Packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 EPEL Packages (x86_64)"
         description: EPEL packages for Oracle Linux 9 (x86_64)
-        label: ol9_x86_64_developer_EPEL
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/EPEL/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_developer_EPEL"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/developer/EPEL/x86_64/"
         organization: "{{ foreman_organization_ol9 }}"
       ### Oracle Linux 9 CodeReady Builder (x86_64) | ol9_x86_64_codeready_builder ###
-      - name: Oracle Linux 9 CodeReady Builder (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 CodeReady Builder (x86_64)"
         description: Repository of additional development and build tools for Oracle Linux 9 (x86_64) - (Unsupported)
-        label: ol9_x86_64_codeready_builder
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/codeready/builder/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_codeready_builder"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/codeready/builder/x86_64/"
         organization: "{{ foreman_organization_ol9 }}"
       ### Oracle Linux 9 Distro Builder (x86_64) | ol9_x86_64_distro_builder ###
-      - name: Oracle Linux 9 Distro Builder (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 9 Distro Builder (x86_64)"
         description: Oracle Linux 9 Distro Builder Packages (x86_64) - (Unsupported)
-        label: ol9_x86_64_distro_builder
-        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/distro/builder/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol9_x86_64_distro_builder"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle9 }}/OL9/distro/builder/x86_64/"
         organization: "{{ foreman_organization_ol9 }}"
 
 

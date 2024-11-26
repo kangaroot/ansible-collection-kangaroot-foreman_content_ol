@@ -25,48 +25,48 @@ foreman_products_ol7:
     organization: "{{ foreman_organization_ol7 }}"
     repositories:
       ### Oracle Linux 7 Latest (x86_64) | ol7_x86_64_latest ###
-      - name: Oracle Linux 7 Latest (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest (x86_64)"
         description: All packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
-        label: ol7_x86_64_latest
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/latest/x86_64/"
         organization: "{{ foreman_organization_ol7 }}"
 
       ### Oracle Linux 7 Latest Optional Packages (x86_64) | ol7_x86_64_optional_latest ###
-      - name: Oracle Linux 7 Latest Optional Packages (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Latest Optional Packages (x86_64)"
         description: All optional packages released for Oracle Linux 7 (x86_64) including the latest errata packages. (x86_64)
-        label: ol7_x86_64_optional_latest
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/optional/latest/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_optional_latest"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/optional/latest/x86_64/"
         organization: "{{ foreman_organization_ol7 }}"
 
       ### Oracle Linux 7 Addons (x86_64) | ol7_x86_64_addons ###
-      - name: Oracle Linux 7 Addons (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 Addons (x86_64)"
         description: Oracle Linux 7 Addons (x86_64).
-        label: ol7_x86_64_addons
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/addons/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_addons"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/addons/x86_64/"
         organization: "{{ foreman_organization_ol7 }}"
       ### Oracle Linux 7 (x86_64) Development | ol7_x86_64_developer ###
-      - name: Oracle Linux 7 (x86_64) Development
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Linux 7 (x86_64) Development"
         description: Latest packages for creating test and development environments - Oracle Linux 7 (x86_64)
-        label: ol7_x86_64_developer
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_developer"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer/x86_64/"
         organization: "{{ foreman_organization_ol7 }}"
       ### EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64) | ol7_x86_64_developer_EPEL ###
-      - name: EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}EPEL Packages for creating test and development environments for Oracle Linux 7 (x86_64)"
         description: Latest EPEL packages for creating test and development environments - Oracle Linux 7 (x86_64)
-        label: ol7_x86_64_developer_EPEL
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_EPEL/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_developer_EPEL"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/developer_EPEL/x86_64/"
         organization: "{{ foreman_organization_ol7 }}"
       ### Oracle Software Collections for Oracle Linux 7 (x86_64) | ol7_x86_64_SoftwareCollections ###
-      - name: Oracle Software Collections for Oracle Linux 7 (x86_64)
+      - name: "{{ foreman_repo_name_prefix | default('') }}Oracle Software Collections for Oracle Linux 7 (x86_64)"
         description: Latest Oracle Software Collections 3.0 packages for Oracle Linux 7 (x86_64).
-        label: ol7_x86_64_SoftwareCollections
-        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/SoftwareCollections/x86_64/"
+        label: "{{ foreman_repo_label_prefix | default('') }}ol7_x86_64_SoftwareCollections"
         <<: *foreman_products_defaults
+        url: "{{ foreman_repo_baseurl_oracle7 }}/OL7/SoftwareCollections/x86_64/"
         organization: "{{ foreman_organization_ol7 }}"
 
 
