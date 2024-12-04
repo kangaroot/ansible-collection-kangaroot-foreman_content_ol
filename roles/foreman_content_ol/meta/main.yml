@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  role_name: foreman_content_atix
+  role_name: foreman_content_ol
   author: "Sven Meeus <sven.meeus@kangaroot.net>"
-  description: "Role for configuring ATIX repositories in a Foreman/Katello installation"
+  description: "Role for configuring Oracle Linux repositories and Oracle Linux OS related content in a Foreman/Katello installation"
   license: GPL-3.0-or-later
   min_ansible_version: "2.13"
   platforms:
